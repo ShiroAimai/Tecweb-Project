@@ -7,55 +7,106 @@ html, body {
 	margin:0;
 	font-family:; Verdana, Arial, Helvetica, sans-serif;
 	font-size: 100%;
+	background-color: Gray;
 }
 #Header {
 	background-color: black;
-	border:0.2px solid black;
-	padding-bottom:8em;
+	min-height:10em;
 }
 #logo {
-	font-size:150%;
-	width:39.1%;
+	font-size:;
+	width:20%;
 	float:left;
 }
+
 #Areapersonale {
+	position:relative;
 	margin-top:0;
 	margin-left: 90%;
 	font-weight: bold;
-	font-size:150%;
-	color: black;
+	font-size:120%;
+}
+
+#Areapersonale a {
+	display:block;
+	text-decoration: none;
+	color:white;
+	background-color: #333333;
+	padding:0.5em;
+
+}
+#Areapersonale a:focus
+{
+	background-color:#DAAC5E; 
+	color:black;
+}
+#logoit {
+	width:3.2%;
+	padding:0.3em;
+	margin-left:66%;
+	position:absolute;
 }
 #pos {
-	margin-left:53%;
+	position:relative;
+	margin-top:6.74em;
+	margin-left:26.91%;
 }
 ul {
     list-style-type: none;
-    padding: 0.5em;
+    padding: 0;
     overflow: hidden;
-    background-color: black;
+    
 }
 
 li {
     float:left;
     font-size:120%;
     font-weight: bold;
+    background-color:#333333;
 }
 
 li a {
     display: block;
-    color: white;
+    color: #DAAC5E;
     text-align: center;
     padding: 16px;
+    padding-left:1.5em;
+    padding-right:1.5em;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: gold;
+    background-color: #DAAC5E;
     color:black;
     font-weight: bold;
 }
 li a:focus {
-	background-color: gold;
-    	color:black;
-    	font-weight: bold;
+	background-color:#DAAC5E;
+	color:black;
+	font-weight: bold;
+}
+
+#Footer {
+	margin-top:36%;
+	border:1px solid black;
+	color:#DAAC5E;
+	background-color: black;
+	font-weight: bold;
+}
+
+#luogo {
+	position:relative;
+	margin-left:80%;
+	padding:1em;
+}
+#contatti {
+	position:relative;
+	margin-left:80%;
+	padding:1em;
+}
+#diritti
+{
+	text-align:center;
+	font-size:120%;
+	padding-bottom:0.5em;
 }
