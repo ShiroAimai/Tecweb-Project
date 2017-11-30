@@ -54,3 +54,8 @@ li a:hover {
     color:black;
     font-weight: bold;
 }
+li a:focus {
+	background-color: gold;
+    	color:black;
+    	font-weight: bold;
+}
