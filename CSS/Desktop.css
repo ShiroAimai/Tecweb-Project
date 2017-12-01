@@ -26,10 +26,13 @@ SEZIONE INTESTAZIONE
 
 #logo {
 	float: left;
-	padding: 0.5em;
-	width: 7em;
-	margin-right: 3%;
-	margin-left: 3%;
+	padding: 0.25em;
+	width: 9em;
+	
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	position:relative;
+	z-index: 5;
 }
 
 
@@ -41,8 +44,11 @@ SEZIONE MENU
 */
 
 #Menu {
-	margin-top: 3%;
-	background-color: #000;
+	background-color: black;
+	width:100%;
+	opacity:0.8;
+	
+
 }
 
 #Menu ul {
@@ -50,19 +56,27 @@ SEZIONE MENU
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #000;
+	
+	
 }
 
 #Menu li {
 	float: left;
+
+	
 }
 
 #Menu li a {
 	display: block;
 	color:#DAAC5E;
 	text-align: center;
-	padding: 35px 28px;
+	
     text-decoration: none;
+    font-weight:bold;
+    font-size:100%;
+    padding:2em 2.214em;
+
+    
 }
 
 #Menu li a:hover:not(.active) {
@@ -100,6 +114,10 @@ SEZIONE FOOTER
 
 }
 	
+
+
+
+
 
 
 
