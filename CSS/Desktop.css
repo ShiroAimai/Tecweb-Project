@@ -1,0 +1,105 @@
+/*
+=========================
+SEZIONE GENERALE
+=========================
+*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-image: url("culo.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+
+/*
+=========================
+SEZIONE INTESTAZIONE
+=========================
+*/
+
+#logo {
+	float: left;
+	padding: 0.5em;
+	width: 7em;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+
+
+/*
+=========================
+SEZIONE MENU
+=========================
+*/
+
+#Menu {
+	margin-top: 3%;
+	background-color: #000;
+}
+
+#Menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+}
+
+#Menu li {
+	float: left;
+}
+
+#Menu li a {
+	display: block;
+	color:#DAAC5E;
+	text-align: center;
+	padding: 35px 28px;
+    text-decoration: none;
+}
+
+#Menu li a:hover:not(.active) {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+#Menu li a.active {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+
+
+/*
+=========================
+SEZIONE DESCRIZIONE
+=========================
+*/
+
+#Descrizione {
+	
+}
+
+
+
+
+/*
+=========================
+SEZIONE FOOTER
+=========================
+*/
+
+#Footer {
+
+}
+	
+
+
+
