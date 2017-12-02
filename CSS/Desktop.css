@@ -11,8 +11,8 @@ html, body {
 	padding: 0;
 	font-size: 100%;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	background-image: url("../IMAGES/culo.jpg");
-	background-size: contain;
+	background-image: url("../IMAGES/Sfondo.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
