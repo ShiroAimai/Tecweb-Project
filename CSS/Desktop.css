@@ -64,7 +64,7 @@ SEZIONE MENU
 	text-align: center;	
 	text-decoration: none;
 	font-weight:bold;
-	padding:2em 2.214em;   
+	padding:2em 1.1em;   
 }
 
 #Menu li a:hover:not(.active) {
