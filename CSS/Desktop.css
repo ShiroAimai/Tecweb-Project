@@ -1,4 +1,5 @@
 /*
+
 =========================
 SEZIONE GENERALE
 =========================
@@ -15,7 +16,12 @@ html, body {
 }
 
 
-
+#contenitore
+{
+	margin:1.46em;
+	border:1px solid #323232;
+	
+}
 /*
 =========================
 SEZIONE INTESTAZIONE
@@ -23,8 +29,9 @@ SEZIONE INTESTAZIONE
 */
 
 #Intestazione {
-	position: fixed;
+	
 	width: 100%;
+
 }
 
 #logo {
@@ -44,13 +51,15 @@ SEZIONE INTESTAZIONE
 
 #Menu ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;	
+	margin:auto;
+	padding:0;
+	overflow: hidden;
+
 }
 
 #Menu li {
 	float: left;
+	width:11.106%;
 }
 
 #Menu li a {
@@ -59,7 +68,9 @@ SEZIONE INTESTAZIONE
 	text-align: center;	
 	text-decoration: none;
 	font-weight:bold;
-	padding:2em 0.3em;   
+	padding:2em 0.1em;
+	font-size:100%;
+	width:100%;  
 }
 
 #Menu li a:hover:not(.active) {
@@ -97,7 +108,7 @@ SEZIONE FOOTER
 
 #Footer {
 	
-	padding: 1.2em;
+	padding: 1em;
 	text-align: center;
 	font-style: italic;
 	font-size: 0.8em;
@@ -115,4 +126,20 @@ SEZIONE FOOTER
 	float: right;
 	padding: 0.5em;
 	width: 7%;
+}
+
+
+/*PAGINA PALESTRA*/
+
+
+#titolopalestra {
+	font-size:40px;
+	font-weight:600;
+	text-align: center;
+	padding-top: 4em;
+	position:relative;
+}
+
+#imagepalestra {
+	width:100%;
 }
