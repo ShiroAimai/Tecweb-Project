@@ -120,16 +120,89 @@ PAGINA PALESTRA
 =========================
 */
 
-#titolopalestra {
-	font-size:40px;
-	font-weight:600;
-	text-align: center;
-	padding-top: 4em;
+#sfondopalestra
+{
 	position:relative;
 }
-
-#imagepalestra {
+#titolopalestra {
+	position:absolute;
+	font-family:Arial;
+	color:rgb(0,120,255);
+	font-weight:800;
+	font-size:auto;
 	width:100%;
+	text-align:center;
+	left:0;
+	top:10%;
+}
+#imagepalestra {
+	width:100%;	
+
+}
+
+#DescrizionePalestra
+{
+
+	color:white;
+}
+.separator 
+{
+	overflow: hidden;
+	position:relative;
+	display:block;
+	height:1px;
+	background-color: #eaeaea;
+	margin:10px 0;
+}
+
+.ridimensionasx
+{
+	float:left;
+	width:50%;
+	
+}
+.ridimensionadx
+{
+	float:right;
+	width:50%;
+	
+}
+.limitesx
+{
+	margin-right:55%;
+}
+.limitedx
+{
+	margin-left:55%;
+}
+.sx {
+	text-align:left;
+	float:left;
+	margin:5% 10%;
+	font-family: 'Raleway', sans-serif;
+	font-size:95%;
+}
+.allenamento {
+	float:left;
+	width:50%;
+	height:25em;
+}
+.dx {
+	text-align:left;
+	float:right;
+	margin:5% 10%;
+	font-size:95%;
+	font-family: 'Raleway', sans-serif;
+}
+
+#fabio
+{
+	float:left;
+}
+#genny
+{
+
+	float:left;
 }
 
 /*
@@ -217,93 +290,4 @@ PAGINA DOVE SIAMO
 #GoogleMaps p {
 	padding: 2em;
 	margin-left: 25%;
-}
-
-
-
-/*PAGINA PALESTRA*/
-
-#sfondopalestra
-{
-	position:relative;
-}
-#titolopalestra {
-	position:absolute;
-	font-family:Arial;
-	color:rgb(0,120,255);
-	font-weight:800;
-	font-size:auto;
-	width:100%;
-	text-align:center;
-	left:0;
-	top:10%;
-}
-#imagepalestra {
-	width:100%;	
-
-}
-
-#DescrizionePalestra
-{
-
-	color:white;
-}
-.separator 
-{
-	overflow: hidden;
-	position:relative;
-	display:block;
-	height:1px;
-	background-color: #eaeaea;
-	margin:10px 0;
-}
-
-.ridimensionasx
-{
-	float:left;
-	width:50%;
-	
-}
-.ridimensionadx
-{
-	float:right;
-	width:50%;
-	
-}
-.limitesx
-{
-	margin-right:55%;
-}
-.limitedx
-{
-	margin-left:55%;
-}
-.sx {
-	text-align:left;
-	float:left;
-	margin:5% 10%;
-	font-family: 'Raleway', sans-serif;
-	font-size:95%;
-}
-.allenamento {
-	float:left;
-	width:50%;
-	height:25em;
-}
-.dx {
-	text-align:left;
-	float:right;
-	margin:5% 10%;
-	font-size:95%;
-	font-family: 'Raleway', sans-serif;
-}
-
-#fabio
-{
-	float:left;
-}
-#genny
-{
-
-	float:left;
 }
