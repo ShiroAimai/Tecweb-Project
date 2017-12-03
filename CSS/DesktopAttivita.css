@@ -1,0 +1,237 @@
+/*
+
+=========================
+SEZIONE GENERALE
+=========================
+*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #323232;
+}
+
+
+#contenitore
+{
+	margin:1.46em;
+	border:1px solid #323232;
+	
+}
+/*
+=========================
+SEZIONE INTESTAZIONE
+=========================
+*/
+
+#Intestazione {
+	
+	width: 100%;
+
+}
+
+#logo {
+	float: left;
+	padding: 0.25em;
+	width: 9em;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	position:relative;
+	z-index: 5;
+}
+
+#Menu {
+	background-color: black;
+	opacity:0.8;
+}
+
+#Menu ul {
+	list-style-type: none;
+	margin:auto;
+	padding:0;
+	overflow: hidden;
+
+}
+
+#Menu li {
+	float: left;
+	width:11.106%;
+}
+
+#Menu li a {
+	display: block;
+	color:#DAAC5E;
+	text-align: center;	
+	text-decoration: none;
+	font-weight:bold;
+	padding:2em 0.1em;
+	font-size:100%;
+	width:100%;  
+}
+
+#Menu li a:hover:not(.active) {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+#Menu li a.active {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+
+
+/*
+=========================
+SEZIONE DESCRIZIONE
+=========================
+*/
+
+#Sfondo {
+	max-width: 100%;
+	height: auto;
+	width:auto;
+}
+
+
+
+
+/*
+=========================
+SEZIONE FOOTER
+=========================
+*/
+
+#Footer {
+	
+	padding: 1em;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8em;
+	color: white;
+	background-color: #323232;
+}
+
+#Coni {
+	float: left;
+	padding: 0.5em;
+	width: 7%;
+}
+
+#asi {
+	float: right;
+	padding: 0.5em;
+	width: 7%;
+}
+
+
+/*PAGINA PALESTRA*/
+
+
+#titolopalestra {
+	font-size:40px;
+	font-weight:600;
+	text-align: center;
+	padding-top: 4em;
+	position:relative;
+}
+
+#imagepalestra {
+	width:100%;
+}
+
+
+/* PAGINA ATTIVITA' */
+#AccordionMenu li{
+	list-style-type: none;
+	text-align: center;
+}
+
+#AccordionMenu img {
+	width: 100%;
+	height: 20em;
+}
+
+
+#imgCorso {
+	position: relative;
+}
+
+#imgCorso h1{
+	position: absolute;
+	left: 5%;
+	bottom: 1%;
+	width: 100%;
+	text-align: left;
+	font-size: 70px;
+	font-weight: 600;
+	color: white;
+}
+
+#powerpump h1{
+	color: green;
+}
+
+#spinning h1{
+	color: pink;
+}
+
+#jumpfit h1{
+	color: blue;
+}
+
+#fitboxe h1{
+	color: red;
+}
+
+#step h1{
+	color: yellow;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #DAAC5E;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    <
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
