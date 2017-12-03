@@ -183,12 +183,11 @@ PAGINA CHI SIAMO
 	font-size:450%;
 	width:100%;
 	text-align:center;
-	top:0%;
+	bottom:30%;
 	left:0;
 }
 #imagepalestra {
 	width:100%;	
-	height:711px;
 }
 
 #DescrizionePalestra
