@@ -167,6 +167,58 @@ PAGINA CHI SIAMO
 	margin-left: 25%;
 }
 
+/*
+=========================
+PAGINA DOVE SIAMO
+=========================
+*/
+
+#sfondodovesiamo {
+	position: relative;
+}
+
+#titolodovesiamo {
+	position: absolute;
+	font-family: Arial;
+	color: #FD0303;
+	font-size: 450%;
+	font-weight:800;
+    width: 100%;
+	margin-right: 20%;
+	text-align: right;
+	left: -70px;
+    top: 0;
+}
+
+#imagedovesiamo {
+	width: 100%;
+}
+
+#map {
+	float: left;
+	width: 600px;
+	height: 600px;
+	margin-right: 3em;
+}
+
+#GoogleMaps {
+	color: white;
+	margin-top: 2em;
+	padding: 2em;
+	overflow: hidden;
+}
+
+#GoogleMaps h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#GoogleMaps p {
+	padding: 2em;
+	margin-left: 25%;
+}
+
 
 
 /*PAGINA PALESTRA*/
