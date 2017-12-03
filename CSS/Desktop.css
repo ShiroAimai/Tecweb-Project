@@ -154,7 +154,10 @@ PAGINA PALESTRA
 	background-color: #eaeaea;
 	margin:10px 0;
 }
-
+#DescrizionePalestra h3 {
+	font-size:150%;
+	font-weight:600;
+}
 .ridimensionasx
 {
 	float:left;
