@@ -139,8 +139,7 @@ PAGINA CHI SIAMO
 */
 
 #ChiSiamoImg {
-	width:100%;
-	
+	width:100%;	
 }
 
 #GennyTiengo, #FabioFerro {
@@ -151,6 +150,7 @@ PAGINA CHI SIAMO
 }
 
 #GennyTiengoImg, #FabioFerroImg {
+	margin-right: 3em;
 	float: left;
 	border-radius: 50px;
 	width: 20%;
