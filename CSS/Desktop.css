@@ -52,7 +52,7 @@ SEZIONE INTESTAZIONE
 
 #Menu li {
 	float: left;
-	width: 11%;
+	width: auto;
 }
 
 #Menu li a {
@@ -61,7 +61,7 @@ SEZIONE INTESTAZIONE
 	text-align: center;	
 	text-decoration: none;
 	font-weight: bold;
-	padding: 2em 0.5em;
+	padding: 2em 0.9em;
 	width: 100%;
 }
 
@@ -82,7 +82,6 @@ SEZIONE FOOTER
 */
 
 #Footer {
-	
 	padding: 1em;
 	text-align: center;
 	font-style: italic;
@@ -131,4 +130,39 @@ PAGINA PALESTRA
 
 #imagepalestra {
 	width:100%;
+}
+
+/*
+=========================
+PAGINA CHI SIAMO
+=========================
+*/
+
+#ChiSiamoImg {
+	width:100%;
+	height: 350px;
+}
+
+#GennyTiengo, #FabioFerro {
+	padding: 2em;
+	overflow: hidden;
+	font-size: 20px;
+	color: white;
+}
+
+#GennyTiengoImg, #FabioFerroImg {
+	float: left;
+	border-radius: 50px;
+	width: 20%;
+}
+
+#Istruttori h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#Istruttori ul {
+	padding: 2em;
+	margin-left: 25%;
 }
