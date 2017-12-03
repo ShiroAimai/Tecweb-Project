@@ -140,7 +140,7 @@ PAGINA CHI SIAMO
 
 #ChiSiamoImg {
 	width:100%;
-	height: 350px;
+	
 }
 
 #GennyTiengo, #FabioFerro {
@@ -165,4 +165,83 @@ PAGINA CHI SIAMO
 #Istruttori ul {
 	padding: 2em;
 	margin-left: 25%;
+}
+
+
+
+/*PAGINA PALESTRA*/
+
+#sfondopalestra
+{
+	position:relative;
+}
+#titolopalestra {
+	position:absolute;
+	font-family:Arial;
+	color:rgb(0,120,255);
+	font-weight:800;
+	font-size:450%;
+	width:100%;
+	text-align:center;
+	top:0%;
+	left:0;
+}
+#imagepalestra {
+	width:100%;	
+	height:711px;
+}
+
+#DescrizionePalestra
+{
+	color:white;
+}
+.separator 
+{
+	overflow: hidden;
+	position:relative;
+	display:block;
+	height:1px;
+	background-color: #eaeaea;
+	margin:10px 0;
+}
+
+.ridimensionasx
+{
+	float:left;
+	width:50%;
+	padding:0 2em;
+}
+.ridimensionadx
+{
+	float:right;
+	width:50%;
+	padding:0 2em;
+}
+.sx {
+	float:right;
+	margin:5% 10%;
+	font-family: 'Raleway', sans-serif;
+	font-size:95%;
+}
+#macchine 
+{
+	float:right;
+	width:47.5%;
+	padding:0 2em;
+}
+.dx {
+	float:left;
+	margin:5% 10%;
+	font-size:95%;
+	font-family: 'Raleway', sans-serif;
+}
+
+#fabio
+{
+	float:left;
+}
+#genny
+{
+
+	float:left;
 }
