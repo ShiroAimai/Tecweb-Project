@@ -180,18 +180,20 @@ PAGINA CHI SIAMO
 	font-family:Arial;
 	color:rgb(0,120,255);
 	font-weight:800;
-	font-size:450%;
+	font-size:auto;
 	width:100%;
 	text-align:center;
-	bottom:30%;
 	left:0;
+	top:10%;
 }
 #imagepalestra {
 	width:100%;	
+
 }
 
 #DescrizionePalestra
 {
+
 	color:white;
 }
 .separator 
@@ -208,28 +210,37 @@ PAGINA CHI SIAMO
 {
 	float:left;
 	width:50%;
-	padding:0 2em;
+	
 }
 .ridimensionadx
 {
 	float:right;
 	width:50%;
-	padding:0 2em;
+	
+}
+.limitesx
+{
+	margin-right:55%;
+}
+.limitedx
+{
+	margin-left:55%;
 }
 .sx {
-	float:right;
+	text-align:left;
+	float:left;
 	margin:5% 10%;
 	font-family: 'Raleway', sans-serif;
 	font-size:95%;
 }
-#macchine 
-{
-	float:right;
-	width:47.5%;
-	padding:0 2em;
+.allenamento {
+	float:left;
+	width:50%;
+	height:25em;
 }
 .dx {
-	float:left;
+	text-align:left;
+	float:right;
 	margin:5% 10%;
 	font-size:95%;
 	font-family: 'Raleway', sans-serif;
