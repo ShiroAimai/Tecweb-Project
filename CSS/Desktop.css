@@ -291,3 +291,78 @@ PAGINA DOVE SIAMO
 	padding: 2em;
 	margin-left: 25%;
 }
+
+/*
+=========================
+PAGINA ATTIVITA
+=========================
+*/
+
+#AccordionMenu li{
+	list-style-type: none;
+	text-align: center;
+}
+
+#AccordionMenu img {
+	width: 100%;
+	height: 20em;
+}
+
+
+#imgCorso {
+	position: relative;
+}
+
+#imgCorso h1{
+	position: absolute;
+	left: 5%;
+	bottom: 1%;
+	width: 100%;
+	text-align: left;
+	font-size: 70px;
+	font-weight: 600;
+	color: white;
+}
+
+#powerpump h1{
+	color: green;
+}
+
+#spinning h1{
+	color: pink;
+}
+
+#jumpfit h1{
+	color: blue;
+}
+
+#fitboxe h1{
+	color: red;
+}
+
+#step h1{
+	color: yellow;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #DAAC5E;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    <
+}
