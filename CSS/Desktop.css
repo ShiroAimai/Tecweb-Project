@@ -1,0 +1,421 @@
+/*
+=========================
+SEZIONE GENERALE
+=========================
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #323232;
+}
+
+
+#contenitore {
+	margin:1.5em;
+	border:1px solid #323232;	
+}
+
+/*
+=========================
+SEZIONE INTESTAZIONE
+=========================
+*/
+
+#Intestazione {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#logo {
+	float: left;
+	padding: 0.25em;
+	width: 9em;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	position:relative;
+	z-index: 5;
+}
+
+#Menu {
+	background-color: black;
+	opacity:0.8;
+}
+
+#Menu ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+#Menu li {
+	float: left;
+}
+
+#Menu li a {
+	display: block;
+	color: #DAAC5E;
+	text-align: center;	
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2em 0.9em;
+	width: auto;
+}
+
+#Menu li a:hover:not(.active) {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+#Menu li a.active {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+/*
+=========================
+SEZIONE FOOTER
+=========================
+*/
+
+#Footer {
+	font-size: 0.8em;
+	line-height: 22px;
+	color: white;
+	background-color: rgb(32,32,32);
+	overflow: hidden;
+}
+
+#Footer h3 {
+	margin-top: 4em;
+	marginn-bottom: 3em;
+}
+
+.blocco {
+	display: block;
+}
+
+#footersx {
+	float: left;
+	padding: 3%;
+	width: 22%;
+}
+
+#logofooter {
+	margin-bottom: 1.5em;
+	width: 50%;
+}
+
+#logofacebook {
+	width: 10%;
+	margin-top: 2em;
+}
+
+#footercx {
+	float: left;
+	padding: 3%;
+	width: 22%;
+}
+
+#footerdx {
+	float: left;
+	padding: 3%;
+	width:37%;
+}
+
+#Coni {
+	float: left;
+	width: 30%;
+	margin-bottom: 1.5em;
+}
+
+#asi {
+	width: 30%;
+	margin-left: 20%;
+	margin-bottom: 1.5em;
+}
+
+#footerbottom {
+	padding: 0.2em;
+	clear:both;
+	background-color: rgb(26,26,26);
+	text-align: center;
+}
+
+/*
+=========================
+PAGINA HOME
+=========================
+*/
+
+#Sfondo {
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+=========================
+PAGINA PALESTRA
+=========================
+*/
+
+#sfondopalestra {
+	position:relative;
+}
+
+#titolopalestra {
+	position:absolute;
+	font-family:Arial;
+	color:rgb(0,120,255);
+	font-weight:800;
+	font-size:6vw;
+	width:100%;
+	text-align:center;
+	left:0;
+	top:25%;
+}
+
+#imagepalestra {
+	width:100%;
+}
+
+#DescrizionePalestra {
+	color:white;
+}
+
+.separator {
+	overflow: hidden;
+	position:relative;
+	display:block;
+	height:1px;
+	background-color: #eaeaea;
+	margin:10px 0;
+}
+
+#DescrizionePalestra h3 {
+	font-size:150%;
+	font-weight:600;
+}
+
+.ridimensionasx {
+	float:left;
+	width:50%;
+}
+
+.ridimensionadx {
+	float:right;
+	width:50%;
+}
+
+.limitesx {
+	margin-right:55%;
+}
+
+.limitedx {
+	margin-left:55%;
+}
+
+.sx {
+	text-align:left;
+	float:left;
+	margin:5% 10%;
+	font-family: 'Raleway', sans-serif;
+	font-size:95%;
+}
+
+.allenamento {
+	float:left;
+	width:50%;
+	height:25em;
+}
+
+.dx {
+	text-align:left;
+	float:right;
+	margin:5% 10%;
+	font-size:95%;
+	font-family: 'Raleway', sans-serif;
+}
+
+#fabio
+{
+	float:left;
+}
+
+#genny
+{
+
+	float:left;
+}
+
+/*
+=========================
+PAGINA CHI SIAMO
+=========================
+*/
+
+#ChiSiamoImg {
+	width:100%;	
+}
+
+#GennyTiengo, #FabioFerro {
+	padding: 2em;
+	overflow: hidden;
+	font-size: 20px;
+	color: white;
+}
+
+#GennyTiengoImg, #FabioFerroImg {
+	margin-right: 3em;
+	float: left;
+	border-radius: 50px;
+	width: 20%;
+}
+
+#Istruttori h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#Istruttori ul {
+	padding: 2em;
+	margin-left: 25%;
+}
+
+/*
+=========================
+PAGINA DOVE SIAMO
+=========================
+*/
+
+#sfondodovesiamo {
+	position: relative;
+}
+
+#titolodovesiamo {
+	position: absolute;
+	font-family: Arial;
+	color: #FD0303;
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 10%;
+    top: 0;
+}
+
+#imagedovesiamo {
+	width: 100%;
+}
+
+#map {
+	float: left;
+	width: 600px;
+	height: 600px;
+	margin-right: 3em;
+}
+
+#GoogleMaps {
+	color: white;
+	margin-top: 2em;
+	padding: 2em;
+	overflow: hidden;
+}
+
+#GoogleMaps h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#GoogleMaps p {
+	padding: 2em;
+	margin-left: 25%;
+}
+
+/*
+=========================
+PAGINA ATTIVITA
+=========================
+*/
+
+#sfondocorsipalestra {
+	position: relative;
+}
+
+#titolocorsipalestra {
+	position: absolute;
+	font-family: Arial;
+	color: #A0CA2A;
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 10%;
+    top: -10%;
+}
+
+#imagecorsipalestra {
+	width: 100%;
+}
+
+#AccordionMenu {
+	width: 90%;
+	padding:0;
+	margin: 2em auto;
+}
+
+#AccordionMenu li {
+	list-style-type: none;
+}
+
+#AccordionMenu img {
+	width: 100%;
+	position: relative;
+}
+
+#powerpump {
+	color: #66ffff; /*celsestino*/
+}
+
+#spinning {
+	color: #80ff80; /*verde */
+}
+
+#jumpfit {
+	color:  #ffff4d; /*giallo*/
+}
+
+#fitboxe {
+	color: #ffa64d; /*arancione*/
+}
+
+#step {
+	color: #ff80d5; /*rosa*/
+}
+
+
+button.accordion {
+    background-color: #a6a6a6;
+    cursor: pointer;
+    padding: 2em;
+    width: 100%;
+    text-align: left;
+    border: 1px solid;
+    outline: none;
+    transition: 0.5s; /* tempo per colorarsi*/
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #DAAC5E;
+}
+
+div.panel {
+    background-color: white;
+    display: none;
+}
