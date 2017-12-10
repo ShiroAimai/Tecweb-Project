@@ -88,12 +88,12 @@ SEZIONE FOOTER
 	color: white;
 	background-color: rgb(32,32,32);
 	overflow: hidden;
-	float:left;
+	float: left;
 }
 
 #Footer h3 {
 	margin-top: 4em;
-	margin-bottom: 3em;
+	marginn-bottom: 3em;
 }
 
 .blocco {
@@ -120,6 +120,11 @@ SEZIONE FOOTER
 	float: left;
 	padding: 3%;
 	width: 22%;
+}
+
+#footercx ul {
+	margin-left: 0;
+	padding-left: 0;
 }
 
 #footerdx {
@@ -251,6 +256,32 @@ PAGINA PALESTRA
 {
 
 	float:left;
+}
+
+/*
+=========================
+PAGINA GALLERIA
+=========================
+*/
+
+#sfondogalleria {
+	position: relative;
+}
+
+#titologalleria {
+	position: absolute;
+	font-family: Arial;
+	color: rgb(107,27,87);
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 5%;
+    top: -5%;
+}
+
+#imagegalleria {
+	width: 100%;
 }
 
 /*
