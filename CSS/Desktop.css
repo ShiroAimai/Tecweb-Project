@@ -88,7 +88,7 @@ SEZIONE FOOTER
 	color: white;
 	background-color: rgb(32,32,32);
 	overflow: hidden;
-	clear:both;
+	clear: both;
 }
 
 #Footer h3 {
@@ -130,7 +130,7 @@ SEZIONE FOOTER
 #footerdx {
 	float: left;
 	padding: 3%;
-	width:37%;
+	width: 37%;
 }
 
 #Coni {
@@ -147,7 +147,7 @@ SEZIONE FOOTER
 
 #footerbottom {
 	padding: 0.2em;
-	clear:both;
+	clear: both;
 	background-color: rgb(26,26,26);
 	text-align: center;
 }
@@ -247,14 +247,11 @@ PAGINA PALESTRA
 	font-family: 'Raleway', sans-serif;
 }
 
-#fabio
-{
+#fabio {
 	float:left;
 }
 
-#genny
-{
-
+#genny {
 	float:left;
 }
 
