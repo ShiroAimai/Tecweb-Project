@@ -158,9 +158,49 @@ PAGINA HOME
 =========================
 */
 
-#Sfondo {
-	max-width: 100%;
-	height: auto;
+#slideshow {
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.slide {
+	display:none
+}
+
+.titolo {
+	color: white;
+	font-size: 7vw;
+	font-weight: bold;
+	text-shadow: 3px 3px #DAAC5E;
+	padding: 2%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#immagineslide {
+	width: 100%;
+}
+
+#punti {
+	position: absolute;
+	bottom: 5%;
+	left: 46%;
+}
+
+.punto {
+	height: 20px;
+	width: 20px;
+	margin: 0 2px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active {
+	background-color: #DAAC5E;
 }
 
 /*
