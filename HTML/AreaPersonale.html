@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
-	<title>Chi Siamo | Body Evolution</title>
+	<title>Area Personale | Body Evolution</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
@@ -22,39 +22,53 @@
 					<li><a href="News.html"><span xml:lang="en">News</span></a></li>
 					<li><a href="Galleria.html">Galleria</a></li>
 					<li><a href="Calendario.html">Calendario</a></li>
-					<li><a class="active">Chi siamo</a></li>
+					<li><a href="ChiSiamo.html">Chi siamo</a></li>
 					<li><a href="DoveSiamo.html">Dove siamo</a></li>
-					<li><a href="AreaPersonale.html">Area Personale</a></li>
+					<li><a class="active">Area Personale</a></li>
 				</ul>
 			</div>
 		</div>
 		
 		<div id="Descrizione">
-			<div id="Istruttori">
-				<img id="ChiSiamoImg" src="../IMAGES/ChiSiamo.jpg" alt="Immagine Chi Siamo"/>
-				<div id="GennyTiengo">
-					<img id="GennyTiengoImg" src="../IMAGES/GennyTiengo.jpg" alt="Foto Genny Tiengo"/>
-					<h2>GENNY TIENGO</h2>
-					<div class="separator"></div>
-					<ul>
-						<li>Dirigente sportivo Coni</li>
-						<li>Istruttore (Spinning, Fit Boxe, Power Pump, Jump Fit, Step, Pilates, Riabilitazione, Gestanti)</li>
-						<li>Personal Trainer</li>
-						<li>Giudice di gara</li>
-					</ul>
-				</div>
-				<div id="FabioFerro">
-					<img id="FabioFerroImg" src="../IMAGES/FabioFerro.jpg" alt="Foto Fabio Ferro"/>
-					<h2>FABIO FERRO</h2>
-					<div class="separator"></div>
-					<ul>
-						<li>Preparatore atletico</li>
-						<li>Istruttore Kick Boxing</li>
-						<li>Personal Trainer</li>
-						<li>Giudice di gara</li>
-					</ul>
-				</div>
-			</div>
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../IMAGES/logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 		</div>
 
 		<div id="Footer">
@@ -99,4 +113,3 @@
 	</div>
 </body>
 </html>
-
