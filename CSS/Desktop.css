@@ -511,16 +511,7 @@ PAGINA ATTIVITA
 	height: 20em; /* per capirmi Stefano!!! */
 }
 
-.container {
-    position: relative;
-}
 
-.text-block {
-    position: absolute;
-    bottom: 5%;
-    left: 4%;
-    color: white;
-}
 /*
 ===================
 SEZIONE CALENDARIO
