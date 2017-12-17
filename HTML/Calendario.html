@@ -24,7 +24,7 @@
 					<li><a class="active">Calendario</a></li>
 					<li><a href="ChiSiamo.html">Chi siamo</a></li>
 					<li><a href="DoveSiamo.html">Dove siamo</a></li>
-					<li><a href="AreaPersonale.html">Area Personale</a></li>
+					<li><button onclick="document.getElementById('login').style.display='block'">Area Personale</button></li>
 				</ul>
 			</div>
 		</div>
@@ -62,6 +62,31 @@
 				<td>SOLO SALA FITNESS</td>
 			</tr>
 		</table>
+		
+		<div id="login" class="popup">
+			<form class="popup-content animate" action="/action_page.php">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('login').style.display='none'" class="close" title="Chiudi">&times;</span>
+					<img src="../IMAGES/logo.png" alt="logo palestra" class="logo"/>
+				</div>
+				<div class="container">
+					<h2>ACCESSO <span class="bold">ALL'AREA PERSONALE</span></h2>
+					<input type="text" name="uname" placeholder="USERNAME" required="required"/>
+					<input type="password" name="psw" placeholder="PASSWORD" required="required"/>
+					<button type="submit">LOGIN</button>
+					<div id="password"><a href="#">PASSWORD DIMENTICATA?</a></div>
+				</div>
+			</form>
+		</div>
+
+		<script type="text/javascript">
+			var popup = document.getElementById('login');
+			window.onclick = function(event) {
+				if (event.target == popup) {
+					popup.style.display = "none";
+				}
+			}
+		</script>
 
 		<div id="Footer">
 			<div id="footersx">
