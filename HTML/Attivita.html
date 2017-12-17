@@ -8,8 +8,8 @@
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<!--<script type="text/javascript" src="../JS/Accordion.js"></script> 
-		NON FUNZIONA-->
+	<script type="text/javascript" src="../JS/Popup.js" async></script>
+	<script type="text/javascript" src="../JS/Accordion.js" async></script>
 <body>
 	<div id="contenitore">
 		<div id="Intestazione">
@@ -114,15 +114,6 @@
 			</form>
 		</div>
 
-		<script type="text/javascript">
-			var popup = document.getElementById('login');
-			window.onclick = function(event) {
-				if (event.target == popup) {
-					popup.style.display = "none";
-				}
-			}
-		</script>
-
 		<div id="Footer">
 			<div id="footersx">
 				<a href="Home.html"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
@@ -163,24 +154,6 @@
 			</div>
 		</div>
 	</div>
-
-<!-- MESSO PERCHE' NON MI PRENDE IL FILE ESTERNO-->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 
 </body>
 </html>

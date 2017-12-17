@@ -8,6 +8,8 @@
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script type="text/javascript" src="../JS/Slider.js" async></script>
+	<script type="text/javascript" src="../JS/Popup.js" async></script>
 </head>
 
 <body>
@@ -54,28 +56,6 @@
 				<span class="punto"></span>
 				<span class="punto"></span>
 			</div>	
-			<script type="text/javascript">
-				var indice = 0;
-				showSlides();
-				function showSlides() {
-					var i;
-					var slides = document.getElementsByClassName("slide");
-					var punti = document.getElementsByClassName("punto");
-					for (i = 0; i < slides.length; i++) {
-					   slides[i].style.display = "none";  
-					}
-					indice++;
-					if (indice > slides.length) {
-						indice = 1;
-					}
-					for (i = 0; i < punti.length; i++) {
-						punti[i].className = punti[i].className.replace(" active", "");
-					}
-					slides[indice-1].style.display = "block";  
-					punti[indice-1].className += " active";
-					setTimeout(showSlides, 5000);
-				}
-			</script>
 		</div>
 		
 		<div id="login" class="popup">
@@ -93,15 +73,6 @@
 				</div>
 			</form>
 		</div>
-
-		<script type="text/javascript">
-			var popup = document.getElementById('login');
-			window.onclick = function(event) {
-				if (event.target == popup) {
-					popup.style.display = "none";
-				}
-			}
-		</script>
 
 		<div id="Footer">
 			<div id="footersx">
