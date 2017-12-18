@@ -429,6 +429,10 @@ PAGINA DOVE SIAMO
 PAGINA ATTIVITA
 =========================
 */
+#DescrizioneAttivita{
+  width: 90%;
+  margin:auto;
+}
 
 #sfondocorsipalestra {
 	position: relative;
