@@ -391,7 +391,7 @@ PAGINA DOVE SIAMO
 	width: 100%;
 	text-align: right;
 	right: 10%;
-    top: 0;
+    	top: 0;
 }
 
 #imagedovesiamo {
@@ -429,8 +429,8 @@ PAGINA ATTIVITA
 =========================
 */
 #DescrizioneAttivita{
-  width: 90%;
-  margin:auto;
+  	width: 90%;
+  	margin:auto;
 }
 
 #sfondocorsipalestra {
@@ -446,7 +446,7 @@ PAGINA ATTIVITA
 	width: 100%;
 	text-align: left;
 	left: 10%;
-    top: -5%;
+    	top: -5%;
 }
 
 #imagecorsipalestra {
@@ -455,30 +455,29 @@ PAGINA ATTIVITA
 }
 
 .accordion {
-    cursor: pointer;
-    padding: 18px;
+    	cursor: pointer;
+    	padding: 18px;
 	border: none;
-    width: 100%;
+    	width: 100%;
 	height: 300px;
-    text-align: left;
-    font-size: 7vw;
+    	text-align: left;
+    	font-size: 7vw;
 	font-weight: bold;
-    transition: 0.4s;
+    	transition: 0.4s;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-
-.active, .accordion:hover {
-    background-color: #ccc;
+.accordion:focus {
+	outline:none;
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    	padding: 0 18px;
+    	background-color: white;
+    	max-height: 0;
+    	overflow: hidden;
+    	transition: max-height 0.2s ease-out;
 }
 
 #colorpower {
