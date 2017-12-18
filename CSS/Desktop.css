@@ -451,51 +451,23 @@ PAGINA ATTIVITA
 	height: 35em;
 }
 
-#AccordionMenu {
-	width: 90%;
-	padding:0;
-	margin: 2em auto;
-}
-
-#AccordionMenu li {
-	list-style-type: none;
-}
-
-#powerpump {
-	color: #66ffff; /*celsestino*/
-}
-#pwptext{
-	background-color:#66ffff;
-}
-
-#spinning {
-	color: #80ff80; /*verde */
-}
-
-#jumpfit {
-	color:  #ffff4d; /*giallo*/
-}
-
-#fitboxe {
-	color: #ffa64d; /*arancione*/
-}
-
-#step {
-	color: #ff80d5; /*rosa*/
-}
-
 .accordion {
-    background-color: #eee;
     cursor: pointer;
-    padding: 1em;
+    padding: 18px;
+	border: none;
     width: 100%;
-    border: 1em;
-    font-size: 24px;
+	height: 300px;
+    text-align: left;
+    font-size: 7vw;
+	font-weight: bold;
     transition: 0.4s;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 
 .active, .accordion:hover {
-    background-color: #DAAC5E;
+    background-color: #ccc;
 }
 
 .panel {
@@ -506,11 +478,55 @@ PAGINA ATTIVITA
     transition: max-height 0.2s ease-out;
 }
 
-#imgCorso{
-	width: 100%;
-	height: 20em; /* per capirmi Stefano!!! */
+#colorpower {
+	border: 10px solid yellow;
 }
 
+#powerpump {
+	color: yellow;
+	text-shadow: 5px 5px black;
+	background-image: url("../IMAGES/powerpump.jpg");
+}
+
+#colorspinning {
+	border: 10px solid red;
+}
+
+#spinning {
+	color: red;
+	text-shadow: 5px 5px black;
+	background-image: url("../IMAGES/spinning.jpg");
+}
+
+#colorfitboxe {
+	border: 10px solid purple;
+}
+
+#fitboxe {
+	color: purple;
+	text-shadow: 5px 5px black;
+	background-image: url("../IMAGES/fitboxe.jpg");
+}
+
+#colorjumpfit {
+	border: 10px solid green;
+}
+
+#jumpfit {
+	color: green;
+	text-shadow: 5px 5px black;
+	background-image: url("../IMAGES/jumpfit.jpg");
+}
+
+#colorstep {
+	border: 10px solid blue;
+}
+
+#step {
+	color: blue;
+	text-shadow: 5px 5px black;
+	background-image: url("../IMAGES/step.jpg");
+}
 
 /*
 ===================
