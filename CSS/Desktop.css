@@ -437,7 +437,7 @@ PAGINA ATTIVITA
 #titolocorsipalestra {
 	position: absolute;
 	font-family: Arial;
-	color: #A0CA2A;
+	color: red;
 	font-size: 6vw;
 	font-weight:800;
 	width: 100%;
@@ -479,51 +479,51 @@ PAGINA ATTIVITA
 }
 
 #colorpower {
-	border: 10px solid yellow;
+	border: 10px solid blue;
 }
 
 #powerpump {
-	color: yellow;
+	color: blue;
 	text-shadow: 5px 5px black;
 	background-image: url("../IMAGES/powerpump.jpg");
 }
 
 #colorspinning {
-	border: 10px solid red;
+	border: 10px solid green;
 }
 
 #spinning {
-	color: red;
+	color: green;
 	text-shadow: 5px 5px black;
 	background-image: url("../IMAGES/spinning.jpg");
 }
 
 #colorfitboxe {
-	border: 10px solid purple;
+	border: 10px solid red;
 }
 
 #fitboxe {
-	color: purple;
+	color: red;
 	text-shadow: 5px 5px black;
 	background-image: url("../IMAGES/fitboxe.jpg");
 }
 
 #colorjumpfit {
-	border: 10px solid green;
+	border: 10px solid rgb(200,50,0);
 }
 
 #jumpfit {
-	color: green;
+	color: rgb(200,50,0);
 	text-shadow: 5px 5px black;
 	background-image: url("../IMAGES/jumpfit.jpg");
 }
 
 #colorstep {
-	border: 10px solid blue;
+	border: 10px solid purple;
 }
 
 #step {
-	color: blue;
+	color: purple;
 	text-shadow: 5px 5px black;
 	background-image: url("../IMAGES/step.jpg");
 }
