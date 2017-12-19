@@ -623,7 +623,7 @@ POPUP LOGIN
 ======================
 */
 
-input {
+.loginput {
     color: #000;
     font-size: 22px;
     font-weight: 300;
@@ -635,7 +635,7 @@ input {
 	width: 100%;
 }
 
-input:focus {
+.loginput:focus {
 	outline: none;
 	background-color: white;
 	border: 2px inset #ecebe9;
