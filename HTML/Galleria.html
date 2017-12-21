@@ -9,24 +9,25 @@
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<script type="text/javascript" src="../JS/Popup.js" async></script>
+	<script type="text/javascript" src="../JS/Sandwich.js" async></script>
 </head>
 
 <body>
 	<div id="contenitore">
 		<div id="Intestazione">
+			<a class="sandwich" onclick="myFunction()">&#9776;</a>
 			<a href="Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
-			<div id="Menu">
-				<ul>
-					<li><a href="Home.html">Home</a></li>
-					<li><a href="Palestra.html">Palestra</a></li>
-					<li><a href="Attivita.html">Attivit&agrave;</a></li>
-					<li><a href="News.html"><span xml:lang="en">News</span></a></li>
-					<li><a class="active">Galleria</a></li>
-					<li><a href="Calendario.html">Calendario</a></li>
-					<li><a href="ChiSiamo.html">Chi siamo</a></li>
-					<li><a href="DoveSiamo.html">Dove siamo</a></li>
-					<li><button onclick="document.getElementById('login').style.display='block'">Area Personale</button></li>
-				</ul>
+			<a onclick="document.getElementById('login').style.display='block'"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
+			<div class="Menu" id="myMenu">
+				<a class="active">Home</a>
+				<a href="Palestra.html">Palestra</a>
+				<a href="Attivita.html">Attivit&agrave;</a>
+				<a href="News.html"><span xml:lang="en">News</span></a>
+				<a href="Galleria.html">Galleria</a>
+				<a href="Calendario.html">Calendario</a>
+				<a href="ChiSiamo.html">Chi siamo</a>
+				<a href="DoveSiamo.html">Dove siamo</a>
+				<button onclick="document.getElementById('login').style.display='block'">Area Personale</button>
 			</div>
 		</div>
 		
