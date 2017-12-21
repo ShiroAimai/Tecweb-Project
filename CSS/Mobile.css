@@ -14,8 +14,8 @@ html, body {
 
 
 #contenitore {
-	margin: 1.5em;
-	border: 1px solid #323232;	
+	margin: 0;
+	border: 0;	
 }
 
 /*
@@ -33,9 +33,10 @@ SEZIONE INTESTAZIONE
 }
 
 #logo {
-	float: left;
+	float: none;
 	padding: 0.3em;
-	width: 9.19em;
+	width: 30%;
+	margin-left: 22%;
 }
 
 .Menu {
@@ -43,14 +44,7 @@ SEZIONE INTESTAZIONE
 }
 
 .Menu a {
-	float: left;
-	display: block;
-	color: #DAAC5E;
-	text-align: center;
-	font-weight: bold;
-	padding: 2em 0.9em;
-	text-decoration: none;
-	width: auto;
+	display: none;
 }
 
 .Menu a:hover {
@@ -64,16 +58,7 @@ SEZIONE INTESTAZIONE
 }
 
 .Menu button {
-	display: block;
-	color: white;
-	background-color: #4CAF50;
-	padding: 2em 0.9em;
-	width: auto;
-	border: none;
-	font-size: 100%;
-	font-weight: bold;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	cursor: pointer;
+	display: none;
 }
 
 .Menu button:hover {
@@ -81,11 +66,33 @@ SEZIONE INTESTAZIONE
 }
 
 .sandwich {
-	display: none;
+	display: block;
+	float: left;
+	color: #DAAC5E;
+	text-align: center;
+	font-weight: bold;
+	padding: 7% 3%;
+	text-decoration: none;
+	width: auto;
+	cursor: pointer;
 }
 
 #user {
-	display: none;
+	display: block;
+	float: right;
+	padding: 7% 3%;
+	width: 6%;
+	cursor: pointer;
+}
+
+.Menu.responsive {
+	position: relative;
+}
+  
+.Menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
 }
 
 /*
