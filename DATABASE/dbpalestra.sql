@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Feb 28, 2018 alle 17:59
+-- Creato il: Feb 28, 2018 alle 18:32
 -- Versione del server: 10.1.30-MariaDB
 -- Versione PHP: 7.2.1
 
@@ -169,6 +169,27 @@ INSERT INTO `iscrizionecorso` (`CodiceUtente`, `CodiceCorso`, `NomeCorso`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Struttura della tabella `news`
+--
+
+CREATE TABLE `news` (
+  `Titolo` varchar(50) NOT NULL,
+  `Data` date NOT NULL,
+  `Immagine` varchar(50) NOT NULL,
+  `Descrizione` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Trigger `news`
+--
+DELIMITER $$
+CREATE TRIGGER `Data` BEFORE INSERT ON `news` FOR EACH ROW SET new.Data = CURRENT_DATE()
+$$
+DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
 -- Struttura della tabella `scheda`
 --
 
@@ -236,6 +257,12 @@ ALTER TABLE `fattura`
 ALTER TABLE `iscrizionecorso`
   ADD PRIMARY KEY (`CodiceUtente`,`CodiceCorso`,`NomeCorso`),
   ADD KEY `iscr2` (`CodiceCorso`);
+
+--
+-- Indici per le tabelle `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`Titolo`);
 
 --
 -- Indici per le tabelle `scheda`
