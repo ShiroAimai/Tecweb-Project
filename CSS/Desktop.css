@@ -420,8 +420,6 @@ PAGINA DOVE SIAMO
 PAGINA ATTIVITA
 =========================
 */
-
-
 #PresentazioneAttivita{
 	color: white;
 	font-family: Arial;
@@ -452,6 +450,7 @@ PAGINA ATTIVITA
     font-size: 24px;
 	font-weight: bold;
     transition: 0.4s;
+    background-color: #a6a6a6;
 }
 
 .accordion:focus {
@@ -459,7 +458,7 @@ PAGINA ATTIVITA
 }
 
 .accordion:hover {
-    background-color: white; 
+    background-color: #d9d9d9; 
 }
 
 .panel {
@@ -475,6 +474,10 @@ PAGINA ATTIVITA
     color: black;
     font-weight: bold;
     float: left;
+}
+
+.accordion.active{
+	background-color: white;
 }
 
 .accordion.active:after {
