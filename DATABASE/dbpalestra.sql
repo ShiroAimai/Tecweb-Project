@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Feb 28, 2018 alle 12:59
+-- Creato il: Feb 28, 2018 alle 17:59
 -- Versione del server: 10.1.30-MariaDB
 -- Versione PHP: 7.2.1
 
@@ -169,6 +169,24 @@ INSERT INTO `iscrizionecorso` (`CodiceUtente`, `CodiceCorso`, `NomeCorso`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Struttura della tabella `scheda`
+--
+
+CREATE TABLE `scheda` (
+  `CodiceUtente` int(10) NOT NULL,
+  `FileScheda` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dump dei dati per la tabella `scheda`
+--
+
+INSERT INTO `scheda` (`CodiceUtente`, `FileScheda`) VALUES
+(1, '1.pdf');
+
+-- --------------------------------------------------------
+
+--
 -- Struttura della tabella `utente`
 --
 
@@ -220,6 +238,12 @@ ALTER TABLE `iscrizionecorso`
   ADD KEY `iscr2` (`CodiceCorso`);
 
 --
+-- Indici per le tabelle `scheda`
+--
+ALTER TABLE `scheda`
+  ADD PRIMARY KEY (`CodiceUtente`);
+
+--
 -- Indici per le tabelle `utente`
 --
 ALTER TABLE `utente`
@@ -269,6 +293,12 @@ ALTER TABLE `fattura`
 ALTER TABLE `iscrizionecorso`
   ADD CONSTRAINT `iscr1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`),
   ADD CONSTRAINT `iscr2` FOREIGN KEY (`CodiceCorso`) REFERENCES `corso` (`CodiceCorso`);
+
+--
+-- Limiti per la tabella `scheda`
+--
+ALTER TABLE `scheda`
+  ADD CONSTRAINT `sched1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
