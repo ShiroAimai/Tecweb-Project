@@ -420,6 +420,13 @@ PAGINA DOVE SIAMO
 PAGINA ATTIVITA
 =========================
 */
+
+#noscriptAttivita{
+	font-size: 24px;
+	color:white;
+	text-align: center;
+}
+
 #PresentazioneAttivita{
 	color: white;
 	font-family: Arial;
