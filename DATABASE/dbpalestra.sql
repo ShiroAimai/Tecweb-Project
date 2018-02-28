@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Creato il: Dic 16, 2017 alle 14:28
--- Versione del server: 10.1.28-MariaDB
--- Versione PHP: 7.1.11
+-- Host: localhost
+-- Creato il: Feb 28, 2018 alle 12:59
+-- Versione del server: 10.1.30-MariaDB
+-- Versione PHP: 7.2.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `palestra_tw`
+-- Database: `fsacchet`
 --
 
 -- --------------------------------------------------------
@@ -31,17 +31,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `abbonamento` (
   `CodiceUtente` int(10) NOT NULL,
   `ScadenzaFitness` date DEFAULT NULL,
-  `PuntiCorsi` int(10) DEFAULT NULL
+  `EntrateCorsi` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `abbonamento`
 --
 
-INSERT INTO `abbonamento` (`CodiceUtente`, `ScadenzaFitness`, `PuntiCorsi`) VALUES
+INSERT INTO `abbonamento` (`CodiceUtente`, `ScadenzaFitness`, `EntrateCorsi`) VALUES
 (1, '2018-03-28', NULL),
 (2, NULL, 20),
-(3, '2018-03-28', 30);
+(3, '2018-05-28', 32);
 
 -- --------------------------------------------------------
 
@@ -87,18 +87,63 @@ CREATE TABLE `fattura` (
 INSERT INTO `fattura` (`NumeroRicevuta`, `DataEmissione`, `ImportoEuro`, `CodiceUtente`, `MesiFitness`, `EntrateCorsi`) VALUES
 (1, '2017-03-28', 300, 1, 12, NULL),
 (2, '2017-03-28', 120, 2, NULL, 20),
-(3, '2017-09-28', 420, 3, 6, 30);
-
--- --------------------------------------------------------
+(3, '2017-09-28', 420, 3, 6, 30),
+(5, '2018-02-28', 6, 3, NULL, 1),
+(10, '2018-02-28', 6, 3, NULL, 1),
+(14, '2018-02-28', 30, 3, 1, NULL),
+(16, '2018-02-28', 60, 3, 2, NULL);
 
 --
--- Struttura della tabella `galleria`
+-- Trigger `fattura`
 --
+DELIMITER $$
+CREATE TRIGGER `updateAbbonamento` AFTER INSERT ON `fattura` FOR EACH ROW BEGIN
+DECLARE entry INTEGER;
+DECLARE scad DATE;
+DECLARE newdata DATE;
 
-CREATE TABLE `galleria` (
-  `NomeImmagine` varchar(50) NOT NULL,
-  `Link` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+SELECT abbonamento.ScadenzaFitness INTO scad FROM abbonamento WHERE new.CodiceUtente = abbonamento.CodiceUtente;
+
+IF (scad < CURRENT_DATE() )
+THEN
+SELECT DATE_ADD(CURRENT_DATE, INTERVAL new.MesiFitness MONTH) INTO newdata;
+UPDATE abbonamento
+SET abbonamento.ScadenzaFitness = newdata
+WHERE 
+new.CodiceUtente = abbonamento.CodiceUtente;
+END IF;
+
+IF (scad IS NULL )
+THEN
+SELECT DATE_ADD(CURRENT_DATE, INTERVAL new.MesiFitness MONTH) INTO newdata;
+UPDATE abbonamento
+SET abbonamento.ScadenzaFitness = newdata
+WHERE 
+new.CodiceUtente = abbonamento.CodiceUtente;
+END IF;
+
+IF (scad >= CURRENT_DATE() )
+THEN
+SELECT DATE_ADD(abbonamento.ScadenzaFitness, INTERVAL new.MesiFitness MONTH) INTO newdata FROM abbonamento WHERE new.CodiceUtente = abbonamento.CodiceUtente;
+UPDATE abbonamento
+SET abbonamento.ScadenzaFitness = newdata
+WHERE 
+new.CodiceUtente = abbonamento.CodiceUtente;
+END IF;
+
+SELECT abbonamento.EntrateCorsi INTO entry FROM abbonamento WHERE new.CodiceUtente = abbonamento.CodiceUtente;
+
+IF (new.EntrateCorsi > 0)
+THEN
+UPDATE abbonamento
+SET abbonamento.EntrateCorsi = entry + new.EntrateCorsi
+WHERE 
+new.CodiceUtente = abbonamento.CodiceUtente;
+END IF;
+
+END
+$$
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -120,38 +165,6 @@ INSERT INTO `iscrizionecorso` (`CodiceUtente`, `CodiceCorso`, `NomeCorso`) VALUE
 (2, 1, 'Spinning'),
 (2, 2, 'FitBoxe'),
 (3, 2, 'FitBoxe');
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `news`
---
-
-CREATE TABLE `news` (
-  `Titolo` varchar(50) NOT NULL,
-  `Data` date NOT NULL,
-  `Immagine` varchar(50) DEFAULT NULL,
-  `Testo` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Trigger `news`
---
-DELIMITER $$
-CREATE TRIGGER `Data` BEFORE INSERT ON `news` FOR EACH ROW SET new.Data = CURRENT_DATE()
-$$
-DELIMITER ;
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `scheda`
---
-
-CREATE TABLE `scheda` (
-  `CodiceUtente` int(10) NOT NULL,
-  `LinkScheda` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -200,29 +213,11 @@ ALTER TABLE `fattura`
   ADD KEY `fatt1` (`CodiceUtente`);
 
 --
--- Indici per le tabelle `galleria`
---
-ALTER TABLE `galleria`
-  ADD PRIMARY KEY (`NomeImmagine`,`Link`);
-
---
 -- Indici per le tabelle `iscrizionecorso`
 --
 ALTER TABLE `iscrizionecorso`
   ADD PRIMARY KEY (`CodiceUtente`,`CodiceCorso`,`NomeCorso`),
   ADD KEY `iscr2` (`CodiceCorso`);
-
---
--- Indici per le tabelle `news`
---
-ALTER TABLE `news`
-  ADD PRIMARY KEY (`Titolo`);
-
---
--- Indici per le tabelle `scheda`
---
-ALTER TABLE `scheda`
-  ADD PRIMARY KEY (`CodiceUtente`);
 
 --
 -- Indici per le tabelle `utente`
@@ -244,7 +239,7 @@ ALTER TABLE `corso`
 -- AUTO_INCREMENT per la tabella `fattura`
 --
 ALTER TABLE `fattura`
-  MODIFY `NumeroRicevuta` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `NumeroRicevuta` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT per la tabella `utente`
@@ -274,12 +269,6 @@ ALTER TABLE `fattura`
 ALTER TABLE `iscrizionecorso`
   ADD CONSTRAINT `iscr1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`),
   ADD CONSTRAINT `iscr2` FOREIGN KEY (`CodiceCorso`) REFERENCES `corso` (`CodiceCorso`);
-
---
--- Limiti per la tabella `scheda`
---
-ALTER TABLE `scheda`
-  ADD CONSTRAINT `scheda` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
