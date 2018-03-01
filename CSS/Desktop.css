@@ -428,13 +428,17 @@ PAGINA ATTIVITA
 }
 
 #PresentazioneAttivita{
-	color: white;
+	color: #DAAC5E;
 	font-family: Arial;
 	position: relative;
 	font-size: 18px;
 	text-align: left;
 	left: 5%;
     top: -5%;
+}
+
+#PresentazioneAttivita p{
+	color:white;
 }
 
 #titolocorsipalestra {
@@ -450,7 +454,8 @@ PAGINA ATTIVITA
 .accordion {
     cursor: pointer;
     padding: 18px;
-	border: none;
+    border-color: #DAAC5E;
+    border-style: 2px solid;
     width: 100%;
     height: 100px;
     text-align: center;
@@ -485,6 +490,7 @@ PAGINA ATTIVITA
 
 .accordion.active{
 	background-color: white;
+	border: none;
 }
 
 .accordion.active:after {
@@ -496,47 +502,24 @@ PAGINA ATTIVITA
 	height: 300px;
 }
 
-
-#colorpower {
-	border: 5px solid blue;
-}
-
 #powerpump {
 	color: blue;
 }
-
-#colorspinning {
-	border: 5px solid green;
-}
-
 #spinning {
 	color: green;
-}
-
-#colorfitboxe {
-	border: 5px solid red;
 }
 
 #fitboxe {
 	color: red;
 }
 
-#colorjumpfit {
-	border: 5px solid rgb(200,50,0);
-}
-
 #jumpfit {
 	color: rgb(200,50,0);
-}
-
-#colorstep {
-	border: 5px solid purple;
 }
 
 #step {
 	color: purple;
 }
-
 /*
 ===================
 SEZIONE CALENDARIO
