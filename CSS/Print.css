@@ -1,0 +1,87 @@
+/*
+=========================
+SEZIONE GENERALE
+=========================
+*/
+
+html, body {
+	font-size: 12pt;
+	max-width: 1024px;
+	margin: auto;
+	font-family: Times New Roman, Times, serif;
+	text-align: justify;
+	position: relative;
+}
+
+.Menu, .sandwich, #user, #logofooter, #logofacebook, .container, .logo, #Coni, #asi  {
+	display: none;
+}
+
+#logo{
+	width: 200px;
+	height: 100px; 
+}
+
+#footerdx{
+	font-size: 10pt;
+}
+
+/*
+=========================
+PAGINA HOME
+=========================
+*/
+
+.image, .ridimensionasx, .ridimensionadx, .allenamento, #slider {
+	display:none;
+}
+
+/*
+=========================
+PAGINA ATTIVITA
+=========================
+*/
+
+.courseimg{
+	display: none;
+}
+
+.course{
+	border: 2px solid;
+	margin: 10px;
+	border-spacing: 15px; 
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 0%;
+	padding-bottom: 3%;
+}
+
+
+button.accordion{
+	border: none;
+	margin: 5px 350px;
+	font-size: 16px;
+	font-weight: bold ;
+}
+
+#Attivita #Footer{
+	display: none;
+}
+
+/*
+=========================
+PAGINA CALENDARIO
+=========================
+*/
+
+#imgcal{
+	display: none;
+}
+
+#Calendario #footercx, #Calendario #footerdx{
+	display: none;
+}
+
+
+
+
