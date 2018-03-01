@@ -2,13 +2,12 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
-	<title>Palestra | Body Evolution</title>
+	<title>Home | Body Evolution</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script type="text/javascript" src="../JS/Popup.js" async></script>
 	<script type="text/javascript" src="../JS/Sandwich.js" async></script>
 </head>
 
@@ -26,7 +25,7 @@
 				<a href="Calendario.html">Calendario</a>
 				<a href="ChiSiamo.html">Chi siamo</a>
 				<a href="DoveSiamo.html">Dove siamo</a>
-				<button onclick="document.getElementById('login').style.display='block'">Area Personale</button>
+				<button onclick="window.location.href='AreaPersonale.html'">Area Personale</button>
 			</div>
 		</div>
 		
@@ -96,7 +95,7 @@
 				<div class="limitedx">
 					<h3>IL FITNESS</h3>
 					<div class="separator"></div>
-					<p>La Body Evolution non gode di una grande storia ma ha solide tradizioni. Tra queste il modo in cui vengono gestiti gli allenamneti, attenzione e massima serietà nella stilatura di programmi per ogni tipo di fisico.</p>
+					<p>La Body Evolution non gode di una grande storia ma ha solide tradizioni. Tra queste il modo in cui vengono gestiti gli allenamenti, attenzione e massima serietà nella stilatura di programmi per ogni tipo di fisico.</p>
 				</div>
 			</div>
 			<div class="sx">
@@ -172,22 +171,6 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		
-		<div id="login" class="popup">
-			<form class="popup-content animate" action="/action_page.php">
-				<div class="imgcontainer">
-					<span onclick="document.getElementById('login').style.display='none'" class="close" title="Chiudi">&times;</span>
-					<img src="../IMAGES/logo.png" alt="logo palestra" class="logo"/>
-				</div>
-				<div class="container">
-					<h2>ACCESSO <span class="bold">ALL'AREA PERSONALE</span></h2>
-					<input class="loginput" type="text" name="uname" placeholder="USERNAME" required="required"/>
-					<input class="loginput" type="password" name="psw" placeholder="PASSWORD" required="required"/>
-					<button type="submit">LOGIN</button>
-					<div id="password"><a href="#">PASSWORD DIMENTICATA?</a></div>
-				</div>
-			</form>
 		</div>
 		
 		<div id="Footer">
