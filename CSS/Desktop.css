@@ -170,71 +170,327 @@ PAGINA HOME
 =========================
 */
 
-#slideshow {
+#slider {
 	width: 100%;
+	height: 500px;
 	position: relative;
-	margin: auto;
+	overflow: hidden;
 }
 
-.slide {
-	display:none
+@keyframes load {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0;
+	}
 }
 
-.titolo {
-	color: white;
-	font-size: 7vw;
-	font-weight: bold;
-	text-shadow: 3px 3px #DAAC5E;
-	padding: 2%;
-	position: absolute;
-	top:0;
-	left:0;
+.slides {
+	width: 400%;
+	height: 100%;
+	position: relative;
+	-webkit-animation: slide 30s infinite;
+	-moz-animation: slide 30s infinite;
+	animation: slide 30s infinite;
 }
 
-.immagineslide {
+.slider {
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide img {
 	width: 100%;
+	height: 100%;
 }
 
-#punti {
+.slide img {
+	width: 100%;
+	height: 100%;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	bottom: 5%;
-	left: 46%;
+	overflow: hidden;
 }
 
-.punto {
-	height: 20px;
-	width: 20px;
-	margin: 0 2px;
-	background-color: white;
+.content-txt {
+	width: 400px;
+	height: 150px;
+	float: left;
+	position: relative;
+	top: 300px;
+}
+
+.content-txt h1 {
+	font-size: 24px;
+	color: #FFF;
+	text-align: left;
+	margin-left: 30px;
+	padding-bottom: 10px;
+}
+
+.content-txt h2 {
+	font-weight: normal;
+	font-size: 14px;
+	font-style: italic;
+	color: #FFF;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.switch {
+	width: 120px;
+	height: 10px;
+	position: absolute;
+	bottom: 50px;
+	left: 44%;
+}
+
+.switch ul {
+	list-style: none;
+}
+
+.switch ul li {
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+	background: #333;
+	float: left;
+	margin-right: 5px;
 }
 
-/*
-=========================
-PAGINA PALESTRA
-=========================
-*/
-
-#sfondopalestra {
-	position:relative;
+.switch ul {
+	overflow: hidden;
 }
 
-#titolopalestra {
-	position:absolute;
-	font-family:Arial;
-	color:rgb(0,120,255);
-	font-weight:800;
-	font-size:6vw;
-	width:100%;
-	text-align:center;
-	left:0;
-	top:25%;
+.on {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #DAAC5E;
+	position: relative;
+	-webkit-animation: on 30s infinite;
+	-moz-animation: on 30s infinite;
+	animation: on 30s infinite;
 }
 
-#imagepalestra {
-	width:100%;
+@-webkit-keyframes slide {
+	0%, 100% {
+		margin-left:0;
+	} 
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:-100%;
+	}  
+	46% {
+		margin-left:-100%;
+	}  
+	50% {
+		margin-left:-200%;
+	} 
+	71% {
+		margin-left:-200%;
+	}  
+	75% {
+		margin-left:-300%;
+	}  
+	96% {
+		margin-left:-300%;
+	}
+}
+
+@-moz-keyframes slide {
+	0%, 100% {
+		margin-left:0%;
+	}
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:-100%;
+	}
+	46% {
+		margin-left:-100%;
+	}
+	50% {
+		margin-left:-200%;
+	}
+	71% {
+		margin-left:-200%;
+	}
+	75% {
+		margin-left:-300%;
+	}
+	96% {
+		margin-left:-300%;
+	}
+}
+
+@keyframes slide {
+	0%, 100% {
+		margin-left:0%;
+	}
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:-100%;
+	}
+	46% {
+		margin-left:-100%;
+	}
+	50% {
+		margin-left:-200%;
+	}
+	71% {
+		margin-left:-200%;
+	}
+	75% {
+		margin-left:-300%;
+	}
+	96% {
+		margin-left:-300%;
+	}
+}
+
+@-webkit-keyframes content-s {
+	0%{left:-420px;}
+	10%{left:0px;}
+	30%{left:0px;}
+	40%{left:0px;}
+	50%{left:0px;}
+	60%{left:0px;}
+	70%{left:0;}
+	80%{left:-420px;}
+	90%{left:-420px;}
+	100%{left:-420px;}
+}
+
+@-moz-keyframes content-s {
+	0%{left:-420px;}
+	10%{left:0px;}
+	30%{left:0px;}
+	40%{left:0px;}
+	50%{left:0px;}
+	60%{left:0px;}
+	70%{left:0;}
+	80%{left:-420px;}
+	90%{left:-420px;}
+	100%{left:-420px;}
+}
+
+@keyframes content-s {
+	0%{left:-420px;}
+	10%{left:20px;}
+	15%{left:0px;}
+	30%{left:0px;}
+	40%{left:0px;}
+	50%{left:0px;}
+	60%{left:0px;}
+	70%{left:0;}
+	80%{left:-420px;}
+	90%{left:-420px;}
+	100%{left:-420px;}
+}
+
+@-webkit-keyframes on {
+	0%, 100% {
+		margin-left:0%;
+	}
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:20px;
+	}
+	46% {
+		margin-left:20px;
+	}
+	50% {
+		margin-left:40px;
+	}
+	71% {
+		margin-left:40px;
+	}
+	75% {
+		margin-left:60px;
+	}
+	96% {
+		margin-left:60px;
+	}
+}
+
+@-moz-keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:20px;
+  }
+  46%{
+    margin-left:20px;
+  }
+  50%{
+    margin-left:40px;
+  }
+  71%{
+    margin-left:40px;
+  }
+  75%{
+    margin-left:60px;
+  }
+  96%{
+    margin-left:60px;
+  }
+}
+
+@keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:20px;
+  }
+  46%{
+    margin-left:20px;
+  }
+  50%{
+    margin-left:40px;
+  }
+  71%{
+    margin-left:40px;
+  }
+  75%{
+    margin-left:60px;
+  }
+  96%{
+    margin-left:60px;
+  }
 }
 
 #DescrizionePalestra {
@@ -277,7 +533,6 @@ PAGINA PALESTRA
 	text-align:left;
 	float:left;
 	margin:5% 10%;
-	font-family: 'Raleway', sans-serif;
 	font-size:95%;
 }
 
@@ -292,7 +547,6 @@ PAGINA PALESTRA
 	float:right;
 	margin:5% 10%;
 	font-size:95%;
-	font-family: 'Raleway', sans-serif;
 }
 
 #fabio {
