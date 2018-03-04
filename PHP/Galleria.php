@@ -17,7 +17,7 @@
 			<a href="../HTML/Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
 			<a onclick="document.getElementById('login').style.display='block'"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
-				
+				<a href="../HTML/Home.html">Home</a>
 				<a href="../HTML/Attivita.html">Attivit&agrave;</a>
 				<a href="News.php"><span xml:lang="en">News</span></a>
 				<a class="active">Galleria</a>
