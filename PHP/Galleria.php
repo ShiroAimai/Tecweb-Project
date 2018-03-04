@@ -21,7 +21,6 @@
 			<a href="../HTML/Attivita.html">Attivit&agrave;</a>
 			<a href="../PHP/News.php"><span xml:lang="en">News</span></a>
 			<a class="active">Galleria</a>
-			<a href="Galleria.php">Galleria</a>
 			<a href="../HTML/Calendario.html">Calendario</a>
 			<a href="../HTML/ChiSiamo.html">Chi siamo</a>
 			<a href="../HTML/DoveSiamo.html">Dove siamo</a>
