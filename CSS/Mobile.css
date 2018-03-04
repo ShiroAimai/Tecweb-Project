@@ -55,6 +55,7 @@ SEZIONE INTESTAZIONE
 .Menu a.active {
 	color: #000;
 	background-color: #DAAC5E;
+	cursor: default;
 }
 
 .Menu button {
@@ -71,7 +72,7 @@ SEZIONE INTESTAZIONE
 	color: #DAAC5E;
 	text-align: center;
 	font-weight: bold;
-	padding: 7% 3%;
+	padding: 6% 3%;
 	text-decoration: none;
 	width: auto;
 	cursor: pointer;
@@ -80,8 +81,8 @@ SEZIONE INTESTAZIONE
 #user {
 	display: block;
 	float: right;
-	padding: 7% 3%;
-	width: 6%;
+	padding: 6% 3%;
+	width: 12%;
 	cursor: pointer;
 }
 

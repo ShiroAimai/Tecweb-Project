@@ -61,6 +61,7 @@ SEZIONE INTESTAZIONE
 .Menu a.active {
 	color: #000;
 	background-color: #DAAC5E;
+	cursor: default;
 }
 
 .Menu button {
@@ -918,23 +919,11 @@ PAGINA AREA PERSONALE
 	background: #3D5A80;
 	height: 80vh;
 	width: 60vw;
-	margin-top: 24%;
-	margin-bottom: -20%;
-	margin-right: auto;
-	margin-left: auto;
+	position: relative;
+	margin: 3% auto;
 	border-radius: 10px;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
 	overflow: hidden;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
 	border-radius: 0.1875rem;
 	box-shadow: 6px 7px 0.4375rem rgba(0, 0, 0, 0.25);
 }
