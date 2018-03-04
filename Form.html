@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
+<head>
+	<title> Form News | Body Evolution</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
+	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
+	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="form">
+	<form method="post" action="PHP/test.php" enctype="multipart/form-data">
+		<fieldset>
+		<Legend>NUOVO ELEMENTO NEWS</Legend>
+		<br/>
+		<div class="spazia">
+		Titolo della News:
+		<input type="text" name="Titolo" maxlength="16"/>
+		<br/>
+		</div>
+		<div class="spazia">
+		Nome Immagine(Estensione Compresa):
+		<input type="text" name="NomeImmagine" id="NomeImmagine" />
+		File:
+		<input type="file" name="Immagine" id="Immagine"/>
+		<br/>
+		</div>
+		<div class="spazia">
+		Descrizione:<br />
+		<textarea name="Descrizione" rows="5" cols="50">Inserisci del testo qui.</textarea>
+		<br />
+		</div>
+		<br />
+		</fieldset>
+		<br/>
+		<input type="submit" name="submit">
+	</form>
+
+</body>
+</html>
