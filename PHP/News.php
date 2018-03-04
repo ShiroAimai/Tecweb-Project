@@ -15,16 +15,16 @@
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
 			<a href="../HTML/Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
-			<a onclick="document.getElementById('login').style.display='block'"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
+			<a href="AreaPersonale.html"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
-				<a href="../HTML/Home.html">Home</a>
-				<a href="../HTML/Attivita.html">Attivit&agrave;</a>
-				<a class="active">News</a>
-				<a href="Galleria.php">Galleria</a>
-				<a href="../HTML/Calendario.html">Calendario</a>
-				<a href="../HTML/ChiSiamo.html">Chi siamo</a>
-				<a href="../HTML/DoveSiamo.html">Dove siamo</a>
-				<button onclick="document.getElementById('login').style.display='block'">Area Personale</button>
+			<a href="../HTML/Home.html">Home</a>
+			<a href="../HTML/Attivita.html">Attivit&agrave;</a>
+			<a class="active">News</a>
+			<a href="Galleria.php">Galleria</a>
+			<a href="../HTML/Calendario.html">Calendario</a>
+			<a href="../HTML/ChiSiamo.html">Chi siamo</a>
+			<a href="../HTML/DoveSiamo.html">Dove siamo</a>
+			<button onclick="window.location.href='AreaPersonale.html'">Area Personale</button>
 			</div>
 		</div>
 		<?php
