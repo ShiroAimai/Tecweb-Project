@@ -24,7 +24,7 @@
 			<a href="../HTML/Calendario.html">Calendario</a>
 			<a href="../HTML/ChiSiamo.html">Chi siamo</a>
 			<a href="../HTML/DoveSiamo.html">Dove siamo</a>
-			<button onclick="window.location.href='AreaPersonale.html'">Area Personale</button>
+			<button onclick="window.location.href='../HTML/AreaPersonale.html'">Area Personale</button>
 			</div>
 		</div>
 		<div class="gallerymain">
