@@ -4,8 +4,8 @@ GESTIONE COMPITI
 *GESTIRE ERRORI NEWS CON php e js. Ad esempio riempimento spazi 
 * gestire le eccezzioni con js e php, riempimento spazi, e campi errati del form login
 *Modificare la pagina Attività rendendola più stravagante
-*creare la pagina template utilizzata dai vari album
-*gestione eccezzioni per form inserimento immagini in galleria
+*perfezionare pagina ingrandimento foto singola negli album
+*gestione eccezzioni per form inserimento immagini in galleria con php
 *accessibilità del sito
 *gestire la login degli utenti e dividere per admin e utenti
 * creare la pagina di gestione admin con i suoi privilegi
