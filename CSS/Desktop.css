@@ -1,0 +1,1261 @@
+/*
+=========================
+SEZIONE GENERALE
+=========================
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #323232;	
+	
+}
+
+
+#contenitore {
+	margin: 1.5em;
+	border: 1px solid #323232;
+	background-image: url("../IMAGES/sfondo.jpg");
+	overflow: hidden;
+	
+}
+
+/*
+=========================
+SEZIONE INTESTAZIONE
+=========================
+*/
+
+#Intestazione {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	background-color: #000;
+	opacity: 0.8;
+}
+
+#logo {
+	float: left;
+	padding: 0.3em;
+	width: 9.19em;
+}
+
+.Menu {
+	overflow: hidden;
+}
+
+.Menu a {
+	float: left;
+	display: block;
+	color: #DAAC5E;
+	text-align: center;
+	font-weight: bold;
+	padding: 2em 0.9em;
+	text-decoration: none;
+	width: auto;
+}
+
+.Menu a:hover {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+.Menu a.active {
+	color: #000;
+	background-color: #DAAC5E;
+	cursor: default;
+}
+
+.Menu button {
+	float: right;
+	display: block;
+	color: white;
+	background-color: #4CAF50;
+	padding: 2em 0.9em;
+	width: auto;
+	border: none;
+	font-size: 100%;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+.Menu button:hover {
+	opacity: 0.8;
+}
+
+.sandwich {
+	display: none;
+}
+
+#user {
+	display: none;
+}
+
+/*
+=========================
+SEZIONE FOOTER
+=========================
+*/
+
+#Footer {
+	font-size: 0.8em;
+	line-height: 22px;
+	color: white;
+	background-color: rgb(32,32,32);
+	overflow: hidden;
+	clear: both;
+}
+
+#Footer h3 {
+	margin-top: 4em;
+	margin-bottom: 3em;
+}
+
+.blocco {
+	display: block;
+}
+
+#footersx {
+	float: left;
+	padding: 3%;
+	width: 22%;
+}
+
+#logofooter {
+	margin-bottom: 1.5em;
+	width: 50%;
+}
+
+#logofacebook {
+	width: 2em;
+	margin-top: 2em;
+}
+
+#footercx {
+	float: left;
+	padding: 3%;
+	width: 22%;
+}
+
+#footercx ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#footerdx {
+	float: left;
+	padding: 3%;
+	width: 37%;
+}
+
+#Coni {
+	float: left;
+	width: 30%;
+	margin-bottom: 1.5em;
+}
+
+#asi {
+	width: 30%;
+	margin-left: 20%;
+	margin-bottom: 1.5em;
+}
+
+#footerbottom {
+	padding: 0.2em;
+	clear: both;
+	background-color: rgb(26,26,26);
+	text-align: center;
+}
+
+/*
+=========================
+PAGINA HOME
+=========================
+*/
+
+#slider {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+@keyframes load {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0;
+	}
+}
+
+.slides {
+	width: 400%;
+	height: 100%;
+	position: relative;
+	-webkit-animation: slide 30s infinite;
+	-moz-animation: slide 30s infinite;
+	animation: slide 30s infinite;
+}
+
+.slider {
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+.content-txt {
+	width: 400px;
+	height: 150px;
+	float: left;
+	position: relative;
+	top: 300px;
+}
+
+.content-txt h1 {
+	font-size: 24px;
+	color: #FFF;
+	text-align: left;
+	margin-left: 30px;
+	padding-bottom: 10px;
+}
+
+.content-txt h2 {
+	font-weight: normal;
+	font-size: 14px;
+	font-style: italic;
+	color: #FFF;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.switch {
+	width: 120px;
+	height: 10px;
+	position: absolute;
+	bottom: 50px;
+	left: 44%;
+}
+
+.switch ul {
+	list-style: none;
+}
+
+.switch ul li {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #333;
+	float: left;
+	margin-right: 5px;
+}
+
+.switch ul {
+	overflow: hidden;
+}
+
+.on {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #DAAC5E;
+	position: relative;
+	-webkit-animation: on 30s infinite;
+	-moz-animation: on 30s infinite;
+	animation: on 30s infinite;
+}
+
+@-webkit-keyframes slide {
+	0%, 100% {
+		margin-left:0;
+	} 
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:-100%;
+	}  
+	46% {
+		margin-left:-100%;
+	}  
+	50% {
+		margin-left:-200%;
+	} 
+	71% {
+		margin-left:-200%;
+	}  
+	75% {
+		margin-left:-300%;
+	}  
+	96% {
+		margin-left:-300%;
+	}
+}
+
+@-moz-keyframes slide {
+	0%, 100% {
+		margin-left:0%;
+	}
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:-100%;
+	}
+	46% {
+		margin-left:-100%;
+	}
+	50% {
+		margin-left:-200%;
+	}
+	71% {
+		margin-left:-200%;
+	}
+	75% {
+		margin-left:-300%;
+	}
+	96% {
+		margin-left:-300%;
+	}
+}
+
+@keyframes slide {
+	0%, 100% {
+		margin-left:0%;
+	}
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:-100%;
+	}
+	46% {
+		margin-left:-100%;
+	}
+	50% {
+		margin-left:-200%;
+	}
+	71% {
+		margin-left:-200%;
+	}
+	75% {
+		margin-left:-300%;
+	}
+	96% {
+		margin-left:-300%;
+	}
+}
+
+@-webkit-keyframes content-s {
+	0%{left:-420px;}
+	10%{left:0px;}
+	30%{left:0px;}
+	40%{left:0px;}
+	50%{left:0px;}
+	60%{left:0px;}
+	70%{left:0;}
+	80%{left:-420px;}
+	90%{left:-420px;}
+	100%{left:-420px;}
+}
+
+@-moz-keyframes content-s {
+	0%{left:-420px;}
+	10%{left:0px;}
+	30%{left:0px;}
+	40%{left:0px;}
+	50%{left:0px;}
+	60%{left:0px;}
+	70%{left:0;}
+	80%{left:-420px;}
+	90%{left:-420px;}
+	100%{left:-420px;}
+}
+
+@keyframes content-s {
+	0%{left:-420px;}
+	10%{left:20px;}
+	15%{left:0px;}
+	30%{left:0px;}
+	40%{left:0px;}
+	50%{left:0px;}
+	60%{left:0px;}
+	70%{left:0;}
+	80%{left:-420px;}
+	90%{left:-420px;}
+	100%{left:-420px;}
+}
+
+@-webkit-keyframes on {
+	0%, 100% {
+		margin-left:0%;
+	}
+	21% {
+		margin-left:0%;
+	}
+	25% {
+		margin-left:20px;
+	}
+	46% {
+		margin-left:20px;
+	}
+	50% {
+		margin-left:40px;
+	}
+	71% {
+		margin-left:40px;
+	}
+	75% {
+		margin-left:60px;
+	}
+	96% {
+		margin-left:60px;
+	}
+}
+
+@-moz-keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:20px;
+  }
+  46%{
+    margin-left:20px;
+  }
+  50%{
+    margin-left:40px;
+  }
+  71%{
+    margin-left:40px;
+  }
+  75%{
+    margin-left:60px;
+  }
+  96%{
+    margin-left:60px;
+  }
+}
+
+@keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:20px;
+  }
+  46%{
+    margin-left:20px;
+  }
+  50%{
+    margin-left:40px;
+  }
+  71%{
+    margin-left:40px;
+  }
+  75%{
+    margin-left:60px;
+  }
+  96%{
+    margin-left:60px;
+  }
+}
+
+#DescrizionePalestra {
+	color:white;
+}
+
+.separator {
+	overflow: hidden;
+	position:relative;
+	display:block;
+	height:1px;
+	background-color: #eaeaea;
+	margin:10px 0;
+}
+
+#DescrizionePalestra h3 {
+	font-size:150%;
+	font-weight:600;
+}
+
+.ridimensionasx {
+	float:left;
+	width:50%;
+}
+
+.ridimensionadx {
+	float:right;
+	width:50%;
+}
+
+.limitesx {
+	margin-right:55%;
+}
+
+.limitedx {
+	margin-left:55%;
+}
+
+.sx {
+	text-align:left;
+	float:left;
+	margin:5% 10%;
+	font-size:95%;
+}
+
+.allenamento {
+	float:left;
+	width:50%;
+	height:25em;
+}
+
+.dx {
+	text-align:left;
+	float:right;
+	margin:5% 10%;
+	font-size:95%;
+}
+
+#fabio {
+	float:left;
+}
+
+#genny {
+	float:left;
+}
+
+/*
+=========================
+PAGINA GALLERIA
+=========================
+*/
+
+#sfondogalleria {
+	position: relative;
+}
+
+#titologalleria {
+	position: absolute;
+	font-family: Verdana;
+	color: rgb(107,27,87);
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 5%;
+    top: -5%;
+}
+
+#imagegalleria {
+	width: 100%;
+}
+
+/*
+=========================
+PAGINA CHI SIAMO
+=========================
+*/
+
+#ChiSiamoImg {
+	width:100%;	
+}
+
+#GennyTiengo, #FabioFerro {
+	padding: 2em;
+	overflow: hidden;
+	font-size: 20px;
+	color: white;
+}
+
+#GennyTiengoImg, #FabioFerroImg {
+	margin-right: 3em;
+	float: left;
+	border-radius: 50px;
+	width: 20%;
+}
+
+#Istruttori h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#Istruttori ul {
+	padding: 2em;
+	margin-left: 25%;
+}
+
+/*
+=========================
+PAGINA DOVE SIAMO
+=========================
+*/
+
+#sfondodovesiamo {
+	position: relative;
+}
+
+#titolodovesiamo {
+	position: absolute;
+	font-family: Verdana;
+	color: #FD0303;
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 10%;
+    top: 0;
+}
+
+#imagedovesiamo {
+	width: 100%;
+}
+
+#map {
+	float: left;
+	width: 600px;
+	height: 600px;
+	margin-right: 3em;
+}
+
+#GoogleMaps {
+	color: white;
+	margin-top: 2em;
+	padding: 2em;
+	overflow: hidden;
+}
+
+#GoogleMaps h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#GoogleMaps p {
+	padding: 2em;
+	margin-left: 25%;
+}
+
+/*
+=========================
+PAGINA ATTIVITA
+=========================
+*/
+
+#noscriptAttivita{
+	font-size: 24px;
+	color:white;
+	text-align: center;
+}
+
+#Presentazione{
+	color: #DAAC5E;
+	font-family: Verdana;
+	position: relative;
+	font-size: 18px;
+	text-align: left;
+	left: 5%;
+	margin-bottom: 1em;
+    
+}
+
+#Presentazione p{
+	color:white;
+}
+
+#titoloPagina {
+	font-size: 50px;
+}
+
+
+#DescrizioneAttivita{
+  	width: 90%;
+  	margin: 4% auto;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    border-color: #DAAC5E;
+    border-style: 2px solid;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+	font-weight: bold;
+    transition: 0.4s;
+    background-color: #a6a6a6;
+}
+
+.accordion:focus {
+	outline:none;
+}
+
+.accordion:hover {
+    background-color: #d9d9d9; 
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: left;
+}
+
+.accordion.active{
+	background-color: white;
+	border: none;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+.courseimg{
+	width: 100%;
+	height: 300px;
+}
+
+#powerpump {
+	color: blue;
+}
+#spinning {
+	color: green;
+}
+
+#fitboxe {
+	color: red;
+}
+
+#jumpfit {
+	color: rgb(200,50,0);
+}
+
+#step {
+	color: purple;
+}
+/*
+===================
+SEZIONE CALENDARIO
+==================
+*/
+
+#calendario {
+	text-align:center;
+	width:95.4%;
+	height:26em;
+	font-weight:bold;
+	margin:0em 2em;
+	margin-bottom:10%;
+	top:40%;
+}
+
+#imgcal {
+	width:96%;
+	height:44em;
+	position:absolute;
+
+}
+
+#firstrow {
+	color:white;
+	font-weight:bold;
+	font-size:120%;
+}
+
+.spinning {
+	background-color: green;
+}
+
+.spinning:hover {
+	background-color: rgb(0,230,0);
+}
+
+.powerpump {
+	background-color: blue;
+}
+
+.powerpump:hover {
+	background-color: rgb(0,100,180);
+}
+
+.jumpfit {
+	background-color: rgb(200,50,0);
+}
+
+.jumpfit:hover {
+	background-color: rgb(220,120,0);
+}
+
+.fitboxe {
+	background-color: red;
+}
+
+.fitboxe:hover {
+	background-color: rgb(120,0,0);
+}
+
+.step {
+	background-color: purple;
+}
+
+.step:hover {
+	background-color: rgb(120,0,40)
+}
+
+table, td {
+    border: 6px solid white;
+    border-collapse: collapse;
+    color:white;
+    opacity:0.9;
+}
+
+td a {
+	color:white;
+	text-decoration: none;
+	width:auto;
+}
+/*
+====================
+PAGINA DINAMICA NEWS
+====================
+*/
+.newscont {
+	border:4px solid white;
+	float:left;
+	width:40%;
+	height:28em;
+	margin:2em 4em;
+}
+.titlenews {
+	text-align:center;
+	margin:2%;
+	margin-bottom:0%;
+	color:white;
+}
+.pubblicazione
+{
+	float:right;
+	margin:0.5em;
+	color:white;
+	font-size: 12px;
+}
+.imgnews {
+	
+	width:97%;
+	margin:0.5em;
+	margin-bottom: 0%;
+	overflow: auto;
+	height:16em;
+}
+.corpopos
+{
+	float:left;
+}
+
+.textnews{
+	margin:0% 1%;
+	text-align: left;
+	width:100%;
+	color:white;
+	font-family:Helvetica;
+	
+	
+}
+
+/*=================
+PAGINA GALLERIA
+================*/
+.gallerymain{
+	display:table;
+	margin:1em 6em;
+
+}
+
+.album {
+	border:2px solid black;
+	float:left;
+	align-items: center;
+	width:25%;
+	margin:0% 3.8% 2% 3.8%;
+	overflow: hidden;
+	height:16em;
+}
+.album:hover {
+	border:2px solid #DAAC5E;
+}
+.album:hover .albumname
+{
+	border-bottom:2px solid #DAAC5E;
+	color:#DAAC5E;
+}
+.album .albumname
+{
+	border-bottom: 2px solid black;
+	font-weight: bold;
+	color:white;
+	text-align: center;
+	margin:0;
+	padding:0.5em;
+
+	
+}
+
+.album .galleryimg{
+   float:left;
+   width: 99.8%;
+   height:100%;
+   margin-left:0.01em;
+  
+}
+
+#gallerypictitle {
+	font-weight: bold;
+	font-size:400%;
+	margin-top:0%;
+	margin:0 2em 0 2em;
+	color:white;
+	text-align: center;
+}
+.gallerypic {
+	margin: 2em 0em 4em 4.4em;
+	width:90%;
+}
+.gallerypicmini {
+	float:left;
+	width:10%;
+	height:6em;
+	margin:1.5em;
+	border:2px solid black;
+}
+.gallerypicmini:hover
+{
+	border:2px solid #DAAC5E;
+}
+.gallerypicmini:active{
+	border:2px solid #DAAC5E;
+}
+#albumtitle
+{
+	color:#DAAC5E;
+}
+.sfondonero {
+	background-color: #323232;
+}
+.imgsfondonero {
+	margin:2% 10% 2% 10%;
+	width:80%;
+	
+
+}
+
+.backbutton a {
+	width:100%;
+	
+}
+#backarrow
+{
+	text-align: center;
+	width:80%;
+	margin:0.5em;
+	
+}
+
+.backbutton 
+{
+	border:2px solid black;
+	margin:2% 0% 2% 85%;
+	width:5%;
+	
+
+}
+.backbutton:hover
+{
+	border:2px solid #DAAC5E;
+}
+
+/*
+=========================
+PAGINA AREA PERSONALE
+=========================
+*/
+
+.LoginSignupContainer {
+	background: #3D5A80;
+	height: 80vh;
+	width: 60vw;
+	position: relative;
+	margin: 3% auto;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	border-radius: 0.1875rem;
+	box-shadow: 6px 7px 0.4375rem rgba(0, 0, 0, 0.25);
+}
+
+.signupOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.76);
+}
+
+.containerChild {
+	width: 50%;
+	height: 100%;
+	color: #fff;
+}
+
+.leftContent {
+	position: relative;
+	z-index: 2;
+	padding: 2em;
+	-ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+label {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	color: #ccc;
+}
+
+*,:after,:before {
+	box-sizing:border-box;
+}
+
+a {
+	color:inherit;
+	text-decoration:none;
+}
+
+.loginWrap {
+	width:100%;
+	height: 100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	background-color: #3D5A80;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding: 4%;
+	padding-top:9%;
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateX(180deg);
+	backface-visibility:hidden;
+	transition:all .5s linear;
+}
+
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+	display:none;
+}
+
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.login-html .tab {
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+	color:#fff;
+	border-color:#1161ee;
+}
+
+.login-form {
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+
+.login-form .group {
+	margin-bottom:15px;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+	width:100%;
+	color:#e3e3e3;
+	display:block;
+}
+
+.login-form .group .input,
+.login-form .group .button {
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+
+.login-form .group .label {
+	color:#aaa;
+	font-size:12px;
+}
+
+.login-form .group .button {
+	background:#3F51B5;
+}
+
+.login-form .group label .icon {
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+
+.login-form .group label .icon:before {
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+
+.login-form .group label .icon:after {
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+
+.login-form .group .check:checked + label {
+	color:#fff;
+}
+
+.login-form .group .check:checked + label .icon {
+	background:#1161ee;
+}
+
+.login-form .group .check:checked + label .icon:before {
+	transform:scale(1) rotate(45deg);
+}
+
+.login-form .group .check:checked + label .icon:after {
+	transform:scale(1) rotate(-45deg);
+}
+
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
+	transform:rotate(0);
+}
+
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+	transform:rotate(0);
+}
+
+.hr {
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+
+.foot-lnk {
+	text-align:center;
+}
+
+.cred {
+	position:fixed;
+	bottom:0;
+	padding-bottom:.5%;
+	padding-left:1%;
+	padding-top:.5%;
+	border-top:1px solid #eee;
+	width:100%;
+	background:;
+	color:#181818;
+}
+
+.cred>span {
+	padding-left:5px;
+	font-size:23px;
+}
