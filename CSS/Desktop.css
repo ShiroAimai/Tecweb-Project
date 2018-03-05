@@ -1094,6 +1094,7 @@ a {
 
 .loginWrap {
 	width:100%;
+	height: 100%;
 	margin:auto;
 	max-width:525px;
 	min-height:670px;
