@@ -781,6 +781,7 @@ PAGINA ATTIVITA
 #step {
 	color: purple;
 }
+
 /*
 ===================
 SEZIONE CALENDARIO
@@ -788,12 +789,13 @@ SEZIONE CALENDARIO
 */
 
 .calendario {
+	width: 90%;
+	margin:5%;
 	float:left;
 	text-align:left;
 	color:white;
 	font-weight: bold;
 	position: relative;
-	margin-bottom: 7%;
 
 }
 #salafitness
@@ -809,21 +811,26 @@ SEZIONE CALENDARIO
 .vocecalendario
 {
 	float:left;
-	margin:2em;
+	margin:0;
+	width: 16.6%;
 }
 .orari
 {
 	
 	list-style-type: none;
 	font-size: 110%;
+	margin:0;
+	padding:0;
 }
 .orari li {
-	margin:2.8em 0em 3.6em 0em;
+	margin:1.3em 0em 3.6em 0em;
 }
 .oraricorsi {
 
 	list-style-type: none;
 	font-size: 110%;
+	margin:0;
+	padding:0;
 
 }
 .oraricorsi li a{
@@ -832,17 +839,17 @@ SEZIONE CALENDARIO
 }
 .oraricorsi li
 {
-	margin:1em 0em;
+	margin:0;
 }
 .corsovuoto
 {
 	border:1px solid white;
-	width:140%;
+	width:auto;
 	height:4em;
 }
 .spinning {
 	border:1px solid white;
-	width:140%;
+	width:auto;
 	height:4em;
 	background-color: green;
 	text-align: center;
@@ -856,7 +863,7 @@ SEZIONE CALENDARIO
 .step {
 	background-color: purple;
 	border:1px solid white;
-	width:140%;
+	width:auto;
 	height:4em;
 	text-align: center;
 	opacity: 0.8;
@@ -868,7 +875,7 @@ SEZIONE CALENDARIO
 .powerpump {
 	background-color: blue;
 	border:1px solid white;
-	width:140%;
+	width:auto;
 	height:4em;
 	text-align: center;
 	opacity: 0.8;
@@ -882,7 +889,7 @@ SEZIONE CALENDARIO
 .jumpfit {
 	background-color: rgb(200,50,0);
 	border:1px solid white;
-	width:140%;
+	width:auto;
 	height:4em;
 	text-align: center;
 	opacity: 0.8;
@@ -896,7 +903,7 @@ SEZIONE CALENDARIO
 .fitboxe {
 	background-color: red;
 	border:1px solid white;
-	width:140%;
+	width:auto;
 	height:4em;
 	text-align: center;
 	opacity: 0.8;
@@ -916,11 +923,11 @@ SEZIONE CALENDARIO
 	position:absolute;
 
 }
-/*
+
 ====================
 PAGINA DINAMICA NEWS
 ====================
-*/
+
 .newscont {
 	border:4px solid white;
 	float:left;
