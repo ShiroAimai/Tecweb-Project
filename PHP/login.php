@@ -15,6 +15,6 @@
 		else
 		{
 			$_SESSION['wrong_login']= 1; // flag degli errori: sbaglio le credenziali, ricarico la pagina adminLogin.php con il mess di errore.
-			header("Location:login2.php");
+			header("Location:../HTML/Errorelogin.html");
 		}
 ?>
