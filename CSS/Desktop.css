@@ -787,80 +787,134 @@ SEZIONE CALENDARIO
 ==================
 */
 
-#calendario {
-	text-align:center;
-	width:95.4%;
-	height:26em;
-	font-weight:bold;
-	margin:0em 2em;
-	margin-bottom:10%;
-	top:40%;
+.calendario {
+	float:left;
+	text-align:left;
+	color:white;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 7%;
+
+}
+#salafitness
+{
+	font-size:140%;
+	clear:both;
+	margin-left:1.5em;
+}
+.giornovoce
+{
+	font-size:140%;
+}
+.vocecalendario
+{
+	float:left;
+	margin:2em;
+}
+.orari
+{
+	
+	list-style-type: none;
+	font-size: 110%;
+}
+.orari li {
+	margin:2.8em 0em 3.6em 0em;
+}
+.oraricorsi {
+
+	list-style-type: none;
+	font-size: 110%;
+
+}
+.oraricorsi li a{
+	width:100%;
+	height:4em;
+}
+.oraricorsi li
+{
+	margin:1em 0em;
+}
+.corsovuoto
+{
+	border:1px solid white;
+	width:140%;
+	height:4em;
+}
+.spinning {
+	border:1px solid white;
+	width:140%;
+	height:4em;
+	background-color: green;
+	text-align: center;
+	opacity: 0.8;
+}
+.spinning:hover{
+	background-color: rgb(0,230,0);
+	opacity: 0.7;
+
+}
+.step {
+	background-color: purple;
+	border:1px solid white;
+	width:140%;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
+}
+.step:hover {
+	background-color: rgb(120,0,40);
+	opacity: 0.8;
+}
+.powerpump {
+	background-color: blue;
+	border:1px solid white;
+	width:140%;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
 }
 
+.powerpump:hover {
+	background-color: rgb(0,100,180);
+	opacity: 0.8;
+}
+
+.jumpfit {
+	background-color: rgb(200,50,0);
+	border:1px solid white;
+	width:140%;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.jumpfit:hover {
+	background-color: rgb(220,120,0);
+	opacity: 0.8;
+}
+
+.fitboxe {
+	background-color: red;
+	border:1px solid white;
+	width:140%;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.fitboxe:hover {
+	background-color: rgb(120,0,0);
+	opacity: 0.8;
+}
+
+.corsovoce {
+	margin-top:1.2em;
+}
 #imgcal {
 	width:96%;
 	height:44em;
 	position:absolute;
 
-}
-
-#firstrow {
-	color:white;
-	font-weight:bold;
-	font-size:120%;
-}
-
-.spinning {
-	background-color: green;
-}
-
-.spinning:hover {
-	background-color: rgb(0,230,0);
-}
-
-.powerpump {
-	background-color: blue;
-}
-
-.powerpump:hover {
-	background-color: rgb(0,100,180);
-}
-
-.jumpfit {
-	background-color: rgb(200,50,0);
-}
-
-.jumpfit:hover {
-	background-color: rgb(220,120,0);
-}
-
-.fitboxe {
-	background-color: red;
-}
-
-.fitboxe:hover {
-	background-color: rgb(120,0,0);
-}
-
-.step {
-	background-color: purple;
-}
-
-.step:hover {
-	background-color: rgb(120,0,40)
-}
-
-table, td {
-    border: 6px solid white;
-    border-collapse: collapse;
-    color:white;
-    opacity:0.9;
-}
-
-td a {
-	color:white;
-	text-decoration: none;
-	width:auto;
 }
 /*
 ====================
