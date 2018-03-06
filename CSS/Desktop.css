@@ -1201,3 +1201,32 @@ a {
 	margin:60px 0 50px 0;
 	background:rgba(255,255,255,.2);
 }
+/*============
+ERRORE LOGIN
+===========*/
+
+.error {
+	border:3px solid white;
+	margin:15% 25%;
+	width:50%;
+	height:20em;
+	float:left;
+	background-color: #3D5A80;
+	text-align:center;
+}
+.errortext
+{
+	color:white;
+	margin-top:10%;
+}
+.errorlink {
+	color:white;
+	float:right;
+	margin:16% 2% 1% 0%;
+	text-decoration: underline;
+}
+.errorlink:hover
+{
+	color:blue;
+}
+
