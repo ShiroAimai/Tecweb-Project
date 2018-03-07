@@ -1237,3 +1237,81 @@ ERRORE LOGIN
 	color:blue;
 }
 
+/*
+============
+ADMIN PANEL
+============
+*/
+
+#btnContainer {
+	width: 95%;
+	margin: auto;
+}
+
+.btn {
+	width: 247px;
+	color: #fff;
+	border: none;
+	font-size: inherit;
+	cursor: pointer;
+	display: inline-block;
+	margin: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+}
+
+.btn:before {
+	font-family: 'FontAwesome';
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 2.2;
+	font-size: 200%;
+	width: 60px;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.btn-sep {
+	padding: 25px 10px 25px 70px;
+}
+
+.btn-sep:before {
+	background: rgba(0,0,0,0.15);
+}
+
+.btn-1 {
+	background: #3498db;
+}
+
+.btn-2 {
+	background: #2ecc71;
+}
+
+.btn-3 {
+	background: #e74c3c;
+}
+
+.btn-4 {
+	background: #34495e;
+}
+
+.icon-adduser:before {
+	content: "\f234";
+}
+
+.icon-addnews:before {
+	content: "\f1ea";
+}
+
+.icon-addphoto:before {
+	content: "\f030";
+}
+
+.icon-showusers:before {
+	content: "\f0c0";
+}
