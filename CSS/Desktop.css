@@ -706,24 +706,29 @@ PAGINA ATTIVITA
 	font-size: 50px;
 }
 
-
+/*larghezza bottoni */
 #DescrizioneAttivita{
-  	width: 90%;
+  	width: 50%; 
   	margin: 4% auto;
 }
 
 .accordion {
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
     cursor: pointer;
     padding: 18px;
     border-color: #DAAC5E;
-    border-style: 2px solid;
+    border-style: outset;
+    border-width: 5px;
+    margin-bottom: 7px;
     width: 100%;
     height: 100px;
     text-align: center;
     font-size: 24px;
 	font-weight: bold;
     transition: 0.4s;
-    background-color: #a6a6a6;
+    background-color: #404040;
 }
 
 .accordion:focus {
@@ -740,6 +745,7 @@ PAGINA ATTIVITA
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    margin-bottom: 7px;
 }
 
 .accordion:after {
@@ -752,6 +758,7 @@ PAGINA ATTIVITA
 .accordion.active{
 	background-color: white;
 	border: none;
+	margin-bottom: 0;
 }
 
 .accordion.active:after {
@@ -763,23 +770,69 @@ PAGINA ATTIVITA
 	height: 300px;
 }
 
-#powerpump {
+.accordion#powerpump {
 	color: blue;
+	background-image: url("../IMAGES/icone/power.png");
 }
+
+.accordion.active#powerpump {
+	color: blue;
+	background-image: none;
+}
+
 #spinning {
 	color: green;
+	background-image: url("../IMAGES/icone/spinning.png");
 }
+
+.accordion.active##spinning {
+	color: green;
+	background-image: none;}
 
 #fitboxe {
 	color: red;
+	background-image: url("../IMAGES/icone/fitboxe.png");
+}
+
+.accordion.active##fitboxe {
+	color: red;
+	background-image: none;
 }
 
 #jumpfit {
 	color: rgb(200,50,0);
+	background-image: url("../IMAGES/icone/jumpfit.png");
+}
+
+.accordion.active##jumpfit {
+	color: rgb(200,50,0);
+	background-image: none;
 }
 
 #step {
 	color: purple;
+	background-image: url("../IMAGES/icone/step.png");
+}
+
+.accordion.active#step {
+	color: purple;
+	background-image: none;
+}
+
+#colorpower{
+}
+
+#colorspinning{
+}
+
+#colorfitboxe{
+}
+
+#colorjumpfit{
+}
+
+#colorstep{
+	margin-bottom: 10px;
 }
 
 /*
