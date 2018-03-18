@@ -78,38 +78,6 @@ PAGINA CALENDARIO
 	display: none;
 }
 
-#Calendario #footercx, #Calendario #footerdx{
-	display: none;
-}
-
-/*
-.oraricorsi {
-	list-style-type: none;
-}
-
-.vocecalendario {
-    display: table;
-    width: 100%;
-}
-
-.vocecalendario.giornovoce {
-    display: table-row;
-}
-
-.vocecalendario li {
-    display: table-cell;
-    width: 33%;
-    border: 1px solid black;
-}
-
-.vocecalendario.separator{
-	display: none;
-	overflow: hidden;
-	margin:0 0;
-}
-
-*/
-
 #calendariocorsi #Footer{
 	display: none;
 }
