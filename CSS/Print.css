@@ -82,6 +82,127 @@ PAGINA CALENDARIO
 	display: none;
 }
 
+/*
+.oraricorsi {
+	list-style-type: none;
+}
+
+.vocecalendario {
+    display: table;
+    width: 100%;
+}
+
+.vocecalendario.giornovoce {
+    display: table-row;
+}
+
+.vocecalendario li {
+    display: table-cell;
+    width: 33%;
+    border: 1px solid black;
+}
+
+.vocecalendario.separator{
+	display: none;
+	overflow: hidden;
+	margin:0 0;
+}
+
+*/
+
+#calendariocorsi #Footer{
+	display: none;
+}
+
+.calendario {
+	width: 90%;
+	margin:5%;
+	float:left;
+	text-align:left;
+	border-color:white;
+	font-weight: bold;
+	position: relative;
+	border-style: solid;
+}
+
+#salafitness{
+	font-size: 16px;
+	clear:both;
+	margin-left:1.5em;
+}
+
+.vocecalendario
+{
+	float:left;
+	margin:0;
+	width: 110px;
+}
+
+.giornovoce{
+	text-align: center;
+}
+.orari{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	text-align: center;
+
+}
+.orari li {
+	margin: 2.3em 0em 3em 0em;
+}
+
+.oraricorsi li a{
+	text-decoration: none;
+}
+
+.oraricorsi {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.corsovuoto{
+	border:1px solid black;
+	width:auto;
+	height:4em;
+}
+.spinning {
+	border:1px solid black;
+	width:auto;
+	height:4em;
+	text-align: center;
+}
+
+.step {
+	border:1px solid black;
+	width:auto;
+	height:4em;
+	text-align: center;
+}
+
+.powerpump {
+	border:1px solid black;
+	width:auto;
+	height:4em;
+	text-align: center;
+}
+
+.jumpfit {
+
+	border:1px solid black;
+	width:auto;
+	height:4em;
+	text-align: center;
+}
+
+.fitboxe {
+	border:1px solid black;
+	width:auto;
+	height:4em;
+	text-align: center;
+}
+
 
 
 
