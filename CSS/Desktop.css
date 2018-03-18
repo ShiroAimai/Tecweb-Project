@@ -785,7 +785,7 @@ PAGINA ATTIVITA
 	background-image: url("../IMAGES/icone/spinning.png");
 }
 
-.accordion.active##spinning {
+.accordion.active#spinning {
 	color: green;
 	background-image: none;}
 
@@ -794,7 +794,7 @@ PAGINA ATTIVITA
 	background-image: url("../IMAGES/icone/fitboxe.png");
 }
 
-.accordion.active##fitboxe {
+.accordion.active#fitboxe {
 	color: red;
 	background-image: none;
 }
@@ -804,7 +804,7 @@ PAGINA ATTIVITA
 	background-image: url("../IMAGES/icone/jumpfit.png");
 }
 
-.accordion.active##jumpfit {
+.accordion.active#jumpfit {
 	color: rgb(200,50,0);
 	background-image: none;
 }
