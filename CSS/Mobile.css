@@ -4,6 +4,12 @@ SEZIONE GENERALE
 =========================
 */
 
+/* Resetto valori di default impostati dai browser */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;

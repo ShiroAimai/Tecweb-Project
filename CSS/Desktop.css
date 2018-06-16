@@ -4,6 +4,12 @@ SEZIONE GENERALE
 =========================
 */
 
+/* Resetto valori di default impostati dai browser */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -1143,7 +1149,7 @@ PAGINA AREA PERSONALE / FORM ADMIN
 
 .FormContainer {
 	background: #3D5A80;
-	height: 85vh;
+	height: 60vh;
 	width: 60vw;
 	position: relative;
 	margin: 3% auto;
