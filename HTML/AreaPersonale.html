@@ -8,7 +8,6 @@
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script type="text/javascript" src="../JS/Sandwich.js" async></script>
 </head>
 
 <body>
@@ -25,7 +24,7 @@
 			<a href="Calendario.html">Calendario</a>
 			<a href="ChiSiamo.html">Chi siamo</a>
 			<a href="DoveSiamo.html">Dove siamo</a>
-			<button disabled>Area Personale</button>
+			<button disabled="disabled">Area Personale</button>
 			</div>
 		</div>
 		
@@ -41,19 +40,19 @@
 				<div class="loginWrap">
 					<div class="login-html">
 						<h1>Sign In</h1>
-						<a href="Home.html"><div id="exit">&#215;</div></a>
+						<a href="Home.html"><span id="exit">&#215;</span></a>
 						<div class="login-form">
-							<form action="../PHP/login.php" method="POST">
+							<form action="../PHP/login.php" method="post">
 								<div class="group">
-									<label for="codice" class="label">Codice utente</label>
-									<input name="codice" type="text" class="input" required>
+									<label class="label">Codice utente</label>
+									<input type="text" class="input" required="required"/>
 								</div>
 								<div class="group">
-									<label for="pass" class="label">Password</label>
-									<input name="pass" type="password" class="input" required>
+									<label class="label">Password</label>
+									<input type="password" class="input" required="required"/>
 								</div>
 								<div class="group">
-									<input type="submit" class="button" value="Sign In">
+									<input type="submit" class="button" value="Sign In"/>
 								</div>
 								<div class="line"></div>
 								<a href="#forgot">Password dimenticata?</a>
@@ -104,6 +103,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript" src="../JS/Sandwich.js"></script>
 
 </body>
 </html>

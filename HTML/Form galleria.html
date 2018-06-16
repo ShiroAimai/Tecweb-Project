@@ -8,7 +8,6 @@
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script type="text/javascript" src="../JS/Sandwich.js" async></script>
 </head>
 
 <body>
@@ -25,7 +24,7 @@
 			<a href="Calendario.html">Calendario</a>
 			<a href="ChiSiamo.html">Chi siamo</a>
 			<a href="DoveSiamo.html">Dove siamo</a>
-			<button disabled>Area Personale</button>
+			<button disabled="disabled">Area Personale</button>
 			</div>
 		</div>
 		
@@ -43,19 +42,19 @@
 			<div class="containerChild">
 				<div class="loginWrap">
 					<div class="login-html">
-						<a href="AdminPanel.html"><div id="exit">&#215;</div></a>
+						<a href="AdminPanel.html"><span id="exit">&#215;</span></a>
 						<div class="login-form">							
 							<form method="post" action="PHP/testgalleria.php" enctype="multipart/form-data">
 								<div class="group">
-									<label for="Immagine[]" class="label">File</label>
-									<input name="Immagine[]" type="file" class="input" multiple accept="image/*" required>
+									<label class="label">File</label>
+									<input type="file" class="input" multiple="yes" accept="image/*" required="yes"/>
 								</div>
 								<div class="group">
-									<label for="album" class="label">Nome album</label>
-									<input name="album" type="text" class="input" required>
+									<label class="label">Nome album</label>
+									<input type="text" class="input" required="true"/>
 								</div>
 								<div class="group">
-									<input type="submit" class="button" value="Inserisci file">
+									<input type="submit" class="button" value="Inserisci file"/>
 								</div>
 							</form>
 						</div>
@@ -104,6 +103,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript" src="../JS/Sandwich.js"></script>
 
 </body>
 </html>

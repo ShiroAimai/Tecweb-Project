@@ -8,7 +8,6 @@
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script type="text/javascript" src="../JS/Sandwich.js" async></script>
 </head>
 
 <body>
@@ -25,7 +24,7 @@
 			<a href="Calendario.html">Calendario</a>
 			<a href="ChiSiamo.html">Chi siamo</a>
 			<a href="DoveSiamo.html">Dove siamo</a>
-			<button disabled>Area Personale</button>
+			<button disabled="disabled">Area Personale</button>
 			</div>
 		</div>
 		
@@ -43,23 +42,23 @@
 			<div class="containerChild">
 				<div class="loginWrap">
 					<div class="login-html">
-						<a href="AdminPanel.html"><div id="exit">&#215;</div></a>
+						<a href="AdminPanel.html"><span id="exit">&#215;</span></a>
 						<div class="login-form">							
 							<form method="post" action="PHP/test.php" enctype="multipart/form-data">
 								<div class="group">
-									<label for="titolo" class="label">Titolo news</label>
-									<input name="titolo" type="text" class="input" maxlength="16" required>
+									<label class="label">Titolo news</label>
+									<input type="text" class="input" maxlength="16" required="required" />
 								</div>
 								<div class="group">
-									<label for="immagine" class="label">Immagine</label>
-									<input name="immagine" type="file" class="input" accept="image/*" required>
+									<label class="label">Immagine</label>
+									<input type="file" class="input" accept="image/*" required />
 								</div>
 								<div class="group">
-									<label for="descrizione" class="label">Descrizione</label>
-									<textarea name="descrizione" rows="5" cols="50" class="input" required></textarea>
+									<label class="label">Descrizione</label>
+									<textarea rows="5" cols="50" class="input" required></textarea>
 								</div>
 								<div class="group">
-									<input type="submit" class="button" value="Inserisci news">
+									<input type="submit" class="button" value="Inserisci news"/>
 								</div>
 							</form>
 						</div>
@@ -108,6 +107,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript" src="../JS/Sandwich.js"></script>
 
 </body>
 </html>
