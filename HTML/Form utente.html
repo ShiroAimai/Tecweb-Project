@@ -44,31 +44,30 @@
 					<div class="login-html">
 						<a href="AdminPanel.html"><span id="exit">&#215;</span></a>
 						<div class="login-form">							
-							<form action="/action_page.php">
+							<form id="userForm" action="/action_page.php" onsubmit="return validateUserForm()">
 								<div class="group">
 									<label class="label">Codice utente</label>
-									<input type="text" class="input" required="required"/>
+									<input id="userCode" type="text" class="input"/>
 								</div>
 								<div class="group">
 									<label class="label">Nome</label>
-									<input type="text" class="input" required="required"/>
+									<input id="userName" type="text" class="input"/>
 								</div>
 								<div class="group">
 									<label class="label">Cognome</label>
-									<input type="text" class="input" required="required"/>
+									<input id="userSurname" type="text" class="input"/>
 								</div>
 								<div class="group">
 									<label class="label">Password</label>
-									<input id="pass" type="password" class="input" title="La password deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera"
-									required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/>
+									<input id="pass" type="password" class="input" title="La password deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera"/>
 								</div>
 								<div class="group">
 									<label class="label">Ripeti Password</label>
-									<input id="confirmPass" type="password" class="input" required="required"/>
+									<input id="confirmPass" type="password" class="input"/>
 								</div>
 								<div class="group">
 									<label class="label">Email</label>
-									<input type="email" class="input" required="required"/>
+									<input id="userMail" type="text" class="input"/>
 								</div>
 								<div class="group">
 									<input type="submit" class="button" value="Inserisci utente"/>
@@ -122,7 +121,7 @@
 	</div>
 	
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
-	<script type="text/javascript" src="../JS/PswValidation.js"></script>
+	<script type="text/javascript" src="../JS/FormValidation.js"></script>
 
 </body>
 </html>

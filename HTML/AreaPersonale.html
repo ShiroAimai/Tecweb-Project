@@ -42,20 +42,20 @@
 						<h1>Sign In</h1>
 						<a href="Home.html"><span id="exit">&#215;</span></a>
 						<div class="login-form">
-							<form action="../PHP/login.php" method="post">
+							<form id="PersonalAreaForm" action="../PHP/login.php" method="post" onsubmit="return validatePersonalAreaForm()">
 								<div class="group">
 									<label class="label">Codice utente</label>
-									<input type="text" class="input" required="required"/>
+									<input id="userCode" type="text" class="input"/>
 								</div>
 								<div class="group">
 									<label class="label">Password</label>
-									<input type="password" class="input" required="required"/>
+									<input id="pass" type="password" class="input"/>
 								</div>
 								<div class="group">
 									<input type="submit" class="button" value="Sign In"/>
 								</div>
 								<div class="line"></div>
-								<a href="#forgot">Password dimenticata?</a>
+								<div><a href="#forgot">Password dimenticata?</a></div>
 							</form>
 						</div>
 					</div>
@@ -105,6 +105,7 @@
 	</div>
 	
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
+	<script type="text/javascript" src="../JS/FormValidation.js"></script>
 
 </body>
 </html>

@@ -44,14 +44,14 @@
 					<div class="login-html">
 						<a href="AdminPanel.html"><span id="exit">&#215;</span></a>
 						<div class="login-form">							
-							<form method="post" action="PHP/testgalleria.php" enctype="multipart/form-data">
-								<div class="group">
-									<label class="label">File</label>
-									<input type="file" class="input" multiple="yes" accept="image/*" required="yes"/>
-								</div>
+							<form id="galleryForm" method="post" action="PHP/testgalleria.php" enctype="multipart/form-data" onsubmit="return validateGalleryForm()">
 								<div class="group">
 									<label class="label">Nome album</label>
-									<input type="text" class="input" required="true"/>
+									<input id="galleryName" type="text" class="input"/>
+								</div>
+								<div class="group">
+									<label class="label">File</label>
+									<input id="galleryFile" type="file" class="input" accept="image/*" multiple="multiple"/>
 								</div>
 								<div class="group">
 									<input type="submit" class="button" value="Inserisci file"/>
@@ -105,6 +105,7 @@
 	</div>
 	
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
+	<script type="text/javascript" src="../JS/FormValidation.js"></script>
 
 </body>
 </html>

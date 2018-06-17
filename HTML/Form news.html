@@ -44,18 +44,18 @@
 					<div class="login-html">
 						<a href="AdminPanel.html"><span id="exit">&#215;</span></a>
 						<div class="login-form">							
-							<form method="post" action="PHP/test.php" enctype="multipart/form-data">
+							<form id="newsForm" method="post" action="PHP/test.php" enctype="multipart/form-data" onsubmit="return validateNewsForm()">
 								<div class="group">
 									<label class="label">Titolo news</label>
-									<input type="text" class="input" maxlength="16" required="required" />
+									<input id="newsTitle" type="text" class="input" maxlength="16"/>
 								</div>
 								<div class="group">
 									<label class="label">Immagine</label>
-									<input type="file" class="input" accept="image/*" required />
+									<input id="newsImage" type="file" class="input" accept="image/*"/>
 								</div>
 								<div class="group">
 									<label class="label">Descrizione</label>
-									<textarea rows="5" cols="50" class="input" required></textarea>
+									<textarea id="newsDescription" rows="5" cols="50" class="input"></textarea>
 								</div>
 								<div class="group">
 									<input type="submit" class="button" value="Inserisci news"/>
@@ -109,6 +109,7 @@
 	</div>
 	
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
+	<script type="text/javascript" src="../JS/FormValidation.js"></script>
 
 </body>
 </html>
