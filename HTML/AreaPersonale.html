@@ -44,12 +44,12 @@
 						<div class="login-form">
 							<form id="PersonalAreaForm" action="../PHP/login.php" method="post" onsubmit="return validatePersonalAreaForm()">
 								<div class="group">
-									<label class="label">Codice utente</label>
-									<input id="userCode" type="text" class="input"/>
+									<label for="userCode" class="label">Codice utente</label>
+									<input name="userCode" id="userCode" type="text" class="input"/>
 								</div>
 								<div class="group">
-									<label class="label">Password</label>
-									<input id="pass" type="password" class="input"/>
+									<label for="pass" class="label">Password</label>
+									<input name="pass" id="pass" type="password" class="input"/>
 								</div>
 								<div class="group">
 									<input type="submit" class="button" value="Sign In"/>

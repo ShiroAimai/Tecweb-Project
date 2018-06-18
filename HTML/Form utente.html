@@ -46,28 +46,28 @@
 						<div class="login-form">							
 							<form id="userForm" action="/action_page.php" onsubmit="return validateUserForm()">
 								<div class="group">
-									<label class="label">Codice utente</label>
-									<input id="userCode" type="text" class="input"/>
+									<label for="userCode" class="label">Codice utente</label>
+									<input name="userCode" id="userCode" type="text" class="input"/>
 								</div>
 								<div class="group">
-									<label class="label">Nome</label>
-									<input id="userName" type="text" class="input"/>
+									<label for="userName" class="label">Nome</label>
+									<input name="userName" id="userName" type="text" class="input"/>
 								</div>
 								<div class="group">
-									<label class="label">Cognome</label>
-									<input id="userSurname" type="text" class="input"/>
+									<label for="userSurname" class="label">Cognome</label>
+									<input name="userSurname" id="userSurname" type="text" class="input"/>
 								</div>
 								<div class="group">
-									<label class="label">Password</label>
-									<input id="pass" type="password" class="input" title="La password deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera"/>
+									<label for="pass" class="label">Password</label>
+									<input name="pass" id="pass" type="password" class="input" title="La password deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera"/>
 								</div>
 								<div class="group">
-									<label class="label">Ripeti Password</label>
-									<input id="confirmPass" type="password" class="input"/>
+									<label for="confirmPass" class="label">Ripeti Password</label>
+									<input name="confirmPass" id="confirmPass" type="password" class="input"/>
 								</div>
 								<div class="group">
-									<label class="label">Email</label>
-									<input id="userMail" type="text" class="input"/>
+									<label for="userMail" class="label">Email</label>
+									<input name="userMail" id="userMail" type="text" class="input"/>
 								</div>
 								<div class="group">
 									<input type="submit" class="button" value="Inserisci utente"/>

@@ -24,7 +24,11 @@
 			<a href="Calendario.html">Calendario</a>
 			<a href="ChiSiamo.html">Chi siamo</a>
 			<a href="DoveSiamo.html">Dove siamo</a>
-			<button onclick="window.location.href='AreaPersonale.html'">Area Personale</button>
+			<?php if(isset($_SESSION['logged']==1)){ ?>
+				<button onclick="logout.php">Logout</button>
+			<?php }else{ ?>
+				<button onclick="window.location.href='AreaPersonale.html'">Area Personale</button>
+			<?php } ?>
 			</div>
 		</div>
 		

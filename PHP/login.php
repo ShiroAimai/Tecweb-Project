@@ -1,12 +1,12 @@
 <?php
 	session_start();
-	if($_POST['codice']=='admin' && $_POST['pass']=='admin')
+	if($_POST['userCode']=='admin' && $_POST['pass']=='admin')
 	{
 		$_SESSION['wrong_login']=0;
 		$_SESSION['logged']= 1;
-		header("Location:../HTML/Calendario.html");
+		header("Location:../HTML/AdminPanel.html");
 	}
-	else if($_POST['codice']=='utente' && $_POST['pass']=='utente')
+	else if($_POST['userCode']=='utente' && $_POST['pass']=='utente')
 		{
 			$_SESSION['wrong_login']=0;
 			$_SESSION['logged']= 1;

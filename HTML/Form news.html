@@ -46,16 +46,16 @@
 						<div class="login-form">							
 							<form id="newsForm" method="post" action="PHP/test.php" enctype="multipart/form-data" onsubmit="return validateNewsForm()">
 								<div class="group">
-									<label class="label">Titolo news</label>
-									<input id="newsTitle" type="text" class="input" maxlength="16"/>
+									<label for="newsTitle" class="label">Titolo news</label>
+									<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16"/>
 								</div>
 								<div class="group">
-									<label class="label">Immagine</label>
-									<input id="newsImage" type="file" class="input" accept="image/*"/>
+									<label for="newsImage" class="label">Immagine</label>
+									<input name="newsImage" id="newsImage" type="file" class="input" accept="image/*"/>
 								</div>
 								<div class="group">
-									<label class="label">Descrizione</label>
-									<textarea id="newsDescription" rows="5" cols="50" class="input"></textarea>
+									<label for="newsDescription" class="label">Descrizione</label>
+									<textarea name="newsDescription" id="newsDescription" rows="5" cols="50" class="input"></textarea>
 								</div>
 								<div class="group">
 									<input type="submit" class="button" value="Inserisci news"/>
