@@ -14,13 +14,13 @@
 	<div id="contenitore">
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
-			<a href="../HTML/Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<a href="../PHP/Home.php"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
 			<a onclick="document.getElementById('login').style.display='block'"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
-				<a href="../HTML/Home.html">Home</a>
-				<a href="../HTML/Attivita.html">Attivit&agrave;</a>
-				<a href="News.php"><span xml:lang="en">News</span></a>
+				<a href="../PHP/Home.php">Home</a>
+				<a href="../PHP/Attivita.php">Attivit&agrave;</a>
+				<a href="../PHP/News.php"><span xml:lang="en">News</span></a>
 				<a class="active" href="Galleria.php">Galleria</a>
-				<a href="../HTML/Calendario.html">Calendario</a>
-				<a href="../HTML/ChiSiamo.html">Chi siamo</a>
-				<a href="../HTML/DoveSiamo.html">Dove siamo</a>
+				<a href="../PHP/Calendario.php">Calendario</a>
+				<a href="../PHP/ChiSiamo.php">Chi siamo</a>
+				<a href="../PHP/DoveSiamo.php">Dove siamo</a>
