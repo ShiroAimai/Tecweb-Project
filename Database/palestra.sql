@@ -345,26 +345,26 @@ ALTER TABLE `utente`
 -- Limiti per la tabella `abbonamento`
 --
 ALTER TABLE `abbonamento`
-  ADD CONSTRAINT `abb1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`);
+  ADD CONSTRAINT `abb1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`) ON DELETE CASCADE;
 
 --
 -- Limiti per la tabella `fattura`
 --
 ALTER TABLE `fattura`
-  ADD CONSTRAINT `fatt1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`);
+  ADD CONSTRAINT `fatt1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`) ON DELETE CASCADE;
 
 --
 -- Limiti per la tabella `iscrizionecorso`
 --
 ALTER TABLE `iscrizionecorso`
-  ADD CONSTRAINT `iscr1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`),
+  ADD CONSTRAINT `iscr1` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`) ON DELETE CASCADE,
   ADD CONSTRAINT `iscr2` FOREIGN KEY (`CodiceCorso`) REFERENCES `corso` (`CodiceCorso`);
 
 --
 -- Limiti per la tabella `scheda`
 --
 ALTER TABLE `scheda`
-  ADD CONSTRAINT `scheda` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`);
+  ADD CONSTRAINT `scheda` FOREIGN KEY (`CodiceUtente`) REFERENCES `utente` (`CodiceUtente`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

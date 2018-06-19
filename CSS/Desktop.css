@@ -712,6 +712,14 @@ PAGINA ATTIVITA
 	font-size: 50px;
 }
 
+#backAdminPanel {
+	font-size: 18px;
+	color:white;
+	float:right;
+	margin-right:5%;
+	text-decoration: underline;
+}
+
 /*larghezza bottoni */
 #DescrizioneAttivita{
   	width: 50%; 
@@ -1186,6 +1194,12 @@ label {
 	color: #ccc;
 }
 
+.invisibleLabel {
+    line-height: 0;
+    font-size : 0px;
+    overflow: hidden;
+}
+
 *,:after,:before {
 	box-sizing:border-box;
 }
@@ -1384,4 +1398,46 @@ ADMIN PANEL
 
 .icon-showusers:before {
 	content: "\f0c0";
+}
+
+/*
+============
+LISTA UTENTI
+============
+*/
+
+.tableResponsive {
+    overflow-x: auto;
+	clear: both;
+}
+
+table {
+    width: 90%;
+	margin: 2em auto;
+    background-color: #D0E4F5;
+    border: solid 1px #000000;
+    border-collapse: collapse;
+}
+
+thead {
+	background-color: #003366;
+    color: #cccccc;
+    text-align: left;
+}
+
+
+tr:nth-child(even) {
+	background-color: #eeeeee;
+}
+
+tr:nth-child(even) {
+	background-color: #ffffff;
+}
+
+th, td {
+	padding: 0.5em;
+}
+
+td {
+	vertical-align: bottom;
 }

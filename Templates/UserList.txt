@@ -1,0 +1,19 @@
+<div id="Presentazione">
+	<h1 id="titoloPagina">Lista Utenti</h1>
+	<p>Visualizza la lista di utenti e amministratori registrati</p>
+</div>
+<a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
+<div class="tableResponsive"> 
+<table>
+<thead>
+    <tr>
+        <th scope="col">Codice Utente</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">Password</th>
+        <th scope="col">Email</th>
+        <th scope="col">Tipo</th>
+		<th scope="col">Elimina Utente</th>
+    </tr>
+</thead>
+<tbody>
