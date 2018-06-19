@@ -47,7 +47,7 @@
 					<div class="login-html">
 						<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
 						<div class="login-form">							
-							<form id="userForm" action="/action_page.php" onsubmit="return validateUserForm()">
+							<form id="userForm" action="registrazione utente.php" method="post" onsubmit="return validateUserForm()">
 								<div class="group">
 									<label for="userCode" class="label">Codice utente</label>
 									<input name="userCode" id="userCode" type="text" class="input"/>

@@ -1271,27 +1271,30 @@ a {
 ERRORE LOGIN
 ===========*/
 
-.error {
+.message {
 	border:3px solid white;
-	margin:15% 25%;
+	margin:5% 25%;
 	width:50%;
 	height:20em;
 	float:left;
 	background-color: #3D5A80;
 	text-align:center;
 }
-.errortext
+.messagetext
 {
 	color:white;
 	margin-top:10%;
+	margin-bottom:20%;
 }
-.errorlink {
+.messagelink {
 	color:white;
 	float:right;
-	margin:16% 2% 1% 0%;
+	clear:both;
+	margin-top:2%;
+	margin-right:10%;
 	text-decoration: underline;
 }
-.errorlink:hover
+.messagelink:hover
 {
 	color:blue;
 }
@@ -1359,7 +1362,15 @@ ADMIN PANEL
 	background: #34495e;
 }
 
+.btn-5 {
+	background: #dead00;
+}
+
 .icon-adduser:before {
+	content: "\f234";
+}
+
+.icon-addadmin:before {
 	content: "\f234";
 }
 

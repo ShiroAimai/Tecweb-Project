@@ -30,12 +30,12 @@
 			<?php include '../PHP/login_logout_button.php' ?>
 			</div>
 		</div>
-		<div class="error">
-			<div class="errortext">
-				<h2>Si è verificato un'errore:</h2>
-				<h4>Il Codice Utente o la Password inseriti non sono corretti.</h4>
+		<div class="message">
+			<div class="messagetext">
+				<h2>Utente inserito con successo!</h2>
 			</div>
-			<a class="errorlink" href="AreaPersonale.php">Per reinserire i dati cliccare qui</a>
+			<a class="messagelink" href="AdminPanel.php">Ritorna al pannello amministratore</a>
+			<a class="messagelink" href="Home.php">Ritorna alla homepage</a>
 		</div>
 
 

@@ -28,7 +28,7 @@
 			<a href="Calendario.php">Calendario</a>
 			<a href="ChiSiamo.php">Chi siamo</a>
 			<a href="DoveSiamo.php">Dove siamo</a>
-			<button disabled="disabled">Area Personale</button>
+			<?php include '../PHP/login_logout_button.php' ?>
 			</div>
 		</div>
 		
@@ -39,6 +39,7 @@
 			</div>
 			<div id="btnContainer">
 				<a href="Form utente.php"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
+				<a href="Form admin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi admin</button></a>
 				<a href="Form news.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
 				<a href="Form galleria.php"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
 				<a href="#"><button class="btn btn-4 btn-sep icon-showusers">Mostra utenti</button></a>

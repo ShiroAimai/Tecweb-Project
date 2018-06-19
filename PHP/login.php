@@ -15,7 +15,11 @@ if(count($utente_trovato) > 0){
   $_SESSION['user_code'] = $utente_trovato[0]['CodiceUtente'];
   $_SESSION['user_name'] = $utente_trovato[0]['Nome'];
   $_SESSION['user_surname'] = $utente_trovato[0]['Cognome'];
-  header("Location:Home.php");
+  $_SESSION['user_type'] = $utente_trovato[0]['Tipo'];
+  if($_SESSION['user_type'] == 'admin')
+	header("Location:AdminPanel.php");
+  else
+	header("Location:Home.php");
 }
 else { // utente non trovato nel database
   header("Location:Errorelogin.php");

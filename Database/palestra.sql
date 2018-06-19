@@ -245,18 +245,21 @@ CREATE TABLE `utente` (
   `Nome` varchar(150) NOT NULL,
   `Cognome` varchar(150) NOT NULL,
   `Password` varchar(50) NOT NULL,
-  `Email` varchar(50) NOT NULL
+  `Email` varchar(50) NOT NULL,
+  `Tipo` enum('user','admin') NOT NULL DEFAULT 'user'
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `utente`
 --
 
-INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `Password`, `Email`) VALUES
-(1, 'Francesco', 'Sacchetto', 'fsacchet1', 'francesco.sacchetto@gmail.com'),
-(2, 'Nicola', 'Cisternino', 'nicocister2', 'nicola.cisternino@gmail.com'),
-(3, 'Marco', 'Masiero', 'marmasier3', 'marco.masiero@gmail.com'),
-(4, 'Stefano', 'Nordio', 'snordio4', 'stefano.nordio@gmail.com');
+INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `Password`, `Email`, `Tipo`) VALUES
+(1, 'Francesco', 'Sacchetto', 'fsacchet1', 'francesco.sacchetto@gmail.com', 'user'),
+(2, 'Nicola', 'Cisternino', 'nicocister2', 'nicola.cisternino@gmail.com', 'user'),
+(3, 'Marco', 'Masiero', 'marmasier3', 'marco.masiero@gmail.com', 'user'),
+(4, 'Stefano', 'Nordio', 'snordio4', 'stefano.nordio@gmail.com', 'user'),
+(5, 'Admin-Name', 'Admin-Surname', 'admin', 'admin.admin@gmail.com', 'admin');
 
 --
 -- Indici per le tabelle scaricate
