@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
-	<title> Errore Login | Body Evolution</title>
+	<title>Logout | Body Evolution</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
@@ -19,7 +20,7 @@
 			<div class="Menu" id="myMenu">
 			<a href="../PHP/Home.php">Home</a>
 			<a href="../PHP/Attivita.php">Attivit&agrave;</a>
-			<a href="../PHP/News.php"><span xml:lang="en">News</span></a>
+			<a href="../PHP/News.php">News</a>
 			<a href="../PHP/Galleria.php">Galleria</a>
 			<a href="../PHP/Calendario.php">Calendario</a>
 			<a href="../PHP/ChiSiamo.php">Chi siamo</a>

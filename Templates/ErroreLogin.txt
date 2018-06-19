@@ -1,7 +1,0 @@
-<div class="message">
-			<div class="messagetext">
-				<h2>Si è verificato un'errore:</h2>
-				<h4>Il Codice Utente o la Password inseriti non sono corretti.</h4>
-			</div>
-			<a class="messagelink" href="../HTML/AreaPersonale.html">Per reinserire i dati cliccare qui</a>
-		</div>

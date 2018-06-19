@@ -91,6 +91,10 @@ SEZIONE INTESTAZIONE
 	opacity: 0.8;
 }
 
+#logoutButton {
+	background-color: red;
+}
+
 .sandwich {
 	display: none;
 }
@@ -142,6 +146,7 @@ SEZIONE FOOTER
 #footercx {
 	float: left;
 	padding: 3%;
+	margin-left: 8%;
 	width: 22%;
 }
 
@@ -151,7 +156,7 @@ SEZIONE FOOTER
 }
 
 #footerdx {
-	float: left;
+	float: right;
 	padding: 3%;
 	width: 37%;
 }
