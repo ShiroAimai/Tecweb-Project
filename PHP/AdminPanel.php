@@ -1,48 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<?php require_once('config.php'); ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
-	<title>Dove Siamo | Body Evolution</title>
+	<title>Admin Panel | Body Evolution</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 </head>
 
 <body>
 	<div id="contenitore">
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
-			<a href="Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
-			<a href="AreaPersonale.html"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>			<div class="Menu" id="myMenu">
-			<a href="Home.html">Home</a>
-			<a href="Attivita.html">Attivit&agrave;</a>
-			<a href="../PHP/News.php"><span xml:lang="en">News</span></a>
-			<a href="../PHP/Galleria.php">Galleria</a>
-			<a href="Calendario.html">Calendario</a>
-			<a href="ChiSiamo.html">Chi siamo</a>
-			<a class="active">Dove siamo</a>
-			<button onclick="window.location.href='AreaPersonale.html'">Area Personale</button>
+			<a href="Home.php"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<a class="active"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
+			<div class="Menu" id="myMenu">
+			<a href="Home.php">Home</a>
+			<a href="Attivita.php">Attivit&agrave;</a>
+			<a href="News.php"><span xml:lang="en">News</span></a>
+			<a href="Galleria.php">Galleria</a>
+			<a href="Calendario.php">Calendario</a>
+			<a href="ChiSiamo.php">Chi siamo</a>
+			<a href="DoveSiamo.php">Dove siamo</a>
+			<button disabled="disabled">Area Personale</button>
 			</div>
 		</div>
 		
 		<div id="Descrizione">
 			<div id="Presentazione">
-				<h1 id="titoloPagina">DOVE SIAMO</h1>
-				<p> Vieni a trovarci alla <span lang="en">Body Evolution</span>!</p>
+				<h1 id="titoloPagina">ADMIN PANEL</h1>
+				<p>Benvenuto nel pannello amministratore</p>
 			</div>
-			<div id="GoogleMaps">
-				<div id="map"></div>
-				<h2>INDIRIZZO</h2>
-				<div class="separator"></div>
-				<p>Via Cavour 18, 30014 - Cavarzere (VE)</p>
+			<div id="btnContainer">
+				<a href="Form utente.php"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
+				<a href="Form news.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
+				<a href="Form galleria.php"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
+				<a href="#"><button class="btn btn-4 btn-sep icon-showusers">Mostra utenti</button></a>
 			</div>
 		</div>
 
 		<div id="Footer">
 			<div id="footersx">
-				<a href="Home.html"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+				<a href="Home.php"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
 				<p><span class="blocco">Via Cavour, 18</span>
 				<span class="blocco">30014 Cavarzere (VE)</span>
 				<span class="blocco">tel. 340 9473426</span>
@@ -81,10 +86,7 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="../JS/Maps.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy9ePX9YzCd4SvN7AJ8oNL6-2uue4rh6g&amp;callback=myMap"></script>
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
-	
 </body>
 </html>
 

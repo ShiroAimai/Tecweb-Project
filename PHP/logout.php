@@ -1,8 +1,7 @@
 <?php
-	//crea o attiva la sessione
-	session_start();
-	$_SESSION['logged']= 0; //non sono più loggato
-    unset($_SESSION['logged']);
-	
-	header("Location: ../HTML/Home.html");
+require_once('config.php');
+unset($_SESSION['user_code']);
+unset($_SESSION['user_name']);
+unset($_SESSION['user_surname']);
+header("Location:Home.php");
 ?>

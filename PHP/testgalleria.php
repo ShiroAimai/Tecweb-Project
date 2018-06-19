@@ -1,6 +1,6 @@
 <?php
 
-require "db_connection.php";
+require_once('config.php');
 
 function test_input($data) {
     $data = trim($data);
@@ -61,4 +61,5 @@ if(isset($_FILES['Immagine']['name']))
         }
     }
 } 
+
 ?>

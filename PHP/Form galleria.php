@@ -1,50 +1,74 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<?php require_once('config.php'); ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
-	<title>Admin Panel | Body Evolution</title>
+	<title> Form Galleria | Body Evolution</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 </head>
 
 <body>
 	<div id="contenitore">
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
-			<a href="Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<a href="Home.php"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
 			<a class="active"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
-			<a href="Home.html">Home</a>
-			<a href="Attivita.html">Attivit&agrave;</a>
-			<a href="../PHP/News.php"><span xml:lang="en">News</span></a>
-			<a href="../PHP/Galleria.php">Galleria</a>
-			<a href="Calendario.html">Calendario</a>
-			<a href="ChiSiamo.html">Chi siamo</a>
-			<a href="DoveSiamo.html">Dove siamo</a>
-			<button disabled="disabled">Area Personale</button>
+			<a href="Home.php">Home</a>
+			<a href="Attivita.php">Attivit&agrave;</a>
+			<a href="News.php"><span xml:lang="en">News</span></a>
+			<a href="Galleria.php">Galleria</a>
+			<a href="Calendario.php">Calendario</a>
+			<a href="ChiSiamo.php">Chi siamo</a>
+			<a href="DoveSiamo.php">Dove siamo</a>
+			<?php include '../PHP/login_logout_button.php' ?>
 			</div>
 		</div>
 		
-		<div id="Descrizione">
-			<div id="Presentazione">
-				<h1 id="titoloPagina">ADMIN PANEL</h1>
-				<p>Benvenuto nel pannello amministratore</p>
+		<div id="Presentazione">
+				<h1 id="titoloPagina">AGGIUNGI FOTO</h1>
 			</div>
-			<div id="btnContainer">
-				<a href="Form utente.html"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
-				<a href="Form news.html"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
-				<a href="Form galleria.html"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
-				<a href="#"><button class="btn btn-4 btn-sep icon-showusers">Mostra utenti</button></a>
+		<div class="FormContainer">
+			<div class="containerChild">
+				<div class="leftContent">
+					<h1>Nuovo Album Galleria</h1>
+					<p>Inserisci una o pi&ugrave; immagini da inserire nel nuovo album</p>
+				</div>
+				<div class="signupOverlay"></div>
+			</div>
+			<div class="containerChild">
+				<div class="loginWrap">
+					<div class="login-html">
+						<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
+						<div class="login-form">							
+							<form id="galleryForm" method="post" action="PHP/testgalleria.php" enctype="multipart/form-data" onsubmit="return validateGalleryForm()">
+								<div class="group">
+									<label for="galleryName" class="label">Nome album</label>
+									<input name="galleryName" id="galleryName" type="text" class="input"/>
+								</div>
+								<div class="group">
+									<label for="galleryFile" class="label">File</label>
+									<input name="galleryFile" id="galleryFile" type="file" class="input" accept="image/*" multiple="multiple"/>
+								</div>
+								<div class="group">
+									<input type="submit" class="button" value="Inserisci file"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
+		
 		<div id="Footer">
 			<div id="footersx">
-				<a href="Home.html"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+				<a href="Home.php"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
 				<p><span class="blocco">Via Cavour, 18</span>
 				<span class="blocco">30014 Cavarzere (VE)</span>
 				<span class="blocco">tel. 340 9473426</span>
@@ -84,6 +108,7 @@
 	</div>
 	
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
+	<script type="text/javascript" src="../JS/FormValidation.js"></script>
+
 </body>
 </html>
-

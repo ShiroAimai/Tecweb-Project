@@ -52,7 +52,7 @@ INSERT INTO `abbonamento` (`CodiceUtente`, `ScadenzaFitness`, `PuntiCorsi`) VALU
 CREATE TABLE `corso` (
   `CodiceCorso` int(10) NOT NULL,
   `NomeCorso` varchar(150) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `corso`
@@ -244,18 +244,19 @@ CREATE TABLE `utente` (
   `CodiceUtente` int(10) NOT NULL,
   `Nome` varchar(150) NOT NULL,
   `Cognome` varchar(150) NOT NULL,
-  `DataNascita` date NOT NULL,
-  `CodiceFiscale` varchar(150) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `Password` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `utente`
 --
 
-INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `DataNascita`, `CodiceFiscale`) VALUES
-(1, 'Francesco', 'Sacchetto', '1994-12-19', 'SCCFNC94T19G224O'),
-(2, 'Nicola', 'Cisternino', '1994-01-12', 'CSTNCL95A12I452W'),
-(3, 'Marco', 'Masiero', '1992-10-06', 'MSRMRC92R06B563K');
+INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `Password`, `Email`) VALUES
+(1, 'Francesco', 'Sacchetto', 'fsacchet1', 'francesco.sacchetto@gmail.com'),
+(2, 'Nicola', 'Cisternino', 'nicocister2', 'nicola.cisternino@gmail.com'),
+(3, 'Marco', 'Masiero', 'marmasier3', 'marco.masiero@gmail.com'),
+(4, 'Stefano', 'Nordio', 'snordio4', 'stefano.nordio@gmail.com');
 
 --
 -- Indici per le tabelle scaricate

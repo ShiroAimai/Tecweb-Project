@@ -1,5 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<?php require_once('config.php'); ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
 	<title> News | Body Evolution</title>
@@ -14,17 +17,17 @@
 	<div id="contenitore">
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
-			<a href="../HTML/Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
-			<a href="AreaPersonale.html"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
+			<a href="Home.php"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<a href="AreaPersonale.php"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
-			<a href="../HTML/Home.html">Home</a>
-			<a href="../HTML/Attivita.html">Attivit&agrave;</a>
+			<a href="Home.php">Home</a>
+			<a href="Attivita.php">Attivit&agrave;</a>
 			<a class="active">News</a>
 			<a href="Galleria.php">Galleria</a>
-			<a href="../HTML/Calendario.html">Calendario</a>
-			<a href="../HTML/ChiSiamo.html">Chi siamo</a>
-			<a href="../HTML/DoveSiamo.html">Dove siamo</a>
-			<button onclick="window.location.href='../HTML/AreaPersonale.html'">Area Personale</button>
+			<a href="Calendario.php">Calendario</a>
+			<a href="ChiSiamo.php">Chi siamo</a>
+			<a href="DoveSiamo.php">Dove siamo</a>
+			<?php include '../PHP/login_logout_button.php' ?>
 			</div>
 		</div>
 		<div id="Presentazione">
@@ -32,10 +35,11 @@
 				<p>Resta aggiornato sulle ultime novità della <span lang="en">Body Evolution</span>!</p>
 		</div>
 		<?php
-			$query = "SELECT Titolo, Data, Immagine, Descrizione FROM news";
-			require "db_connection.php";
-			$queryresult= mysqli_query($connessione,$query);
-				while($row = mysqli_fetch_assoc($queryresult))
+			$query = query("
+			SELECT Titolo, Data, Immagine, Descrizione 
+			FROM news;
+			");
+				while($row = mysqli_fetch_assoc($query))
 					{
 						$stampa = "<div class=\"newscont\"> <h3 class=\"titlenews\"> ".$row['Titolo']." </h3> <div class=\"corpopos\"> <p class=\"pubblicazione\">Pubblicato il ".$row['Data']."</p><img class=\"imgnews\" src=\"../uploads/".$row['Immagine']."\" alt=\"Immagine della news\"/> <p class=\"textnews\"> ".$row['Descrizione']."  </p></div> </div>";
 						echo $stampa;
@@ -47,7 +51,7 @@
 
 			<div id="Footer">
 			<div id="footersx">
-				<a href="Home.html"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+				<a href="Home.php"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
 				<p><span class="blocco">Via Cavour, 18</span>
 				<span class="blocco">30014 Cavarzere (VE)</span>
 				<span class="blocco">tel. 340 9473426</span>

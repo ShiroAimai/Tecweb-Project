@@ -1,8 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<?php require_once('config.php'); ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
-	<title>Chi Siamo | Body Evolution</title>
+	<title> Form News | Body Evolution</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
@@ -14,53 +17,62 @@
 	<div id="contenitore">
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
-			<a href="Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
-			<a href="AreaPersonale.html"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
+			<a href="Home.php"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<a class="active"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
-			<a href="Home.html">Home</a>
-			<a href="Attivita.html">Attivit&agrave;</a>
+			<a href="Home.php">Home</a>
+			<a href="Attivita.php">Attivit&agrave;</a>
 			<a href="../PHP/News.php"><span xml:lang="en">News</span></a>
 			<a href="../PHP/Galleria.php">Galleria</a>
-			<a href="Calendario.html">Calendario</a>
-			<a class="active">Chi siamo</a>
-			<a href="DoveSiamo.html">Dove siamo</a>
-			<button onclick="window.location.href='AreaPersonale.html'">Area Personale</button>
+			<a href="Calendario.php">Calendario</a>
+			<a href="ChiSiamo.php">Chi siamo</a>
+			<a href="DoveSiamo.php">Dove siamo</a>
+			<?php include '../PHP/login_logout_button.php' ?>
 			</div>
 		</div>
 		
-		<div id="Descrizione">
-			<div id="Presentazione">
-				<h1 id="titoloPagina">CHI SIAMO</h1>
+		<div id="Presentazione">
+				<h1 id="titoloPagina">AGGIUNGI NEWS</h1>
 			</div>
-			<div id="Istruttori">
-				<div id="GennyTiengo">
-					<img id="GennyTiengoImg" src="../IMAGES/GennyTiengo.jpg" alt="Foto Genny Tiengo"/>
-					<h2>GENNY TIENGO</h2>
-					<div class="separator"></div>
-					<ul>
-						<li>Dirigente sportivo Coni</li>
-						<li>Istruttore (Spinning, Fit Boxe, Power Pump, Jump Fit, Step, Pilates, Riabilitazione, Gestanti)</li>
-						<li>Personal Trainer</li>
-						<li>Giudice di gara</li>
-					</ul>
+		<div class="FormContainer">
+			<div class="containerChild">
+				<div class="leftContent">
+					<h1>Nuova News</h1>
+					<p>Inserisci titolo, immagine e descrizione di una nuova news</p>
 				</div>
-				<div id="FabioFerro">
-					<img id="FabioFerroImg" src="../IMAGES/FabioFerro.jpg" alt="Foto Fabio Ferro"/>
-					<h2>FABIO FERRO</h2>
-					<div class="separator"></div>
-					<ul>
-						<li>Preparatore atletico</li>
-						<li>Istruttore Kick Boxing</li>
-						<li>Personal Trainer</li>
-						<li>Giudice di gara</li>
-					</ul>
+				<div class="signupOverlay"></div>
+			</div>
+			<div class="containerChild">
+				<div class="loginWrap">
+					<div class="login-html">
+						<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
+						<div class="login-form">							
+							<form id="newsForm" method="post" action="PHP/test.php" enctype="multipart/form-data" onsubmit="return validateNewsForm()">
+								<div class="group">
+									<label for="newsTitle" class="label">Titolo news</label>
+									<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16"/>
+								</div>
+								<div class="group">
+									<label for="newsImage" class="label">Immagine</label>
+									<input name="newsImage" id="newsImage" type="file" class="input" accept="image/*"/>
+								</div>
+								<div class="group">
+									<label for="newsDescription" class="label">Descrizione</label>
+									<textarea name="newsDescription" id="newsDescription" rows="5" cols="50" class="input"></textarea>
+								</div>
+								<div class="group">
+									<input type="submit" class="button" value="Inserisci news"/>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
+		
 		<div id="Footer">
 			<div id="footersx">
-				<a href="Home.html"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+				<a href="Home.php"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
 				<p><span class="blocco">Via Cavour, 18</span>
 				<span class="blocco">30014 Cavarzere (VE)</span>
 				<span class="blocco">tel. 340 9473426</span>
@@ -100,7 +112,7 @@
 	</div>
 	
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
-	
+	<script type="text/javascript" src="../JS/FormValidation.js"></script>
+
 </body>
 </html>
-

@@ -1,20 +1,23 @@
 <?php
-	session_start();
-	if($_POST['userCode']=='admin' && $_POST['pass']=='admin')
-	{
-		$_SESSION['wrong_login']=0;
-		$_SESSION['logged']= 1;
-		header("Location:../HTML/AdminPanel.html");
-	}
-	else if($_POST['userCode']=='utente' && $_POST['pass']=='utente')
-		{
-			$_SESSION['wrong_login']=0;
-			$_SESSION['logged']= 1;
-			header("Location:../HTML/Attivita.html");
-		}
-		else
-		{
-			$_SESSION['wrong_login']= 1; // flag degli errori: sbaglio le credenziali, ricarico la pagina adminLogin.php con il mess di errore.
-			header("Location:../HTML/Errorelogin.html");
-		}
+require_once('config.php');
+register('userCode');
+register('pass');
+
+$utente_trovato = select("
+SELECT * FROM utente
+WHERE CodiceUtente='$userCode'
+AND Password='$pass';
+");
+
+if(count($utente_trovato) > 0){
+  //qualcuno è stato trovato
+  // imposto i parametri nella sessione
+  $_SESSION['user_code'] = $utente_trovato[0]['CodiceUtente'];
+  $_SESSION['user_name'] = $utente_trovato[0]['Nome'];
+  $_SESSION['user_surname'] = $utente_trovato[0]['Cognome'];
+  header("Location:Home.php");
+}
+else { // utente non trovato nel database
+  header("Location:Errorelogin.php");
+}
 ?>

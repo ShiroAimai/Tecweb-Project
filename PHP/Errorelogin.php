@@ -1,8 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<?php require_once('config.php'); ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
 <head>
-	<title>Area Personale | Body Evolution</title>
+	<title> ERRORE LOGIN | Body Evolution</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
@@ -14,55 +17,28 @@
 	<div id="contenitore">
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
-			<a href="Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
-			<a class="active"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
+			<a href="Home.php"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<a href="AreaPersonale.php"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
-			<a href="Home.html">Home</a>
-			<a href="Attivita.html">Attivit&agrave;</a>
-			<a href="../PHP/News.php"><span xml:lang="en">News</span></a>
-			<a href="../PHP/Galleria.php">Galleria</a>
-			<a href="Calendario.html">Calendario</a>
-			<a href="ChiSiamo.html">Chi siamo</a>
-			<a href="DoveSiamo.html">Dove siamo</a>
-			<button disabled="disabled">Area Personale</button>
+			<a href="Home.php">Home</a>
+			<a href="Attivita.php">Attivit&agrave;</a>
+			<a href="News.php"><span xml:lang="en">News</span></a>
+			<a href="Galleria.php">Galleria</a>
+			<a href="Calendario.php">Calendario</a>
+			<a href="ChiSiamo.php">Chi siamo</a>
+			<a href="DoveSiamo.php">Dove siamo</a>
+			<?php include '../PHP/login_logout_button.php' ?>
 			</div>
 		</div>
-		
-		<div class="FormContainer">
-			<div class="containerChild">
-				<div class="leftContent">
-					<h1>Area Personale</h1>
-					<p>Inserisci le tue credenziali per accedere all'area personale</p>
-				</div>
-				<div class="signupOverlay"></div>
+		<div class="error">
+			<div class="errortext">
+				<h2>Si è verificato un'errore:</h2>
+				<h4>Il Codice Utente o la Password inseriti non sono corretti.</h4>
 			</div>
-			<div class="containerChild">
-				<div class="loginWrap">
-					<div class="login-html">
-						<h1>Sign In</h1>
-						<a href="Home.html"><span id="exit">&#215;</span></a>
-						<div class="login-form">
-							<form id="PersonalAreaForm" action="../PHP/login.php" method="post" onsubmit="return validatePersonalAreaForm()">
-								<div class="group">
-									<label for="userCode" class="label">Codice utente</label>
-									<input name="userCode" id="userCode" type="text" class="input"/>
-								</div>
-								<div class="group">
-									<label for="pass" class="label">Password</label>
-									<input name="pass" id="pass" type="password" class="input"/>
-								</div>
-								<div class="group">
-									<input type="submit" class="button" value="Sign In"/>
-								</div>
-								<div class="line"></div>
-								<div><a href="#forgot">Password dimenticata?</a></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+			<a class="errorlink" href="AreaPersonale.html">Per reinserire i dati cliccare qui</a>
 		</div>
-		
+
+
 		<div id="Footer">
 			<div id="footersx">
 				<a href="Home.html"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
@@ -105,7 +81,6 @@
 	</div>
 	
 	<script type="text/javascript" src="../JS/Sandwich.js"></script>
-	<script type="text/javascript" src="../JS/FormValidation.js"></script>
 
 </body>
 </html>
