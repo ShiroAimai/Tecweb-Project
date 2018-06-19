@@ -3,7 +3,7 @@
     $head = file_get_contents("../Templates/headerGallery.txt");
     $foot = file_get_contents("../Templates/footer.txt");
 	$login = "<button onclick=\"window.location.href='logout.php'\">Logout</button>";
-	$logout = "<button onclick=\"window.location.href='AreaPersonale.php'\">Area Personale</button>";
+	$logout = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 	$closediv = "</div>";
 	
 	echo $head;

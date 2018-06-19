@@ -1,0 +1,158 @@
+<img id="imgcal" src="../IMAGES/sfondocalendario.png" alt="sfondo pagina calendario palestra"/>
+		<div id="Presentazione">
+				<h1 id="titoloPagina">CALENDARIO</h1>
+				<p> Guarda gli orari dei corsi offerti alla <span lang="en">Body Evolution</span>!</p>
+		</div>
+		<div class="calendario">
+			<div class="vocecalendario">
+				<h2 class="giornovoce">Orari:</h2>
+				<div class="separator"></div>
+				<ul class="orari">
+					<li>10:15-11:15</li>
+					<li>19:00-19:45</li>
+					<li>19:45-20:30</li>
+				</ul>
+			</div>
+			<div class="vocecalendario">
+				<h2 class="giornovoce">Lunedì</h2>
+				<div class="separator"></div>
+				<ul class="oraricorsi">
+					<li>
+						<a href="Attivita.html#spinning">
+							<div class="spinning">
+								<p class="corsovoce">Spinning</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#step">
+							<div class="step">
+								<p class="corsovoce">Step</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#jumpfit">
+							<div class="jumpfit">
+								<p class="corsovoce">Jump Fit</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="vocecalendario">
+				<h2 class="giornovoce">Martedì</h2>
+				<div class="separator"></div>
+				<ul class="oraricorsi">
+					<li>
+							<div class="corsovuoto">
+								<p class="corsovoce"></p>
+							</div>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#spinning">
+							<div class="spinning">
+								<p class="corsovoce">Spinning</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#fitboxe">
+							<div class="fitboxe">
+								<p class="corsovoce">Fit Boxe</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="vocecalendario">
+				<h2 class="giornovoce">Mercoledì</h2>
+				<div class="separator"></div>
+				<ul class="oraricorsi">
+					<li>
+						<a href="Attivita.html#powerpump">
+							<div class="powerpump">
+								<p class="corsovoce">Power Pump</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#step">
+							<div class="step">
+								<p class="corsovoce">Step</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#jumpfit">
+							<div class="jumpfit">
+								<p class="corsovoce">Jump Fit</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="vocecalendario">
+				<h2 class="giornovoce">Giovedì</h2>
+				<div class="separator"></div>
+				<ul class="oraricorsi">
+					<li>
+						<a href="Attivita.html#jumpfit">
+							<div class="jumpfit">
+								<p class="corsovoce">Jump Fit</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#powerpump">
+							<div class="powerpump">
+								<p class="corsovoce">Power Pump</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#fitboxe">
+							<div class="fitboxe">
+								<p class="corsovoce">Fit Boxe</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="vocecalendario">
+				<h2 class="giornovoce">Venerdì</h2>
+				<div class="separator"></div>
+				<ul class="oraricorsi">
+					<li>
+							<div class="corsovuoto">
+								<p class="corsovoce"></p>
+							</div>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#spinning">
+							<div class="spinning">
+								<p class="corsovoce">Spinning</p>
+							</div>
+						</a>
+					</li>
+					
+					<li>
+						<a href="Attivita.html#spinning">
+							<div class="spinning">
+								<p class="corsovoce">Spinning</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		<h1 id="salafitness">LA SALA FITNESS E' APERTA TUTTI I GIORNI NEGLI ORARI DALL'ORARIO DI APERTURA FINO ALLA CHIUSURA</h1>
+		</div>

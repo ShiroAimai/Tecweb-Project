@@ -1,0 +1,68 @@
+<div id="Presentazione">
+				<h1 id="titoloPagina">ATTIVIT&Agrave;</h1>
+				<p> Alla <span lang="en">Body Evolution</span> ti offriamo svariate attivit&agrave; per migliorare la tua forma!<br />Scegli un corso per saperne di pi&ugrave; </p>
+		</div>
+
+		<noscript id="noscriptAttivita">
+			<p>Sembra tu non abbia abilitato JavaScript!<br /> Attivalo per vedere al meglio i corsi che ti offriamo!<br /></p>
+		</noscript>
+
+		<div id="DescrizioneAttivita">
+			
+		<div id="colorpower">
+			<button id="powerpump" class="accordion">POWER PUMP</button>
+			<div class="panel">
+				<div>
+					<img class="courseimg" src="../IMAGES/powerpump.jpg" alt="powepump"/>
+				</div>
+				<p>TONIFICAZIONE - MODELLAMENTO DELLA FIGURA - GLUTEI SODI E TONICI - AUMENTO RESISTENZA</p>
+				<p>Corso di gruppo divertente e completo per <span class="bold">dimagrire</span> e tonificarsi su base muscolare.<br /><br />Un allenamento mirano alla <span class="bold">tonificazione</span> muscolare e delle forza resistente attraverso il costante utilizzo del bilanciere a peso regolabile, cavigliere e pesetti, squat, trazioni, distensioni, spinte con colonne sonore che allieteranno la lezione.<br /><br />Esercizi completi ti faranno riscoprire il tuo corpo, donando nuova <span class="bold">energia e vitalit&agrave;</span> alla tua figura.<br />La lezione dura <span class="bold">45 minuti</span>.</p>
+			</div>
+		</div>
+		
+		<div id="colorspinning">
+			<button id="spinning" class="accordion">SPINNING</button>
+			<div class="panel">
+				<div>
+					<img class="courseimg" src="../IMAGES/spinning.jpg" alt="powepump"/>
+				</div>
+				<p>GRUPPO - DIVERTIMENTO - BICICLETTA STAZIONARIA - INTENSIT&Agrave; PEDALATA - CONSUMO CALORICO</p>
+				<p>Lo spinning &egrave; una <span class="bold">attivit&agrave; aerobica di gruppo</span>, divertente e coinvolgente, attraverso dei percorsi <span class="bold">virtuali</span> creati con video e tour paesaggistici, con l'iscritto utilizzando una <span class="bold">bicicletta stazionaria</span>, pu&ograve; migliorare le proprie capacit&agrave; organiche attraverso concentrazione e coinvolgimento portando la mente a superare la fatica fisica.<br /><br /><span class="bold">La pedalata a varie velocit&agrave;</span>, diretta dall'Istruttore e unita alla tecnica di concentrazione e coinvolgimento del gruppo, rendono piacevole e divertente la lezione.<br /><br /> Le lezioni durano <span class="bold">45 minuti</span> e grazie all'ottimo allenamento aerobico portano a un <span class="bold">grosso dispendio calorico</span> (500-800 caloreie a lezione).</p>
+			</div>
+		</div>
+
+		<div id="colorfitboxe">
+			<button id="fitboxe" class="accordion">FITBOXE</button>
+			<div class="panel">
+				<div>
+					<img class="courseimg" src="../IMAGES/fitboxe.jpg" alt="powepump"/>
+				</div>
+				<p> DIMAGRIRE - PREVENIRE MALATTIA CARDIOVASCOLARI - RASSODARE - RILLASSARSI E SCARICARE TENSIONI- DIVERTIRSI - IMPARARE A DIFENDERSI</p>
+				<p>Attivit&agrave; di gruppo: <span class="bold">esplosiva, divertente e liberatoria</span>. <br></br>Ogni lezione unisce l'aerobica alle arti marziali. Calci, pugni, ginocchiate, gomitate in un coinvolgente <span class="bold">crescendo musicale</span> che trasforma le <span class="bold">tecniche di combattimento</span> in una danza fatale.<br /><br />
+				Questa disciplina, giocosa e coinvolgente, consente di scaricare in maniera positiva l'aggressivit&agrave; accumulata nella vita di tutti i giorni. Il risultato &egrave; un mix di benessere e piacere che ci permette di essere in forma imparando a difendersi.<br /><br />
+				&Egrave; uno sport praticabile ad ogni et&agrave;, migliora la forma fisica attraverso un allenamento aerobico. La lezione dura <span class="bold">45 minuti</span>.</p>
+			</div>
+		</div>
+		
+		<div id="colorjumpfit">
+			<button id="jumpfit" class="accordion">JUMP FIT</button>
+			<div class="panel">
+				<div>
+					<img class="courseimg" src="../IMAGES/jumpfit.jpg" alt="powepump"/>
+				</div>
+				<p>DIVERTIMENTO - TONIFICAZIONE - SENSO DI EQUILIBRIO - BRUCIARE GRASSO - SVAGO ASSOLUTO</p>
+				<p>Attivit&agrave; aerobica di gruppo ad <span class="bold">impatto zero</span> che <span class="bold">incrementa la circolazione del sangue</span> e aumenta le capacit&agrave; di cuore e polmoni.<br></br> Migliora il <span class="bold">senso di equilibrio</span>; rinforza i vostri uscoli; fornisce un effetto aerobico; vi distende quando siete tesi e vi rimette in forma quando siete stanchi. Ottimo per <span class="bold">perdere peso velocemente</span> divertendosi. Le articolazioni si rafforzano senza subire lo stress del impatto a terra.<br /><br /> Ideale a tutte le et&agrave;, per chu vuole rimettersi in forma e bruciare grasso e calorie <span class="bold">ritorndando bambino</span>.<br /><br /> Salti a ritmo di musica allieteranno l'allenamento della durata di <span class="bold">45 minuti</span>.</p>
+			</div>
+		</div>
+		
+		<div id="colorstep">
+			<button id="step" class="accordion">STEP</button>
+			<div class="panel">
+				<div>
+					<img class="courseimg" src="../IMAGES/step.jpg" alt="powepump"/>
+				</div>
+				<p>PERDITA DI PESO - DIVERTIMENTO - TONIFICAZIONE - AUMENTO COORDINAZIONE</p>
+				<p>La lezione di step prevede una serie di esercizi dinamici di <span class="bold">salita e discesa dalla piattaforma</span> seguendo un ritmo costante scandito dalla musica e dai comandi dell'istruttore.<br /><br /> L'attivit&agrave; eseguita sullo step migliora l'efficienza dell'apparato <span class="bold">cardio-vascolare</span> e nello stesso tempo si agisce sullo stato tonico-trofico degli arti inferiori con un lavoro di alta intensit&agrave;, ma a basso impatto.<br /><br /> Ogni lezione ha durata pari a <span class="bold">45 minuti</span>. Le coreografie permettono di divertirsi e scaricare gli stress producendo un ottimo <span class="bold">consumo calorico</span>. Alla fine di ogni lezione daremo spazio ad esercizi per <span class="bold">glutei e addominali</span>. Divertimento assicurato e risultati evidenti.</p>
+			</div>
+		</div>
+		</div>
