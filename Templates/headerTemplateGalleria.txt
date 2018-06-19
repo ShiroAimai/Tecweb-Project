@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
+<head>
+	<title> Galleria Foto | Body Evolution</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
+	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
+	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+	<div id="contenitore">
+		<div id="Intestazione">
+			<a class="sandwich" onclick="myFunction()">&#9776;</a>
+			<a href="../HTML/Home.html"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<a onclick="document.getElementById('login').style.display='block'"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
+			<div class="Menu" id="myMenu">
+				<a href="../HTML/Home.html">Home</a>
+				<a href="../HTML/Attivita.html">Attivit&agrave;</a>
+				<a href="News.php"><span xml:lang="en">News</span></a>
+				<a class="active" href="Galleria.php">Galleria</a>
+				<a href="../HTML/Calendario.html">Calendario</a>
+				<a href="../HTML/ChiSiamo.html">Chi siamo</a>
+				<a href="../HTML/DoveSiamo.html">Dove siamo</a>
+				<button onclick="document.getElementById('login').style.display='block'">Area Personale</button>
+			</div>
+		</div>
