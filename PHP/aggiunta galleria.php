@@ -31,11 +31,8 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
         $sql = "INSERT INTO galleria (NomeImmagine, Album)
             VALUES ('$Immagine', '$Album')";
 
-           if ($connessione->query($sql) === TRUE) {
+           if (query($sql) === TRUE) {
               echo "New record created successfully. <br />";
-              }         
-             else {
-                echo "Error: " . $sql . "<br />" . $connessione->error;
               }
         $counter++;
     }
