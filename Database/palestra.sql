@@ -204,16 +204,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`Titolo`, `Data`, `Immagine`, `Descrizione`) VALUES
-('nove', '2018-02-28', 'powerpump.jpg', 'Nel settcente erano gli asini che volavano e chiedevano pieta per la loro stupdoiita\r\nNel settcente erano gli asini che volavano e chiedevano pieta per la loro stupdoiita\r\nNel settcente erano gli asini che volavano e chiedevano pieta per la loro stupdoiita\r\nNel settcente erano gli asini che volavano e chiedevano pieta per la loro stupdoiita\r\nNel settcente erano gli asini che volavano e chiedevano pieta per la loro stupdoiita'),
-('otto', '2018-02-28', 'powerpump.jpg', 'Nel settcente erano gli asini che volavano e chiedevano pieta per la loro stupdoiita'),
-('primo tentativ', '2018-02-28', 'Trainer.jpg', 'Inserisci del testo qui.'),
-('quarto', '2018-02-28', 'spinning.jpg', 'spinner'),
-('quinto', '2018-02-28', 'powerpump.jpg', 'spinner'),
-('rob1', '2018-03-04', 'FabioFerro.jpg', 'Inserisci del testo qui.'),
-('robe', '2018-03-04', 'tornaindietro.png', 'Inserisci del testo qui.'),
-('sec tentativ', '2018-02-28', 'Trainer.jpg', 'Inserisci del testo qui.'),
-('ter', '2018-03-01', 'Freddy.jpg', 'Nel settcente erano gli asini che volavano e chiedevano pieta per la loro stupdoiita ec le man i'),
-('terz tentativ', '2018-02-28', 'macchine.jpg', 'Inserisci del testo qui.');
+('Titolo news', '2018-03-01', 'Freddy.jpg', 'Nel settcente erano gli asini che volavano e chiedevano pieta per la loro stupidità'),
+('Titolo seconda news', '2018-02-28', 'Freddy.jpg', 'Inserisci del testo qui');
 
 --
 -- Trigger `news`
@@ -288,7 +280,7 @@ ALTER TABLE `fattura`
 -- Indici per le tabelle `galleria`
 --
 ALTER TABLE `galleria`
-  ADD PRIMARY KEY (`NomeImmagine`);
+  ADD PRIMARY KEY (`NomeImmagine`, `Album`);
 
 --
 -- Indici per le tabelle `iscrizionecorso`

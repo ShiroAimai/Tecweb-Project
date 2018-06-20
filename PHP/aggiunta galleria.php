@@ -14,20 +14,20 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
 
    if ($_SERVER["REQUEST_METHOD"] == "POST") 
       {
-          if (empty($_FILES["Immagine"]["name"])) {
+          if (empty($_FILES["galleryFile"]["name"])) {
               $Immagineerr = "Immagine is required";
               } 
          
-        if (empty($_POST["Album"])) {
+        if (empty($_POST["galleryName"])) {
             $Albumerr = "Album is required";
             } else {
-              $Album = test_input($_POST["Album"]);
+              $Album = test_input($_POST["galleryName"]);
               }
       }
     $counter=0;
-    while(isset($_FILES['Immagine']['name'][$counter]))
+    while(isset($_FILES['galleryFile']['name'][$counter]))
     {   
-      $Immagine=$_FILES['Immagine']['name'][$counter];
+      $Immagine=$_FILES['galleryFile']['name'][$counter];
         $sql = "INSERT INTO galleria (NomeImmagine, Album)
             VALUES ('$Immagine', '$Album')";
 
@@ -42,18 +42,18 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
 	$connessione->close();
 
 $target_dir = "../galleria/";
-if(isset($_FILES['Immagine']['name']))
+if(isset($_FILES['galleryFile']['name']))
 {
 
     $count=0;
-    foreach ($_FILES['Immagine']['name'] as $filename) {
+    foreach ($_FILES['galleryFile']['name'] as $filename) {
         $destination=$target_dir;
-        $origin=$_FILES['Immagine']['tmp_name'][$count];
+        $origin=$_FILES['galleryFile']['tmp_name'][$count];
         $count++;
         $destination=$destination.basename($filename);
         if (move_uploaded_file($origin, $destination)) 
         {
-          echo "The file ".basename($_FILES["Immagine"]["name"][$count-1])." has been uploaded. <br />";
+          echo "The file ".basename($_FILES["galleryFile"]["name"][$count-1])." has been uploaded. <br />";
         } 
         else 
         {
