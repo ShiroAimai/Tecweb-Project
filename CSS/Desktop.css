@@ -1062,12 +1062,12 @@ PAGINA GALLERIA
 	height:16em;
 }
 .album:hover {
-	border:2px solid #DAAC5E;
+	border:2px solid #ffffff;
 }
 .album:hover .albumname
 {
-	border-bottom:2px solid #DAAC5E;
-	color:#DAAC5E;
+	border-bottom:2px solid #ffffff;
+	color:#ffffff;
 }
 .album .albumname
 {
@@ -1110,10 +1110,10 @@ PAGINA GALLERIA
 }
 .gallerypicmini:hover
 {
-	border:2px solid #DAAC5E;
+	border:2px solid #ffffff;
 }
 .gallerypicmini:active{
-	border:2px solid #DAAC5E;
+	border:2px solid #ffffff;
 }
 #albumtitle
 {
@@ -1151,7 +1151,7 @@ PAGINA GALLERIA
 }
 .backbutton:hover
 {
-	border:2px solid #DAAC5E;
+	border:2px solid #ffffff;
 }
 
 /*

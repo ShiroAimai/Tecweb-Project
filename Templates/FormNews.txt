@@ -14,7 +14,7 @@
 					<div class="login-html">
 						<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
 						<div class="login-form">							
-							<form id="newsForm" method="post" action="PHP/test.php" enctype="multipart/form-data" onsubmit="return validateNewsForm()">
+							<form id="newsForm" method="post" action="../PHP/aggiunta news.php" enctype="multipart/form-data" onsubmit="return validateNewsForm()">
 								<div class="group">
 									<label for="newsTitle" class="label">Titolo news</label>
 									<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16"/>
