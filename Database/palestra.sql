@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mar 06, 2018 alle 19:13
--- Versione del server: 10.1.29-MariaDB
--- Versione PHP: 7.1.12
+-- Creato il: Giu 20, 2018 alle 15:26
+-- Versione del server: 10.1.30-MariaDB
+-- Versione PHP: 7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -149,20 +149,29 @@ DELIMITER ;
 
 CREATE TABLE `galleria` (
   `NomeImmagine` varchar(50) NOT NULL,
-  `Album` varchar(45) DEFAULT NULL
+  `Data` date NOT NULL,
+  `Album` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `galleria`
 --
 
-INSERT INTO `galleria` (`NomeImmagine`, `Album`) VALUES
-('Allenamento.jpg', 'Palestra'),
-('fitBoxe.jpg', 'Palestra'),
-('fitness.jpg', 'Palestra'),
-('jumpfit.jpg', 'Palestra'),
-('pizzata.jpg', 'Pizzata'),
-('Trainer.jpg', 'Palestra');
+INSERT INTO `galleria` (`NomeImmagine`, `Data`, `Album`) VALUES
+('Allenamento.jpg', '2018-01-01', 'Palestra'),
+('fitBoxe.jpg', '2018-01-01', 'Palestra'),
+('fitness.jpg', '2018-01-01', 'Palestra'),
+('jumpfit.jpg', '2018-01-01', 'Palestra'),
+('pizzata.jpg', '2018-01-01', 'Pizzata'),
+('Trainer.jpg', '2018-01-01', 'Palestra');
+
+--
+-- Trigger `galleria`
+--
+DELIMITER $$
+CREATE TRIGGER `Datag` BEFORE INSERT ON `galleria` FOR EACH ROW SET new.Data = CURRENT_DATE()
+$$
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -238,7 +247,6 @@ CREATE TABLE `utente` (
   `Password` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Tipo` enum('user','admin') NOT NULL DEFAULT 'user'
-  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -279,7 +287,7 @@ ALTER TABLE `fattura`
 -- Indici per le tabelle `galleria`
 --
 ALTER TABLE `galleria`
-  ADD PRIMARY KEY (`NomeImmagine`, `Album`);
+  ADD PRIMARY KEY (`NomeImmagine`,`Album`);
 
 --
 -- Indici per le tabelle `iscrizionecorso`
@@ -326,7 +334,7 @@ ALTER TABLE `fattura`
 -- AUTO_INCREMENT per la tabella `utente`
 --
 ALTER TABLE `utente`
-  MODIFY `CodiceUtente` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `CodiceUtente` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Limiti per le tabelle scaricate
