@@ -1,0 +1,7 @@
+<div class="message">
+			<div class="messagetext">
+				<h2>Non sei loggato o non hai i privilegi necessari per accedere a questa pagina!</h2>
+			</div>
+			<a class="messagelink" href="../HTML/AreaPersonale.html">Effettua il login</a>
+			<a class="messagelink" href="Home.php">Ritorna alla homepage</a>
+		</div>

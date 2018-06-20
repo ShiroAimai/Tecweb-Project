@@ -3,6 +3,7 @@
     $head = file_get_contents("../Templates/headerFormUtente.txt");
     $foot = file_get_contents("../Templates/footer.txt");
 	$formUtente = file_get_contents("../Templates/FormUtente.txt");
+	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
@@ -22,6 +23,11 @@
 	
 	echo $closediv;
 	echo $closediv;
-	echo $formUtente;
+	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
+		echo $formUtente;
+	}
+	else {
+		echo $notAdmin;
+	}
 	echo $foot;
 ?>
