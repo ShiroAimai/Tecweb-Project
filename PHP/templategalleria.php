@@ -7,7 +7,7 @@
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
 	$closediv = "</div>";
-	$goback = "<a id=\"backAdminPanel\" href=\"Galleria.php\">Torna agli album</a>";
+	$goback = "<a href=\"Galleria.php\">Torna agli album</a>";
 	
 	echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -23,9 +23,12 @@
 	echo $closediv;
 	echo $closediv;
 
-	echo "<h2 id=\"gallerypictitle\">Album <span id=\"albumtitle\">".$_GET['album']."</span></h2>";
+	echo "<div id=\"gallerypictitle\">";
+	echo "<h2>Album <span id=\"albumtitle\">".$_GET['album']."</span></h2>";
 	echo $goback;
-	
+	echo $closediv;
+
+	echo "<div id=\"gallerypicblock\">";
 	$aux=$_GET['album'];
 	$query=query("
 		SELECT NomeImmagine, Album 
@@ -38,7 +41,8 @@
 			$stampa = "<a href=\"immaginesingola.php?nome=".$row['NomeImmagine']."&album=".$row['Album']."\"><img class=\"gallerypicmini\" src=\"../galleria/".$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"/></a>";
 		}
 		echo $stampa;
-	}		
+	}
+	echo $closediv;		
 	
 	$connessione->close();
 	
