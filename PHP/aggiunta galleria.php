@@ -1,6 +1,30 @@
 <?php
 
 require_once('config.php');
+$head = file_get_contents("../Templates/headerAddGallery.txt");
+$foot = file_get_contents("../Templates/footer.txt");
+$addGallery = file_get_contents("../Templates/AddGallery.txt");
+$errorGallery = file_get_contents("../Templates/ErrorGallery.txt");
+$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
+$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
+$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
+$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
+$closediv = "</div>";
+$ok = true;
+
+echo $head;
+	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
+		echo $logout;
+		echo $adminPanel;
+	} else if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
+		echo $logout;
+		echo $userPanel;
+	} else {
+		echo $login;
+	}
+	
+	echo $closediv;
+	echo $closediv;
 
 function test_input($data) {
     $data = trim($data);
@@ -31,9 +55,9 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
         $sql = "INSERT INTO galleria (NomeImmagine, Album)
             VALUES ('$Immagine', '$Album')";
 
-           if (query($sql) === TRUE) {
-              echo "New record created successfully. <br />";
-              }
+			if (query($sql) == FALSE) {
+				$ok = FALSE;
+            }
         $counter++;
     }
 	$connessione->close();
@@ -48,15 +72,16 @@ if(isset($_FILES['galleryFile']['name']))
         $origin=$_FILES['galleryFile']['tmp_name'][$count];
         $count++;
         $destination=$destination.basename($filename);
-        if (move_uploaded_file($origin, $destination)) 
+        if (!move_uploaded_file($origin, $destination)) 
         {
-          echo "The file ".basename($_FILES["galleryFile"]["name"][$count-1])." has been uploaded. <br />";
-        } 
-        else 
-        {
-          echo "Sorry, there was an error uploading your file. <br />";
+          $ok = FALSE;
         }
     }
-} 
+}
+
+if($ok == TRUE) {
+	echo $addGallery;
+}
+echo $foot;
 
 ?>
