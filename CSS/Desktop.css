@@ -1007,29 +1007,30 @@ PAGINA DINAMICA NEWS
 	height:28em;
 	margin:2em 4em;
 }
+
 .titlenews {
 	text-align:center;
 	margin:2%;
 	margin-bottom:0%;
 	color:white;
 }
-.pubblicazione
-{
+
+.pubblicazione {
 	float:right;
 	margin:0.5em;
 	color:white;
 	font-size: 12px;
 }
+
 .imgnews {
-	
 	width:97%;
 	margin:0.5em;
 	margin-bottom: 0%;
 	overflow: auto;
 	height:16em;
 }
-.corpopos
-{
+
+.corpopos {
 	float:left;
 }
 
@@ -1039,8 +1040,6 @@ PAGINA DINAMICA NEWS
 	width:100%;
 	color:white;
 	font-family:Helvetica;
-	
-	
 }
 
 /*=================

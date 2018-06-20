@@ -158,11 +158,10 @@ CREATE TABLE `galleria` (
 
 INSERT INTO `galleria` (`NomeImmagine`, `Album`) VALUES
 ('Allenamento.jpg', 'Palestra'),
-('CorsiPalestra1.jpg', 'Palestra'),
-('Freddy.jpg', 'Palestra'),
-('pizzata.jpg', 'Natale'),
-('Spinning.png', 'Palestra'),
-('step.jpg', 'Palestra'),
+('fitBoxe.jpg', 'Palestra'),
+('fitness.jpg', 'Palestra'),
+('jumpfit.jpg', 'Palestra'),
+('pizzata.jpg', 'Pizzata'),
 ('Trainer.jpg', 'Palestra');
 
 -- --------------------------------------------------------
@@ -204,8 +203,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`Titolo`, `Data`, `Immagine`, `Descrizione`) VALUES
-('Titolo news', '2018-03-01', 'Freddy.jpg', 'Nel settcente erano gli asini che volavano e chiedevano pieta per la loro stupidità'),
-('Titolo seconda news', '2018-02-28', 'Freddy.jpg', 'Inserisci del testo qui');
+('Titolo news', '2018-03-01', 'Freddy.jpg', 'Descrizione news'),
+('Titolo seconda news', '2018-02-28', 'Freddy.jpg', 'Descrizione seconda news');
 
 --
 -- Trigger `news`

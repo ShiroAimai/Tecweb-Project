@@ -4,7 +4,6 @@ require_once('config.php');
 $head = file_get_contents("../Templates/headerAddGallery.txt");
 $foot = file_get_contents("../Templates/footer.txt");
 $addGallery = file_get_contents("../Templates/AddGallery.txt");
-$errorGallery = file_get_contents("../Templates/ErrorGallery.txt");
 $logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 $login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 $adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
