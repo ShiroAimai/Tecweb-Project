@@ -1078,7 +1078,6 @@ PAGINA GALLERIA
 	font-weight: bold;
 	color:white;
 	text-align: center;
-	margin:0;
 	padding:0.5em;
 
 	
@@ -1086,9 +1085,9 @@ PAGINA GALLERIA
 
 .album .galleryimg{
    float:left;
-   width: 99.8%;
-   height:100%;
-   margin-left:0.01em;
+   width: 100%;
+   
+  
   
 }
 
