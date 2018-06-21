@@ -41,12 +41,14 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
               $Immagineerr = "Immagine is required";
               } 
          
-        if (empty($_POST["galleryName"])) {
-            $Albumerr = "Album is required";
-            } else {
-              $Album = test_input($_POST["galleryName"]);
-              }
+          if (empty($_POST["galleryName"])) {
+              $Albumerr = "Album is required";
+              } else {
+                $Album = test_input($_POST["galleryName"]);
+                }
       }
+  if(!isset($Immagineerr) && !isset($Albumerr))
+  {
     $counter=0;
     while(isset($_FILES['galleryFile']['name'][$counter]))
     {   
@@ -59,8 +61,8 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
             }
         $counter++;
     }
-	$connessione->close();
-
+	   $connessione->close();
+  }
 $target_dir = "../galleria/";
 if(isset($_FILES['galleryFile']['name']))
 {

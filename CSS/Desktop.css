@@ -1062,7 +1062,7 @@ PAGINA GALLERIA
 	width:25.33% ;/*32.3%*/
 	margin:0% 4% 2% 4%;
 	overflow: hidden;
-	height:20em;
+	height:16em;
 }
 .album:hover {
 	border:2px solid #ffffff;
@@ -1079,16 +1079,11 @@ PAGINA GALLERIA
 	color:white;
 	text-align: center;
 	padding:0.5em;
-
-	
 }
 
 .album .galleryimg{
    float:left;
    width: 100%;
-   
-  
-  
 }
 
 #gallerypictitle {

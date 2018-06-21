@@ -109,8 +109,9 @@ function validateGalleryForm() {
     }
 	
 	//File galleria
-    var Title=document.forms["galleryForm"]["galleryFile"].value;
-    if (Title!=null && Title=="") {
+    var Title=document.getElementById('GalleryFile').value;
+    console.log(Title)
+    if (Title==undefined) {
 		alert("Nessuna immagine selezionata");
 		return false;
     }
