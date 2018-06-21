@@ -18,7 +18,9 @@ html, body {
 	background-color: #323232;	
 	
 }
-
+.print {
+	display:none;
+}
 
 #contenitore {
 	margin: 1.5%;
@@ -1051,9 +1053,6 @@ PAGINA GALLERIA
 .gallerymain{
 	display:table;
 	width:100%;
-	
-	
-
 }
 
 .album {
