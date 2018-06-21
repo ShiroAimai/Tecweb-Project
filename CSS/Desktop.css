@@ -1050,6 +1050,7 @@ PAGINA GALLERIA
 ================*/
 .gallerymain{
 	display:table;
+	width:90.5%;
 	margin:1em 6em;
 
 }
