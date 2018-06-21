@@ -21,7 +21,7 @@ html, body {
 
 
 #contenitore {
-	margin: 1.5em;
+	margin: 1.5%;
 	border: 1px solid #323232;
 	background-image: url("../IMAGES/sfondo.jpg");
 	
@@ -1050,8 +1050,9 @@ PAGINA GALLERIA
 ================*/
 .gallerymain{
 	display:table;
-	width:90.5%;
-	margin:1em 6em;
+	width:100%;
+	
+	
 
 }
 
@@ -1059,10 +1060,10 @@ PAGINA GALLERIA
 	border:2px solid black;
 	float:left;
 	align-items: center;
-	width:25%;
-	margin:0% 3.8% 2% 3.8%;
+	width:25.33% ;/*32.3%*/
+	margin:0% 4% 2% 4%;
 	overflow: hidden;
-	height:16em;
+	height:20em;
 }
 .album:hover {
 	border:2px solid #ffffff;
