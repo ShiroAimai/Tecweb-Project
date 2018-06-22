@@ -2,6 +2,6 @@
 	<div class="messagetext">
 		<h2>Non è possibile rimuovere il tuo stesso account!</h2>
 	</div>
-	<a class="messagelink" href="Lista utenti.php">Ritorna alla lista utenti</a>
+	<a class="messagelink" href="Lista admin.php">Ritorna alla lista admin</a>
 	<a class="messagelink" href="Home.php">Ritorna alla homepage</a>
 </div>
