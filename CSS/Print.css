@@ -18,8 +18,12 @@ html, body {
 }
 
 #logo{
-	width: 200px;
-	height: 100px; 
+	display: none;
+}
+
+.printable{
+	font-size: 16pt;
+	font-weight: bold;
 }
 
 #footerdx{

@@ -14,6 +14,7 @@
 		<div id="Intestazione">
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
 			<a class="active"><img id="logo" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+			<div class="printable"> BODY EVOLUTION FITNESS</div>
 			<a href="../PHP/AreaPersonale.php"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
 			<div class="Menu" id="myMenu">
 			<a class="active">Home</a>
