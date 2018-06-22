@@ -47,7 +47,7 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
                 $Album = test_input($_POST["galleryName"]);
                 }
       }
-  if(!isset($Immagineerr) && !isset($Albumerr))
+  if($Immagineerr=="" && $Albumerr==" ")
   {
     $counter=0;
     while(isset($_FILES['galleryFile']['name'][$counter]))

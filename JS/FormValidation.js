@@ -109,9 +109,10 @@ function validateGalleryForm() {
     }
 	
 	//File galleria
-    var Title=document.getElementById('GalleryFile').value;
-    console.log(Title)
-    if (Title==undefined) {
+	//TODO: da sistemare, non controlla il tipo di Title
+    var Title=document.forms["galleryForm"]["galleryFile"].value;
+    console.log([0])
+    if (Title[0]==undefined) {
 		alert("Nessuna immagine selezionata");
 		return false;
     }
