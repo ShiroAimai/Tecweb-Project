@@ -33,7 +33,7 @@
 		$query = query("SELECT CodiceUtente, Password, Nome, Cognome, Email from utente where CodiceUtente=$usercode");
 		$data = mysqli_fetch_assoc($query);
 		
-		$stampa .= "<h1 class=\"userData\">Dati utente:</h1>";
+		$stampa ="<h1 class=\"userData\">Dati utente:</h1>";
 		$stampa .="<div class=\"TabUtente\">";
 		$stampa .="<h2 class=\"EntryUtente\"> CodiceUtente:</h2><h2 class=\"EntryTab\">&nbsp;" .$data['CodiceUtente']."&ensp;</h2>";
 		$stampa .="<h2 class=\"EntryUtente\"> Password: </h2><h2 class=\"EntryTab\">&nbsp;" .$data['Password']."&ensp;</h2>";
