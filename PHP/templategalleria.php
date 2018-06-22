@@ -7,6 +7,8 @@
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
 	$closediv = "</div>";
+	$closebody = "</body>";
+	$closehtml = "</html>";
 	$goback = "<a href=\"Galleria.php\">Torna agli album</a>";
 	
 	echo $head;
@@ -47,4 +49,6 @@
 	$connessione->close();
 	
 	echo $foot;
+	echo $closebody;
+	echo $closehtml;
 ?>

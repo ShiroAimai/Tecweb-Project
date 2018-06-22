@@ -9,6 +9,8 @@
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
 	$closediv = "</div>";
+	$closebody = "</body>";
+	$closehtml = "</html>";
 	
 	echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -30,4 +32,6 @@
 		echo $notAdmin;
 	}
 	echo $foot;
+	echo $closebody;
+	echo $closehtml;
 ?>

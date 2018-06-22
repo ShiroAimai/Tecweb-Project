@@ -3,13 +3,14 @@
 	$head = file_get_contents("../Templates/headerImmagineSingola.txt");
 	echo $head;
 
-	$body1 = "<body>";
-	$body2 = "</body>";
-	$div1 = "<div class=\"sfondonero\">";
-	$div2 = "</div>";
+	$body = "<body>";
+	$closebody ="</body>";
+	$div = "<div class=\"sfondonero\">";
+	$closediv = "</div>";
+	$closehtml = "</html>";
 
-	echo $body1;
-	echo $div1;
+	echo $body;
+	echo $div;
 
 	$aux=$_GET['album'];
 	$stampa="
@@ -20,8 +21,7 @@
 	$stampa.="<img class=\"imgsfondonero\" src=\"../galleria/".$_GET['nome']."\" alt=\"Immagine dell'album\"/>";
 	echo $stampa;
 
-	echo $div2;
-	echo $body2;
-	$closehtml = "</html>";
+	echo $closediv;
+	echo $closebody;
 	echo $closehtml;
 ?>

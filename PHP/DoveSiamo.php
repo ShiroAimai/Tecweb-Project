@@ -7,7 +7,11 @@
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
+	$maps = "<script src=\"../JS/Maps.js\"></script>
+	<script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDy9ePX9YzCd4SvN7AJ8oNL6-2uue4rh6g&amp;callback=myMap\"></script>";
 	$closediv = "</div>";
+	$closebody = "</body>";
+	$closehtml = "</html>";
 	
 	echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -24,4 +28,8 @@
 	echo $closediv;
 	echo $dovesiamo;
 	echo $foot;
+	
+	echo $maps;
+	echo $closebody;
+	echo $closehtml;
 ?>

@@ -7,7 +7,10 @@
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
+	$accordion = "<script src=\"../JS/Accordion.js\"></script>";
 	$closediv = "</div>";
+	$closebody = "</body>";
+	$closehtml = "</html>";
 	
 	echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -24,4 +27,7 @@
 	echo $closediv;
 	echo $attivita;
 	echo $foot;
+	echo $accordion;
+	echo $closebody;
+	echo $closehtml;
 ?>
