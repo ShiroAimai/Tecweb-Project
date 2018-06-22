@@ -6,7 +6,7 @@ session_start();
 //parametri di connessione al database
 $hostname = "localhost";
 $username = "root";
-$password = "flucky365";
+$password = "";
 $database = "fsacchet";
 
 //registra una variabile da una form nella pagina che richiama questa funzione
