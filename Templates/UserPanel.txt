@@ -3,7 +3,4 @@
 				<h1 id="titoloPagina">USER PANEL</h1>
 				<p>Benvenuto nel pannello utente</p>
 			</div>
-			<div id="btnContainer">
-				<h1> Snordio usa bootstrap di nascosto</h1>
-			</div>
 		</div>

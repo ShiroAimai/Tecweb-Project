@@ -1458,3 +1458,41 @@ th, td {
 td {
 	vertical-align: bottom;
 }
+
+/*===============
+USER PANEL
+=================*/
+
+
+.TabUtente {
+	border:2px solid white;
+	align-content: center;
+	margin:1% 25% 2% 7%;
+	float:left;
+	padding:0.5%;
+}
+.TabUtente2 {
+	border:2px solid white;
+	align-content: center;
+	margin:1% 60% 2% 7%;
+	float:left;
+	padding:0.5%;
+}
+.EntryUtente {
+	float:left;
+	color:#DAAC5E;
+	font-weight: bold;
+}
+
+.EntryTab {
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+
+.userData {
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	margin:2% 0 0 5%;
+}
