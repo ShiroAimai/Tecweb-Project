@@ -25,10 +25,7 @@
 	echo $closediv;	
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
 		echo $UserPanel;
-	}
-	else {
-		echo $notAdmin;
-	}
+	
 
 	//Dati utente
 	$usercode =$_SESSION['user_code'];
@@ -56,7 +53,7 @@
 		$stampa .="<h2 class=\"EntryTab\">&nbsp;" .$data['ScadenzaFitness']."&ensp;</h2>";
 	else
 		$stampa .=" <h2 class=\"EntryTab\">&nbsp;Scaduto!&ensp;</h2>";
-	$stampa .="<h2 class=\"EntryUtente\"> Punti accumulati:</h2><h2 class=\"EntryTab\">&nbsp;" .$data['PuntiCorsi']."&ensp;</h2>";
+	$stampa .="<h2 class=\"EntryUtente\"> Entrate disponibili: </h2><h2 class=\"EntryTab\">&nbsp;" .$data['PuntiCorsi']."&ensp;</h2>";
 	$stampa .="</div>";
 
 	//Corsi a cui si è iscritti
@@ -69,7 +66,9 @@
 	}
 	$stampa .="</div>";
 	echo $stampa;
-
-
+	}
+	else {
+		echo $notAdmin;
+	}
 	echo $foot;
 ?>
