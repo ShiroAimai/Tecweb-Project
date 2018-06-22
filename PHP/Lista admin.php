@@ -2,7 +2,7 @@
 	require_once('config.php');
     $head = file_get_contents("../Templates/headerUserList.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$userList = file_get_contents("../Templates/UserList.txt");
+	$adminList = file_get_contents("../Templates/AdminList.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
@@ -26,8 +26,8 @@
 	echo $closediv;
 	echo $closediv;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $userList;
-		$sql = "SELECT * FROM utente WHERE Tipo='user' ORDER BY CodiceUtente";
+		echo $adminList;
+		$sql = "SELECT * FROM utente WHERE Tipo='admin' ORDER BY CodiceUtente";
 		$utenti=select($sql);
 		if ($utenti == null) {
 			echo "<tr><td colspan=7 >Nessun risultato</td>";
@@ -55,14 +55,6 @@
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Elimina utente</label>
 					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Elimina utente\" value=\"Elimina utente\"/>
-				</form>
-				</td>";
-				
-			echo "<td>
-				<form method=\"post\" action=\"Aggiungi scheda.php\" enctype=\"multipart/form-data\" >
-					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Aggiungi scheda</label>
-					<input id=\"".$u['CodiceUtente']."\" name=\"".$u['CodiceUtente']."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda\" value=\"Aggiungi scheda\" onchange=\"form.submit()\"/>
 				</form>
 				</td>";
 		}

@@ -9,5 +9,6 @@
 		<a href="Form news.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
 		<a href="Form galleria.php"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
 		<a href="Lista utenti.php"><button class="btn btn-4 btn-sep icon-showusers">Mostra utenti</button></a>
+		<a href="Lista admin.php"><button class="btn btn-6 btn-sep icon-showusers">Mostra admin</button></a>
 	</div>
 </div>

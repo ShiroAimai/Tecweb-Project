@@ -1397,6 +1397,10 @@ ADMIN PANEL
 	background: #dead00;
 }
 
+.btn-6 {
+	background: #da8709;
+}
+
 .icon-adduser:before {
 	content: "\f234";
 }
