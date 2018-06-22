@@ -26,7 +26,7 @@ function connect()
     global $connessione, $hostname, $username, $password, $database;
     $connessione = new mysqli($hostname, $username, $password, $database);
     if ($connessione->connect_error) {
-        die("Connessione fallita: " . $connessione->connect_error);
+        die("Connessione fallita: Servizio momentaneamente non disponibile. Riprovare pi&ugrave; tardi");
     }
 }
 

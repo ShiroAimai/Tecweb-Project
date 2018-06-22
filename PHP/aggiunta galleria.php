@@ -35,7 +35,7 @@ function test_input($data) {
   }
 
 
-$Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
+$Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Albumerr="";
 
    if ($_SERVER["REQUEST_METHOD"] == "POST") 
       {
@@ -49,7 +49,7 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
                 $Album = test_input($_POST["galleryName"]);
                 }
       }
-  if($Immagineerr=="" && $Albumerr==" ")
+  if($Immagineerr=="" && $Albumerr=="")
   {
     $counter=0;
     while(isset($_FILES['galleryFile']['name'][$counter]))
