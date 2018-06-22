@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
+<!DOCTYPE html>
+<html lang="it">
 <head>
 	<title>User Panel | Body Evolution</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link href="../CSS/Desktop.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
-	<link href="../CSS/Mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
-	<link href="../CSS/Print.css" rel="stylesheet" type="text/css" media="print"/>
+	<meta charset="utf-8">
+	<link href="../CSS/Desktop.css" rel="stylesheet" media="handheld, screen"/>
+	<link href="../CSS/Mobile.css" rel="stylesheet" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
+	<link href="../CSS/Print.css" rel="stylesheet" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 </head>

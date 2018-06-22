@@ -1,12 +1,12 @@
 <div id="Descrizione">
-			<div id="Presentazione">
-				<h1 id="titoloPagina">DOVE SIAMO</h1>
-				<p> Vieni a trovarci alla <span lang="en">Body Evolution</span>!</p>
-			</div>
-			<div id="GoogleMaps">
-				<div id="map"></div>
-				<h2>INDIRIZZO</h2>
-				<div class="separator"></div>
-				<p>Via Cavour 18, 30014 - Cavarzere (VE)</p>
-			</div>
-		</div>
+	<div id="Presentazione">
+		<h1 id="titoloPagina">DOVE SIAMO</h1>
+		<p> Vieni a trovarci alla <span lang="en">Body Evolution</span>!</p>
+	</div>
+	<div id="GoogleMaps">
+		<div id="map"></div>
+		<h2>INDIRIZZO</h2>
+		<div class="separator"></div>
+		<p>Via Cavour 18, 30014 - Cavarzere (VE)</p>
+	</div>
+</div>
