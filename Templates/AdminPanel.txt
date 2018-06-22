@@ -10,5 +10,7 @@
 		<a href="Form galleria.php"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
 		<a href="Lista utenti.php"><button class="btn btn-4 btn-sep icon-showusers">Mostra utenti</button></a>
 		<a href="Lista admin.php"><button class="btn btn-6 btn-sep icon-showusers">Mostra admin</button></a>
+		<a href="Lista news.php"><button class="btn btn-7 btn-sep icon-shownews">Mostra news</button></a>
+		<a href="Lista album.php"><button class="btn btn-8 btn-sep icon-showalbum">Mostra album</button></a>
 	</div>
 </div>

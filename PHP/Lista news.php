@@ -1,8 +1,8 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerFatture.txt");
+    $head = file_get_contents("../Templates/headerNewsList.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$listaFatture = file_get_contents("../Templates/ListaFatture.txt");
+	$newsList = file_get_contents("../Templates/NewsList.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
@@ -25,31 +25,35 @@
 	
 	echo $closediv;
 	echo $closediv;
-	register('user');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $listaFatture;
-		$sql = "SELECT * FROM fattura WHERE CodiceUtente='$user' ORDER BY DataEmissione DESC";
-		$fatture=select($sql);
-		if ($fatture == null) {
+		echo $newsList;
+		$sql = "SELECT * FROM news ORDER BY Data DESC";
+		$news=select($sql);
+		if ($news == null) {
 			echo "<tr><td colspan=7 >Nessun risultato</td>";
 		}
-		foreach ($fatture as $f) {
+		foreach ($news as $n) {
 			echo "<tr>";
 
-			echo "<td>".$f['NumeroRicevuta'];
+			echo "<td>".$n['Titolo'];
 			echo "</td>";
 
-			echo "<td>".$f['DataEmissione'];
+			echo "<td>".$n['Data'];
 			echo "</td>";
 						
-			echo "<td>".$f['ImportoEuro'];
+			echo "<td>".$n['Immagine'];
 			echo "</td>";
-					
-			echo "<td>".$f['MesiFitness'];
+						
+			echo "<td>".$n['Descrizione'];
 			echo "</td>";
 			
-			echo "<td>".$f['EntrateCorsi'];
-			echo "</td>";
+			echo "<td>
+				<form method=\"post\" action=\"Elimina news.php\" onsubmit=\"return confirm('Confermi di voler eliminare la news?');\" >
+					<input type=\"hidden\"  name=\"user\" value=\"" . $n['Titolo'] . "\"/>
+					<label class=\"invisibleLabel\" for=\"" . $n['Titolo'] . "\">Elimina news</label>
+					<input id=\"".$n['Titolo']."\" type=\"submit\"  title=\"Elimina news\" value=\"Elimina news\"/>
+				</form>
+				</td>";
 		}
 		echo "</tbody>";
 		echo "</table>";

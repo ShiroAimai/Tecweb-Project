@@ -1401,6 +1401,14 @@ ADMIN PANEL
 	background: #da8709;
 }
 
+.btn-7 {
+	background: #4c7610;
+}
+
+.btn-8 {
+	background: #81350c;
+}
+
 .icon-adduser:before {
 	content: "\f234";
 }
@@ -1419,6 +1427,14 @@ ADMIN PANEL
 
 .icon-showusers:before {
 	content: "\f0c0";
+}
+
+.icon-shownews:before {
+	content: "\f02d";
+}
+
+.icon-showalbum:before {
+	content: "\f03e";
 }
 
 /*

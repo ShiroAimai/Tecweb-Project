@@ -1,0 +1,17 @@
+<div id="Presentazione">
+	<h1 id="titoloPagina">Lista news</h1>
+	<p>Visualizza la lista delle news presenti nel sito</p>
+</div>
+<a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
+<div class="tableResponsive"> 
+<table>
+<thead>
+    <tr>
+        <th scope="col">Titolo</th>
+        <th scope="col">Data</th>
+        <th scope="col">Immagine</th>
+        <th scope="col">Descrizione</th>
+		<th scope="col">Elimina news</th>
+    </tr>
+</thead>
+<tbody>

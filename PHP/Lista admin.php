@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerUserList.txt");
+    $head = file_get_contents("../Templates/headerAdminList.txt");
     $foot = file_get_contents("../Templates/footer.txt");
 	$adminList = file_get_contents("../Templates/AdminList.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
