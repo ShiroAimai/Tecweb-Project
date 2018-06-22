@@ -26,6 +26,11 @@ html, body {
 	font-weight: bold;
 }
 
+.printablefooter{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
 #footerdx{
 	font-size: 10pt;
 }
@@ -60,6 +65,9 @@ PAGINA ATTIVITA
 	padding-bottom: 3%;
 }
 
+#spinning{
+	text-align: left;
+}
 
 button.accordion{
 	border: none;
