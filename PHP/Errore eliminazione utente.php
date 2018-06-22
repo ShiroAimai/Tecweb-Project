@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerAddUser.txt");
+    $head = file_get_contents("../Templates/headerDeleteError.txt");
     $foot = file_get_contents("../Templates/footer.txt");
 	$deleteError = file_get_contents("../Templates/DeleteError.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
