@@ -1,6 +1,6 @@
 <?php
 require_once('config.php');
-register('name');
-query("DELETE FROM galleria WHERE Album='$name'");
+register('title');
+query("DELETE FROM galleria WHERE Album='$title'");
 header("Location:Lista album.php");
 ?>

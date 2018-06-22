@@ -42,8 +42,8 @@
 			echo "</td>";
 			
 			echo "<td>
-				<form method=\"post\" action=\"Elimina galleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria?');\" >
-					<input type=\"hidden\"  name=\"user\" value=\"" . $a['Album'] . "\"/>
+				<form method=\"post\" action=\"elimina galleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria?');\" >
+					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Elimina galleria</label>
 					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Elimina galleria\" value=\"Elimina galleria\"/>
 				</form>
