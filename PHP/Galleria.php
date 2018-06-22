@@ -7,6 +7,8 @@
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
 	$closediv = "</div>";
+	$closebody = "</body>";
+	$closehtml = "</html>";
 
     $query=query("
 		SELECT NomeImmagine, Album 
@@ -58,6 +60,8 @@
     echo $stampa;
     echo $closediv;
     echo $foot;
+	echo $closebody;
+	echo $closehtml;
     
     $connessione->close();
 ?>

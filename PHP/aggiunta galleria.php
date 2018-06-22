@@ -9,6 +9,8 @@ $login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">
 $adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 $userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
 $closediv = "</div>";
+$closebody = "</body>";
+$closehtml = "</html>";
 $ok = true;
 
 echo $head;
@@ -84,5 +86,7 @@ if($ok == TRUE) {
 	echo $addGallery;
 }
 echo $foot;
+echo $closebody;
+echo $closehtml;
 
 ?>

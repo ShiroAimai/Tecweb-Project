@@ -17,7 +17,7 @@
 		if($_SESSION['user_type'] == 'admin')
 			header("Location:AdminPanel.php");
 		else
-			header("Location:Home.php");
+			header("Location:UserPanel.php");
 	}
 	else { 
 	  header("Location:../HTML/ErroreLogin.html");

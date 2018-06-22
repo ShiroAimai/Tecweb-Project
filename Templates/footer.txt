@@ -40,10 +40,3 @@
 </div>
 
 <script src="../JS/Sandwich.js"></script>
-<script src="../JS/Accordion.js"></script>
-<script src="../JS/PswValidation.js"></script>
-<script src="../JS/Maps.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy9ePX9YzCd4SvN7AJ8oNL6-2uue4rh6g&amp;callback=myMap"></script>
-
-</body>
-</html>
