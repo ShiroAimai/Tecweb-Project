@@ -11,7 +11,7 @@
     $query=query("
 		SELECT NomeImmagine, Album 
 		FROM galleria 
-		GROUP BY Album,NomeImmagine;
+		GROUP BY Album, NomeImmagine;
 	");
 
     echo $head;
