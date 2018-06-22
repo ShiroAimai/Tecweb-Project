@@ -1,29 +1,29 @@
 <div id="Descrizione">
-			<div id="Presentazione">
-				<h1 id="titoloPagina">CHI SIAMO</h1>
-			</div>
-			<div id="Istruttori">
-				<div id="GennyTiengo">
-					<img id="GennyTiengoImg" src="../IMAGES/GennyTiengo.jpg" alt="Foto Genny Tiengo"/>
-					<h2>GENNY TIENGO</h2>
-					<div class="separator"></div>
-					<ul>
-						<li>Dirigente sportivo Coni</li>
-						<li>Istruttore (Spinning, Fit Boxe, Power Pump, Jump Fit, Step, Pilates, Riabilitazione, Gestanti)</li>
-						<li>Personal Trainer</li>
-						<li>Giudice di gara</li>
-					</ul>
-				</div>
-				<div id="FabioFerro">
-					<img id="FabioFerroImg" src="../IMAGES/FabioFerro.jpg" alt="Foto Fabio Ferro"/>
-					<h2>FABIO FERRO</h2>
-					<div class="separator"></div>
-					<ul>
-						<li>Preparatore atletico</li>
-						<li>Istruttore Kick Boxing</li>
-						<li>Personal Trainer</li>
-						<li>Giudice di gara</li>
-					</ul>
-				</div>
-			</div>
+	<div id="Presentazione">
+		<h1 id="titoloPagina">CHI SIAMO</h1>
+	</div>
+	<div id="Istruttori">
+		<div id="GennyTiengo">
+			<img id="GennyTiengoImg" src="../IMAGES/GennyTiengo.jpg" alt="Foto Genny Tiengo"/>
+			<h2>GENNY TIENGO</h2>
+			<div class="separator"></div>
+			<ul>
+				<li>Dirigente sportivo Coni</li>
+				<li>Istruttore (Spinning, Fit Boxe, Power Pump, Jump Fit, Step, Pilates, Riabilitazione, Gestanti)</li>
+				<li>Personal Trainer</li>
+				<li>Giudice di gara</li>
+			</ul>
 		</div>
+		<div id="FabioFerro">
+			<img id="FabioFerroImg" src="../IMAGES/FabioFerro.jpg" alt="Foto Fabio Ferro"/>
+			<h2>FABIO FERRO</h2>
+			<div class="separator"></div>
+			<ul>
+				<li>Preparatore atletico</li>
+				<li>Istruttore Kick Boxing</li>
+				<li>Personal Trainer</li>
+				<li>Giudice di gara</li>
+			</ul>
+		</div>
+	</div>
+</div>

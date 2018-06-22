@@ -1,38 +1,38 @@
 <div id="Presentazione">
-				<h1 id="titoloPagina">AGGIUNGI NEWS</h1>
-			</div>
-		<div class="FormContainer">
-			<div class="containerChild">
-				<div class="leftContent">
-					<h1>Nuova News</h1>
-					<p>Inserisci titolo, immagine e descrizione di una nuova news</p>
-				</div>
-				<div class="signupOverlay"></div>
-			</div>
-			<div class="containerChild">
-				<div class="loginWrap">
-					<div class="login-html">
-						<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
-						<div class="login-form">							
-							<form id="newsForm" method="post" action="../PHP/aggiunta news.php" enctype="multipart/form-data" onsubmit="return validateNewsForm()">
-								<div class="group">
-									<label for="newsTitle" class="label">Titolo news</label>
-									<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16"/>
-								</div>
-								<div class="group">
-									<label for="newsImage" class="label">Immagine</label>
-									<input name="newsImage" id="newsImage" type="file" class="input" accept="image/*"/>
-								</div>
-								<div class="group">
-									<label for="newsDescription" class="label">Descrizione</label>
-									<textarea name="newsDescription" id="newsDescription" rows="5" cols="50" class="input"></textarea>
-								</div>
-								<div class="group">
-									<input type="submit" class="button" value="Inserisci news"/>
-								</div>
-							</form>
+	<h1 id="titoloPagina">AGGIUNGI NEWS</h1>
+</div>
+<div class="FormContainer">
+	<div class="containerChild">
+		<div class="leftContent">
+			<h1>Nuova News</h1>
+			<p>Inserisci titolo, immagine e descrizione di una nuova news</p>
+		</div>
+		<div class="signupOverlay"></div>
+	</div>
+	<div class="containerChild">
+		<div class="loginWrap">
+			<div class="login-html">
+				<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
+				<div class="login-form">							
+					<form id="newsForm" method="post" action="../PHP/aggiunta news.php" enctype="multipart/form-data">
+						<div class="group">
+							<label for="newsTitle" class="label">Titolo news</label>
+							<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16" required />
 						</div>
-					</div>
+						<div class="group">
+							<label for="newsImage" class="label">Immagine</label>
+							<input name="newsImage" id="newsImage" type="file" class="input" accept="image/*" required />
+						</div>
+						<div class="group">
+							<label for="newsDescription" class="label">Descrizione</label>
+							<textarea name="newsDescription" id="newsDescription" rows="5" cols="50" class="input" required ></textarea>
+						</div>
+						<div class="group">
+							<input type="submit" class="button" value="Inserisci news"/>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
