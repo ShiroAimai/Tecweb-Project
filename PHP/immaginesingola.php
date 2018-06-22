@@ -18,7 +18,7 @@
 	<a href=\"templategalleria.php?album=$aux\">
 	<img id=\"backarrow\" src=\"../IMAGES/tornaindietro.png\" alt=\"TORNA ALLA GALLERIA FOTO DELL'ALBUM $aux\"/>
 	</a></div>";
-	$stampa.="<img class=\"imgsfondonero\" src=\"../galleria/".$_GET['nome']."\" alt=\"Immagine dell'album\"/>";
+	$stampa.="<img class=\"imgsfondonero\" src=\"../galleria/".$aux.'/'.$_GET['nome']."\" alt=\"Immagine dell'album\"/>";
 	echo $stampa;
 
 	echo $closediv;

@@ -37,10 +37,10 @@
 		FROM galleria 
 		WHERE Album=\"$aux\";
 	");
-	$aux=null;
+	$tmp=null;
 	while($row = mysqli_fetch_assoc($query)) {	
-		if($aux==null) {
-			$stampa = "<a href=\"immaginesingola.php?nome=".$row['NomeImmagine']."&album=".$row['Album']."\"><img class=\"gallerypicmini\" src=\"../galleria/".$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"/></a>";
+		if($tmp==null) {
+			$stampa = "<a href=\"immaginesingola.php?nome=".$row['NomeImmagine']."&album=".$row['Album']."\"><img class=\"gallerypicmini\" src=\"../galleria/".$aux.'/'.$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"/></a>";
 		}
 		echo $stampa;
 	}

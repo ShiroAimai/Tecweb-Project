@@ -65,7 +65,11 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Albumerr="";
     }
 	   $connessione->close();
   }
-$target_dir = "../galleria/";
+  
+if (!file_exists('../galleria/'.$_POST["galleryName"].'/')) {
+    mkdir('../galleria/'.$_POST["galleryName"].'/', 0777, true);
+}
+$target_dir = '../galleria/'.$_POST["galleryName"].'/';
 if(isset($_FILES['galleryFile']['name']))
 {
 
