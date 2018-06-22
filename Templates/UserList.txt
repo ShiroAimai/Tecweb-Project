@@ -1,6 +1,6 @@
 <div id="Presentazione">
 	<h1 id="titoloPagina">Lista Utenti</h1>
-	<p>Visualizza la lista di utenti e amministratori registrati</p>
+	<p>Visualizza la lista di utenti registrati</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
 <div class="tableResponsive"> 
@@ -14,6 +14,7 @@
         <th scope="col">Email</th>
 		<th scope="col">Elimina Utente</th>
 		<th scope="col">Aggiungi scheda</th>
+		<th scope="col">Fatture</th>
     </tr>
 </thead>
 <tbody>

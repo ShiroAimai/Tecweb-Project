@@ -65,6 +65,14 @@
 					<input id=\"".$u['CodiceUtente']."\" name=\"".$u['CodiceUtente']."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda\" value=\"Aggiungi scheda\" onchange=\"form.submit()\"/>
 				</form>
 				</td>";
+				
+			echo "<td>
+				<form method=\"post\" action=\"fatture.php\" >
+					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
+					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Vedi fatture</label>
+					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Vedi fatture\" value=\"Vedi fatture\"/>
+				</form>
+				</td>";
 		}
 		echo "</tbody>";
 		echo "</table>";

@@ -1,6 +1,6 @@
 <div id="Presentazione">
-	<h1 id="titoloPagina">Lista Utenti</h1>
-	<p>Visualizza la lista di utenti e amministratori registrati</p>
+	<h1 id="titoloPagina">Lista Admin</h1>
+	<p>Visualizza la lista di amministratori registrati</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
 <div class="tableResponsive"> 
