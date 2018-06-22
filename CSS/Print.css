@@ -96,26 +96,23 @@ PAGINA CALENDARIO
 
 .calendario {
 	width: 90%;
-	margin:5%;
-	float:left;
 	text-align:left;
 	border-color:white;
 	font-weight: bold;
-	position: relative;
+	position: static;
 	border-style: solid;
 }
 
 #salafitness{
 	font-size: 14pt;
 	clear:both;
-	margin-left:1.5em;
 }
 
 .vocecalendario
 {
 	float:left;
 	margin:0;
-	width: 110px;
+	width: 107px;
 }
 
 .giornovoce{
@@ -183,6 +180,55 @@ PAGINA CALENDARIO
 	text-align: center;
 }
 
+/*
+=========================
+PAGINA NEWS
+=========================
+*/
+
+.imgnews{
+	display: none;
+}
+
+/*
+=========================
+PAGINA GALLERIA
+=========================
+*/
+
+.galleryimg, .gallerypicmini, .backbutton{
+	display: none;
+}
+
+.imgsfondonero {
+	width:100%;
+}
 
 
+/*
+=========================
+PAGINA CHI SIAMO
+=========================
+*/
 
+#Istruttori img{
+	width: 250px;
+	height: 200px;
+	overflow: auto;
+	margin-right: 40px;
+}
+
+#GennyTiengoImg, #FabioFerroImg {
+float: left;
+}
+
+#GennyTiengo, #FabioFerro {
+	overflow: auto;
+	font-size: 16px;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+#Istruttori ul {
+	padding: 2px;
+}
