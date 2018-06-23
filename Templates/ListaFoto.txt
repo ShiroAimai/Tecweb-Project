@@ -1,0 +1,15 @@
+<div id="Presentazione">
+	<h1 id="titoloPagina">Lista Foto</h1>
+	<p>Visualizza la lista delle foto relative all'album</p>
+</div>
+<a id="backAdminPanel" href="Lista album.php">Torna alla lista album</a>
+<div class="tableResponsive"> 
+<table>
+<thead>
+    <tr>
+        <th scope="col">Album</th>
+        <th scope="col">Foto</th>
+        <th scope="col">Elimina foto</th>
+    </tr>
+</thead>
+<tbody>

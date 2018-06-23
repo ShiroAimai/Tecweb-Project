@@ -11,6 +11,7 @@
 		<th scope="col">Numero foto</th>
 		<th scope="col">Data</th>
 		<th scope="col">Elimina galleria</th>
+		<th scope="col">Vedi foto</th>
     </tr>
 </thead>
 <tbody>

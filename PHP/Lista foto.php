@@ -1,8 +1,8 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerFatture.txt");
+    $head = file_get_contents("../Templates/headerListaFoto.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$listaFatture = file_get_contents("../Templates/ListaFatture.txt");
+	$listaFoto = file_get_contents("../Templates/ListaFoto.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
@@ -25,31 +25,31 @@
 	
 	echo $closediv;
 	echo $closediv;
-	register('user');
+	register('title');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $listaFatture;
-		$sql = "SELECT * FROM fattura WHERE CodiceUtente='$user' ORDER BY DataEmissione DESC";
-		$fatture=select($sql);
-		if ($fatture == null) {
+		echo $listaFoto;
+		$sql = "SELECT * FROM galleria WHERE Album='$title'";
+		$foto=select($sql);
+		if ($foto == null) {
 			echo "<tr><td colspan=7 >Nessun risultato</td>";
 		}
-		foreach ($fatture as $f) {
+		foreach ($foto as $f) {
 			echo "<tr>";
 
-			echo "<td>".$f['NumeroRicevuta'];
+			echo "<td>".$f['Album'];
 			echo "</td>";
 
-			echo "<td>".$f['DataEmissione'];
-			echo "</td>";
-						
-			echo "<td>".$f['ImportoEuro'];
-			echo "</td>";
-					
-			echo "<td>".$f['MesiFitness'];
+			echo "<td>".$f['NomeImmagine'];
 			echo "</td>";
 			
-			echo "<td>".$f['PuntiCorsi'];
-			echo "</td>";
+			echo "<td>
+				<form method=\"post\" action=\"elimina foto.php\" onsubmit=\"return confirm('Confermi di voler eliminare la foto?');\" >
+					<input type=\"hidden\"  name=\"folder\" value=\"" . $f['Album'] . "\"/>
+					<input type=\"hidden\"  name=\"image\" value=\"" . $f['NomeImmagine'] . "\"/>
+					<label class=\"invisibleLabel\" for=\"" . $f['NomeImmagine'] . "\">Elimina foto</label>
+					<input id=\"".$f['NomeImmagine']."\" type=\"submit\"  title=\"Elimina foto\" value=\"Elimina foto\"/>
+				</form>
+				</td>";
 		}
 		echo "</tbody>";
 		echo "</table>";

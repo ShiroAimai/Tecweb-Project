@@ -67,7 +67,7 @@
 				</td>";
 				
 			echo "<td>
-				<form method=\"post\" action=\"fatture.php\" >
+				<form method=\"post\" action=\"Lista fatture.php\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Vedi fatture</label>
 					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Vedi fatture\" value=\"Vedi fatture\"/>
