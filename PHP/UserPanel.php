@@ -63,10 +63,7 @@
 		$stampa .="<div class=\"TabUtente\">";
 		$countercorsi=1;
 		while($data = mysqli_fetch_assoc($query3)){
-			$stampa .="<div class=\"lineacapo\">
-			<div id=\"numCorso\" class=\"EntryUtente\">$countercorsi.</div>
-			<div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>
-			</div>";
+			$stampa .="<div class=\"lineacapo\"><div id=\"numCorso\" class=\"EntryUtente\">$countercorsi.</div><div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div></div>";
 			$stampa .="</br>";
 			$countercorsi++;
 		}

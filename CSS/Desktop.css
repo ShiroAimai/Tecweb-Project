@@ -1486,6 +1486,7 @@ USER PANEL
 	margin:1% 1% 2% 8%;
 	float:left;
 	
+	
 }
 .bloccoDati2 {
 	margin:2% 8.2%;
@@ -1503,21 +1504,22 @@ USER PANEL
 	float:left;
 	color:#DAAC5E;
 	font-weight: bold;
-	font-size:16pt;
+	font-size:18px;
 }
 
 .EntryTab {
 	float: left;
 	color: white;
 	font-weight: bold;
-	font-size:16pt;
+	font-size:18px;
 }
 
 .userData {
 	color: white;
 	margin:1% 1%;
 	font-weight: bold;
-	font-size:18pt;
+	font-size:20px;
+	
 }
 .userData2 {
 	color: white;
