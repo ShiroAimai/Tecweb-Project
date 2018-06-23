@@ -1037,6 +1037,7 @@ PAGINA DINAMICA NEWS
 
 .corpopos {
 	float:left;
+	width:100%;
 }
 
 .textnews{
@@ -1306,7 +1307,7 @@ ERRORE LOGIN
 	border:3px solid white;
 	margin:5% 25%;
 	width:50%;
-	height:20em;
+	height:14em;
 	float:left;
 	background-color: #3D5A80;
 	text-align:center;
@@ -1322,7 +1323,7 @@ ERRORE LOGIN
 	float:right;
 	clear:both;
 	margin-top:2%;
-	margin-right:10%;
+	margin-right:2%;
 	text-decoration: underline;
 }
 .messagelink:hover

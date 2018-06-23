@@ -2,7 +2,7 @@
 	require_once('config.php');
 	$head = file_get_contents("../Templates/headerLogout.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$Logout = file_get_contents("../Templates/logout.txt");
+	$Logout = file_get_contents("../Templates/Logout.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 	$adminPanel = "<button disabled onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
