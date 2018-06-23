@@ -242,3 +242,42 @@ PAGINA DOVE SIAMO
 	height: 400px;
     width: auto;
 }
+
+
+/*
+=========================
+PAGINA DOVE SIAMO
+=========================
+*/
+
+.bloccoDati {
+	border:none;
+	margin-bottom: 5px;
+}
+
+.lineacapo {
+	display: inline;
+	font-size: 14pt;
+}
+
+.EntryUtente {
+	font-weight: bold;
+}
+
+.userData {
+	clear: both;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+#numCorso{
+	display: none;
+}
+
+#nomeCorso{
+	display: inline;
+}
+
+.bloccoDati2 {
+	display: none;
+}
