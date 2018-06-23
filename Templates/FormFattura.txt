@@ -41,12 +41,12 @@
 							</select>
 						</div>
 						<div class="group">
-						<label for="corsi" class="label">Iscrizione corsi</label>
-						<input name="corsi1" id="corsiselect1" value="Spinning" type="checkbox"> Spinning
-						<input name="corsi2" id="corsiselect2" value="Step" type="checkbox"> Step
-						<input name="corsi3" id="corsiselect3" value="Jump Fit" type="checkbox"> Jump Fit
-						<input name="corsi4" id="corsiselect4" value="Power Pump" type="checkbox"> Power Pump
-						<input name="corsi5" id="corsiselect5" value="Fit Boxe" type="checkbox"> Fit Boxe
+						<label for="corsi" class="label>Iscrizione corsi</label>
+						<input name="corsiselect1" id="orsiselect1" value="Spinning" type="checkbox"> Spinning
+						<input name="corsiselect2" id="corsiselect2" value="Step" type="checkbox"> Step
+						<input name="corsiselect3" id="corsiselect3" value="Jump Fit" type="checkbox"> Jump Fit
+						<input name="corsiselect4" id="corsiselect4" value="Power Pump" type="checkbox"> Power Pump
+						<input name="corsiselect5" id="corsiselect5" value="Fit Boxe" type="checkbox"> Fit Boxe
 						</div>
 						<div class="group">
 							<label for="punti" class="label">Punti Corsi</label>

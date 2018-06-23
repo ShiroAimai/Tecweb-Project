@@ -43,7 +43,7 @@
 		$stampa .="</div></div>";
 		
 		//Dati abbonamento
-		$query2 = query("SELECT ScadenzaFitness, PuntiCorsi from abbonamento where CodiceUtente=$usercode");
+		$query2 = query("SELECT ScadenzaFitness, EntrateCorsi from abbonamento where CodiceUtente=$usercode");
 		$data = mysqli_fetch_assoc($query2);
 		$stampa .="<div class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Dati abbonamento:</div>";
@@ -53,7 +53,7 @@
 			$stampa .="<div id\"scadenzaAbbonamento\" class=\"EntryTab\">&nbsp;" .$data['ScadenzaFitness']."&ensp;</div></div>";
 		else
 			$stampa .=" <div class=\"EntryTab\">&nbsp;Scaduto!&ensp;</div></div>";
-		$stampa .="<div id=\"puntiAccumulati\"class=\"lineacapo\"><div class=\"EntryUtente\"> Punti accumulati:</div><div class=\"EntryTab\">&nbsp;" .$data['PuntiCorsi']."&ensp;</div></div>";
+		$stampa .="<div id=\"puntiAccumulati\"class=\"lineacapo\"><div class=\"EntryUtente\"> Punti accumulati:</div><div class=\"EntryTab\">&nbsp;" .$data['EntrateCorsi']."&ensp;</div></div>";
 		$stampa .="</div></div>";
 
 		//Corsi a cui si è iscritti
