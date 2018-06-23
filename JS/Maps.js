@@ -4,8 +4,7 @@ function myMap() {
 	var mapOptions = {center: myCenter, zoom: 16};
 	var map = new google.maps.Map(mapCanvas,mapOptions);
 	var marker = new google.maps.Marker({
-		position: myCenter,
-		animation: google.maps.Animation.BOUNCE
+		position: myCenter
 	});
 	marker.setMap(map);
 	//Zoom a 18 quando si clicca nel marker 

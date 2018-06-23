@@ -204,7 +204,6 @@ PAGINA GALLERIA
 	width:100%;
 }
 
-
 /*
 =========================
 PAGINA CHI SIAMO
@@ -231,4 +230,15 @@ float: left;
 
 #Istruttori ul {
 	padding: 2px;
+}
+
+/*
+=========================
+PAGINA DOVE SIAMO
+=========================
+*/
+
+#map {
+	height: 400px;
+    width: auto;
 }
