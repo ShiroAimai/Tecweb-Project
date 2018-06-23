@@ -76,7 +76,7 @@
 		$stampa .= "<h1 class=\"userData2\">Scarica la tua scheda:</h1>";
 		if($data['LinkScheda']!=null) {
 			//mi cerca la scheda nella dir schede col nome corrispondente salvato sul db
-			$stampa.="<a href=\"../schede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\">";
+			$stampa.="<a id=\"linkscheda\" href=\"../schede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\">";
 			$stampa .= "<img id=\"schedadownimg\" src=\"../IMAGES/icone/downbutton.svg\" alt=\"Bottone di download scheda.\"></a>";
 		}
 		else

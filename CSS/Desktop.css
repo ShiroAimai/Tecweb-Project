@@ -1492,14 +1492,13 @@ USER PANEL
 =================*/
 
 .bloccoDati {
-	margin:1% 1% 1% 8%;
+	margin:1% 1% 2% 8%;
 	float:left;
 	
 }
 .bloccoDati2 {
-	margin:4% 1% 4% 8%;
+	margin:2% 8.2%;
 	clear:both;
-	
 	
 }
 .TabUtente {
@@ -1530,7 +1529,7 @@ USER PANEL
 .userData2 {
 	color: white;
 	font-weight: bold;
-	
+	clear:both;
 }
 .TabUtente2 {
 	color:#DAAC5E;
@@ -1539,12 +1538,19 @@ USER PANEL
 	
 }
 #schedadownimg {
-	width:5%;
-	margin:1% 7%;
+	width:4%;
+	padding:0.2%;
+	margin-top:1%;
+	border:"0";
 	border: 4px solid white;
+	overflow:hidden;
+
 }
 #schedadownimg:hover {
 	border: 4px solid #DAAC5E;
+}
+#linkscheda {
+	margin-left:8%;
 }
 .lineacapo {
 	clear:both;
