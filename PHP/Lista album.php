@@ -27,7 +27,7 @@
 	echo $closediv;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $albumList;
-		$sql = "SELECT * FROM galleria GROUP BY Album ORDER BY Data DESC";
+		$sql = "SELECT *, count(*) as foto FROM galleria GROUP BY Album ORDER BY Data DESC";
 		$album=select($sql);
 		if ($album == null) {
 			echo "<tr><td colspan=7 >Nessun risultato</td>";
@@ -37,12 +37,15 @@
 
 			echo "<td>".$a['Album'];
 			echo "</td>";
+			
+			echo "<td>".$a['foto'];
+			echo "</td>";
 
 			echo "<td>".$a['Data'];
 			echo "</td>";
 			
 			echo "<td>
-				<form method=\"post\" action=\"elimina galleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria?');\" >
+				<form method=\"post\" action=\"elimina galleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria e le relative foto?');\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Elimina galleria</label>
 					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Elimina galleria\" value=\"Elimina galleria\"/>

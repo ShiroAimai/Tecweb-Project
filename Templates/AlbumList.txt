@@ -8,7 +8,8 @@
 <thead>
     <tr>
         <th scope="col">Album</th>
-        <th scope="col">Data</th>
+		<th scope="col">Numero foto</th>
+		<th scope="col">Data</th>
 		<th scope="col">Elimina galleria</th>
     </tr>
 </thead>
