@@ -1141,36 +1141,25 @@ PAGINA GALLERIA
 	background-color: #323232;
 }
 .imgsfondonero {
-	margin:2% 10% 2% 10%;
-	width:80%;
-	
-
+	width:60%;
+	margin:1% 20% 0 20%;
 }
 
-.backbutton a {
+#imgsfondoneroa {
+	color:white;
+	margin-left:71%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#imgsfondoneroa:hover {
+	color:#DAAC5E;
+}
+#sfondonerocont {
 	width:100%;
-	
-}
-#backarrow
-{
-	text-align: center;
-	width:80%;
-	margin:0.5em;
-	
+	margin-top:5%;
 }
 
-.backbutton 
-{
-	border:2px solid black;
-	margin:2% 0% 2% 85%;
-	width:5%;
-	
 
-}
-.backbutton:hover
-{
-	border:2px solid #ffffff;
-}
 
 /*
 ==================================
@@ -1231,6 +1220,7 @@ a {
 	color:inherit;
 	text-decoration:none;
 }
+
 
 .loginWrap {
 	width:100%;

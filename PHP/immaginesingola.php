@@ -13,12 +13,8 @@
 	echo $div;
 
 	$aux=$_GET['album'];
-	$stampa="
-	<div class=\"backbutton\">
-	<a href=\"templategalleria.php?album=$aux\">
-	<img id=\"backarrow\" src=\"../IMAGES/tornaindietro.png\" alt=\"TORNA ALLA GALLERIA FOTO DELL'ALBUM $aux\"/>
-	</a></div>";
-	$stampa.="<img class=\"imgsfondonero\" src=\"../galleria/".$aux.'/'.$_GET['nome']."\" alt=\"Immagine dell'album\"/>";
+	$stampa="<div id=\"sfondonerocont\" ><a id=\"imgsfondoneroa\" href=\"templategalleria.php?album=$aux\">Torna all'album ".$aux."</a>";
+	$stampa.="<img class=\"imgsfondonero\" src=\"../galleria/".$aux.'/'.$_GET['nome']."\" alt=\"Immagine dell'album ".$aux."\"/></div>";
 	echo $stampa;
 
 	echo $closediv;
