@@ -25,10 +25,11 @@
 	
 	echo $closediv;
 	echo $closediv;
-	register('title');
+	//register('title'); EDIT: Non usabile perché perde il valore al refresh
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $listaFoto;
-		$sql = "SELECT * FROM galleria WHERE Album='$title'";
+		$aux=$_GET['album'];
+		$sql = "SELECT * FROM galleria WHERE Album='$aux'";
 		$foto=select($sql);
 		if ($foto == null) {
 			echo "<tr><td colspan=7 >Nessun risultato</td>";
@@ -43,7 +44,7 @@
 			echo "</td>";
 			
 			echo "<td>
-				<form method=\"post\" action=\"Elimina foto.php\" onsubmit=\"return confirm('Confermi di voler eliminare la foto?');\" >
+				<form method=\"post\" action=\"Elimina foto.php?albumT=".$f['Album']."\" onsubmit=\"return confirm('Confermi di voler eliminare la foto?');\" >
 					<input type=\"hidden\"  name=\"folder\" value=\"" . $f['Album'] . "\"/>
 					<input type=\"hidden\"  name=\"image\" value=\"" . $f['NomeImmagine'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $f['NomeImmagine'] . "\">Elimina foto</label>

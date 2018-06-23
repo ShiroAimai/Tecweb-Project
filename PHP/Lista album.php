@@ -53,7 +53,7 @@
 				</td>";
 				
 			echo "<td>
-				<form method=\"post\" action=\"Lista foto.php\" >
+				<form method=\"post\" action=\"Lista foto.php?album=".$a['Album']."\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Vedi foto</label>
 					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Vedi foto\" value=\"Vedi foto\"/>
