@@ -1409,6 +1409,10 @@ ADMIN PANEL
 	background: #81350c;
 }
 
+.btn-9 {
+	background: #95a190;
+}
+
 .icon-adduser:before {
 	content: "\f234";
 }
@@ -1435,6 +1439,10 @@ ADMIN PANEL
 
 .icon-showalbum:before {
 	content: "\f03e";
+}
+
+.icon-addfattura:before {
+	content: "\f153";
 }
 
 /*

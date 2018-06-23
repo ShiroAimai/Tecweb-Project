@@ -12,5 +12,6 @@
 		<a href="Lista admin.php"><button class="btn btn-6 btn-sep icon-showusers">Mostra admin</button></a>
 		<a href="Lista news.php"><button class="btn btn-7 btn-sep icon-shownews">Mostra news</button></a>
 		<a href="Lista album.php"><button class="btn btn-8 btn-sep icon-showalbum">Mostra album</button></a>
+		<a href="Form fattura.php"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
 	</div>
 </div>

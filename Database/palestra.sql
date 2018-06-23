@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `abbonamento` (
   `CodiceUtente` int(10) NOT NULL,
   `ScadenzaFitness` date DEFAULT NULL,
-  `PuntiCorsi` int(10) DEFAULT NULL
+  `PuntiCorsi` int(10) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -39,8 +39,8 @@ CREATE TABLE `abbonamento` (
 --
 
 INSERT INTO `abbonamento` (`CodiceUtente`, `ScadenzaFitness`, `PuntiCorsi`) VALUES
-(1, '2018-03-28', NULL),
-(2, NULL, 20),
+(1, '2018-03-28', 0),
+(2, '2018-03-28', 20),
 (3, '2018-03-28', 30);
 
 -- --------------------------------------------------------
@@ -76,17 +76,17 @@ CREATE TABLE `fattura` (
   `DataEmissione` date NOT NULL,
   `ImportoEuro` int(10) NOT NULL,
   `CodiceUtente` int(10) NOT NULL,
-  `MesiFitness` int(10) DEFAULT NULL,
-  `EntrateCorsi` int(10) DEFAULT NULL
+  `MesiFitness` int(10) DEFAULT 0,
+  `PuntiCorsi` int(10) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `fattura`
 --
 
-INSERT INTO `fattura` (`NumeroRicevuta`, `DataEmissione`, `ImportoEuro`, `CodiceUtente`, `MesiFitness`, `EntrateCorsi`) VALUES
-(1, '2017-03-28', 300, 1, 12, NULL),
-(2, '2017-03-28', 120, 2, NULL, 20),
+INSERT INTO `fattura` (`NumeroRicevuta`, `DataEmissione`, `ImportoEuro`, `CodiceUtente`, `MesiFitness`, `PuntiCorsi`) VALUES
+(1, '2017-03-28', 300, 1, 12, 0),
+(2, '2017-03-28', 120, 2, 0, 20),
 (3, '2017-09-28', 420, 3, 6, 30);
 
 --
@@ -127,12 +127,12 @@ WHERE
 new.CodiceUtente = abbonamento.CodiceUtente;
 END IF;
  
-SELECT abbonamento.EntrateCorsi INTO entry FROM abbonamento WHERE new.CodiceUtente = abbonamento.CodiceUtente;
+SELECT abbonamento.PuntiCorsi INTO entry FROM abbonamento WHERE new.CodiceUtente = abbonamento.CodiceUtente;
  
-IF (new.EntrateCorsi > 0)
+IF (new.PuntiCorsi > 0)
 THEN
 UPDATE abbonamento
-SET abbonamento.EntrateCorsi = entry + new.EntrateCorsi
+SET abbonamento.PuntiCorsi = entry + new.PuntiCorsi
 WHERE
 new.CodiceUtente = abbonamento.CodiceUtente;
 END IF;
