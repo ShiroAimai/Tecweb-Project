@@ -27,7 +27,7 @@
 	echo $closediv;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $albumList;
-		$sql = "SELECT *, count(*) as foto FROM galleria GROUP BY Album, NomeImmagine ORDER BY Data DESC";
+		$sql = "SELECT Album,Data, count(*) as foto FROM galleria GROUP BY Album,Data ORDER BY Data DESC";
 		$album=select($sql);
 		if ($album == null) {
 			echo "<tr><td colspan=7 >Nessun risultato</td>";

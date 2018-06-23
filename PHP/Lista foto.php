@@ -43,7 +43,7 @@
 			echo "</td>";
 			
 			echo "<td>
-				<form method=\"post\" action=\"elimina foto.php\" onsubmit=\"return confirm('Confermi di voler eliminare la foto?');\" >
+				<form method=\"post\" action=\"Elimina foto.php\" onsubmit=\"return confirm('Confermi di voler eliminare la foto?');\" >
 					<input type=\"hidden\"  name=\"folder\" value=\"" . $f['Album'] . "\"/>
 					<input type=\"hidden\"  name=\"image\" value=\"" . $f['NomeImmagine'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $f['NomeImmagine'] . "\">Elimina foto</label>
