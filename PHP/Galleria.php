@@ -44,7 +44,8 @@
                 
                 if($aux==null)//caso in cui siamo appena entrati a prelevare nel database
                     {
-                    $stampa = "<a href=\"templategalleria.php?album=".$row['Album']."\"><div class=\"album\"> <h3 class=\"albumname\">".$row['Album']."</h3><img class=\"galleryimg\" src=\"../galleria/".$row['Album'].'/'.$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"></div></a>";// aggiungere il primo $row di ogni album
+                    $stampa = "<a href=\"templategalleria.php?album=".$row['Album']."\"><div class=\"album\"> <h3 class=\"albumname\">".$row['Album']."</h3><img class=\"galleryimg\" src=\"../galleria/".$row['Album'].'/'.$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"></div></a>";
+                    // aggiungere il primo $row di ogni album
                         $aux=$row['Album'];
                     }
                 else if($row['Album']!=$aux)
