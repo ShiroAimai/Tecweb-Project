@@ -53,6 +53,15 @@
 				</td>";
 				
 			echo "<td>
+				<form method=\"post\" action=\"Rinomina galleria.php\" >
+					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
+					<label class=\"invisibleLabel\" for=\"rename\">Rinomina galleria</label>
+					<input name=\"rename\" id=\"rename\" type=\"text\"  title=\"Rinomina galleria\" required />
+					<input type=\"submit\"  title=\"Rinomina galleria\" value=\"Rinomina galleria\"/>
+				</form>
+				</td>";
+				
+			echo "<td>
 				<form method=\"post\" action=\"Lista foto.php?album=".$a['Album']."\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Vedi foto</label>
