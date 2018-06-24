@@ -109,7 +109,7 @@
 				<li>Giuduce di gara</li>  
 				<li>Istuttore Spinning</li>
 				<li>Fit Box</li>
-				<li> Power Pump</li>
+				<li>Power Pump</li>
 				<li>Pilates</li>
 			</ul>
 			</div>
