@@ -8,11 +8,12 @@
 		
 		if(isset($corsiselect1) || isset($corsiselect2) || isset($corsiselect3) || isset($corsiselect4) || isset($corsiselect5))
 		{
-			//aggiorno la tabella iscrizionecorso
-			//ampliare con gestione errori query
+			
 			if(isset($corsiselect1))
 				if(query("INSERT INTO iscrizionecorso (CodiceUtente, CodiceCorso, NomeCorso) VALUES ('$userCode', 1, '$corsiselect1')") == FALSE)
+				{
 					header("Location: iscrizioneCorsoFallita.php");
+				}
 			if(isset($corsiselect2))
 				if(query("INSERT INTO iscrizionecorso (CodiceUtente, CodiceCorso, NomeCorso) VALUES ('$userCode', 5, '$corsiselect2')") == FALSE)
 					header("Location: iscrizioneCorsoFallita.php");
