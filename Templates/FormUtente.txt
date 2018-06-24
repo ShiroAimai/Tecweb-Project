@@ -16,10 +16,6 @@
 				<div class="login-form">							
 					<form id="userForm" action="registrazione utente.php" method="post">
 						<div class="group">
-							<label for="userCode" class="label">Codice utente</label>
-							<input name="userCode" id="userCode" type="text" class="input" required />
-						</div>
-						<div class="group">
 							<label for="userName" class="label">Nome</label>
 							<input name="userName" id="userName" type="text" class="input" required />
 						</div>
