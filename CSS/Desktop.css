@@ -182,6 +182,26 @@ SEZIONE FOOTER
 	text-align: center;
 }
 
+#backTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #acc0e0;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#backTop:hover {
+    background-color: #8294b2;
+}
+
 /*
 =========================
 PAGINA HOME
@@ -574,32 +594,6 @@ PAGINA HOME
 
 #genny {
 	float:left;
-}
-
-/*
-=========================
-PAGINA GALLERIA
-=========================
-*/
-
-#sfondogalleria {
-	position: relative;
-}
-
-#titologalleria {
-	position: absolute;
-	font-family: Verdana;
-	color: rgb(107,27,87);
-	font-size: 6vw;
-	font-weight:800;
-	width: 100%;
-	text-align: right;
-	right: 5%;
-    top: -5%;
-}
-
-#imagegalleria {
-	width: 100%;
 }
 
 /*
@@ -1051,6 +1045,27 @@ PAGINA DINAMICA NEWS
 /*=================
 PAGINA GALLERIA
 ================*/
+
+#sfondogalleria {
+	position: relative;
+}
+
+#titologalleria {
+	position: absolute;
+	font-family: Verdana;
+	color: rgb(107,27,87);
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 5%;
+    top: -5%;
+}
+
+#imagegalleria {
+	width: 100%;
+}
+
 .gallerymain{
 	display:table;
 	width:100%;
