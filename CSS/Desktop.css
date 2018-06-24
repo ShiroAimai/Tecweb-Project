@@ -1289,6 +1289,10 @@ a {
 	cursor: pointer;
 }
 
+select option {
+    background: #516b8d;
+}
+
 /*============
 ERRORE LOGIN
 ===========*/

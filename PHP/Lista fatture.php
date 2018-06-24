@@ -48,7 +48,7 @@
 			echo "<td>".$f['MesiFitness'];
 			echo "</td>";
 			
-			echo "<td>".$f['PuntiCorsi'];
+			echo "<td>".$f['EntrateCorsi'];
 			echo "</td>";
 		}
 		echo "</tbody>";
