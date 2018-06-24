@@ -1,9 +1,0 @@
-<div class="message">
-	<div class="messagetext">
-		<h2>Sei già iscritto a quel corso!</h2>
-		<h3>Seleziona nuovi corsi a cui iscriverti</h3>
-		<a class="messagelink" href="formCorsi.php">Ritorna al pannello amministratore</a>
-		<a class="messagelink" href="Home.php">Ritorna alla homepage</a>
-	</div>
-	
-</div>

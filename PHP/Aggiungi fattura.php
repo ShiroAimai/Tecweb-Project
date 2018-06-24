@@ -12,14 +12,9 @@
 			//aggiorno fattura
 			$sql = "INSERT INTO fattura (CodiceUtente, DataEmissione, ImportoEuro, MesiFitness, EntrateCorsi)
 			VALUES ('$userCode','$today','$importo','$mesi','$entrate')";
-			if(query($sql) == FALSE) //da ampliare con gestione errori
-				header("Location:queryfallita.php");
-			
+			query($sql) == FALSE);			
 			header("Location:fattura aggiunta.php");
 	}
 	else
 		header("Location: queryfallita.php");
-
-	
-
 ?>

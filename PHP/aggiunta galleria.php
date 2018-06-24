@@ -57,16 +57,14 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Albumerr="";
       $Immagine=$_FILES['galleryFile']['name'][$counter];
         $sql = "INSERT INTO galleria (NomeImmagine, Album)
             VALUES ('$Immagine', '$Album')";
-
-			if (query($sql) === FALSE) 
-          header("Location: queryfallita.php");
+		query($sql);
       $counter++;
     }
   }
   else
     header("Location: queryfallita.php");
 
-if (query($sql) === TRUE) {
+
 	if (!file_exists('../galleria/'.$_POST["galleryName"].'/')) {
 		mkdir('../galleria/'.$_POST["galleryName"].'/', 0777, true);
 	}
@@ -86,7 +84,6 @@ if (query($sql) === TRUE) {
 			}
 		}
 	}
-}
 
 
 echo $addGallery;

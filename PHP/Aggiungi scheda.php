@@ -11,7 +11,6 @@ $closediv = "</div>";
 $closebody = "</body>";
 $closehtml = "</html>";
 register('user');
-$ok = true;
 $pdf = $_FILES[$user]["name"];
 $sql = "UPDATE scheda SET LinkScheda='$pdf' WHERE CodiceUtente='$user'";
 
@@ -29,22 +28,17 @@ echo $head;
 	echo $closediv;
 	echo $closediv;
 
-if (query($sql) === FALSE) {
-	$ok = false;
-}
+query($sql);
+echo $addScheda;
 
 $target_dir = "../schede/";
 $target_file = $target_dir . basename($_FILES["$user"]["name"]);
 $uploadOk = 1;
 $pdfFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 if (!move_uploaded_file($_FILES["$user"]["tmp_name"], $target_file)) {
-        $ok = false;
+        header("Location: queryfallita.php");
     }
-if($ok) {
-	echo $addScheda;
-}
-else
-	header("Location: queryfallita.php");
+
 echo $foot;
 echo $closebody;
 echo $closehtml;

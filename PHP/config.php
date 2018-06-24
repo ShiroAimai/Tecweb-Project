@@ -6,7 +6,7 @@ session_start();
 //parametri di connessione al database
 $hostname = "localhost";
 $username = "root";
-$password = "";
+$password = "a";
 $database = "fsacchet";
 
 //registra una variabile da una form nella pagina che richiama questa funzione
@@ -26,7 +26,8 @@ function connect()
     global $connessione, $hostname, $username, $password, $database;
     $connessione = new mysqli($hostname, $username, $password, $database);
     if ($connessione->connect_error) {
-       header("Location: connessioneFallita.php");
+		header("Location: connessioneFallita.php");
+		die();
     }
 }
 
@@ -39,7 +40,8 @@ function query($sql)
     }
     $res = mysqli_query($connessione, $sql);
     if ($res == FALSE) {
-       header("Location queryfallita.php");
+		header("Location queryfallita.php");
+		die();
     }
     return $res;
 }
@@ -48,8 +50,6 @@ function query($sql)
 function select($sql)
 {
     $res = query($sql);
-    if($res == FALSE)
-        header("Location: queryfallita.php");
     $table = array();
     while ($row = mysqli_fetch_assoc($res)) {
         $table[] = $row;

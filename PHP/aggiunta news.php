@@ -59,13 +59,10 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
       }
     if($Titoloerr=="" && $Immagineerr=="" && $Descrizioneerr=="")
       {  
-        $sql = "INSERT INTO news (Titolo, Immagine, Descrizione) VALUES ('$Titolo', '$Immagine', '$Descrizione')";
+        query("INSERT INTO news (Titolo, Immagine, Descrizione) VALUES ('$Titolo', '$Immagine', '$Descrizione')");
       }
     else
         header("Location: queryfallita.php");
-
-		if (query($sql) === FALSE) 
-			   header("Location: queryfallita.php");
    
 if (query($sql) === TRUE) {
 	$target_dir = "../uploads/";
