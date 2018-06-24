@@ -246,7 +246,7 @@ CREATE TABLE `utente` (
   `Cognome` varchar(150) NOT NULL,
   `Password` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
-  `Tipo` enum('user','admin') NOT NULL DEFAULT 'user'
+  `Tipo` varchar(50) NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -259,6 +259,28 @@ INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `Password`, `Email`, `T
 (3, 'Marco', 'Masiero', 'marmasier3', 'marco.masiero@gmail.com', 'user'),
 (4, 'Stefano', 'Nordio', 'snordio4', 'stefano.nordio@gmail.com', 'user'),
 (5, 'Admin-Name', 'Admin-Surname', 'admin', 'admin.admin@gmail.com', 'admin');
+
+--
+-- Trigger `utente`
+--
+DELIMITER $$
+CREATE TRIGGER `updabb` AFTER INSERT ON `utente` FOR EACH ROW BEGIN
+DECLARE codut INTEGER;
+DECLARE scad DATE;
+DECLARE tipo VARCHAR(50);
+
+SELECT new.Tipo INTO tipo;
+IF (tipo = 'user')
+THEN
+SELECT new.CodiceUtente INTO codut;
+SELECT DATE_ADD(CURRENT_DATE, INTERVAL 1 DAY) INTO scad;
+INSERT INTO `abbonamento`(`CodiceUtente`, `ScadenzaFitness`) VALUES (codut, scad);
+
+END IF;
+
+END
+$$
+DELIMITER ;
 
 --
 -- Indici per le tabelle scaricate

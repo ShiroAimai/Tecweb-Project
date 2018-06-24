@@ -6,9 +6,9 @@
 	register('userSurname');
 	register('pass');
 	register('userMail');
-
+	$user = "user";
 	$sql = "INSERT INTO utente (CodiceUtente, Nome, Cognome, Password, Email, Tipo)
-	VALUES ('$userCode','$userName','$userSurname','$pass','$userMail','user')";
+	VALUES ('$userCode','$userName','$userSurname','$pass','$userMail','$user')";
 	query($sql);
 
 	header("Location:utente aggiunto.php");

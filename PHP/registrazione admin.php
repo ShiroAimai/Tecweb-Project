@@ -7,8 +7,10 @@
 	register('pass');
 	register('userMail');
 
+	$admin = "admin";
+
 	$sql = "INSERT INTO utente (CodiceUtente, Nome, Cognome, Password, Email, Tipo)
-	VALUES ('$userCode','$userName','$userSurname','$pass','$userMail','admin')";
+	VALUES ('$userCode','$userName','$userSurname','$pass','$userMail','$admin')";
 	query($sql);
 
 	header("Location:admin aggiunto.php");
