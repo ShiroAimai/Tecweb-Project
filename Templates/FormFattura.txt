@@ -1,4 +1,4 @@
-<script> var precMesiVal=0; var precPuntiVal=0;</script>
+
 <div id="Presentazione">
 	<h1 id="titoloPagina">AGGIUNGI FATTURA</h1>
 </div>
@@ -43,15 +43,6 @@
 							</select>
 
 						</div>
-
-						<div class="group">
-							<label for="corsi" class="label">Iscrizione corsi</label>
-							<input type="checkbox" name="corsiselect1" id="corsiselect1" value="Spinning"/> Spinning
-							<input type="checkbox" name="corsiselect2" id="corsiselect2" value="Step" /> Step
-							<input type="checkbox" name="corsiselect3" id="corsiselect3" value="Jump Fit"/> Jump Fit
-							<input type="checkbox" name="corsiselect4" id="corsiselect4" value="Power Pump" /> Power Pump 
-							<input type="checkbox" name="corsiselect5" id="corsiselect5" value="Fit Boxe" /> Fit Boxe
-						</div>
 						<div class="group">
 							<label for="entrate" class="label">Entrate Corsi</label>
 							<input onchange="changePunti()" name="entrate" id="entrate" type="number" value="0" class="input" />
@@ -65,6 +56,7 @@
 		</div>
 	</div>
 </div>
+<script> var precMesiVal=0; var precPuntiVal=0;</script>
 <script>function changeMesi(){
 var aux=document.getElementById('importo'); //valore attuale di importo
 var confronto = precMesiVal-Number(document.getElementById('mesi').value); //mi dice se devo sommare o sottrarre dal valore attuale

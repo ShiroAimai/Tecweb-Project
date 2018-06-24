@@ -1,12 +1,14 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerAddFattura.txt");
+    $head = file_get_contents("../Templates/headerFormFattura.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$addFattura = file_get_contents("../Templates/AddFattura.txt");
+	$formcorsi = file_get_contents("../Templates/formcorsi.txt");
+	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
-	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
+	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
+	$pswvalidation = "<script src=\"../JS/PswValidation.js\"></script>";
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
@@ -15,12 +17,19 @@
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;
-	} else 
-		echo $notAdmin;
+	} else if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
+		echo $logout;
+		echo $userPanel;
+	} else {
+		echo $login;
+	}
 	
 	echo $closediv;
 	echo $closediv;
-	echo $addFattura;
+	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
+		echo $formcorsi;
+	}
+	
 	echo $foot;
 	echo $closebody;
 	echo $closehtml;

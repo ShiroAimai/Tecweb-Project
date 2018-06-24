@@ -2,11 +2,11 @@
 	require_once('config.php');
     $head = file_get_contents("../Templates/headerAddFattura.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$addFattura = file_get_contents("../Templates/AddFattura.txt");
+	$iscrizionecorsofail = file_get_contents("../Templates/notIscrizioneCorso.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
-	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
+	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
@@ -15,12 +15,16 @@
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;
-	} else 
-		echo $notAdmin;
+	} else if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
+		echo $logout;
+		echo $userPanel;
+	} else {
+		echo $login;
+	}
 	
 	echo $closediv;
 	echo $closediv;
-	echo $addFattura;
+	echo $iscrizionecorsofail;
 	echo $foot;
 	echo $closebody;
 	echo $closehtml;

@@ -26,12 +26,9 @@ echo $head;
 	
 	echo $closediv;
 	echo $closediv;
-	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $queryfallita;
-	}
-	else {
-		echo $notAdmin;
-	}
+	
+	echo $queryfallita;
+	
 	echo $foot;
 	echo $closebody;
 	echo $closehtml;

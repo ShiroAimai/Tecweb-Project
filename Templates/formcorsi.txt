@@ -1,0 +1,41 @@
+
+<div id="Presentazione">
+	<h1 id="titoloPagina">Iscriviti ad un nuovo corso</h1>
+</div>
+<div class="FormContainer">
+	<div class="containerChild">
+		<div class="leftContent">
+			<h1>Iscrizione corsi</h1>
+			<p>Spunta la casella di un corso per iscriverti a quel corso</p>
+			<p>Non spuntare le caselle dei corsi a cui sei già iscritta!</p>
+		</div>
+		<div class="signupOverlay"></div>
+	</div>
+	<div class="containerChild">
+		<div class="loginWrap">
+			<div class="login-html">
+				<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
+				<div class="login-form">							
+					<form id="userForm" action="aggiuntaCorso.php" method="post">
+						<div class="group">
+							<label for="corsi" class="label">Iscrizione corsi</label>
+							<input type="checkbox" name="corsiselect1" id="corsiselect1" value="Spinning"/> Spinning
+							</br>
+							<input type="checkbox" name="corsiselect2" id="corsiselect2" value="Step" /> Step
+							</br>
+							<input type="checkbox" name="corsiselect3" id="corsiselect3" value="Jump Fit"/> Jump Fit
+							</br>
+							<input type="checkbox" name="corsiselect4" id="corsiselect4" value="Power Pump" /> Power Pump 
+							</br>
+							<input type="checkbox" name="corsiselect5" id="corsiselect5" value="Fit Boxe" /> Fit Boxe
+							</br>
+						</div>
+						<div class="group">
+							<input type="submit" class="button" value="Iscrviti ai corsi"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

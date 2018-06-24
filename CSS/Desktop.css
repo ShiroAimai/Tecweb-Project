@@ -1336,7 +1336,19 @@ ERRORE LOGIN
 	margin-right:2%;
 	text-decoration: underline;
 }
-
+.messagelinkquery {
+	color:white;
+	float:right;
+	clear:both;
+	margin-top:6%;
+	margin-bottom:-4.5%;
+	margin-right:2%;
+	text-decoration: underline;
+}
+.messagelinkquery:hover
+{
+	color:blue;
+}
 .messagelink:hover
 {
 	color:blue;
@@ -1572,3 +1584,17 @@ USER PANEL
 	clear:both;
 }
 
+#linkformcorsi {
+	color:white;
+	border: 2px solid white;
+	margin:0 34%;
+}
+
+#linkformcorsi:hover {
+	color:#DAAC5E;
+	border: 2px solid #DAAC5E;
+}
+
+#voceformcorsi {
+	margin-bottom:6%;
+}

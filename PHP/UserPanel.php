@@ -75,6 +75,11 @@
 		}
 		$stampa .="</div></div>";
 
+		$stampa .="<div class=\"bloccoDati\">";
+		$stampa .= "<div ID=\"voceformcorsi\" class=\"userData\">Iscriviti ad un nuovo corso:</div>";
+		$stampa .="<a id=\"linkformcorsi\" href=\"formCorsi.php\" alt=\"Link al form predisposto per iscriversi ai corsi e aggiungere la voce al proprio profilo\">Iscriviti qui!</a>";
+		$stampa .="</div>";
+
 		//Button di download scheda
 		$query4 = query("SELECT LinkScheda from scheda where CodiceUtente=$usercode");
 		if($query4 == null)
@@ -91,6 +96,9 @@
 			$stampa.="<div class=\"TabUtente2\">Nessuna scheda associata.</div>";
 
 		$stampa .="</div>";
+
+
+
 		echo $stampa;
 	}
 	else {

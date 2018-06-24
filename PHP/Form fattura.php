@@ -17,12 +17,7 @@
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;
-	} else if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
-		echo $logout;
-		echo $userPanel;
-	} else {
-		echo $login;
-	}
+	} 
 	
 	echo $closediv;
 	echo $closediv;
