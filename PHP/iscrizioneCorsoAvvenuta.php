@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerAddFattura.txt");
+    $head = file_get_contents("../Templates/headerAddCorso.txt");
     $foot = file_get_contents("../Templates/footer.txt");
 	$addCorso = file_get_contents("../Templates/AddCorso.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
