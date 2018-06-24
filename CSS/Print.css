@@ -13,10 +13,6 @@ html, body {
 	position: relative;
 }
 
-a #backTop{
-	display: none;
-}
-
 .Menu, .sandwich, #user, #logofooter, #logofacebook, .container, .logo, #Coni, #asi  {
 	display: none;
 }
