@@ -1,5 +1,6 @@
 <?php
 	require_once('config.php');
+	$userCode = $_SESSION['user_code'];
 	register('corsiselect1');
 	register('corsiselect2');
 	register('corsiselect3');
