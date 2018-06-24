@@ -11,7 +11,8 @@ $userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Pane
 $closediv = "</div>";
 $closebody = "</body>";
 $closehtml = "</html>";
-$ok = true;
+
+
 
 echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -56,14 +57,16 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Descrizioneerr="";
               $Descrizione = test_input($_POST["newsDescription"]);
               }
       }
-      
-    $sql = "INSERT INTO news (Titolo, Immagine, Descrizione)
-        VALUES ('$Titolo', '$Immagine', '$Descrizione')";
+    if($Titoloerr=="" && $Immagineerr=="" && $Descrizioneerr=="")
+      {  
+        $sql = "INSERT INTO news (Titolo, Immagine, Descrizione) VALUES ('$Titolo', '$Immagine', '$Descrizione')";
+      }
+    else
+        header("Location: queryfallita.php");
 
-		if (query($sql) === FALSE) {
-			$ok = false;
-        }
-$connessione->close();
+		if (query($sql) === FALSE) 
+			   header("Location: queryfallita.php");
+   
 
 $target_dir = "../uploads/";
 $target_file = $target_dir . basename($_FILES["newsImage"]["name"]);
@@ -71,12 +74,12 @@ $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
 if (!move_uploaded_file($_FILES["newsImage"]["tmp_name"], $target_file)) {
-        $ok = false;
+        header("Location: queryfallita.php");
     }
 	
-if($ok) {
-	echo $addNews;
-}
+
+echo $addNews;
+
 echo $foot;
 echo $closebody;
 echo $closehtml;

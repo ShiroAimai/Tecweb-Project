@@ -10,7 +10,8 @@
 
 	$sql = "INSERT INTO utente (Nome, Cognome, Password, Email, Tipo)
 	VALUES ('$userName','$userSurname','$pass','$userMail','$admin')";
-	query($sql);
+	if(query($sql) == FALSE)
+		header("Location: queryfallita.php");
 
 	header("Location:admin aggiunto.php");
 

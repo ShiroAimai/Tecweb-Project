@@ -1,3 +1,4 @@
+<script> var precMesiVal=0; var precPuntiVal=0;</script>
 <div id="Presentazione">
 	<h1 id="titoloPagina">AGGIUNGI FATTURA</h1>
 </div>
@@ -21,11 +22,12 @@
 						</div>
 						<div class="group">
 							<label for="importo" class="label">Importo</label>
-							<input name="importo" id="importo" type="number" class="input" required />
+							<input name="importo" id="importo" value="0" type="number" class="input" required />
 						</div>
 						<div class="group">
 							<label for="mesi" class="label">Mesi Fitness</label>
-							<select name="mesi" id="mesi" class="input" required>
+							<select onchange="changeMesi()" name="mesi" id="mesi" class="input" >
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -39,6 +41,7 @@
 								<option value="11">11</option>
 								<option value="12">12</option>
 							</select>
+
 						</div>
 
 						<div class="group">
@@ -51,7 +54,7 @@
 						</div>
 						<div class="group">
 							<label for="entrate" class="label">Entrate Corsi</label>
-							<input name="entrate" id="entrate" type="number" class="input" />
+							<input onchange="changePunti()" name="entrate" id="entrate" type="number" value="0" class="input" />
 						</div>
 						<div class="group">
 							<input type="submit" class="button" value="Inserisci fattura"/>
@@ -62,3 +65,25 @@
 		</div>
 	</div>
 </div>
+<script>function changeMesi(){
+var aux=document.getElementById('importo'); //valore attuale di importo
+var confronto = precMesiVal-Number(document.getElementById('mesi').value); //mi dice se devo sommare o sottrarre dal valore attuale
+precMesiVal=Number(document.getElementById('mesi').value); //mi salva l'ultimo valore assegnato a mesi
+console.log(confronto);
+console.log(precMesiVal);
+if(confronto < 0)
+	document.getElementById('importo').value=Number(aux.value)+40*(-1*confronto);
+else if(confronto>0)
+		document.getElementById('importo').value=Number(aux.value)-40*(confronto);
+};
+</script>
+<script>function changePunti(){
+var aux=document.getElementById('importo'); //valore attuale di importo
+var confronto = precPuntiVal-Number(document.getElementById('entrate').value); //mi dice se devo sommare o sottrarre dal valore attuale
+precPuntiVal= document.getElementById('entrate').value; //mi salva l'ultimo valore assegnato a entrate
+if(confronto<0)
+	document.getElementById('importo').value=Number(aux.value)+6*(-1*confronto);
+else if(confronto>0)
+		document.getElementById('importo').value=Number(aux.value)-6*(confronto);
+};
+</script>

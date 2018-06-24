@@ -11,7 +11,7 @@ $userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Pane
 $closediv = "</div>";
 $closebody = "</body>";
 $closehtml = "</html>";
-$ok = true;
+
 
 echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -58,13 +58,13 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Albumerr="";
         $sql = "INSERT INTO galleria (NomeImmagine, Album)
             VALUES ('$Immagine', '$Album')";
 
-			if (query($sql) == FALSE) {
-				$ok = FALSE;
-            }
-        $counter++;
+			if (query($sql) === FALSE) 
+          header("Location: queryfallita.php");
+      $counter++;
     }
-	   $connessione->close();
   }
+  else
+    header("Location: queryfallita.php");
   
 if (!file_exists('../galleria/'.$_POST["galleryName"].'/')) {
     mkdir('../galleria/'.$_POST["galleryName"].'/', 0777, true);
@@ -81,14 +81,15 @@ if(isset($_FILES['galleryFile']['name']))
         $destination=$destination.basename($filename);
         if (!move_uploaded_file($origin, $destination)) 
         {
-          $ok = FALSE;
+          header("Location: queryfallita.php");
+         
         }
     }
 }
 
-if($ok == TRUE) {
-	echo $addGallery;
-}
+
+echo $addGallery;
+
 echo $foot;
 echo $closebody;
 echo $closehtml;

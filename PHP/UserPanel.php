@@ -31,6 +31,8 @@
 		//Dati utente
 		$usercode =$_SESSION['user_code'];
 		$query = query("SELECT CodiceUtente, Password, Nome, Cognome, Email from utente where CodiceUtente=$usercode");
+		if($query == null)
+			header("Location: queryfallita.php");
 		$data = mysqli_fetch_assoc($query);
 		$name =$data['Nome'];
 		$cognome =$data['Cognome'];
@@ -44,6 +46,8 @@
 		
 		//Dati abbonamento
 		$query2 = query("SELECT ScadenzaFitness, EntrateCorsi from abbonamento where CodiceUtente=$usercode");
+		if($query2 == null)
+			header("Location: queryfallita.php");
 		$data = mysqli_fetch_assoc($query2);
 		$stampa .="<div class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Dati abbonamento:</div>";
@@ -53,11 +57,13 @@
 			$stampa .="<div id\"scadenzaAbbonamento\" class=\"EntryTab\">&nbsp;" .$data['ScadenzaFitness']."&ensp;</div></div>";
 		else
 			$stampa .=" <div class=\"EntryTab\">&nbsp;Scaduto!&ensp;</div></div>";
-		$stampa .="<div id=\"puntiAccumulati\"class=\"lineacapo\"><div class=\"EntryUtente\"> Punti accumulati:</div><div class=\"EntryTab\">&nbsp;" .$data['EntrateCorsi']."&ensp;</div></div>";
+		$stampa .="<div id=\"puntiAccumulati\"class=\"lineacapo\"><div class=\"EntryUtente\"> Entrate corsi:</div><div class=\"EntryTab\">&nbsp;" .$data['EntrateCorsi']."&ensp;</div></div>";
 		$stampa .="</div></div>";
 
 		//Corsi a cui si è iscritti
 		$query3 = query("SELECT NomeCorso from iscrizionecorso where CodiceUtente=$usercode");
+		if($query3 == null)
+			header("Location: queryfallita.php");
 		$stampa .="<div class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Corsi a cui si &egrave; iscritti:</div>";
 		$stampa .="<div class=\"TabUtente\">";
@@ -71,6 +77,8 @@
 
 		//Button di download scheda
 		$query4 = query("SELECT LinkScheda from scheda where CodiceUtente=$usercode");
+		if($query4 == null)
+			header("Location: queryfallita.php");
 		$data = mysqli_fetch_assoc($query4);
 		$stampa .="<div class=\"bloccoDati2\">";
 		$stampa .= "<div class=\"userData2\">Scarica la tua scheda:</div>";

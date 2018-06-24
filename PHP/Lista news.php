@@ -48,7 +48,7 @@
 			echo "</td>";
 			
 			echo "<td>
-				<form method=\"post\" action=\"elimina news.php\" onsubmit=\"return confirm('Confermi di voler eliminare la news?');\" >
+				<form method=\"post\" action=\"Elimina news.php\" onsubmit=\"return confirm('Confermi di voler eliminare la news?');\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $n['Titolo'] . "\"/>
 					<input type=\"hidden\"  name=\"image\" value=\"" . $n['Immagine'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $n['Titolo'] . "\">Elimina news</label>
