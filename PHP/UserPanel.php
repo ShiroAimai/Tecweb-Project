@@ -36,7 +36,7 @@
 		$data = mysqli_fetch_assoc($query);
 		$name =$data['Nome'];
 		$cognome =$data['Cognome'];
-		$stampa ="<div class=\"bloccoDati\">";
+		$stampa ="<div id=\"datiUtente\"class=\"bloccoDati\">";
 		$stampa .="<div class=\"userData\">Dati utente:</div>";
 		$stampa .="<div class=\"TabUtente\">";
 		$stampa .="<div  id=\"NomeUtente\" class=\"lineacapo\"><div class=\"EntryUtente\"> Nome: </div><div class=\"EntryTab\">&nbsp;" .$data['Nome']."&ensp;</div></div>";
@@ -49,7 +49,7 @@
 		if($query2 == null)
 			header("Location: queryfallita.php");
 		$data = mysqli_fetch_assoc($query2);
-		$stampa .="<div class=\"bloccoDati\">";
+		$stampa .="<div id=\"datiAbbonamento\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Dati abbonamento:</div>";
 		$stampa .="<div class=\"TabUtente\">";
 		$stampa .="<div class=\"lineacapo\"><div class=\"EntryUtente\"> Validit&agrave; abbonamento:</div>";
@@ -64,7 +64,7 @@
 		$query3 = query("SELECT NomeCorso from iscrizionecorso where CodiceUtente=$usercode");
 		if($query3 == null)
 			header("Location: queryfallita.php");
-		$stampa .="<div class=\"bloccoDati\">";
+		$stampa .="<div id=\"datiCorso\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Corsi a cui si &egrave; iscritti:</div>";
 		$stampa .="<div class=\"TabUtente\">";
 		$countercorsi=1;
@@ -75,8 +75,8 @@
 		}
 		$stampa .="</div></div>";
 
-		$stampa .="<div class=\"bloccoDati\">";
-		$stampa .= "<div ID=\"voceformcorsi\" class=\"userData\">Iscriviti ad un nuovo corso:</div>";
+		$stampa .="<div id=\"datiIscrizione\" class=\"bloccoDati\">";
+		$stampa .= "<div id=\"voceformcorsi\" class=\"userData\">Iscriviti ad un nuovo corso:</div>";
 		$stampa .="<a id=\"linkformcorsi\" href=\"formCorsi.php\" alt=\"Link al form predisposto per iscriversi ai corsi e aggiungere la voce al proprio profilo\">Iscriviti qui!</a>";
 		$stampa .="</div>";
 
@@ -85,7 +85,7 @@
 		if($query4 == null)
 			header("Location: queryfallita.php");
 		$data = mysqli_fetch_assoc($query4);
-		$stampa .="<div class=\"bloccoDati2\">";
+		$stampa .="<div id=\"datiScheda\" class=\"bloccoDati2\">";
 		$stampa .= "<div class=\"userData2\">Scarica la tua scheda:</div>";
 		if($data['LinkScheda']!=null) {
 			//mi cerca la scheda nella dir schede col nome corrispondente salvato sul db
