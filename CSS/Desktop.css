@@ -1017,12 +1017,13 @@ PAGINA DINAMICA NEWS
 .pubblicazione {
 	float:right;
 	margin:0.5em;
+
 	color:white;
 	font-size: 12px;
 }
 
 .imgnews {
-	width:98%;
+	width:98.6%;
 	margin:0.5em;
 	margin-bottom: 0%;
 	overflow: auto;

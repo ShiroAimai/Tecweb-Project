@@ -25,7 +25,7 @@
 						</div>
 						<div class="group">
 							<label for="mesi" class="label">Mesi Fitness</label>
-							<select name="mesi" id="mesi" class="input">
+							<select name="mesi" id="mesi" class="input" required>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>

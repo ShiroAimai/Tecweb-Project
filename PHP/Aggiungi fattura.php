@@ -15,6 +15,7 @@
 	$sql = "INSERT INTO fattura (CodiceUtente, DataEmissione, ImportoEuro, MesiFitness, EntrateCorsi)
 	VALUES ('$userCode','$today','$importo','$mesi','$entrate')";
 	query($sql);
+	//if(isset($corsiselect1) || isset($corsiselect2) || isset($corsiselect3) || isset($corsiselect4) || isset($corsiselect5))
 	if(isset($corsiselect1))
 		query("INSERT INTO iscrizionecorso (CodiceUtente, CodiceCorso, NomeCorso) VALUES ('$userCode', 1, '$corsiselect1')");
 	if(isset($corsiselect2))
