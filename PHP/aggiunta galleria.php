@@ -65,26 +65,27 @@ $Titolo=$Immagine=$Descrizione=$Titoloerr=$Immagineerr=$Albumerr="";
   }
   else
     header("Location: queryfallita.php");
-  
-if (!file_exists('../galleria/'.$_POST["galleryName"].'/')) {
-    mkdir('../galleria/'.$_POST["galleryName"].'/', 0777, true);
-}
-$target_dir = '../galleria/'.$_POST["galleryName"].'/';
-if(isset($_FILES['galleryFile']['name']))
-{
 
-    $count=0;
-    foreach ($_FILES['galleryFile']['name'] as $filename) {
-        $destination=$target_dir;
-        $origin=$_FILES['galleryFile']['tmp_name'][$count];
-        $count++;
-        $destination=$destination.basename($filename);
-        if (!move_uploaded_file($origin, $destination)) 
-        {
-          header("Location: queryfallita.php");
-         
-        }
-    }
+if (query($sql) === TRUE) {
+	if (!file_exists('../galleria/'.$_POST["galleryName"].'/')) {
+		mkdir('../galleria/'.$_POST["galleryName"].'/', 0777, true);
+	}
+	$target_dir = '../galleria/'.$_POST["galleryName"].'/';
+	if(isset($_FILES['galleryFile']['name']))
+	{
+
+		$count=0;
+		foreach ($_FILES['galleryFile']['name'] as $filename) {
+			$destination=$target_dir;
+			$origin=$_FILES['galleryFile']['tmp_name'][$count];
+			$count++;
+			$destination=$destination.basename($filename);
+			if (!move_uploaded_file($origin, $destination)) 
+			{
+			  header("Location: queryfallita.php");			 
+			}
+		}
+	}
 }
 
 
