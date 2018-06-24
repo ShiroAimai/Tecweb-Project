@@ -40,7 +40,7 @@ function query($sql)
     }
     $res = mysqli_query($connessione, $sql);
     if ($res == FALSE) {
-		header("Location queryfallita.php");
+		header("Location: queryfallita.php");
 		die();
     }
     return $res;
@@ -55,6 +55,14 @@ function select($sql)
         $table[] = $row;
     }
     return $table;
+}
+
+//controlla la validità dei valori inviati da una form
+function test_input($data) {
+	$data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
 
 ?>

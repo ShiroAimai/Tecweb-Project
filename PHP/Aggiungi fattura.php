@@ -7,14 +7,17 @@
 	$today = date("Y-m-d"); 
 
 
-	if(isset($userCode) && isset($today) && isset($importo) && isset($mesi) && isset($entrate))
-	{		
+	if(isset($userCode) && !empty($userCode) 
+		&& isset($today) && !empty($today)
+		&& isset($importo) && !empty($importo)
+		&& isset($mesi) && !empty($mesi)
+		&& isset($entrate) && !empty($entrate)) {		
 			//aggiorno fattura
-			$sql = "INSERT INTO fattura (CodiceUtente, DataEmissione, ImportoEuro, MesiFitness, EntrateCorsi)
-			VALUES ('$userCode','$today','$importo','$mesi','$entrate')";
-			query($sql) == FALSE);			
+			query("INSERT INTO fattura (CodiceUtente, DataEmissione, ImportoEuro, MesiFitness, EntrateCorsi)
+			VALUES ('$userCode','$today','$importo','$mesi','$entrate')");			
 			header("Location:fattura aggiunta.php");
 	}
-	else
+	else {
 		header("Location: queryfallita.php");
+	}
 ?>
