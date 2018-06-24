@@ -120,7 +120,7 @@ END IF;
  
 IF (scad >= CURRENT_DATE() )
 THEN
-SELECT DATE_ADD(abbonamento.ScadenzaFitness, INTERVAL new.MesiFitness MONTH) INTO newdata;
+SELECT DATE_ADD(scad, INTERVAL new.MesiFitness MONTH) INTO newdata;
 UPDATE abbonamento
 SET abbonamento.ScadenzaFitness = newdata
 WHERE
