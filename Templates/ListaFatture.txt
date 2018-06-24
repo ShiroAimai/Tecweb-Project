@@ -11,7 +11,7 @@
         <th scope="col">Data Emissione</th>
         <th scope="col">Importo (euro)</th>
         <th scope="col">Mesi Fitness</th>
-		<th scope="col">Punti Corsi</th>
+		<th scope="col">Entrate Corsi</th>
     </tr>
 </thead>
 <tbody>

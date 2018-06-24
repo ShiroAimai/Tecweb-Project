@@ -16,7 +16,7 @@ html, body {
 	font-size: 100%;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	background-color: #323232;	
-	
+	overflow-x: hidden;
 }
 .printable {
 	display:none;
@@ -1288,6 +1288,10 @@ a {
 .login-form .group .button {
 	background:#3F51B5;
 	cursor: pointer;
+}
+
+select option {
+    background: #516b8d;
 }
 
 /*============
