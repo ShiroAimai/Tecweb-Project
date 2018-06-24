@@ -1,6 +1,6 @@
 <?php
 require_once('config.php');
-$head = file_get_contents("../Templates/headerFormFattura.txt");
+$head = file_get_contents("../Templates/headerQueryfallita.txt");
 $foot = file_get_contents("../Templates/footer.txt");
 $notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 $queryfallita = file_get_contents("../Templates/queryfallita.txt");

@@ -1,7 +1,7 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Connessione fallita: Servizio momentaneamente non disponibile. Riprovare pi&ugrave; tardi.</h2>
-		<a class="messagelink" href="../HTML/AreaPersonale.html">Area personale</a>
+		<a class="messagelink" href="#" onclick="history.go(-1)">Torna indietro</a>
 		<a class="messagelink" href="Home.php">Ritorna alla homepage</a>
 	</div>
 </div>
