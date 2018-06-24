@@ -26,7 +26,7 @@ function connect()
     global $connessione, $hostname, $username, $password, $database;
     $connessione = new mysqli($hostname, $username, $password, $database);
     if ($connessione->connect_error) {
-        die("Connessione fallita: Servizio momentaneamente non disponibile. Riprovare pi&ugrave; tardi");
+       header("Location: connessioneFallita.php");
     }
 }
 
@@ -38,10 +38,8 @@ function query($sql)
         connect();
     }
     $res = mysqli_query($connessione, $sql);
-    if (!$res) {
-        echo "Query fallita: ";
-        echo mysqli_error($connessione);
-        die();
+    if ($res == FALSE) {
+       header("Location queryfallita.php");
     }
     return $res;
 }
@@ -50,6 +48,8 @@ function query($sql)
 function select($sql)
 {
     $res = query($sql);
+    if($res == FALSE)
+        header("Location: queryfallita.php");
     $table = array();
     while ($row = mysqli_fetch_assoc($res)) {
         $table[] = $row;
