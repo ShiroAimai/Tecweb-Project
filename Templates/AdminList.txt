@@ -3,6 +3,7 @@
 	<p>Visualizza la lista di amministratori registrati</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
+<a href="Form admin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi admin</button></a>
 <div class="tableResponsive"> 
 <table>
 <thead>

@@ -3,6 +3,8 @@
 	<p>Visualizza la lista di utenti registrati</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
+<a href="Form utente.php"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
+<a href="Form fattura.php"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
 <div class="tableResponsive"> 
 <table>
 <thead>

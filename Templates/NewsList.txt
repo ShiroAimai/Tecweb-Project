@@ -3,6 +3,7 @@
 	<p>Visualizza la lista delle news presenti nel sito</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
+<a href="Form news.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
 <div class="tableResponsive"> 
 <table>
 <thead>

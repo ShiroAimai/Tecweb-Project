@@ -4,6 +4,7 @@
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
 <div class="tableResponsive"> 
+<a href="Form galleria.php"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
 <table>
 <thead>
     <tr>
