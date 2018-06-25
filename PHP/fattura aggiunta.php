@@ -4,7 +4,7 @@
     $foot = file_get_contents("../Templates/footer.txt");
 	$addFattura = file_get_contents("../Templates/AddFattura.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
-	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
+	$login = "<button onclick=\"window.location.href='AreaPersonale.php'\">Area Personale</button>";
 	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$closediv = "</div>";
