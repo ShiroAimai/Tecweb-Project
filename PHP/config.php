@@ -59,9 +59,9 @@ function select($sql)
 
 //controlla la validità dei valori inviati da una form
 function test_input($data) {
-	$data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
+	$data = trim($data); //restituisce il parametro $data privo degli spazi iniziali e finali
+    $data = stripslashes($data); //rimuove i backslash da $data
+    $data = htmlspecialchars($data); //converte i caratteri speciali in entità HTML
     return $data;
 }
 
