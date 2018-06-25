@@ -1,8 +1,8 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Galleria inserita con successo!</h2>
-		<a class="messagelink" href="Gestisci album.php">Ritorna alla gestione degli album</a>
-		<a class="messagelink" href="Home.php">Ritorna alla homepage</a>
+		<a class="messagelinkquery" href="Gestisci album.php">Ritorna alla gestione degli album</a>
+		<a class="messagelinkquery" href="Home.php">Ritorna alla homepage</a>
 	</div>
 	
 </div>
