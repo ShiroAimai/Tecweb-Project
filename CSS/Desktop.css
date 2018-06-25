@@ -580,8 +580,8 @@ PAGINA HOME
 	float:left;
 	width:50%;
 	height:25em;
-}
 
+}
 .dx {
 	text-align:left;
 	float:right;
@@ -589,12 +589,15 @@ PAGINA HOME
 	font-size:95%;
 }
 
-#fabio {
+.elenchiHome{
 	float:left;
+	margin-left:3%;
+	margin-top:1.5%;
 }
-
-#genny {
+.elenchiHomeAll{
 	float:left;
+	margin-left:7%;
+	margin-top:1.5%;
 }
 
 /*
