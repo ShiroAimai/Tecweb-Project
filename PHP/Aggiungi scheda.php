@@ -29,6 +29,7 @@
 
 	$scheda_trovata = select("SELECT * FROM scheda WHERE CodiceUtente='$user';");
 	if(count($scheda_trovata) > 0){
+		unlink('../schede/'.$scheda_trovata[0]['LinkScheda']);
 		query("UPDATE scheda SET LinkScheda='$pdf' WHERE CodiceUtente='$user'");
 	}
 	else {

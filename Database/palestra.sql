@@ -234,6 +234,13 @@ CREATE TABLE `scheda` (
   `LinkScheda` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dump dei dati per la tabella `scheda`
+--
+
+INSERT INTO `scheda` (`CodiceUtente`, `LinkScheda`) VALUES
+(1, 'fsacchet.pdf');
+
 -- --------------------------------------------------------
 
 --
