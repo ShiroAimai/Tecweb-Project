@@ -25,10 +25,10 @@
 	
 	echo $closediv;
 	echo $closediv;
-	register('user');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $listaFatture;
-		$sql = "SELECT * FROM fattura WHERE CodiceUtente='$user' ORDER BY DataEmissione DESC";
+		$aux=$_GET['user'];
+		$sql = "SELECT * FROM fattura WHERE CodiceUtente='$aux' ORDER BY DataEmissione DESC";
 		$fatture=select($sql);
 		if ($fatture == null) {
 			echo "<tr><td colspan=7 >Nessun risultato</td>";
@@ -52,10 +52,10 @@
 			echo "</td>";
 
 			echo "<td>
-				<form method=\"post\" action=\"Elimina fattura.php\" onsubmit=\"return confirm('Confermi di voler eliminare questa fattura?');\" >
-					<input type=\"hidden\"  name=\"fattura\" value=\"" . $u['NumeroRicevuta'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $u['NumeroRicevuta'] . "\">Elimina fattura</label>
-					<input id=\"".$u['NumeroRicevuta']."\" type=\"submit\"  title=\"Elimina fattura\" value=\"Elimina fattura\"/>
+				<form method=\"post\" action=\"Elimina fattura.php?user=".$f['CodiceUtente']."\" onsubmit=\"return confirm('Confermi di voler eliminare questa fattura?');\" >
+					<input type=\"hidden\"  name=\"fattura\" value=\"" . $f['NumeroRicevuta'] . "\"/>
+					<label class=\"invisibleLabel\" for=\"" . $f['NumeroRicevuta'] . "\">Elimina fattura</label>
+					<input id=\"".$f['NumeroRicevuta']."\" type=\"submit\"  title=\"Elimina fattura\" value=\"Elimina fattura\"/>
 				</form>
 				</td>";
 		}

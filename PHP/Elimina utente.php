@@ -1,15 +1,16 @@
 <?php
 require_once('config.php');
 register('user');
+register('type');
 if($_SESSION['user_code'] == $user) {
 	header("Location:Errore eliminazione utente.php");
-} else {
+} 
+else if($type == 'admin') {
 	query("DELETE FROM utente WHERE CodiceUtente=$user");
-	if($_SESSION['user_type'] == 'admin') {
-		header("Location:Lista admin.php");
-	}
-	else {
-		header("Location:Lista utenti.php");
-	}
+	header("Location:Gestisci admin.php");
+}
+else {
+	query("DELETE FROM utente WHERE CodiceUtente=$user");
+	header("Location:Gestisci utenti.php");
 }
 ?>

@@ -52,6 +52,7 @@
 			
 			echo "<td>
 				<form method=\"post\" action=\"Elimina utente.php\" onsubmit=\"return confirm('Confermi di voler eliminare l\'utente?');\" >
+					<input type=\"hidden\"  name=\"type\" value=\"" . $u['Tipo'] . "\"/>
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Elimina utente</label>
 					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Elimina utente\" value=\"Elimina utente\"/>
@@ -67,7 +68,7 @@
 				</td>";
 				
 			echo "<td>
-				<form method=\"post\" action=\"Lista fatture.php\" >
+				<form method=\"post\" action=\"Lista fatture.php?user=".$u['CodiceUtente']."\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Vedi fatture</label>
 					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Vedi fatture\" value=\"Vedi fatture\"/>
