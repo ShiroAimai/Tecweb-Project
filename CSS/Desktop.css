@@ -209,328 +209,25 @@ PAGINA HOME
 =========================
 */
 
-#slider {
-	width: 100%;
-	height: 500px;
-	position: relative;
-	overflow: hidden;
+.homeImg {
+    position: relative;
+    text-align: center;
+    color: white;
 }
-
-@keyframes load {
-	from {
-		left: -100%;
-	}
-	to {
-		left: 0;
-	}
-}
-
-.slides {
-	width: 400%;
-	height: 100%;
-	position: relative;
-	-webkit-animation: slide 30s infinite;
-	-moz-animation: slide 30s infinite;
-	animation: slide 30s infinite;
-}
-
-.slider {
-	width: 25%;
-	height: 100%;
-	float: left;
-	position: relative;
-	overflow: hidden;
-}
-
-.slide img {
-	width: 100%;
-	height: 100%;
-}
-
-.slide img {
-	width: 100%;
-	height: 100%;
-}
-
 
 .image {
 	width: 100%;
-	height: 100%;
+	height: 500px;
+	object-fit: cover;
 }
 
-.image img {
-	width: 100%;
-	height: 100%;
-}
-
-.content {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-}
-
-.content-txt {
-	width: 400px;
-	height: 150px;
-	float: left;
-	position: relative;
-	top: 300px;
-}
-
-.content-txt h1 {
-	font-size: 24px;
-	color: #FFF;
+.bottom-left {
+	width: 30%;
 	text-align: left;
-	margin-left: 30px;
-	padding-bottom: 10px;
-}
-
-.content-txt h2 {
-	font-weight: normal;
-	font-size: 14px;
-	font-style: italic;
-	color: #FFF;
-	text-align: left;
-	margin-left: 30px;
-}
-
-.switch {
-	width: 120px;
-	height: 10px;
-	position: absolute;
-	bottom: 50px;
-	left: 44%;
-}
-
-.switch ul {
-	list-style: none;
-}
-
-.switch ul li {
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	background: #333;
-	float: left;
-	margin-right: 5px;
-}
-
-.switch ul {
-	overflow: hidden;
-}
-
-.on {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background: #DAAC5E;
-	position: relative;
-	-webkit-animation: on 30s infinite;
-	-moz-animation: on 30s infinite;
-	animation: on 30s infinite;
-}
-
-@-webkit-keyframes slide {
-	0%, 100% {
-		margin-left:0;
-	} 
-	21% {
-		margin-left:0%;
-	}
-	25% {
-		margin-left:-100%;
-	}  
-	46% {
-		margin-left:-100%;
-	}  
-	50% {
-		margin-left:-200%;
-	} 
-	71% {
-		margin-left:-200%;
-	}  
-	75% {
-		margin-left:-300%;
-	}  
-	96% {
-		margin-left:-300%;
-	}
-}
-
-@-moz-keyframes slide {
-	0%, 100% {
-		margin-left:0%;
-	}
-	21% {
-		margin-left:0%;
-	}
-	25% {
-		margin-left:-100%;
-	}
-	46% {
-		margin-left:-100%;
-	}
-	50% {
-		margin-left:-200%;
-	}
-	71% {
-		margin-left:-200%;
-	}
-	75% {
-		margin-left:-300%;
-	}
-	96% {
-		margin-left:-300%;
-	}
-}
-
-@keyframes slide {
-	0%, 100% {
-		margin-left:0%;
-	}
-	21% {
-		margin-left:0%;
-	}
-	25% {
-		margin-left:-100%;
-	}
-	46% {
-		margin-left:-100%;
-	}
-	50% {
-		margin-left:-200%;
-	}
-	71% {
-		margin-left:-200%;
-	}
-	75% {
-		margin-left:-300%;
-	}
-	96% {
-		margin-left:-300%;
-	}
-}
-
-@-webkit-keyframes content-s {
-	0%{left:-420px;}
-	10%{left:0px;}
-	30%{left:0px;}
-	40%{left:0px;}
-	50%{left:0px;}
-	60%{left:0px;}
-	70%{left:0;}
-	80%{left:-420px;}
-	90%{left:-420px;}
-	100%{left:-420px;}
-}
-
-@-moz-keyframes content-s {
-	0%{left:-420px;}
-	10%{left:0px;}
-	30%{left:0px;}
-	40%{left:0px;}
-	50%{left:0px;}
-	60%{left:0px;}
-	70%{left:0;}
-	80%{left:-420px;}
-	90%{left:-420px;}
-	100%{left:-420px;}
-}
-
-@keyframes content-s {
-	0%{left:-420px;}
-	10%{left:20px;}
-	15%{left:0px;}
-	30%{left:0px;}
-	40%{left:0px;}
-	50%{left:0px;}
-	60%{left:0px;}
-	70%{left:0;}
-	80%{left:-420px;}
-	90%{left:-420px;}
-	100%{left:-420px;}
-}
-
-@-webkit-keyframes on {
-	0%, 100% {
-		margin-left:0%;
-	}
-	21% {
-		margin-left:0%;
-	}
-	25% {
-		margin-left:20px;
-	}
-	46% {
-		margin-left:20px;
-	}
-	50% {
-		margin-left:40px;
-	}
-	71% {
-		margin-left:40px;
-	}
-	75% {
-		margin-left:60px;
-	}
-	96% {
-		margin-left:60px;
-	}
-}
-
-@-moz-keyframes on{
-  0%,100%{
-    margin-left:0%;
-  }
-  21%{
-    margin-left:0%;
-  }
-  25%{
-    margin-left:20px;
-  }
-  46%{
-    margin-left:20px;
-  }
-  50%{
-    margin-left:40px;
-  }
-  71%{
-    margin-left:40px;
-  }
-  75%{
-    margin-left:60px;
-  }
-  96%{
-    margin-left:60px;
-  }
-}
-
-@keyframes on{
-  0%,100%{
-    margin-left:0%;
-  }
-  21%{
-    margin-left:0%;
-  }
-  25%{
-    margin-left:20px;
-  }
-  46%{
-    margin-left:20px;
-  }
-  50%{
-    margin-left:40px;
-  }
-  71%{
-    margin-left:40px;
-  }
-  75%{
-    margin-left:60px;
-  }
-  96%{
-    margin-left:60px;
-  }
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+	line-height: normal;
 }
 
 #DescrizionePalestra {
@@ -554,11 +251,13 @@ PAGINA HOME
 .ridimensionasx {
 	float:left;
 	width:50%;
+	object-fit: cover;
 }
 
 .ridimensionadx {
 	float:right;
 	width:50%;
+	object-fit: cover;
 }
 
 .limitesx {
@@ -580,6 +279,7 @@ PAGINA HOME
 	float:left;
 	width:50%;
 	height:25em;
+	object-fit: cover;
 
 }
 .dx {
@@ -788,6 +488,7 @@ PAGINA ATTIVITA
 .courseimg{
 	width: 100%;
 	height: 300px;
+	object-fit: cover;
 }
 
 .accordion#powerpump {
@@ -1031,6 +732,7 @@ PAGINA DINAMICA NEWS
 	width:99%;
 	overflow: hidden;
 	height:24em;
+	object-fit: cover;
 }
 
 .corpopos {
@@ -1143,6 +845,7 @@ PAGINA GALLERIA
 	height:25em;
   	margin:1%;
   	border:2px solid black;
+	object-fit: cover;
 
 
 }

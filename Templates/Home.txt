@@ -1,3 +1,11 @@
+<div class="homeImg">
+	<img class="image" src="../IMAGES/homeImg.jpg" alt="Immagine Body Evolution"/>
+	<div class="bottom-left">
+		<h3>PALESTRA BODY EVOLUTION</h1>
+		<h5>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+	</div>
+</div>
+
 <div id="DescrizionePalestra">
 	<div class="dx">
 		<img class="ridimensionasx" src="../IMAGES/fitness.jpg" alt="esercizi di fitness"/>
