@@ -1,8 +1,8 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerNewsList.txt");
+    $head = file_get_contents("../Templates/headerGestisciNews.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$newsList = file_get_contents("../Templates/NewsList.txt");
+	$gestisciNews = file_get_contents("../Templates/GestisciNews.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
@@ -26,7 +26,7 @@
 	echo $closediv;
 	echo $closediv;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $newsList;
+		echo $gestisciNews;
 		$sql = "SELECT * FROM news ORDER BY Data DESC";
 		$news=select($sql);
 		if ($news == null) {

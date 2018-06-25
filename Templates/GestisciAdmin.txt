@@ -1,10 +1,11 @@
 <div id="Presentazione">
-	<h1 id="titoloPagina">Lista Utenti</h1>
-	<p>Visualizza la lista di utenti registrati</p>
+	<h1 id="titoloPagina">Gestisci Admin</h1>
+	<p>Gestisci gli amministratori registrati</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
-<a href="Form utente.php"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
-<a href="Form fattura.php"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
+<div id="btnContainer">
+	<a href="Form admin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi admin</button></a>
+</div>
 <div class="tableResponsive"> 
 <table>
 <thead>
@@ -15,8 +16,6 @@
         <th scope="col">Password</th>
         <th scope="col">Email</th>
 		<th scope="col">Elimina Utente</th>
-		<th scope="col">Aggiungi scheda</th>
-		<th scope="col">Fatture</th>
     </tr>
 </thead>
 <tbody>

@@ -1,8 +1,8 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerAdminList.txt");
+    $head = file_get_contents("../Templates/headerGestisciAdmin.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$adminList = file_get_contents("../Templates/AdminList.txt");
+	$gestisciAdmin = file_get_contents("../Templates/GestisciAdmin.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
@@ -26,7 +26,7 @@
 	echo $closediv;
 	echo $closediv;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $adminList;
+		echo $gestisciAdmin;
 		$sql = "SELECT * FROM utente WHERE Tipo='admin' ORDER BY CodiceUtente";
 		$utenti=select($sql);
 		if ($utenti == null) {

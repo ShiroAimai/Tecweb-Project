@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<title>Lista News | Body Evolution</title>
+	<title>Gestisci Utenti | Body Evolution</title>
 	<meta charset="utf-8">
 	<link href="../CSS/Desktop.css" rel="stylesheet" media="handheld, screen"/>
 	<link href="../CSS/Mobile.css" rel="stylesheet" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)"/>
 	<link href="../CSS/Print.css" rel="stylesheet" media="print"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 </head>
 
 <body>

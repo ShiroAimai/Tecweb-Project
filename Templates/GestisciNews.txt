@@ -1,9 +1,11 @@
 <div id="Presentazione">
-	<h1 id="titoloPagina">Lista news</h1>
-	<p>Visualizza la lista delle news presenti nel sito</p>
+	<h1 id="titoloPagina">Gestisci news</h1>
+	<p>Gestisci le news presenti nel sito</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
-<a href="Form news.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
+<div id="btnContainer">
+	<a href="Form news.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
+</div>
 <div class="tableResponsive"> 
 <table>
 <thead>
