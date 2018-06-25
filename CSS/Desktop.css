@@ -1144,6 +1144,17 @@ ADMIN PANEL
 	background: #95a190;
 }
 
+.btn-10 {
+	margin: 0;
+	margin-top: 1%;
+	background: #76a8f7;
+}
+
+.btn-11 {
+	margin: 0;
+	background: #058205;
+}
+
 .icon-adduser:before {
 	content: "\f234";
 }
@@ -1174,6 +1185,14 @@ ADMIN PANEL
 
 .icon-addfattura:before {
 	content: "\f153";
+}
+
+.icon-addcorso:before {
+	content: "\f055";
+}
+
+.icon-schedadownimg:before {
+	content: "\f019";
 }
 
 /*
@@ -1223,32 +1242,23 @@ USER PANEL
 =================*/
 
 .bloccoDati {
-	margin:1% 1% 2% 8%;
-	float:left;
-	
-	
+	margin: 3% auto;
+	width:80%;
 }
-.bloccoDati2 {
-	margin:2% 8.2%;
-	clear:both;
-	
-}
+
 .TabUtente {
 	border:2px solid white;
-	margin-left:3%;
-	float:left;
-	padding:0.5%;
+	padding:1%;
 }
 
 .EntryUtente {
-	float:left;
+	float: left;
 	color:#DAAC5E;
 	font-weight: bold;
 	font-size:18px;
 }
 
 .EntryTab {
-	float: left;
 	color: white;
 	font-weight: bold;
 	font-size:18px;
@@ -1259,49 +1269,4 @@ USER PANEL
 	margin:1% 1%;
 	font-weight: bold;
 	font-size:20px;
-	
-}
-.userData2 {
-	color: white;
-	font-weight: bold;
-	clear:both;
-}
-.TabUtente2 {
-	color:#DAAC5E;
-	margin-left:1%;
-	float:left;
-	
-}
-#schedadownimg {
-	width:4%;
-	padding:0.2%;
-	margin-top:1%;
-	border:"0";
-	border: 4px solid white;
-	overflow:hidden;
-
-}
-#schedadownimg:hover {
-	border: 4px solid #DAAC5E;
-}
-#linkscheda {
-	margin-left:8%;
-}
-.lineacapo {
-	clear:both;
-}
-
-#linkformcorsi {
-	color:white;
-	border: 2px solid white;
-	margin:0 34%;
-}
-
-#linkformcorsi:hover {
-	color:#DAAC5E;
-	border: 2px solid #DAAC5E;
-}
-
-#voceformcorsi {
-	margin-bottom:6%;
 }

@@ -27,7 +27,13 @@
 	echo $closediv;
 	echo $closediv;
 
-	query("UPDATE scheda SET LinkScheda='$pdf' WHERE CodiceUtente='$user'");
+	$scheda_trovata = select("SELECT * FROM scheda WHERE CodiceUtente='$user';");
+	if(count($scheda_trovata) > 0){
+		query("UPDATE scheda SET LinkScheda='$pdf' WHERE CodiceUtente='$user'");
+	}
+	else {
+		query("INSERT INTO scheda (CodiceUtente, LinkScheda) VALUES ('$user', '$pdf')");
+	}
 	echo $addScheda;
 
 	$target_dir = "../schede/";
