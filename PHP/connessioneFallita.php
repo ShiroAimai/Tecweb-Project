@@ -14,24 +14,12 @@ $closebody = "</body>";
 $closehtml = "</html>";
 
 echo $head;
-	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $logout;
-		echo $adminPanel;
-	} else if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
-		echo $logout;
-		echo $userPanel;
-	} else {
-		echo $login;
-	}
 	
 	echo $closediv;
 	echo $closediv;
-	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $connfallita;
-	}
-	else {
-		echo $notAdmin;
-	}
+	
+	echo $connfallita;
+	
 	echo $foot;
 	echo $closebody;
 	echo $closehtml;
