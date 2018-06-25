@@ -20,6 +20,6 @@
 			header("Location:UserPanel.php");
 	}
 	else { 
-	  header("Location:../HTML/ErroreLogin.html");
+	  header("Location: erroreLogin.php");
 	}
 ?>

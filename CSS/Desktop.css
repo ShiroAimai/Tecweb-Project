@@ -1052,6 +1052,19 @@ ERRORE LOGIN
 	margin-right:2%;
 	text-decoration: underline;
 }
+.messagelinklogin {
+	color:white;
+	float:right;
+	clear:both;
+	margin-top:4.4%;
+	margin-bottom:-2.8%;
+	margin-right:2%;
+	text-decoration: underline;
+}
+.messagelinklogin:hover
+{
+	color:blue;
+}
 .messagelinkquery:hover
 {
 	color:blue;
