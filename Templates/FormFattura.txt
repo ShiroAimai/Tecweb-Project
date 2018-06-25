@@ -13,7 +13,7 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
+				<a href="Gestisci utenti.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
 					<form id="userForm" action="Aggiungi fattura.php" method="post">
 						<div class="group">

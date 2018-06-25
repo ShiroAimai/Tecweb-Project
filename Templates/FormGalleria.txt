@@ -12,7 +12,7 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="AdminPanel.php"><span id="exit">&#215;</span></a>
+				<a href="Gestisci album.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
 					<form id="galleryForm" method="post" action="../PHP/aggiunta galleria.php" enctype="multipart/form-data">
 						<div class="group">

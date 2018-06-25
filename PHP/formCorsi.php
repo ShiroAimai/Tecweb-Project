@@ -26,6 +26,9 @@
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
 		echo $formcorsi;
 	}
+	else {
+		echo $notAdmin;
+	}
 	
 	echo $foot;
 	echo $closebody;
