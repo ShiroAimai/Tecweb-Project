@@ -275,6 +275,7 @@ THEN
 SELECT new.CodiceUtente INTO codut;
 SELECT DATE_ADD(CURRENT_DATE, INTERVAL 1 DAY) INTO scad;
 INSERT INTO `abbonamento`(`CodiceUtente`, `ScadenzaFitness`) VALUES (codut, scad);
+INSERT INTO `scheda`(`CodiceUtente`) VALUES (codut);
 
 END IF;
 
