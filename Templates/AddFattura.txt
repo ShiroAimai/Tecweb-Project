@@ -1,7 +1,7 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Fattura inserita con successo!</h2>
-		<a class="messagelink" href="AdminPanel.php">Ritorna al pannello amministratore</a>
+		<a class="messagelink" href="Gestisci utenti.php">Ritorna alla gestione degli utenti</a>
 		<a class="messagelink" href="Home.php">Ritorna alla homepage</a>
 	</div>
 	

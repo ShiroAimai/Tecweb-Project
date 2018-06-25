@@ -12,5 +12,5 @@ $files = glob($dir_to_delete . '*', GLOB_MARK);
     }
     rmdir($dir_to_delete);
 query("DELETE FROM galleria WHERE Album='$title'");
-header("Location:Lista album.php");
+header("Location:Gestisci album.php");
 ?>

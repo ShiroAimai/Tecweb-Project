@@ -2,7 +2,7 @@
 	<h1 id="titoloPagina">Lista Fatture</h1>
 	<p>Visualizza la lista delle fatture relative all'utente</p>
 </div>
-<a id="backAdminPanel" href="Lista utenti.php">Torna alla lista utenti</a>
+<a id="backAdminPanel" href="Gestisci utenti.php">Torna alla gestione degli utenti</a>
 <div class="tableResponsive"> 
 <table>
 <thead>
