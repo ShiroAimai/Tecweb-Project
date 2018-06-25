@@ -66,8 +66,13 @@
 			$stampa .="<div class=\"EntryUtente\">$countercorsi.</div><div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>";
 			$countercorsi++;
 		}
-		$stampa .="<a href=\"FormCorsi.php\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corso</button></a>";
 		$stampa .="</div>";
+		$stampa .="</div>";
+		
+		//Button iscrizione corsi
+		$stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
+		$stampa .= "<div class=\"userData\">Iscriviti a nuovi corsi:</div>";
+		$stampa .="<a href=\"FormCorsi.php\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
 		$stampa .="</div>";
 
 		//Button di download scheda
@@ -75,14 +80,13 @@
 		$data = mysqli_fetch_assoc($query4);
 		$stampa .="<div id=\"datiScheda\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">La tua scheda:</div>";
-		$stampa .= "<div class=\"TabUtente\">";
 		if($data['LinkScheda']!=null) {
 			//mi cerca la scheda nella dir schede col nome corrispondente salvato sul db
 			$stampa .= "<a href=\"../schede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\">";
 			$stampa .= "<button class=\"btn btn-11 btn-sep icon-schedadownimg\">Scarica scheda</button></a>";
 		}
 		else
-			$stampa.="<div class=\"EntryTab\">Nessuna scheda associata.</div></div>";
+			$stampa.="<div class=\"EntryUtente\">Nessuna scheda associata.</div>";
 
 		$stampa .="</div>";
 

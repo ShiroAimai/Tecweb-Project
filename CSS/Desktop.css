@@ -1146,7 +1146,6 @@ ADMIN PANEL
 
 .btn-10 {
 	margin: 0;
-	margin-top: 1%;
 	background: #76a8f7;
 }
 
@@ -1247,7 +1246,7 @@ USER PANEL
 }
 
 .TabUtente {
-	border:2px solid white;
+	border:1px solid white;
 	padding:1%;
 }
 
