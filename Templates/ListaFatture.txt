@@ -12,6 +12,7 @@
         <th scope="col">Importo (euro)</th>
         <th scope="col">Mesi Fitness</th>
 		<th scope="col">Entrate Corsi</th>
+		<th scope="col">Elimina Fattura</th>
     </tr>
 </thead>
 <tbody>

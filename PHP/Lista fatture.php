@@ -50,6 +50,14 @@
 			
 			echo "<td>".$f['EntrateCorsi'];
 			echo "</td>";
+
+			echo "<td>
+				<form method=\"post\" action=\"Elimina fattura.php\" onsubmit=\"return confirm('Confermi di voler eliminare questa fattura?');\" >
+					<input type=\"hidden\"  name=\"fattura\" value=\"" . $u['NumeroRicevuta'] . "\"/>
+					<label class=\"invisibleLabel\" for=\"" . $u['NumeroRicevuta'] . "\">Elimina fattura</label>
+					<input id=\"".$u['NumeroRicevuta']."\" type=\"submit\"  title=\"Elimina fattura\" value=\"Elimina fattura\"/>
+				</form>
+				</td>";
 		}
 		echo "</tbody>";
 		echo "</table>";
