@@ -1,8 +1,8 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerAlbumList.txt");
+    $head = file_get_contents("../Templates/headerGestisciAlbum.txt");
     $foot = file_get_contents("../Templates/footer.txt");
-	$albumList = file_get_contents("../Templates/AlbumList.txt");
+	$gestisciAlbum = file_get_contents("../Templates/GestisciAlbum.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='../HTML/AreaPersonale.html'\">Area Personale</button>";
@@ -26,7 +26,7 @@
 	echo $closediv;
 	echo $closediv;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
-		echo $albumList;
+		echo $gestisciAlbum;
 		$sql = "SELECT Album,Data, count(*) as foto FROM galleria GROUP BY Album,Data ORDER BY Data DESC";
 		$album=select($sql);
 		if ($album == null) {

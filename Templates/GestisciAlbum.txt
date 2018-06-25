@@ -1,10 +1,12 @@
 <div id="Presentazione">
-	<h1 id="titoloPagina">Lista album</h1>
-	<p>Visualizza la lista degli album presenti nel sito</p>
+	<h1 id="titoloPagina">Gestisci album</h1>
+	<p>Gestisci gli album presenti nel sito</p>
 </div>
 <a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
+<div id="btnContainer">
+	<a href="Form galleria.php"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
+</div>
 <div class="tableResponsive"> 
-<a href="Form galleria.php"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
 <table>
 <thead>
     <tr>
