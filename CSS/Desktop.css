@@ -15,7 +15,7 @@ html, body {
 	padding: 0;
 	font-size: 100%;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	background-color: #323232;	
+	background-color: #323232;
 }
 
 .printable {
@@ -23,10 +23,9 @@ html, body {
 }
 
 #contenitore {
-	margin: 1.5%;
+	margin:1.5%;
 	border: 1px solid #323232;
 	background-image: url("../IMAGES/sfondo.jpg");
-	
 }
 
 /*
@@ -196,6 +195,7 @@ SEZIONE FOOTER
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
+	overflow:hidden;
 }
 
 #backTop:hover {
@@ -400,6 +400,7 @@ PAGINA ATTIVITA
 
 #Presentazione{
 	color: #DAAC5E;
+	width:95%;
 	font-family: Verdana;
 	position: relative;
 	font-size: 18px;
@@ -418,6 +419,16 @@ PAGINA ATTIVITA
 	font-size: 50px;
 }
 
+#backAdminPanel {
+	font-size: 18px;
+	color:white;
+	float:right;
+	margin-right:5%;
+	text-decoration: underline;
+}
+#backAdminPanel:hover {
+	color:#DAAC5E;
+}
 #powerpump {
 	margin: 4% 2%;
 	width:100%;
@@ -456,7 +467,7 @@ PAGINA ATTIVITA
 .textAttContainer {
 	margin:0 1% 1% 1%;
 	float:left;
-	width:38%;
+	width:46%;
 }
 .testoAtt {
 	
@@ -466,7 +477,7 @@ PAGINA ATTIVITA
 }
 .courseimg{
 	float:left;
-	width: 58%;
+	width: 50%;
 	height: 400px;
 	object-fit: cover;
 
@@ -476,7 +487,7 @@ PAGINA ATTIVITA
 	float:left;
 }
 .titleAttPower {
-  color: blue;
+  color:  rgb(0,100,180);
   float:left;
   font-size: 22pt;
   font-weight: bold;

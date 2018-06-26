@@ -1,4 +1,4 @@
-﻿<a href='#'" id="backTop" title="Torna su">&#9650;</a>
+﻿<a href='#' id="backTop" title="Torna su">&#9650;</a>
 <div id="Footer">
 	<div id="footersx">
 		<a href="Home.php"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
