@@ -1,0 +1,20 @@
+<div id="Presentazione">
+	<h1 id="titoloPagina">DISISCRIVITI DAI CORSI</h1>
+</div>
+<div class="FormContainer">
+	<div class="containerChild">
+		<div class="leftContent">
+			<h1>Disiscrizione corsi</h1>
+			<p>Spunta la casella di un corso per disiscriverti da quel corso.</p>
+		</div>
+		<div class="signupOverlay">
+		</div>
+	</div>
+	<div class="containerChild">
+		<div class="loginWrap">
+			<div class="login-html">
+				<a href="UserPanel.php"><span id="exit">&#215;</span></a>
+				<div class="login-form">
+					<form id="userForm" action="rimozioneCorso.php" method="post">
+						<div class="group">
+							<label for="corsi" class="label">Disiscrizione corsi</label>

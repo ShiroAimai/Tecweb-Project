@@ -1,0 +1,10 @@
+                        </div>
+						<div class="group">
+							<input type="submit" class="button" value="Procedi con la richiesta!"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

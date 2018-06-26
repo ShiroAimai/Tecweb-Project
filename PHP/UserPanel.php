@@ -62,18 +62,28 @@
 		$stampa .= "<div class=\"userData\">I tuoi corsi:</div>";
 		$stampa .="<div class=\"TabUtente\">";
 		$countercorsi=1;
+		$data=0;
 		while($data = mysqli_fetch_assoc($query3)){
 			$stampa .="<div class=\"EntryUtente\">$countercorsi.</div><div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>";
 			$countercorsi++;
 		}
+		if($data == 0)
+			$stampa	.= "<div class=\"EntryTab\">Non sei iscritto a nessun corso di questa palestra!</div>";
 		$stampa .="</div>";
 		$stampa .="</div>";
 		
 		//Button iscrizione corsi
 		$stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Iscriviti a nuovi corsi:</div>";
-		$stampa .="<a href=\"FormCorsi.php\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
+		$stampa .="<a href=\"formCorsi.php?attr=0\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
 		$stampa .="</div>";
+
+		//Button disiscrizione corsi
+        $stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
+        $stampa .= "<div class=\"userData\">Cancella la tua iscrizione ai corsi:</div>";
+        $stampa .="<a href=\"formCorsi.php?attr=1\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Disiscrizione corsi</button></a>";
+        $stampa .="</div>";
+
 
 		//Button di download scheda
 		$query4 = query("SELECT LinkScheda FROM scheda WHERE CodiceUtente=$usercode");
