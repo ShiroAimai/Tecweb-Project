@@ -24,6 +24,7 @@ html, body {
 .printable{
 	font-size: 16pt;
 	font-weight: bold;
+	display: block;
 }
 
 .printablefooter{
@@ -35,16 +36,36 @@ html, body {
 	font-size: 10pt;
 }
 
+#titoloPagina{
+	font-size: 22px;
+}
+
 /*
 =========================
 PAGINA HOME
 =========================
 */
 
-.image, .ridimensionasx, .ridimensionadx, .allenamento, #slider {
+.image, .ridimensionasx, .ridimensionadx, .allenamento, .homeImg {
 	display:none;
+	float: none;
 }
 
+.sx, .dx, .limitedx, .limitesx, .elenchiHome {
+	float:none;
+}
+
+.separator {
+	margin:10px 0;
+}
+
+/*
+,.image, .separator, 
+.ridimensionadx, .ridimensionasx, .allenamento{
+display: none;
+}
+
+*/
 /*
 =========================
 PAGINA ATTIVITA
@@ -57,6 +78,16 @@ PAGINA ATTIVITA
 
 .iconAtt {
 	display: none;
+}
+
+.titleCourseContent{
+	text-align: center;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.textAttContainer{
+	line-height: 110%;
 }
 /*
 .course{
@@ -249,7 +280,7 @@ PAGINA DOVE SIAMO
 
 /*
 =========================
-PAGINA DOVE SIAMO
+PAGINA USER PANEL
 =========================
 */
 
