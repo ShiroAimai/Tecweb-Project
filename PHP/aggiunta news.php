@@ -13,6 +13,16 @@
 	register('newsTitle');
 	register('newsDescription');
 	$newsImage = $_FILES["newsImage"]["name"];
+	
+	if(isset($newsTitle) && !empty($newsTitle) && isset($newsImage) && !empty($newsImage) && isset($newsDescription) && !empty($newsDescription)) {	
+        $newsTitle = test_input($newsTitle);
+        $newsDescription = test_input($newsDescription);
+        query("INSERT INTO news (Titolo, Immagine, Descrizione) VALUES ('$newsTitle', '$newsImage', '$newsDescription')");
+    }
+    else {
+        header("Location: queryfallita.php");
+		die();
+	}
 
 	echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -27,15 +37,6 @@
 	
 	echo $closediv;
 	echo $closediv;
-	
-	if(isset($newsTitle) && !empty($newsTitle) && isset($newsImage) && !empty($newsImage) && isset($newsDescription) && !empty($newsDescription)) {	
-        $newsTitle = test_input($newsTitle);
-        $newsDescription = test_input($newsDescription);
-        query("INSERT INTO news (Titolo, Immagine, Descrizione) VALUES ('$newsTitle', '$newsImage', '$newsDescription')");
-    }
-    else {
-        header("Location: queryfallita.php");
-	}
    
 	$target_dir = "../uploads/";
 	$target_file = $target_dir . basename($newsImage);
@@ -44,6 +45,7 @@
 	// Check if image file is a actual image or fake image
 	if (!move_uploaded_file($_FILES["newsImage"]["tmp_name"], $target_file)) {
 		header("Location: queryfallita.php");
+		die();
 		}
 
 	echo $addNews;

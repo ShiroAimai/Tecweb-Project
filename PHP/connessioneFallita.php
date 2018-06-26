@@ -14,13 +14,10 @@ $closebody = "</body>";
 $closehtml = "</html>";
 
 echo $head;
-	
-	echo $closediv;
-	echo $closediv;
-	
-	echo $connfallita;
-	
-	echo $foot;
-	echo $closebody;
-	echo $closehtml;
+echo $closediv;
+echo $closediv;	
+echo $connfallita;
+echo $foot;
+echo $closebody;
+echo $closehtml;
 ?>

@@ -10,6 +10,7 @@
 	}
 	else {
 		header("Location: queryfallita.php");
+		die();
 	}
 	rename($dir_to_rename, $dir_new_name);
 	header("Location:Gestisci album.php");
