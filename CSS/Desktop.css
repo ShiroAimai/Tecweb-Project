@@ -275,6 +275,10 @@ PAGINA HOME
 	font-size:95%;
 }
 
+.sx p {
+	text-align: justify;
+}
+
 .allenamento {
 	float:left;
 	width:50%;
@@ -289,15 +293,14 @@ PAGINA HOME
 	font-size:95%;
 }
 
-.elenchiHome{
-	float:left;
-	margin-left:3%;
-	margin-top:1.5%;
+.dx p {
+	text-align: justify;
 }
-.elenchiHomeAll{
+
+.elenchiHome {
 	float:left;
 	margin-left:7%;
-	margin-top:1.5%;
+	margin-top:2%;
 }
 
 /*
