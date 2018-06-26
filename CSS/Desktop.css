@@ -466,7 +466,7 @@ PAGINA ATTIVITA
 .textAttContainer {
 	margin:0 1% 1% 1%;
 	float:left;
-	width:38%;
+	width:46%;
 }
 .testoAtt {
 	
@@ -476,7 +476,7 @@ PAGINA ATTIVITA
 }
 .courseimg{
 	float:left;
-	width: 58%;
+	width: 50%;
 	height: 400px;
 	object-fit: cover;
 
@@ -486,7 +486,7 @@ PAGINA ATTIVITA
 	float:left;
 }
 .titleAttPower {
-  color: blue;
+  color:  rgb(0,100,180);
   float:left;
   font-size: 22pt;
   font-weight: bold;
