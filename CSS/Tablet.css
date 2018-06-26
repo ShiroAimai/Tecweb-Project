@@ -1,0 +1,1336 @@
+/*
+=========================
+SEZIONE GENERALE
+=========================
+*/
+
+/* Resetto valori di default impostati dai browser */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #323232;	
+}
+
+.printable {
+	display:none;
+}
+
+#contenitore {
+	margin: 1.5%;
+	border: 1px solid #323232;
+	background-image: url("../IMAGES/sfondo.jpg");
+	
+}
+
+/*
+=========================
+SEZIONE INTESTAZIONE
+=========================
+*/
+
+#Intestazione {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	background-color: #000;
+	opacity: 0.8;
+}
+
+#logo {
+	float: left;
+	padding: 0.3em;
+	width: 9.19em;
+}
+
+.Menu {
+	overflow: hidden;
+}
+
+.Menu a {
+	float: left;
+	display: block;
+	color: #DAAC5E;
+	text-align: center;
+	font-weight: bold;
+	padding: 2em 0.9em;
+	text-decoration: none;
+	width: auto;
+}
+
+.Menu a:hover {
+	color: #000;
+	background-color: #DAAC5E;
+}
+
+.Menu a.active {
+	color: #000;
+	background-color: #DAAC5E;
+	cursor: default;
+}
+
+.Menu button {
+	float: right;
+	display: block;
+	color: white;
+	background-color: #4CAF50;
+	padding: 2em 0.9em;
+	width: auto;
+	border: none;
+	font-size: 100%;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+.Menu button:hover {
+	opacity: 0.8;
+}
+
+#logoutButton {
+	background-color: red;
+}
+
+.sandwich {
+	display: none;
+}
+
+#user {
+	display: none;
+}
+
+/*
+=========================
+SEZIONE FOOTER
+=========================
+*/
+
+#Footer {
+	font-size: 0.8em;
+	line-height: 22px;
+	color: white;
+	background-color: rgb(32,32,32);
+	overflow: hidden;
+	clear: both;
+}
+
+#Footer h3 {
+	margin-top: 4em;
+	margin-bottom: 3em;
+}
+
+.blocco {
+	display: block;
+}
+
+#footersx {
+	float: left;
+	padding: 3%;
+	width: 22%;
+}
+
+#logofooter {
+	margin-bottom: 1.5em;
+	width: 50%;
+}
+
+#logofacebook {
+	width: 2em;
+	margin-top: 2em;
+}
+
+#footercx {
+	float: left;
+	padding: 3%;
+	margin-left: 8%;
+	width: 22%;
+}
+
+#footercx ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#footerdx {
+	float: right;
+	padding: 3%;
+	width: 37%;
+}
+
+#Coni {
+	float: left;
+	width: 30%;
+	margin-bottom: 1.5em;
+}
+
+#asi {
+	width: 30%;
+	margin-left: 20%;
+	margin-bottom: 1.5em;
+}
+
+#footerbottom {
+	padding: 0.2em;
+	clear: both;
+	background-color: rgb(26,26,26);
+	text-align: center;
+}
+
+#backTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #DAAC5E;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#backTop:hover {
+    background-color: #DAAC5E;
+    opacity: 0.5;
+}
+
+/*
+=========================
+PAGINA HOME
+=========================
+*/
+
+.homeImg {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+.bottom-left {
+	width: 30%;
+	text-align: left;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+	line-height: normal;
+}
+
+#DescrizionePalestra {
+	color:white;
+}
+
+.separator {
+	overflow: hidden;
+	position:relative;
+	display:block;
+	height:1px;
+	background-color: #eaeaea;
+	margin:10px 0;
+}
+
+#DescrizionePalestra h3 {
+	font-size:150%;
+	font-weight:600;
+}
+
+.ridimensionasx {
+	float:left;
+	width:50%;
+	object-fit: cover;
+}
+
+.ridimensionadx {
+	float:right;
+	width:50%;
+	object-fit: cover;
+}
+
+.limitesx {
+	margin-right:55%;
+}
+
+.limitedx {
+	margin-left:55%;
+}
+
+.sx {
+	text-align:left;
+	float:left;
+	margin:5% 10%;
+	font-size:95%;
+}
+
+.allenamento {
+	float:left;
+	width:50%;
+	height:25em;
+	object-fit: cover;
+
+}
+.dx {
+	text-align:left;
+	float:right;
+	margin:5% 10%;
+	font-size:95%;
+}
+
+.elenchiHome{
+	float:left;
+	margin-left:3%;
+	margin-top:1.5%;
+}
+.elenchiHomeAll{
+	float:left;
+	margin-left:7%;
+	margin-top:1.5%;
+}
+
+/*
+=========================
+PAGINA CHI SIAMO
+=========================
+*/
+
+#ChiSiamoImg {
+	width:100%;	
+}
+
+#GennyTiengo, #FabioFerro {
+	padding: 2em;
+	overflow: hidden;
+	font-size: 18px;
+	color: white;
+}
+
+#GennyTiengoImg, #FabioFerroImg {
+	margin-right: 3em;
+	float: left;
+	border-radius: 50px;
+	width: 20%;
+}
+
+#Istruttori h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#Istruttori ul {
+	padding: 2em;
+	margin-left: 25%;
+}
+
+/*
+=========================
+PAGINA DOVE SIAMO
+=========================
+*/
+
+#sfondodovesiamo {
+	position: relative;
+}
+
+#titolodovesiamo {
+	position: absolute;
+	font-family: Verdana;
+	color: #FD0303;
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 10%;
+    top: 0;
+}
+
+#imagedovesiamo {
+	width: 100%;
+}
+
+#map {
+	float: left;
+	width: 600px;
+	height: 600px;
+	margin-right: 3em;
+}
+
+#GoogleMaps {
+	color: white;
+	margin-top: 2em;
+	padding: 2em;
+	overflow: hidden;
+}
+
+#GoogleMaps h2 {
+	font-size: 50px;
+	margin-top:0;
+	margin-left: 25%;
+}
+
+#GoogleMaps p {
+	padding: 2em;
+	margin-left: 25%;
+}
+
+/*
+=========================
+PAGINA ATTIVITA
+=========================
+*/
+
+#noscriptAttivita{
+	font-size: 24px;
+	color:white;
+	text-align: center;
+}
+
+#Presentazione{
+	color: #DAAC5E;
+	font-family: Verdana;
+	position: relative;
+	font-size: 18px;
+	text-align: left;
+	left: 5%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+    
+}
+
+#Presentazione p{
+	color:white;
+}
+
+#titoloPagina {
+	font-size: 50px;
+}
+
+#backAdminPanel {
+	font-size: 18px;
+	color:white;
+	float:right;
+	margin-right:5%;
+	text-decoration: underline;
+}
+
+
+
+.panel {
+	margin: 4% 2%;
+	width:100%;
+ 
+    overflow: hidden;
+ 
+}
+
+.textAttContainer {
+	margin:0 1% 1% 1%;
+	float:left;
+	width:38%;
+}
+.testoAtt {
+	
+	font-weight: bold;
+	width:100%;
+	color:white;
+}
+.courseimg{
+	float:left;
+	width: 58%;
+	height: 400px;
+	object-fit: cover;
+
+}
+.titleCourseContent {
+	width:100%;
+	float:left;
+}
+.titleAttPower {
+  color: blue;
+  float:left;
+  font-size: 22pt;
+  font-weight: bold;
+  margin-top:7%;
+}
+.titleAttSpinning {
+  color:green;
+  float:left;
+  font-size: 22pt;
+  font-weight: bold;
+  margin-top:7%;
+}
+.titleAttFitBoxe {
+  color: rgb(220,120,0);
+  float:left;
+  font-size: 22pt;
+  font-weight: bold;
+  margin-top:7%;
+}
+.titleAttJumpFit {
+  color:rgb(200,50,0);
+  float:left;
+  font-size: 22pt;
+  font-weight: bold;
+  margin-top:7%;
+}
+.titleAttStep {
+  color: purple;
+  float:left;
+  font-size: 22pt;
+  font-weight: bold;
+  margin-top:7%;
+}
+.iconAtt {
+	float:left;
+	width:22%;
+	margin-left:25%;
+	
+}
+/* NON UTILIZZATE, PARTE MOBILE?
+.accordion {
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 18px;
+    border-color: #DAAC5E;
+    border-style: outset;
+    border-width: 5px;
+    margin-bottom: 7px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+	font-weight: bold;
+    transition: 0.4s;
+    background-color: #404040;
+}
+
+.accordion:focus {
+	outline:none;
+}
+
+.accordion:hover {
+    background-color: #d9d9d9; 
+}
+.accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: left;
+}
+
+.accordion.active{
+	background-color: white;
+	border: none;
+	margin-bottom: 0;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+.accordion#powerpump {
+	color: blue;
+	
+}
+
+.accordion.active#powerpump {
+	color: blue;
+	background-image: none;
+}
+
+#spinning {
+	color: green;
+	background-image: url("../IMAGES/icone/spinning.png");
+}
+
+.accordion.active#spinning {
+	color: green;
+	background-image: none;}
+
+#fitboxe {
+	color: red;
+
+}
+
+.accordion.active#fitboxe {
+	color: red;
+	background-image: none;
+}
+
+#jumpfit {
+	color: rgb(200,50,0);
+
+}
+
+.accordion.active#jumpfit {
+	color: rgb(200,50,0);
+	background-image: none;
+}
+
+#step {
+	color: purple;
+
+}
+
+.accordion.active#step {
+	color: purple;
+	background-image: none;
+}
+
+#colorpower{
+}
+
+#colorspinning{
+}
+
+#colorfitboxe{
+}
+
+#colorjumpfit{
+}
+
+#colorstep{
+	margin-bottom: 10px;
+}
+*/
+/*
+===================
+SEZIONE CALENDARIO
+==================
+*/
+
+.calendario {
+	width: 90%;
+	margin:7%;
+	float:left;
+	text-align:left;
+	color:white;
+	font-weight: bold;
+	position: relative;
+
+}
+#salafitness
+{
+	font-size:140%;
+	clear:both;
+	margin-left:1.5em;
+}
+.giornovoce
+{
+	font-size:140%;
+}
+.vocecalendario
+{
+	float:left;
+	margin:0;
+	width: 16.6%;
+}
+.orari
+{
+	
+	list-style-type: none;
+	font-size: 110%;
+	margin:0;
+	padding:0;
+}
+.orari li {
+	margin:1.3em 0em 3.6em 0em;
+}
+.oraricorsi {
+
+	list-style-type: none;
+	font-size: 110%;
+	margin:0;
+	padding:0;
+
+}
+.oraricorsi li a{
+	width:100%;
+	height:4em;
+}
+.oraricorsi li
+{
+	margin:0;
+}
+.corsovuoto
+{
+	border:1px solid white;
+	width:auto;
+	height:4em;
+}
+.spinning {
+	border:1px solid white;
+	width:auto;
+	height:4em;
+	background-color: green;
+	text-align: center;
+	opacity: 0.8;
+}
+.spinning:hover{
+	background-color: rgb(0,230,0);
+	opacity: 0.7;
+
+}
+.step {
+	background-color: purple;
+	border:1px solid white;
+	width:auto;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
+}
+.step:hover {
+	background-color: rgb(120,0,40);
+	opacity: 0.8;
+}
+.powerpump {
+	background-color: blue;
+	border:1px solid white;
+	width:auto;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.powerpump:hover {
+	background-color: rgb(0,100,180);
+	opacity: 0.8;
+}
+
+.jumpfit {
+	background-color: rgb(200,50,0);
+	border:1px solid white;
+	width:auto;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.jumpfit:hover {
+	background-color: rgb(220,120,0);
+	opacity: 0.8;
+}
+
+.fitboxe {
+	background-color: red;
+	border:1px solid white;
+	width:auto;
+	height:4em;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.fitboxe:hover {
+	background-color: rgb(120,0,0);
+	opacity: 0.8;
+}
+
+.corsovoce {
+	margin-top:1.2em;
+}
+#imgcal {
+	width:96%;
+	height:44em;
+	position:absolute;
+
+}
+
+/*
+====================
+PAGINA DINAMICA NEWS
+====================
+*/
+
+.newscont {
+	border:2px solid white;
+	float:left;
+	width:60%;
+	margin:3% 20%;
+}
+
+.titlenews {
+	text-align:center;
+	margin:2%;
+	margin-bottom:0%;
+	color:white;
+}
+
+.pubblicazione {
+	float:right;
+	margin:0.5em;
+
+	color:white;
+	font-size: 12px;
+}
+
+.imgnews {
+	float:left;
+	margin:0.5%;
+	width:99%;
+	overflow: hidden;
+	height:24em;
+	object-fit: cover;
+}
+
+.corpopos {
+	float:left;
+	width:100%;
+}
+
+.textnews{
+	float:left;
+	margin:0% 1%;
+	text-align: left;
+	width:100%;
+	color:white;
+	font-family:Helvetica;
+}
+
+/*=================
+PAGINA GALLERIA
+================*/
+
+#sfondogalleria {
+	position: relative;
+}
+
+#titologalleria {
+	position: absolute;
+	font-family: Verdana;
+	color: rgb(107,27,87);
+	font-size: 6vw;
+	font-weight:800;
+	width: 100%;
+	text-align: right;
+	right: 5%;
+    top: -5%;
+}
+
+#imagegalleria {
+	width: 100%;
+}
+
+.gallerymain{
+	display:table;
+	width:100%;
+}
+
+.album {
+	border:2px solid black;
+	float:left;
+	align-items: center;
+	width:25.33% ;/*32.3%*/
+	margin:0% 4% 2% 4%;
+	overflow: hidden;
+	height:16em;
+}
+.album:hover {
+	border:2px solid #ffffff;
+}
+.album:hover .albumname
+{
+	border-bottom:2px solid #ffffff;
+	color:#ffffff;
+}
+.album .albumname
+{
+	border-bottom: 2px solid black;
+	font-weight: bold;
+	color:white;
+	text-align: center;
+	padding:0.5em;
+}
+
+.album .galleryimg{
+   float:left;
+   width: 100%;
+}
+
+#gallerypictitle {
+	font-weight: bold;
+	font-size:400%;
+	margin-top:0%;
+	margin-bottom:2%;
+	color:white;
+	text-align: center;
+}
+
+#gallerypictitle a{
+	font-size: 18px;
+	color:white;
+	float:right;
+	margin-right:5%;
+	text-decoration: underline;
+}
+
+#gallerypicbloc {
+	display: block;
+  	width: 100%;
+
+}
+
+.gallerypic {
+	margin: 2em 0em 4em 4.4em;
+	width:90%;
+}
+.gallerypicmini {
+
+	display: inline-block;
+	vertical-align: text-top;
+
+	width: 31.3%;
+	height:25em;
+  	margin:1%;
+  	border:2px solid black;
+	object-fit: cover;
+
+
+}
+.gallerypicmini:hover
+{
+	border:2px solid #ffffff;
+}
+.gallerypicmini:active{
+	border:2px solid #ffffff;
+}
+#albumtitle
+{
+	color:#DAAC5E;
+}
+.sfondonero {
+	background-color: #323232;
+}
+.imgsfondonero {
+	width:60%;
+	margin:1% 20% 0 20%;
+}
+
+#imgsfondoneroa {
+	color:white;
+	margin-left:71%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#imgsfondoneroa:hover {
+	color:#DAAC5E;
+}
+#sfondonerocont {
+	width:100%;
+	margin-top:5%;
+}
+
+
+
+/*
+==================================
+PAGINA AREA PERSONALE / FORM ADMIN
+==================================
+*/
+
+.FormContainer {
+	background: #3D5A80;
+	height: 65vh;
+	width: 60vw;
+	position: relative;
+	margin: 3% auto;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	border-radius: 0.1875rem;
+}
+
+.signupOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.76);
+}
+
+.containerChild {
+	width: 50%;
+	height: 100%;
+	color: #fff;
+}
+
+.leftContent {
+	position: relative;
+	z-index: 2;
+	padding:9%;
+}
+
+label {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	color: #ccc;
+}
+
+.invisibleLabel {
+    line-height: 0;
+    font-size : 0px;
+    overflow: hidden;
+}
+
+*,:after,:before {
+	box-sizing:border-box;
+}
+
+a {
+	color:inherit;
+	text-decoration:none;
+}
+
+
+.loginWrap {
+	width:100%;
+	height: 100%;
+	margin:auto;
+	position:relative;
+	background-color: #3D5A80;
+}
+
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding: 4%;
+	padding-top:9%;
+}
+
+#exit {
+	position: absolute;
+	top: 0;
+	right: 0.2em;
+	font-size: 50px;
+	color: red;
+	cursor: pointer;
+}
+
+.login-form .group .label,
+.login-form .group .button {
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+.login-form {
+	position:relative;
+	margin-top: 5%;
+}
+
+.login-form .group {
+	margin-bottom:15px;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+	width:100%;
+	color:#e3e3e3;
+	display:block;
+}
+
+.login-form .group .input,
+.login-form .group .button {
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+
+.login-form .group .label {
+	color:#aaa;
+	font-size:12px;
+}
+
+.login-form .group .button {
+	background:#3F51B5;
+	cursor: pointer;
+}
+
+select option {
+    background: #516b8d;
+}
+
+/*============
+ERRORE LOGIN
+===========*/
+
+.message {
+	border:3px solid white;
+	margin:5% 25%;
+	width:50%;
+	height:14em;
+	float:left;
+	background-color: #3D5A80;
+	text-align:center;
+}
+.messagetext
+{
+	color:white;
+	margin-top:10%;
+	margin-bottom:20%;
+}
+.messagelink {
+	color:white;
+	float:right;
+	clear:both;
+	margin-top:1.8%;
+	margin-right:2%;
+	text-decoration: underline;
+}
+.messagelinkquery {
+	color:white;
+	float:right;
+	clear:both;
+	margin-top:6%;
+	margin-bottom:-4.5%;
+	margin-right:2%;
+	text-decoration: underline;
+}
+.messagelinklogin {
+	color:white;
+	float:right;
+	clear:both;
+	margin-top:4.4%;
+	margin-bottom:-2.8%;
+	margin-right:2%;
+	text-decoration: underline;
+}
+.messagelinklogin:hover
+{
+	color:blue;
+}
+.messagelinkquery:hover
+{
+	color:blue;
+}
+.messagelink:hover
+{
+	color:blue;
+}
+
+/*
+============
+ADMIN PANEL
+============
+*/
+
+#btnContainer {
+	width: 95%;
+	margin: auto;
+}
+
+.btn {
+	width: 247px;
+	color: #fff;
+	border: none;
+	font-size: inherit;
+	cursor: pointer;
+	display: inline-block;
+	margin: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+}
+
+.btn:before {
+	font-family: 'FontAwesome';
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 2.2;
+	font-size: 200%;
+	width: 60px;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.btn-sep {
+	padding: 25px 10px 25px 70px;
+}
+
+.btn-sep:before {
+	background: rgba(0,0,0,0.15);
+}
+
+.btn-1 {
+	background: #3498db;
+}
+
+.btn-2 {
+	background: #2ecc71;
+}
+
+.btn-3 {
+	background: #e74c3c;
+}
+
+.btn-4 {
+	background: #34495e;
+}
+
+.btn-5 {
+	background: #dead00;
+}
+
+.btn-6 {
+	background: #da8709;
+}
+
+.btn-7 {
+	background: #4c7610;
+}
+
+.btn-8 {
+	background: #81350c;
+}
+
+.btn-9 {
+	background: #95a190;
+}
+
+.btn-10 {
+	margin: 0;
+	background: #76a8f7;
+}
+
+.btn-11 {
+	margin: 0;
+	background: #058205;
+}
+
+.icon-adduser:before {
+	content: "\f234";
+}
+
+.icon-addadmin:before {
+	content: "\f234";
+}
+
+.icon-addnews:before {
+	content: "\f1ea";
+}
+
+.icon-addphoto:before {
+	content: "\f030";
+}
+
+.icon-showusers:before {
+	content: "\f0c0";
+}
+
+.icon-shownews:before {
+	content: "\f02d";
+}
+
+.icon-showalbum:before {
+	content: "\f03e";
+}
+
+.icon-addfattura:before {
+	content: "\f153";
+}
+
+.icon-addcorso:before {
+	content: "\f055";
+}
+
+.icon-schedadownimg:before {
+	content: "\f019";
+}
+
+/*
+============
+LISTA UTENTI
+============
+*/
+
+.tableResponsive {
+    overflow-x: auto;
+	clear: both;
+}
+
+table {
+    width: 90%;
+	margin: 2em auto;
+    background-color: #D0E4F5;
+    border: solid 1px #000000;
+    border-collapse: collapse;
+}
+
+thead {
+	background-color: #003366;
+    color: #cccccc;
+    text-align: left;
+}
+
+
+tr:nth-child(even) {
+	background-color: #eeeeee;
+}
+
+tr:nth-child(even) {
+	background-color: #ffffff;
+}
+
+th, td {
+	padding: 0.5em;
+}
+
+td {
+	vertical-align: bottom;
+}
+
+/*===============
+USER PANEL
+=================*/
+
+.bloccoDati {
+	margin: 3% auto;
+	width:80%;
+}
+
+.TabUtente {
+	border:1px solid white;
+	padding:1%;
+}
+
+.EntryUtente {
+	float: left;
+	color:#DAAC5E;
+	font-weight: bold;
+	font-size:18px;
+}
+
+.EntryTab {
+	color: white;
+	font-weight: bold;
+	font-size:18px;
+}
+
+.userData {
+	color: white;
+	margin:1% 1%;
+	font-weight: bold;
+	font-size:20px;
+}
