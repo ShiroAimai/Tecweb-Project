@@ -50,7 +50,7 @@
 		$stampa .="<div class=\"TabUtente\">";
 		$stampa .="<div class=\"EntryUtente\"> Validit&agrave; abbonamento:</div>";
 		if($data['ScadenzaFitness'] >= date("Y-m-d"))
-			$stampa .="<div id\"scadenzaAbbonamento\" class=\"EntryTab\">&nbsp;" .$data['ScadenzaFitness']."&ensp;</div></div>";
+			$stampa .="<div id\"scadenzaAbbonamento\" class=\"EntryTab\">&nbsp;" .$data['ScadenzaFitness']."&ensp;</div>";
 		else
 			$stampa .=" <div class=\"EntryTab\">&nbsp;Scaduto!&ensp;</div>";
 		$stampa .="<div class=\"EntryUtente\"> Entrate corsi:</div><div class=\"EntryTab\">&nbsp;" .$data['EntrateCorsi']."&ensp;</div></div>";
