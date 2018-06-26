@@ -419,16 +419,6 @@ PAGINA ATTIVITA
 	font-size: 50px;
 }
 
-#backAdminPanel {
-	font-size: 18px;
-	color:white;
-	float:right;
-	margin-right:5%;
-	text-decoration: underline;
-}
-#backAdminPanel:hover {
-	color:#DAAC5E;
-}
 #powerpump {
 	margin: 4% 2%;
 	width:100%;
@@ -965,9 +955,9 @@ PAGINA GALLERIA
 
 
 /*
-==================================
-PAGINA AREA PERSONALE / FORM ADMIN
-==================================
+===========
+FORM
+===========
 */
 
 .FormContainer {
