@@ -9,7 +9,7 @@
 
 
 	
-		<div class="panel">
+		<div id="powerpump">
 			<img class="courseimg" src="../IMAGES/powerpump.jpg" alt="powepump immagine"/>
 			<div class="textAttContainer">
 				<div class="titleCourseContent">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="panel">
+		<div id="spinning">
 			<img class="courseimg" src="../IMAGES/spinning.jpg" alt="powepump"/>
 			<div class="textAttContainer">
 					<div class="titleCourseContent">
@@ -39,9 +39,9 @@
 		</div>
 
 
-		<div class="panel">
+		<div id="fitboxe">
 			
-			<img class="courseimg" src="../IMAGES/fitBoxe.jpg" alt="fitbox immagine"/>
+			<img class="courseimg" src="../IMAGES/fitBoxe.jpg" alt="fitboxe immagine"/>
 			<div class="textAttContainer">
 				<div class="titleCourseContent">
 					<img class="iconAtt" src="../IMAGES/icone/fitboxe.png" alt="icona alzatore pesi"/>
@@ -58,7 +58,7 @@
 	
 		
 	
-		<div class="panel">
+		<div id="jumpfit">
 			
 				<img class="courseimg" src="../IMAGES/jumpfit.jpg" alt="jumpfit immagine"/>
 			<div class="textAttContainer">
@@ -75,7 +75,7 @@
 	
 		
 	
-		<div class="panel">
+		<div id="step">
 			<img class="courseimg" src="../IMAGES/step.jpg" alt="step immagine"/>
 			<div class="textAttContainer">
 				<div class="titleCourseContent">
