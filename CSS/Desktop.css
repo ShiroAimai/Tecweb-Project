@@ -484,7 +484,7 @@ PAGINA ATTIVITA
   margin-top:7%;
 }
 .titleAttSpinning {
-  color:green;
+  color:rgb(30,128,23);
   float:left;
   font-size: 22pt;
   font-weight: bold;
@@ -505,7 +505,7 @@ PAGINA ATTIVITA
   margin-top:7%;
 }
 .titleAttStep {
-  color: purple;
+  color: rgb(161,22,101);
   float:left;
   font-size: 22pt;
   font-weight: bold;
