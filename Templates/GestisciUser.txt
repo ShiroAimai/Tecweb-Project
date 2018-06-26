@@ -2,7 +2,7 @@
 	<h1 id="titoloPagina">Gestisci Utenti</h1>
 	<p>Gestisci gli utenti registrati</p>
 </div>
-<a id="backAdminPanel" href="AdminPanel.php">Torna al pannello amministratore</a>
+<div id="back"><a href="AdminPanel.php">Torna al pannello amministratore</a></div>
 <div id="btnContainer">
 	<a href="Form utente.php"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
 	<a href="Form fattura.php"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>

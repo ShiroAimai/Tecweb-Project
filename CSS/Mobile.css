@@ -18,6 +18,9 @@ html, body {
 	background-color: #323232;
 }
 
+.printable {
+	display:none;
+}
 
 #contenitore {
 	margin: 0;
@@ -31,11 +34,7 @@ SEZIONE INTESTAZIONE
 */
 
 #Intestazione {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-	background-color: #000;
-	opacity: 0.8;
+	position: static;
 }
 
 #logo {

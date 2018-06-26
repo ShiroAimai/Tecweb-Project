@@ -9,7 +9,7 @@
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
-	$goback = "<a href=\"Galleria.php\">Torna agli album</a>";
+	$goback = "<div id=\"back\"><a href=\"Galleria.php\">Torna agli album</a></div>";
 	
 	echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {

@@ -418,16 +418,6 @@ PAGINA ATTIVITA
 	font-size: 50px;
 }
 
-#backAdminPanel {
-	font-size: 18px;
-	color:white;
-	float:right;
-	margin-right:5%;
-	text-decoration: underline;
-}
-
-
-
 #powerpump {
 	margin: 4% 2%;
 	width:100%;
@@ -897,12 +887,12 @@ PAGINA GALLERIA
 	text-align: center;
 }
 
-#gallerypictitle a{
+#back {
 	font-size: 18px;
 	color:white;
-	float:right;
-	margin-right:5%;
 	text-decoration: underline;
+	margin-right: 5%;
+	text-align: right;
 }
 
 #gallerypicbloc {
@@ -971,8 +961,8 @@ PAGINA AREA PERSONALE / FORM ADMIN
 
 .FormContainer {
 	background: #3D5A80;
-	height: 65vh;
-	width: 60vw;
+	height: 530px;
+	width: 700px;
 	position: relative;
 	margin: 3% auto;
 	border-radius: 10px;

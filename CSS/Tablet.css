@@ -4,29 +4,9 @@ SEZIONE GENERALE
 =========================
 */
 
-/* Resetto valori di default impostati dai browser */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-html, body {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	background-color: #323232;	
-}
-
-.printable {
-	display:none;
-}
-
 #contenitore {
-	margin: 1.5%;
-	border: 1px solid #323232;
-	background-image: url("../IMAGES/sfondo.jpg");
-	
+	margin: 0;
+	border: 0;
 }
 
 /*
@@ -36,73 +16,53 @@ SEZIONE INTESTAZIONE
 */
 
 #Intestazione {
-	position: sticky;
-	top: 0;
-	z-index: 5;
-	background-color: #000;
-	opacity: 0.8;
+	position: static;
 }
 
 #logo {
-	float: left;
-	padding: 0.3em;
-	width: 9.19em;
-}
-
-.Menu {
-	overflow: hidden;
+	float: none;
+	padding: 0.4em;
+	width: 30%;
+	margin-left: 35%;
 }
 
 .Menu a {
-	float: left;
-	display: block;
-	color: #DAAC5E;
-	text-align: center;
-	font-weight: bold;
-	padding: 2em 0.9em;
-	text-decoration: none;
-	width: auto;
-}
-
-.Menu a:hover {
-	color: #000;
-	background-color: #DAAC5E;
-}
-
-.Menu a.active {
-	color: #000;
-	background-color: #DAAC5E;
-	cursor: default;
+	display: none;
 }
 
 .Menu button {
-	float: right;
-	display: block;
-	color: white;
-	background-color: #4CAF50;
-	padding: 2em 0.9em;
-	width: auto;
-	border: none;
-	font-size: 100%;
-	font-weight: bold;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	cursor: pointer;
-}
-
-.Menu button:hover {
-	opacity: 0.8;
-}
-
-#logoutButton {
-	background-color: red;
+	display: none;
 }
 
 .sandwich {
-	display: none;
+	position: absolute;
+    left: 30px;
+    top: 30px;
+	font-size: 50px;
+	display: block;
+	color: #DAAC5E;
+	cursor: pointer;
 }
 
 #user {
-	display: none;
+	position: absolute;
+    right: 30px;
+    top: 35px;
+	width: 8%;
+	display: block;
+	color: #DAAC5E;
+	cursor: pointer;
+}
+
+.Menu.responsive {
+	position: relative;
+}
+  
+.Menu.responsive a {
+    float: none;
+    display: block;
+	width: 100%;
+    text-align: left;
 }
 
 /*
@@ -111,96 +71,24 @@ SEZIONE FOOTER
 =========================
 */
 
-#Footer {
-	font-size: 0.8em;
-	line-height: 22px;
-	color: white;
-	background-color: rgb(32,32,32);
-	overflow: hidden;
-	clear: both;
-}
-
 #Footer h3 {
-	margin-top: 4em;
-	margin-bottom: 3em;
+	margin: 0;
 }
 
-.blocco {
-	display: block;
-}
-
-#footersx {
-	float: left;
-	padding: 3%;
-	width: 22%;
-}
-
-#logofooter {
-	margin-bottom: 1.5em;
-	width: 50%;
-}
-
-#logofacebook {
-	width: 2em;
+#footersx h3 {
 	margin-top: 2em;
 }
 
 #footercx {
-	float: left;
-	padding: 3%;
-	margin-left: 8%;
-	width: 22%;
+	width: 32%;
 }
 
-#footercx ul {
-	margin-left: 0;
-	padding-left: 0;
+#footercx h3 {
+	margin-bottom: 1em;
 }
 
-#footerdx {
-	float: right;
-	padding: 3%;
-	width: 37%;
-}
-
-#Coni {
-	float: left;
-	width: 30%;
-	margin-bottom: 1.5em;
-}
-
-#asi {
-	width: 30%;
-	margin-left: 20%;
-	margin-bottom: 1.5em;
-}
-
-#footerbottom {
-	padding: 0.2em;
-	clear: both;
-	background-color: rgb(26,26,26);
-	text-align: center;
-}
-
-#backTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #DAAC5E;
-    color: black;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-#backTop:hover {
-    background-color: #DAAC5E;
-    opacity: 0.5;
+#logofooter, #Coni, #asi {
+	display: none;
 }
 
 /*
@@ -217,7 +105,7 @@ PAGINA HOME
 
 .image {
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	object-fit: cover;
 }
 
@@ -302,88 +190,28 @@ PAGINA HOME
 
 /*
 =========================
-PAGINA CHI SIAMO
-=========================
-*/
-
-#ChiSiamoImg {
-	width:100%;	
-}
-
-#GennyTiengo, #FabioFerro {
-	padding: 2em;
-	overflow: hidden;
-	font-size: 18px;
-	color: white;
-}
-
-#GennyTiengoImg, #FabioFerroImg {
-	margin-right: 3em;
-	float: left;
-	border-radius: 50px;
-	width: 20%;
-}
-
-#Istruttori h2 {
-	font-size: 50px;
-	margin-top:0;
-	margin-left: 25%;
-}
-
-#Istruttori ul {
-	padding: 2em;
-	margin-left: 25%;
-}
-
-/*
-=========================
 PAGINA DOVE SIAMO
 =========================
 */
 
-#sfondodovesiamo {
-	position: relative;
-}
-
-#titolodovesiamo {
-	position: absolute;
-	font-family: Verdana;
-	color: #FD0303;
-	font-size: 6vw;
-	font-weight:800;
-	width: 100%;
-	text-align: right;
-	right: 10%;
-    top: 0;
-}
-
-#imagedovesiamo {
-	width: 100%;
-}
-
 #map {
-	float: left;
-	width: 600px;
-	height: 600px;
-	margin-right: 3em;
+	float: none;
+	width: 100%;
 }
 
-#GoogleMaps {
-	color: white;
-	margin-top: 2em;
-	padding: 2em;
-	overflow: hidden;
+#GoogleMaps .separator {
+	display: none;
 }
 
 #GoogleMaps h2 {
-	font-size: 50px;
-	margin-top:0;
-	margin-left: 25%;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-left: 0;
 }
 
 #GoogleMaps p {
-	padding: 2em;
-	margin-left: 25%;
+	padding: 0;
+	margin-left: 0;
 }
 
 /*
@@ -615,139 +443,11 @@ SEZIONE CALENDARIO
 */
 
 .calendario {
-	width: 90%;
-	margin:7%;
-	float:left;
-	text-align:left;
-	color:white;
-	font-weight: bold;
-	position: relative;
-
-}
-#salafitness
-{
-	font-size:140%;
-	clear:both;
-	margin-left:1.5em;
-}
-.giornovoce
-{
-	font-size:140%;
-}
-.vocecalendario
-{
-	float:left;
-	margin:0;
-	width: 16.6%;
-}
-.orari
-{
-	
-	list-style-type: none;
-	font-size: 110%;
-	margin:0;
-	padding:0;
-}
-.orari li {
-	margin:1.3em 0em 3.6em 0em;
-}
-.oraricorsi {
-
-	list-style-type: none;
-	font-size: 110%;
-	margin:0;
-	padding:0;
-
-}
-.oraricorsi li a{
-	width:100%;
-	height:4em;
-}
-.oraricorsi li
-{
-	margin:0;
-}
-.corsovuoto
-{
-	border:1px solid white;
-	width:auto;
-	height:4em;
-}
-.spinning {
-	border:1px solid white;
-	width:auto;
-	height:4em;
-	background-color: green;
-	text-align: center;
-	opacity: 0.8;
-}
-.spinning:hover{
-	background-color: rgb(0,230,0);
-	opacity: 0.7;
-
-}
-.step {
-	background-color: purple;
-	border:1px solid white;
-	width:auto;
-	height:4em;
-	text-align: center;
-	opacity: 0.8;
-}
-.step:hover {
-	background-color: rgb(120,0,40);
-	opacity: 0.8;
-}
-.powerpump {
-	background-color: blue;
-	border:1px solid white;
-	width:auto;
-	height:4em;
-	text-align: center;
-	opacity: 0.8;
+	font-size: 80%;
 }
 
-.powerpump:hover {
-	background-color: rgb(0,100,180);
-	opacity: 0.8;
-}
-
-.jumpfit {
-	background-color: rgb(200,50,0);
-	border:1px solid white;
-	width:auto;
-	height:4em;
-	text-align: center;
-	opacity: 0.8;
-}
-
-.jumpfit:hover {
-	background-color: rgb(220,120,0);
-	opacity: 0.8;
-}
-
-.fitboxe {
-	background-color: red;
-	border:1px solid white;
-	width:auto;
-	height:4em;
-	text-align: center;
-	opacity: 0.8;
-}
-
-.fitboxe:hover {
-	background-color: rgb(120,0,0);
-	opacity: 0.8;
-}
-
-.corsovoce {
-	margin-top:1.2em;
-}
 #imgcal {
-	width:96%;
-	height:44em;
-	position:absolute;
-
+	height:35em;
 }
 
 /*
@@ -805,77 +505,8 @@ PAGINA DINAMICA NEWS
 PAGINA GALLERIA
 ================*/
 
-#sfondogalleria {
-	position: relative;
-}
-
-#titologalleria {
-	position: absolute;
-	font-family: Verdana;
-	color: rgb(107,27,87);
-	font-size: 6vw;
-	font-weight:800;
-	width: 100%;
-	text-align: right;
-	right: 5%;
-    top: -5%;
-}
-
-#imagegalleria {
-	width: 100%;
-}
-
-.gallerymain{
-	display:table;
-	width:100%;
-}
-
-.album {
-	border:2px solid black;
-	float:left;
-	align-items: center;
-	width:25.33% ;/*32.3%*/
-	margin:0% 4% 2% 4%;
-	overflow: hidden;
-	height:16em;
-}
-.album:hover {
-	border:2px solid #ffffff;
-}
-.album:hover .albumname
-{
-	border-bottom:2px solid #ffffff;
-	color:#ffffff;
-}
-.album .albumname
-{
-	border-bottom: 2px solid black;
-	font-weight: bold;
-	color:white;
-	text-align: center;
-	padding:0.5em;
-}
-
-.album .galleryimg{
-   float:left;
-   width: 100%;
-}
-
 #gallerypictitle {
-	font-weight: bold;
-	font-size:400%;
-	margin-top:0%;
-	margin-bottom:2%;
-	color:white;
-	text-align: center;
-}
-
-#gallerypictitle a{
-	font-size: 18px;
-	color:white;
-	float:right;
-	margin-right:5%;
-	text-decoration: underline;
+	font-size:300%;
 }
 
 #gallerypicbloc {
@@ -937,21 +568,14 @@ PAGINA GALLERIA
 
 
 /*
-==================================
-PAGINA AREA PERSONALE / FORM ADMIN
-==================================
+===========
+FORM
+===========
 */
 
 .FormContainer {
-	background: #3D5A80;
-	height: 65vh;
-	width: 60vw;
-	position: relative;
-	margin: 3% auto;
-	border-radius: 10px;
-	overflow: hidden;
-	display: flex;
-	border-radius: 0.1875rem;
+	height: 530px;
+	width: 700px;
 }
 
 .signupOverlay {
