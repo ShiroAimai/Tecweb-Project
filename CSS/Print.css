@@ -55,6 +55,10 @@ PAGINA ATTIVITA
 	display: none;
 }
 
+.iconAtt {
+	display: none;
+}
+/*
 .course{
 	border: 2px solid;
 	margin: 10px;
@@ -64,17 +68,16 @@ PAGINA ATTIVITA
 	padding-top: 0%;
 	padding-bottom: 3%;
 }
+*/
 
-#spinning{
-	text-align: left;
-}
-
+/*
 button.accordion{
 	border: none;
 	margin: 5px 350px;
 	font-size: 16px;
 	font-weight: bold ;
 }
+*/
 
 #Attivita #Footer{
 	display: none;

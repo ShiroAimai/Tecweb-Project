@@ -461,7 +461,6 @@ PAGINA ATTIVITA
 }
 .testoAtt {
 	
-	font-weight: bold;
 	width:100%;
 	color:white;
 }
@@ -475,45 +474,45 @@ PAGINA ATTIVITA
 .titleCourseContent {
 	width:100%;
 	float:left;
+	margin-bottom: 2%;
 }
 .titleAttPower {
-  color:  rgb(0,100,180);
-  float:left;
+  color: rgb(0,100,180);
   font-size: 22pt;
   font-weight: bold;
-  margin-top:7%;
+  margin-top:3%;
 }
 .titleAttSpinning {
   color:rgb(30,128,23);
   float:left;
   font-size: 22pt;
   font-weight: bold;
-  margin-top:7%;
+  margin-top:3%;
 }
 .titleAttFitBoxe {
   color: rgb(220,120,0);
   float:left;
   font-size: 22pt;
   font-weight: bold;
-  margin-top:7%;
+  margin-top:3%;
 }
 .titleAttJumpFit {
   color:rgb(200,50,0);
   float:left;
   font-size: 22pt;
   font-weight: bold;
-  margin-top:7%;
+  margin-top:3%;
 }
 .titleAttStep {
   color: rgb(161,22,101);
   float:left;
   font-size: 22pt;
   font-weight: bold;
-  margin-top:7%;
+  margin-top:3%;
 }
 .iconAtt {
 	float:left;
-	width:22%;
+	width:10%;
 	margin-left:25%;
 	
 }
@@ -705,7 +704,7 @@ SEZIONE CALENDARIO
 
 }
 .step {
-	background-color: purple;
+	background-color: rgb(161,22,101);
 	border:1px solid white;
 	width:auto;
 	height:4em;
@@ -717,7 +716,7 @@ SEZIONE CALENDARIO
 	opacity: 0.8;
 }
 .powerpump {
-	background-color: blue;
+	background-color:  rgb(0,100,180);
 	border:1px solid white;
 	width:auto;
 	height:4em;

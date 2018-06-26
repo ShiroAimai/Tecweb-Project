@@ -3,17 +3,11 @@
 	<p> Alla <span lang="en">Body Evolution</span> ti offriamo svariate attivit&agrave; per migliorare la tua forma!<br />Scegli un corso per saperne di pi&ugrave; </p>
 </div>
 
-<noscript id="noscriptAttivita">
-	<p>Sembra tu non abbia abilitato JavaScript!<br /> Attivalo per vedere al meglio i corsi che ti offriamo!<br /></p>
-</noscript>
-
-
-	
 		<div id="powerpump">
 			<img class="courseimg" src="../IMAGES/powerpump.jpg" alt="powepump immagine"/>
 			<div class="textAttContainer">
 				<div class="titleCourseContent">
-					<img class="iconAtt" src="../IMAGES/icone/power.png" alt="icona alzatore pesi"/>
+					<img class="iconAtt" src="../IMAGES/icone/power1.png" alt="icona alzatore pesi"/>
 					<p class="titleAttPower">Power Pump</p>
 				</div>
 				<div class="testoAtt">
@@ -28,7 +22,7 @@
 			<img class="courseimg" src="../IMAGES/spinning.jpg" alt="powepump"/>
 			<div class="textAttContainer">
 					<div class="titleCourseContent">
-						<img class="iconAtt" src="../IMAGES/icone/spinning.png" alt="icona uomo in bicicletta"/>
+						<img class="iconAtt" src="../IMAGES/icone/spinning1.png" alt="icona uomo in bicicletta"/>
 						<p class="titleAttSpinning">Spinning</p>
 					</div>
 				<div class="testoAtt">
@@ -44,7 +38,7 @@
 			<img class="courseimg" src="../IMAGES/fitBoxe.jpg" alt="fitboxe immagine"/>
 			<div class="textAttContainer">
 				<div class="titleCourseContent">
-					<img class="iconAtt" src="../IMAGES/icone/fitboxe.png" alt="icona alzatore pesi"/>
+					<img class="iconAtt" src="../IMAGES/icone/fitboxe1.png" alt="icona alzatore pesi"/>
 					<p class="titleAttFitBoxe"> Fit Boxe</p>
 				</div>
 				<div class="testoAtt">
@@ -63,7 +57,7 @@
 				<img class="courseimg" src="../IMAGES/jumpfit.jpg" alt="jumpfit immagine"/>
 			<div class="textAttContainer">
 				<div class="titleCourseContent">
-					<img class="iconAtt" src="../IMAGES/icone/jumpfit.png" alt="icona alzatore pesi"/>
+					<img class="iconAtt" src="../IMAGES/icone/jumpfit1.png" alt="icona alzatore pesi"/>
 					<p class="titleAttJumpFit"> Jump Fit</p>
 				</div>
 				<div class="testoAtt">
@@ -79,7 +73,7 @@
 			<img class="courseimg" src="../IMAGES/step.jpg" alt="step immagine"/>
 			<div class="textAttContainer">
 				<div class="titleCourseContent">
-					<img class="iconAtt" src="../IMAGES/icone/step.png" alt="icona step"/>
+					<img class="iconAtt" src="../IMAGES/icone/step1.png" alt="icona step"/>
 					<p class="titleAttStep"> Step</p>
 				</div>
 				<div class="testoAtt">
