@@ -44,7 +44,7 @@
 						</div>
 						<div class="group">
 							<label for="importo" class="label">Importo</label>
-							<input disabled name="importo" id="importo" value="0" type="number" min="0" max="1080" class="input" required />
+							<input name="importo" id="importo" value="0" type="number" min="0" max="1080" class="input" required />
 						</div>
 						<div class="group">
 							<input type="submit" class="button" value="Inserisci fattura"/>
