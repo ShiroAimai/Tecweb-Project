@@ -60,13 +60,6 @@ PAGINA HOME
 }
 
 /*
-,.image, .separator, 
-.ridimensionadx, .ridimensionasx, .allenamento{
-display: none;
-}
-
-*/
-/*
 =========================
 PAGINA ATTIVITA
 =========================
@@ -108,12 +101,8 @@ button.accordion{
 	font-size: 16px;
 	font-weight: bold ;
 }
+
 */
-
-#Attivita #Footer{
-	display: none;
-}
-
 /*
 =========================
 PAGINA CALENDARIO
@@ -303,19 +292,12 @@ PAGINA USER PANEL
 	font-weight: bold;
 	font-size: 18pt;
 }
-
-#numCorso{
-	display: none;
-}
-
 #nomeCorso{
-	display: inline;
+	display: block;
 }
 
-.bloccoDati2 {
+.bloccoDati2, #contatoreCorsi, 
+#iscrizioneCorsi, #discrizioneCorsi, #datiScheda{
 	display: none;
 }
 
-#datiIscrizione{
-	display: none;
-}

@@ -64,7 +64,7 @@
 		$countercorsi=1;
 		$data=0;
 		while($data = mysqli_fetch_assoc($query3)){
-			$stampa .="<div class=\"EntryUtente\">$countercorsi.</div><div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>";
+			$stampa .="<div id=\"contatoreCorsi\" class=\"EntryUtente\">$countercorsi.</div><div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>";
 			$countercorsi++;
 		}
 		if($data == 0)
@@ -79,7 +79,7 @@
 		$stampa .="</div>";
 
 		//Button disiscrizione corsi
-        $stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
+        $stampa .="<div id=\"discrizioneCorsi\" class=\"bloccoDati\">";
         $stampa .= "<div class=\"userData\">Cancella la tua iscrizione ai corsi:</div>";
         $stampa .="<a href=\"formCorsi.php?attr=1\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Disiscrizione corsi</button></a>";
         $stampa .="</div>";
