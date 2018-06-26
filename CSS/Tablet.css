@@ -169,3 +169,14 @@ PAGINA GALLERIA
 .gallerypicmini {
 	height:15em;
 }
+
+/*
+============
+PAGINA NEWS
+============
+*/
+
+.newscont {
+	width:96%;
+	margin:3% 2%;
+}
