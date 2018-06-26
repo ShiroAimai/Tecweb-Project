@@ -65,6 +65,13 @@ SEZIONE INTESTAZIONE
     text-align: left;
 }
 
+.Menu.responsive #logoutButton {
+    float: none;
+    display: block;
+	width: 100%;
+    text-align: left;
+}
+
 /*
 =========================
 SEZIONE FOOTER
@@ -128,6 +135,16 @@ PAGINA DOVE SIAMO
 }
 
 /*
+=========================
+PAGINA ATTIVITA
+=========================
+*/
+
+#powerpump, #spinning, #fitboxe, #jumpfit, #step {
+	margin: 5%;
+}
+
+/*
 ===================
 SEZIONE CALENDARIO
 ==================
@@ -147,4 +164,19 @@ PAGINA GALLERIA
 
 #gallerypictitle {
 	font-size:300%;
+}
+
+.gallerypicmini {
+	height:15em;
+}
+
+/*
+============
+PAGINA NEWS
+============
+*/
+
+.newscont {
+	width:96%;
+	margin:3% 2%;
 }

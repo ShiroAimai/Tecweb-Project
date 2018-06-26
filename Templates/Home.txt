@@ -21,7 +21,6 @@
 			<h3>ATTREZZATURA</h3>
 			<div class="separator"></div>
 			<p>La Body Evolution gode di un ampia sala di circa 400mq dedicata interamente al fitness. Nella sala è presente una vasta gamma di macchinari di ultima generazione a disposizione degli iscritti. Alla Body Evolution il rigore e la disciplina sono importanti per cui si chiede ai gentili clienti di dotarsi di asciugamano per l'igiene di tutti.</p>
-		
 			<ul  class="elenchiHome">
 				<li>Area fitness con più di 40 macchine di nuova generazione</li>
 				<li>Area cardio dotata di diversi tapis roulant con schermo digitale</li>
@@ -35,14 +34,13 @@
 			<h3>PROGRAMMA D'ALLENAMENTO</h3>
 			<div class="separator"></div>
 			<p>Grazie all'esperienza dei Trainer son disponibili diversi allenamenti a seconda delle esigenze. Gli allenamenti variano in base al grado di praticità dell'individuo, passsando da una semplice "Total Body" per i novizi, "allenamenti per definizione" che olte ad un'intensa attività cardiomuscolare mettono a dura prova la resistenza dell'individuo con tempi di riposo ridotti fino a "allenamenti ad obbiettivo" concentrati per i più esperti. La possibilità di allenamento varia anche rispetto alla disponibilità temporale, per cui sono stati creati allenamenti da 2, 3 e più giorni a settimana per soddisfare le esigenze di ogni iscritto. Gli allenamenti più comuni comprendono: </p>
-		</div>
-			<ul  class="elenchiHomeAll">
+			<ul  class="elenchiHome">
 				<li>Forza e Potenziamento</li>
 				<li>Ipertrofia</li>
 				<li>Tonificazione e Definizione</li>
 				<li>Dimagrimento</li>
 			</ul>
-		
+		</div>
 	</div>
 	<div class="sx">
 		<img class="ridimensionadx" src="../IMAGES/Trainer.jpg" alt="Trainer segue e consiglia iscritti"/>
