@@ -19,5 +19,6 @@
 	}
 	else {
 		header("Location: queryfallita.php");
+		die();
 	}
 ?>

@@ -42,8 +42,9 @@
 	$uploadOk = 1;
 	$pdfFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 	if (!move_uploaded_file($_FILES["$user"]["tmp_name"], $target_file)) {
-			header("Location: queryfallita.php");
-		}
+		header("Location: queryfallita.php");
+		die();
+	}
 
 	echo $foot;
 	echo $closebody;

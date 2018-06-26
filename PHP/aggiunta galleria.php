@@ -1,5 +1,4 @@
 <?php
-
 	require_once('config.php');
 	$head = file_get_contents("../Templates/headerAddGallery.txt");
 	$foot = file_get_contents("../Templates/footer.txt");
@@ -13,7 +12,27 @@
 	$closehtml = "</html>";
 	register('galleryName');
 	$galleryFile = $_FILES["galleryFile"]["name"];
+	$gallerySize = $_FILES["galleryFile"]["size"];
 	$counter=0;
+	
+	if(isset($galleryName) && !empty($galleryName) && isset($galleryFile) && !empty($galleryFile)) {
+		$max_file_number = 50; //massimo 50 file per volta
+		$upload_max_size = 209715200; //massimo 200M ad upload
+		if(count($galleryFile) > $max_file_number || $gallerySize > $upload_max_size) {
+			header("Location: queryfallita.php");
+			die();
+		}
+        $galleryName = test_input($galleryName);
+        while(isset($_FILES['galleryFile']['name'][$counter])) {   
+			$immagine=$_FILES['galleryFile']['name'][$counter];
+			query("INSERT INTO galleria (NomeImmagine, Album) VALUES ('$immagine', '$galleryName')");
+			$counter++;
+		}
+    }
+    else {
+        header("Location: queryfallita.php");
+		die();
+	}
 	
 	echo $head;
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -29,18 +48,6 @@
 	echo $closediv;
 	echo $closediv;
 
-	if(isset($galleryName) && !empty($galleryName) && isset($galleryFile) && !empty($galleryFile)) {	
-        $galleryName = test_input($galleryName);
-        while(isset($_FILES['galleryFile']['name'][$counter])) {   
-			$immagine=$_FILES['galleryFile']['name'][$counter];
-			query("INSERT INTO galleria (NomeImmagine, Album) VALUES ('$immagine', '$galleryName')");
-			$counter++;
-		}
-    }
-    else {
-        header("Location: queryfallita.php");
-	}
-
 	if (!file_exists('../galleria/'.$galleryName.'/')) {
 		mkdir('../galleria/'.$galleryName.'/', 0777, true);
 	}
@@ -52,7 +59,8 @@
 		$count++;
 		$destination=$destination.basename($g);
 		if (!move_uploaded_file($origin, $destination)) {
-			header("Location: queryfallita.php");			 
+			header("Location: queryfallita.php");		
+			die();			
 		}
 	}
 

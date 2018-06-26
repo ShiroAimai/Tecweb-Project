@@ -9,13 +9,11 @@ $closebody = "</body>";
 $closehtml = "</html>";
 
 echo $head;
-	
-	echo $login;
-	
-	echo $closediv;
-	echo $closediv;
-	echo $errLogin;
-	echo $foot;
-	echo $closebody;
-	echo $closehtml;
+echo $login;
+echo $closediv;
+echo $closediv;
+echo $errLogin;
+echo $foot;
+echo $closebody;
+echo $closehtml;
 ?>
