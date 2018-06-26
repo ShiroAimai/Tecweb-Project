@@ -1,4 +1,3 @@
-
 <div id="Presentazione">
 	<h1 id="titoloPagina">AGGIUNGI FATTURA</h1>
 </div>
@@ -21,10 +20,6 @@
 							<input name="userCode" id="userCode" type="number" class="input" required />
 						</div>
 						<div class="group">
-							<label for="importo" class="label">Importo</label>
-							<input name="importo" id="importo" value="0" type="number" class="input" required />
-						</div>
-						<div class="group">
 							<label for="mesi" class="label">Mesi Fitness</label>
 							<select onchange="changeMesi()" name="mesi" id="mesi" class="input" >
 								<option value="0">0</option>
@@ -45,7 +40,11 @@
 						</div>
 						<div class="group">
 							<label for="entrate" class="label">Entrate Corsi</label>
-							<input onchange="changePunti()" name="entrate" id="entrate" type="number" value="0" class="input" />
+							<input onchange="changePunti()" name="entrate" id="entrate" type="number" min="0" max="100" value="0" class="input" />
+						</div>
+						<div class="group">
+							<label for="importo" class="label">Importo</label>
+							<input disabled name="importo" id="importo" value="0" type="number" min="0" max="1080" class="input" required />
 						</div>
 						<div class="group">
 							<input type="submit" class="button" value="Inserisci fattura"/>
