@@ -428,14 +428,41 @@ PAGINA ATTIVITA
 
 
 
-.panel {
+#powerpump {
 	margin: 4% 2%;
 	width:100%;
  
     overflow: hidden;
  
 }
-
+#spinning {
+	margin: 4% 2%;
+	width:100%;
+ 
+    overflow: hidden;
+ 
+}
+#fitboxe {
+	margin: 4% 2%;
+	width:100%;
+ 
+    overflow: hidden;
+ 
+}
+#jumpfit {
+	margin: 4% 2%;
+	width:100%;
+ 
+    overflow: hidden;
+ 
+}
+#step {
+	margin: 4% 2%;
+	width:100%;
+ 
+    overflow: hidden;
+ 
+}
 .textAttContainer {
 	margin:0 1% 1% 1%;
 	float:left;
