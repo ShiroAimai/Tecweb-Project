@@ -60,9 +60,8 @@
             
     echo $stampa;
     echo $closediv;
+	close_connection();
     echo $foot;
 	echo $closebody;
 	echo $closehtml;
-    
-    $connessione->close();
 ?>

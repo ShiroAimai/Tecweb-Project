@@ -6,7 +6,6 @@
 	register('entrate');
 	$today = date("Y-m-d"); 
 
-
 	if(isset($userCode) && !empty($userCode) 
 		&& isset($today) && !empty($today)
 		&& isset($importo) && !empty($importo)
@@ -21,4 +20,5 @@
 		header("Location: queryfallita.php");
 		die();
 	}
+	close_connection();
 ?>

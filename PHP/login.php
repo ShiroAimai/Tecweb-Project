@@ -8,6 +8,8 @@
 		WHERE CodiceUtente='$userCode'
 		AND Password='$pass';
 	");
+	
+	close_connection();
 
 	if(count($utente_trovato) > 0){
 		$_SESSION['user_code'] = $utente_trovato[0]['CodiceUtente'];

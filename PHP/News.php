@@ -46,8 +46,8 @@
 		echo $stampa;
 	}
 
+	close_connection();
 	echo $foot;
 	echo $closebody;
 	echo $closehtml;
-	$connessione->close();
 ?>

@@ -10,8 +10,7 @@ $password = "";
 $database = "fsacchet";
 
 //registra una variabile da una form nella pagina che richiama questa funzione
-function register($varname)
-{
+function register($varname) {
     global $$varname;
     if (isset($_REQUEST[$varname])) {
         $$varname = addslashes(stripslashes($_REQUEST[$varname])); // previene SQL injection
@@ -31,9 +30,18 @@ function connect()
     }
 }
 
+//chiusura connessione al database
+function close_connection() {
+	global $connessione;
+	if(isset($connessione)){
+		if(mysqli_ping($connessione)) {
+			$connessione->close();
+		}
+	}
+}
+
 //effettua una query sul database ritornando il risultato
-function query($sql)
-{
+function query($sql) {
     global $connessione;
     if ($connessione == null) {
         connect();
@@ -47,8 +55,7 @@ function query($sql)
 }
 
 //salva una query in una tabella, così facendo è possibile ad esempio effettuare il count del risultato
-function select($sql)
-{
+function select($sql) {
     $res = query($sql);
     $table = array();
     while ($row = mysqli_fetch_assoc($res)) {

@@ -12,6 +12,7 @@
 		$pass = test_input($pass);
         $userMail = test_input($userMail);
 		query("INSERT INTO utente (Nome, Cognome, Password, Email, Tipo) VALUES ('$userName','$userSurname','$pass','$userMail','$admin')");
+		close_connection();
 		header("Location:admin aggiunto.php");
 	}
 	else {

@@ -46,6 +46,7 @@
 		die();
 	}
 
+	close_connection();
 	echo $foot;
 	echo $closebody;
 	echo $closehtml;

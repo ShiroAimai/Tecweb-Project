@@ -66,6 +66,7 @@
 	else {
 		echo $notAdmin;
 	}
+	close_connection();
 	echo $foot;
 	echo $closebody;
 	echo $closehtml;

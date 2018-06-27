@@ -7,6 +7,7 @@
 	if(isset($rename) && !empty($rename)) {
 		$rename = test_input($rename);
 		query("UPDATE galleria SET Album='$rename' WHERE Album='$title'");
+		close_connection();
 	}
 	else {
 		header("Location: queryfallita.php");
