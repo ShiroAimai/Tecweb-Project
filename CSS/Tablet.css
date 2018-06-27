@@ -22,22 +22,24 @@ SEZIONE INTESTAZIONE
 #logo {
 	float: none;
 	padding: 0.4em;
-	width: 30%;
-	margin-left: 35%;
+	width: 25%;
+	margin-left: 37%;
 }
 
 .Menu a {
 	display: none;
+	padding: 1em 0.64em;
 }
 
 .Menu button {
 	display: none;
+	padding: 1em 0.64em;
 }
 
 .sandwich {
 	position: absolute;
     left: 30px;
-    top: 30px;
+    top: 18px;
 	font-size: 50px;
 	display: block;
 	color: #DAAC5E;
@@ -47,8 +49,8 @@ SEZIONE INTESTAZIONE
 #user {
 	position: absolute;
     right: 30px;
-    top: 35px;
-	width: 8%;
+    top: 26px;
+	width: 7%;
 	display: block;
 	color: #DAAC5E;
 	cursor: pointer;

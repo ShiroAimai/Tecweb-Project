@@ -43,12 +43,13 @@ SEZIONE INTESTAZIONE
 
 #logo {
 	float: left;
-	padding: 0.3em;
+	padding: 0.2em;
 	width: 9.19em;
 }
 
 .Menu {
 	overflow: hidden;
+	font-size: 15px;
 }
 
 .Menu a {
@@ -57,7 +58,7 @@ SEZIONE INTESTAZIONE
 	color: #DAAC5E;
 	text-align: center;
 	font-weight: bold;
-	padding: 2em 0.9em;
+	padding: 2em 0.64em;
 	text-decoration: none;
 	width: auto;
 }
@@ -78,7 +79,7 @@ SEZIONE INTESTAZIONE
 	display: block;
 	color: white;
 	background-color: #4CAF50;
-	padding: 2em 0.9em;
+	padding: 2em 0.64em;
 	width: auto;
 	border: none;
 	font-size: 100%;
