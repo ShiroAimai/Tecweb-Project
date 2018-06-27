@@ -29,7 +29,7 @@
 		</div>
 	</div>
 	<div class="dx">
-		<img class="allenamento" src="../IMAGES/Allenamento.jpg" alt="allenamento seguito da Trainer"/>
+		<img class="ridimensionasx" src="../IMAGES/Allenamento.jpg" alt="allenamento seguito da Trainer"/>
 		<div class="limitedx">
 			<h3>PROGRAMMA D'ALLENAMENTO</h3>
 			<div class="separator"></div>

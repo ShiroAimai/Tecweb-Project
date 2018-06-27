@@ -4,7 +4,7 @@
 </div>
 
 <div id="powerpump">
-	<div class="titleCourseContent">
+	<div id="PowerpumpCourseContent" class="titleCourseContent">
 		<img class="iconAtt" src="../IMAGES/icone/power1.png" alt="icona alzatore pesi"/>
 		<p class="titleAttPower">Power Pump</p>
 	</div>
@@ -19,7 +19,7 @@
 </div>
 
 <div id="spinning">
-	<div class="titleCourseContent">
+	<div id="SpinningCourseContent" class="titleCourseContent">
 		<img class="iconAtt" src="../IMAGES/icone/spinning1.png" alt="icona uomo in bicicletta"/>
 		<p class="titleAttSpinning">Spinning</p>
 	</div>
@@ -33,7 +33,7 @@
 </div>
 
 <div id="fitboxe">
-	<div class="titleCourseContent">
+	<div id="FitboxeCourseContent" class="titleCourseContent">
 		<img class="iconAtt" src="../IMAGES/icone/fitboxe1.png" alt="icona alzatore pesi"/>
 		<p class="titleAttFitBoxe"> Fit Boxe</p>
 	</div>
@@ -49,7 +49,7 @@
 </div>
 	
 <div id="jumpfit">
-	<div class="titleCourseContent">
+	<div id="JumpfitCourseContent" class="titleCourseContent">
 		<img class="iconAtt" src="../IMAGES/icone/jumpfit1.png" alt="icona alzatore pesi"/>
 		<p class="titleAttJumpFit"> Jump Fit</p>
 	</div>
@@ -63,7 +63,7 @@
 </div>
 
 <div id="step">
-	<div class="titleCourseContent">
+	<div id="StepCourseContent" class="titleCourseContent">
 		<img class="iconAtt" src="../IMAGES/icone/step1.png" alt="icona step"/>
 		<p class="titleAttStep"> Step</p>
 	</div>

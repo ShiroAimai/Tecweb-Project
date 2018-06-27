@@ -4,27 +4,9 @@ SEZIONE GENERALE
 =========================
 */
 
-/* Resetto valori di default impostati dai browser */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-html, body {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	background-color: #323232;
-}
-
-.printable {
-	display:none;
-}
-
 #contenitore {
 	margin: 0;
-	border: 0;	
+	border: 0;
 }
 
 /*
@@ -39,55 +21,38 @@ SEZIONE INTESTAZIONE
 
 #logo {
 	float: none;
-	padding: 0.3em;
-	width: 30%;
-	margin-left: 22%;
-}
-
-.Menu {
-	overflow: hidden;
+	padding: 0.2em;
+	width: 25%;
+	margin-left: 38%;
 }
 
 .Menu a {
 	display: none;
-}
-
-.Menu a:hover {
-	color: #000;
-	background-color: #DAAC5E;
-}
-
-.Menu a.active {
-	color: #000;
-	background-color: #DAAC5E;
-	cursor: default;
+	padding: 1em 0.64em;
 }
 
 .Menu button {
 	display: none;
-}
-
-.Menu button:hover {
-	opacity: 0.8;
+	padding: 1em 0.64em;
 }
 
 .sandwich {
+	position: absolute;
+    left: 15px;
+    top: 13px;
+	font-size: 23px;
 	display: block;
-	float: left;
 	color: #DAAC5E;
-	text-align: center;
-	font-weight: bold;
-	padding: 6% 3%;
-	text-decoration: none;
-	width: auto;
 	cursor: pointer;
 }
 
 #user {
+	position: absolute;
+    right: 15px;
+    top: 14px;
+	width: 7%;
 	display: block;
-	float: right;
-	padding: 6% 3%;
-	width: 12%;
+	color: #DAAC5E;
 	cursor: pointer;
 }
 
@@ -98,6 +63,14 @@ SEZIONE INTESTAZIONE
 .Menu.responsive a {
     float: none;
     display: block;
+	width: 100%;
+    text-align: left;
+}
+
+.Menu.responsive #logoutButton {
+    float: none;
+    display: block;
+	width: 100%;
     text-align: left;
 }
 
@@ -108,73 +81,47 @@ SEZIONE FOOTER
 */
 
 #Footer {
-	font-size: 0.8em;
-	line-height: 22px;
-	color: white;
-	background-color: rgb(32,32,32);
-	overflow: hidden;
-	clear: both;
+	position: relative;
 }
 
 #Footer h3 {
-	margin-top: 4em;
-	margin-bottom: 3em;
-}
-
-.blocco {
-	display: block;
+	margin-top: 6%;
+	margin-bottom: 0;
 }
 
 #footersx {
-	float: left;
-	padding: 3%;
-	width: 22%;
-}
-
-#logofooter {
-	margin-bottom: 1.5em;
-	width: 50%;
-}
-
-#logofacebook {
-	width: 2em;
-	margin-top: 2em;
+	float: none;
+	width: 95%;
 }
 
 #footercx {
-	float: left;
-	padding: 3%;
-	width: 22%;
+	float: none;
+	width: 95%;
+	margin-left: 0;
+}
+
+#footercx h3 {
+	margin-top: 0;
 }
 
 #footercx ul {
-	margin-left: 0;
-	padding-left: 0;
+	margin-left: 4%;
 }
 
 #footerdx {
-	float: left;
-	padding: 3%;
-	width: 37%;
+	display: none;
 }
 
-#Coni {
-	float: left;
-	width: 30%;
-	margin-bottom: 1.5em;
+#logofacebook {
+	width:4em;
+	margin:0;
+	position: absolute;
+	top:15px;
+	right:15px;
 }
 
-#asi {
-	width: 30%;
-	margin-left: 20%;
-	margin-bottom: 1.5em;
-}
-
-#footerbottom {
-	padding: 0.2em;
-	clear: both;
-	background-color: rgb(26,26,26);
-	text-align: center;
+#logofooter, #Coni, #asi {
+	display: none;
 }
 
 /*
@@ -183,202 +130,52 @@ PAGINA HOME
 =========================
 */
 
-#slideshow {
-	width: 100%;
-	position: relative;
-	margin: auto;
+.image {
+	height: 200px;
 }
 
-.slide {
-	display:none
-}
-
-.titolo {
-	color: white;
-	font-size: 7vw;
-	font-weight: bold;
-	text-shadow: 3px 3px #DAAC5E;
-	padding: 2%;
-	position: absolute;
-	top:0;
-	left:0;
-}
-
-.immagineslide {
-	width: 100%;
-}
-
-#punti {
-	position: absolute;
-	bottom: 5%;
-	left: 46%;
-}
-
-.punto {
-	height: 20px;
-	width: 20px;
-	margin: 0 2px;
-	background-color: white;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.active {
-	background-color: #DAAC5E;
-}
-
-/*
-=========================
-PAGINA PALESTRA
-=========================
-*/
-
-#sfondopalestra {
-	position:relative;
-}
-
-#titolopalestra {
-	position:absolute;
-	font-family:Arial;
-	color:rgb(0,120,255);
-	font-weight:800;
-	font-size:6vw;
-	width:100%;
-	text-align:center;
-	left:0;
-	top:25%;
-}
-
-#imagepalestra {
-	width:100%;
-}
-
-#DescrizionePalestra {
-	color:white;
-}
-
-.separator {
-	overflow: hidden;
-	position:relative;
-	display:block;
-	height:1px;
-	background-color: #eaeaea;
-	margin:10px 0;
-}
-
-#DescrizionePalestra h3 {
-	font-size:150%;
-	font-weight:600;
+.bottom-left {
+	width: 50%;
+    bottom: 15px;
+    left: 15px;
+	font-size: 70%;
 }
 
 .ridimensionasx {
-	float:left;
-	width:50%;
+	float:none;
+	width:100%;
+	height: 150px;
+	object-fit: cover;
 }
 
 .ridimensionadx {
-	float:right;
-	width:50%;
+	float:none;
+	width:100%;
+	height: 150px;
+	object-fit: cover;
 }
 
 .limitesx {
-	margin-right:55%;
+	margin-right:0;
 }
 
 .limitedx {
-	margin-left:55%;
+	margin-left:0;
 }
 
-.sx {
+.limitesx h3{
+	margin-top:3%;
+}
+
+.limitedx h3{
+	margin-top:3%;
+}
+
+.sx, .dx {
 	text-align:left;
 	float:left;
-	margin:5% 10%;
-	font-family: 'Raleway', sans-serif;
+	margin:7% 3%;
 	font-size:95%;
-}
-
-.allenamento {
-	float:left;
-	width:50%;
-	height:25em;
-}
-
-.dx {
-	text-align:left;
-	float:right;
-	margin:5% 10%;
-	font-size:95%;
-	font-family: 'Raleway', sans-serif;
-}
-
-#fabio {
-	float:left;
-}
-
-#genny {
-	float:left;
-}
-
-/*
-=========================
-PAGINA GALLERIA
-=========================
-*/
-
-#sfondogalleria {
-	position: relative;
-}
-
-#titologalleria {
-	position: absolute;
-	font-family: Arial;
-	color: rgb(107,27,87);
-	font-size: 6vw;
-	font-weight:800;
-	width: 100%;
-	text-align: right;
-	right: 5%;
-    top: -5%;
-}
-
-#imagegalleria {
-	width: 100%;
-}
-
-/*
-=========================
-PAGINA CHI SIAMO
-=========================
-*/
-
-#ChiSiamoImg {
-	width:100%;	
-}
-
-#GennyTiengo, #FabioFerro {
-	padding: 2em;
-	overflow: hidden;
-	font-size: 20px;
-	color: white;
-}
-
-#GennyTiengoImg, #FabioFerroImg {
-	margin-right: 3em;
-	float: left;
-	border-radius: 50px;
-	width: 20%;
-}
-
-#Istruttori h2 {
-	font-size: 50px;
-	margin-top:0;
-	margin-left: 25%;
-}
-
-#Istruttori ul {
-	padding: 2em;
-	margin-left: 25%;
 }
 
 /*
@@ -387,49 +184,30 @@ PAGINA DOVE SIAMO
 =========================
 */
 
-#sfondodovesiamo {
-	position: relative;
-}
-
-#titolodovesiamo {
-	position: absolute;
-	font-family: Arial;
-	color: #FD0303;
-	font-size: 6vw;
-	font-weight:800;
-	width: 100%;
-	text-align: right;
-	right: 10%;
-    top: 0;
-}
-
-#imagedovesiamo {
-	width: 100%;
-}
-
 #map {
-	float: left;
-	width: 600px;
-	height: 600px;
-	margin-right: 3em;
+	float: none;
+	width: 100%;
+	height: 300px;
 }
 
 #GoogleMaps {
-	color: white;
-	margin-top: 2em;
-	padding: 2em;
-	overflow: hidden;
+	margin-top: 1em;
+	padding: 1em;
+}
+
+#GoogleMaps .separator {
+	display: none;
 }
 
 #GoogleMaps h2 {
-	font-size: 50px;
-	margin-top:0;
-	margin-left: 25%;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-left: 0;
 }
 
 #GoogleMaps p {
-	padding: 2em;
-	margin-left: 25%;
+	padding: 0;
+	margin-left: 0;
 }
 
 /*
@@ -438,105 +216,41 @@ PAGINA ATTIVITA
 =========================
 */
 
-#sfondocorsipalestra {
-	position: relative;
+#powerpump, #spinning, #fitboxe, #jumpfit, #step {
+	margin: 5%;
 }
 
-#titolocorsipalestra {
-	position: absolute;
-	font-family: Arial;
-	color: red;
-	font-size: 6vw;
-	font-weight:800;
+.courseimg {
+	float:none;
 	width: 100%;
-	text-align: left;
-	left: 10%;
-    top: -5%;
+	height: 150px;
+	border-radius: 0;
 }
 
-#imagecorsipalestra {
-	width: 100%;
+.textAttContainer {
+	margin:0;
+	float:none;
+	width:100%;
 }
 
-#DescrizioneAttivita{
-  	width: 90%;
-  	margin: 4% auto;
+#PowerpumpCourseContent {
+	margin-left: -5%;
 }
 
-.accordion {
-    cursor: pointer;
-    padding: 18px;
-	border: none;
-    width: 100%;
-	height: 300px;
-    text-align: left;
-    font-size: 7vw;
-	font-weight: bold;
-    transition: 0.4s;
-	background-repeat: no-repeat;
-	background-size: cover;
+#SpinningCourseContent {
+	margin-left: 0%;
 }
 
-.accordion:focus {
-	outline:none;
+#FitboxeCourseContent {
+	margin-left: 2%;
 }
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+#JumpfitCourseContent {
+	margin-left: 2%;
 }
 
-#colorpower {
-	border: 10px solid blue;
-}
-
-#powerpump {
-	color: blue;
-	text-shadow: 5px 5px black;
-	background-image: url("../IMAGES/powerpump.jpg");
-}
-
-#colorspinning {
-	border: 10px solid green;
-}
-
-#spinning {
-	color: green;
-	text-shadow: 5px 5px black;
-	background-image: url("../IMAGES/spinning.jpg");
-}
-
-#colorfitboxe {
-	border: 10px solid red;
-}
-
-#fitboxe {
-	color: red;
-	text-shadow: 5px 5px black;
-	background-image: url("../IMAGES/fitBoxe.jpg");
-}
-
-#colorjumpfit {
-	border: 10px solid rgb(200,50,0);
-}
-
-#jumpfit {
-	color: rgb(200,50,0);
-	text-shadow: 5px 5px black;
-	background-image: url("../IMAGES/jumpfit.jpg");
-}
-
-#colorstep {
-	border: 10px solid purple;
-}
-
-#step {
-	color: purple;
-	text-shadow: 5px 5px black;
-	background-image: url("../IMAGES/step.jpg");
+#StepCourseContent {
+	margin-left: 10%;
 }
 
 /*
@@ -545,198 +259,47 @@ SEZIONE CALENDARIO
 ==================
 */
 
-#calendario {
-	text-align:center;
-	width:92.5%;
-	height:30em;
-	font-weight:bold;
-	margin:2em;
-	position:absolute;
-	top:48%;
+.calendario {
+	width: 95%;
+	margin:3%;
+	font-size: 50%;
 }
 
-#imgcal {
-	width:100%;
-}
-
-#caltitle {
-	font-weight:800;
-	font-size:6vw;
-	text-align:center;
-	color:lightgray;
-}
-
-#firstrow {
-	color:white;
-	font-weight:bold;
+.giornovoce {
 	font-size:120%;
 }
 
-.spinning {
-	background-color: green;
+.orari {
+	font-size: 100%;
 }
 
-.spinning:hover {
-	background-color: rgb(0,230,0);
+.orari li {
+	margin:2.7em 0em 3.4em 0em;
 }
 
-.powerpump {
-	background-color: blue;
+#imgcal {
+	height:35em;
 }
 
-.powerpump:hover {
-	background-color: rgb(0,100,180);
+/*=================
+PAGINA GALLERIA
+================*/
+
+#gallerypictitle {
+	font-size:300%;
 }
 
-.jumpfit {
-	background-color: rgb(200,50,0);
-}
-
-.jumpfit:hover {
-	background-color: rgb(220,120,0);
-}
-
-.fitboxe {
-	background-color: red;
-}
-
-.fitboxe:hover {
-	background-color: rgb(120,0,0);
-}
-
-.step {
-	background-color: purple;
-}
-
-.step:hover {
-	background-color: rgb(120,0,40)
-}
-
-table, td {
-    border: 6px solid white;
-    border-collapse: collapse;
-    color:white;
-    opacity:0.9;
-}
-
-td a {
-	color:white;
-	text-decoration: none;
-	width:auto;
+.gallerypicmini {
+	height:15em;
 }
 
 /*
-======================
-POPUP LOGIN
-======================
+============
+PAGINA NEWS
+============
 */
 
-.loginput {
-    color: #000;
-    font-size: 22px;
-    font-weight: 300;
-	text-indent: 0.5em;
-    height: 60px;
-    border: 1px solid rgb(195,195,195);
-    margin-bottom: 20px;
-    background-color: rgb(195,195,195);
-	width: 100%;
-}
-
-.loginput:focus {
-	outline: none;
-	background-color: white;
-	border: 2px inset #ecebe9;
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 20px 0 0 0;
-    position: relative;
-}
-
-img.logo {
-    width: 300px;
-}
-
-.container {
-    padding: 16px;
-}
-
-.container h2 {
-	text-align: center;
-	color: #FFF;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.container button {
-	background-color: #DAAC5E;
-	color: #000;
-    font-size: 22px;
-    font-weight: bold;
-	text-indent: 0.5em;
-	border: none;
-    height: 60px;
-    margin-bottom: 20px;
-	width: 50%;
-	cursor: pointer;
-}
-
-.bold {
-	font-weight: bold;
-}
-
-#password {
-    float: right;
-    padding-top: 18px;
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 5;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 30px;
-}
-
-.popup-content {
-    background-color: rgba(32,32,32,.9);
-    margin: 5% auto 15% auto;
-    border: 1px solid #888;
-    width: 40%;
-}
-
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: rgb(195,195,195);
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close:hover {
-    color: red;
-    cursor: pointer;
-}
-
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-}
-    
-@keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
+.newscont {
+	width:96%;
+	margin:3% 2%;
 }
