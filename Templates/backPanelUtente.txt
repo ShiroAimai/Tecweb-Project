@@ -1,0 +1,10 @@
+                        </div>
+                        </form>
+						<div class="group">
+							<button class="button" onclick="window.location.href='UserPanel.php'">Torna al pannello utente!</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

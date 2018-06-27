@@ -62,12 +62,13 @@
 		$stampa .= "<div class=\"userData\">I tuoi corsi:</div>";
 		$stampa .="<div class=\"TabUtente\">";
 		$countercorsi=1;
-		$data=0;
+		$ok = FALSE;
 		while($data = mysqli_fetch_assoc($query3)){
+		    $ok = TRUE;
 			$stampa .="<div id=\"contatoreCorsi\" class=\"EntryUtente\">$countercorsi.</div><div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>";
 			$countercorsi++;
 		}
-		if($data == 0)
+		if($ok == FALSE)
 			$stampa	.= "<div class=\"EntryTab\">Non sei iscritto a nessun corso di questa palestra!</div>";
 		$stampa .="</div>";
 		$stampa .="</div>";
