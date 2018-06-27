@@ -82,7 +82,7 @@
 		//Button disiscrizione corsi
         $stampa .="<div id=\"discrizioneCorsi\" class=\"bloccoDati\">";
         $stampa .= "<div class=\"userData\">Cancella la tua iscrizione ai corsi:</div>";
-        $stampa .="<a href=\"formCorsi.php?attr=1\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Disiscrizione corsi</button></a>";
+        $stampa .="<a href=\"formCorsi.php?attr=1\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
         $stampa .="</div>";
 
 

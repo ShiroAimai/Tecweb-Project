@@ -1,19 +1,15 @@
-/*
-=========================
+/*===============
 SEZIONE GENERALE
-=========================
-*/
+=================*/
 
 #contenitore {
 	margin: 0;
 	border: 0;
 }
 
-/*
-=========================
-SEZIONE INTESTAZIONE
-=========================
-*/
+/*===============
+INTESTAZIONE
+=================*/
 
 #Intestazione {
 	position: static;
@@ -39,7 +35,7 @@ SEZIONE INTESTAZIONE
 .sandwich {
 	position: absolute;
     left: 15px;
-    top: 13px;
+    top: 10px;
 	font-size: 23px;
 	display: block;
 	color: #DAAC5E;
@@ -74,11 +70,9 @@ SEZIONE INTESTAZIONE
     text-align: left;
 }
 
-/*
-=========================
-SEZIONE FOOTER
-=========================
-*/
+/*===============
+FOOTER
+=================*/
 
 #Footer {
 	position: relative;
@@ -124,11 +118,9 @@ SEZIONE FOOTER
 	display: none;
 }
 
-/*
-=========================
+/*===============
 PAGINA HOME
-=========================
-*/
+=================*/
 
 .image {
 	height: 200px;
@@ -178,11 +170,9 @@ PAGINA HOME
 	font-size:95%;
 }
 
-/*
-=========================
+/*===============
 PAGINA DOVE SIAMO
-=========================
-*/
+=================*/
 
 #map {
 	float: none;
@@ -210,11 +200,9 @@ PAGINA DOVE SIAMO
 	margin-left: 0;
 }
 
-/*
-=========================
+/*===============
 PAGINA ATTIVITA
-=========================
-*/
+=================*/
 
 #powerpump, #spinning, #fitboxe, #jumpfit, #step {
 	margin: 5%;
@@ -253,11 +241,9 @@ PAGINA ATTIVITA
 	margin-left: 10%;
 }
 
-/*
-===================
-SEZIONE CALENDARIO
-==================
-*/
+/*===============
+PAGINA CALENDARIO
+=================*/
 
 .calendario {
 	width: 95%;
@@ -281,25 +267,127 @@ SEZIONE CALENDARIO
 	height:35em;
 }
 
-/*=================
+/*===============
+PAGINA CHI SIAMO
+=================*/
+#GennyTiengo, #FabioFerro {
+	padding: 1em;
+}
+
+#GennyTiengoImg, #FabioFerroImg {
+	margin-right: 0;
+	width: 40%;
+}
+
+#Istruttori h2 {
+	font-size: 30px;
+	margin-left: 45%;
+}
+
+#Istruttori ul {
+	padding: 0;
+	margin-left: 48%;
+}
+
+/*===============
 PAGINA GALLERIA
-================*/
+=================*/
 
 #gallerypictitle {
-	font-size:300%;
+	font-size:200%;
 }
 
 .gallerypicmini {
-	height:15em;
+	height:10em;
 }
 
-/*
-============
+.album {
+	height:10em;
+}
+
+#imgsfondoneroa {
+	margin-left:40%;
+}
+
+/*===============
 PAGINA NEWS
-============
-*/
+=================*/
 
 .newscont {
 	width:96%;
 	margin:3% 2%;
+}
+
+.imgnews {
+	height:14em;
+}
+
+/*===============
+FORM
+=================*/
+
+.FormContainer {
+	width: 350px;
+	height: 450px;
+	font-size: 60%;
+}
+
+.login-form {
+	margin-top: 12%;
+}
+
+.login-form .group .label,
+.login-form .group .button {
+	font-size:10px;
+}
+
+/*===============
+PULSANTI FORM
+=================*/
+
+#btnContainer {
+	width: 95%;
+	margin: auto 11%;
+}
+
+/*===============
+MESSAGGI D'ERRORE
+=================*/
+
+.message {
+	width:90%;
+	margin: 5%;
+}
+
+/*===============
+USER PANEL
+=================*/
+
+.bloccoDati {
+	width:95%;
+}
+
+.TabUtente {
+	border:1px solid white;
+	padding:1%;
+}
+
+.EntryUtente {
+	float: left;
+	color:#DAAC5E;
+	font-weight: bold;
+	font-size:18px;
+}
+
+.EntryTab {
+	color: white;
+	font-weight: bold;
+	font-size:18px;
+}
+
+.userData {
+	color: white;
+	margin:1% 1%;
+	font-weight: bold;
+	font-size:20px;
 }

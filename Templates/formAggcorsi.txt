@@ -6,7 +6,6 @@
 		<div class="leftContent">
 			<h1>Iscrizione corsi</h1>
 			<p>Spunta la casella di un corso per iscriverti a quel corso</p>
-			<p>Non spuntare le caselle dei corsi a cui sei già iscritta!</p>
 		</div>
 		<div class="signupOverlay">
 		</div>

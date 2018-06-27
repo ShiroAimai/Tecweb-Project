@@ -1,19 +1,15 @@
-/*
-=========================
+/*===============
 SEZIONE GENERALE
-=========================
-*/
+=================*/
 
 #contenitore {
 	margin: 0;
 	border: 0;
 }
 
-/*
-=========================
-SEZIONE INTESTAZIONE
-=========================
-*/
+/*===============
+INTESTAZIONE
+=================*/
 
 #Intestazione {
 	position: static;
@@ -74,11 +70,9 @@ SEZIONE INTESTAZIONE
     text-align: left;
 }
 
-/*
-=========================
-SEZIONE FOOTER
-=========================
-*/
+/*===============
+FOOTER
+=================*/
 
 #Footer h3 {
 	margin: 0;
@@ -100,21 +94,17 @@ SEZIONE FOOTER
 	display: none;
 }
 
-/*
-=========================
+/*===============
 PAGINA HOME
-=========================
-*/
+=================*/
 
 .image {
 	height: 400px;
 }
 
-/*
-=========================
+/*===============
 PAGINA DOVE SIAMO
-=========================
-*/
+=================*/
 
 #map {
 	float: none;
@@ -136,21 +126,17 @@ PAGINA DOVE SIAMO
 	margin-left: 0;
 }
 
-/*
-=========================
+/*===============
 PAGINA ATTIVITA
-=========================
-*/
+=================*/
 
 #powerpump, #spinning, #fitboxe, #jumpfit, #step {
 	margin: 5%;
 }
 
-/*
-===================
-SEZIONE CALENDARIO
-==================
-*/
+/*===============
+PAGINA CALENDARIO
+=================*/
 
 .calendario {
 	font-size: 80%;
@@ -160,9 +146,9 @@ SEZIONE CALENDARIO
 	height:35em;
 }
 
-/*=================
+/*===============
 PAGINA GALLERIA
-================*/
+=================*/
 
 #gallerypictitle {
 	font-size:300%;
@@ -172,11 +158,9 @@ PAGINA GALLERIA
 	height:15em;
 }
 
-/*
-============
+/*===============
 PAGINA NEWS
-============
-*/
+=================*/
 
 .newscont {
 	width:96%;

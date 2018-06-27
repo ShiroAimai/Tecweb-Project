@@ -1,8 +1,6 @@
-/*
-=========================
+/*===============
 SEZIONE GENERALE
-=========================
-*/
+=================*/
 
 /* Resetto valori di default impostati dai browser */
 * {
@@ -27,11 +25,9 @@ html, body {
 	background-image: url("../IMAGES/sfondo.jpg");
 }
 
-/*
-=========================
-SEZIONE INTESTAZIONE
-=========================
-*/
+/*===============
+INTESTAZIONE
+=================*/
 
 #Intestazione {
 	position: sticky;
@@ -104,11 +100,9 @@ SEZIONE INTESTAZIONE
 	display: none;
 }
 
-/*
-=========================
-SEZIONE FOOTER
-=========================
-*/
+/*===============
+FOOTER
+=================*/
 
 #Footer {
 	font-size: 0.8em;
@@ -203,11 +197,9 @@ SEZIONE FOOTER
     opacity: 0.5;
 }
 
-/*
-=========================
+/*===============
 PAGINA HOME
-=========================
-*/
+=================*/
 
 .homeImg {
     position: relative;
@@ -298,15 +290,9 @@ PAGINA HOME
 	margin-top:2%;
 }
 
-/*
-=========================
+/*===============
 PAGINA CHI SIAMO
-=========================
-*/
-
-#ChiSiamoImg {
-	width:100%;	
-}
+=================*/
 
 #GennyTiengo, #FabioFerro {
 	padding: 2em;
@@ -320,6 +306,7 @@ PAGINA CHI SIAMO
 	float: left;
 	border-radius: 50px;
 	width: 20%;
+	object-fit: cover;
 }
 
 #Istruttori h2 {
@@ -333,11 +320,9 @@ PAGINA CHI SIAMO
 	margin-left: 25%;
 }
 
-/*
-=========================
+/*===============
 PAGINA DOVE SIAMO
-=========================
-*/
+=================*/
 
 #sfondodovesiamo {
 	position: relative;
@@ -384,11 +369,9 @@ PAGINA DOVE SIAMO
 	margin-left: 25%;
 }
 
-/*
-=========================
+/*===============
 PAGINA ATTIVITA
-=========================
-*/
+=================*/
 
 #Presentazione{
 	color: #DAAC5E;
@@ -504,125 +487,13 @@ PAGINA ATTIVITA
 
 .iconAtt {
 	float:left;
-
 	width:10%;
 	margin-left:25%;	
 }
 
-/* NON UTILIZZATE, PARTE MOBILE?
-.accordion {
-	background-position: right;
-	background-size: contain;
-	background-repeat: no-repeat;
-    cursor: pointer;
-    padding: 18px;
-    border-color: #DAAC5E;
-    border-style: outset;
-    border-width: 5px;
-    margin-bottom: 7px;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-size: 24px;
-	font-weight: bold;
-    transition: 0.4s;
-    background-color: #404040;
-}
-
-.accordion:focus {
-	outline:none;
-}
-
-.accordion:hover {
-    background-color: #d9d9d9; 
-}
-.accordion:after {
-    content: '\002B';
-    color: black;
-    font-weight: bold;
-    float: left;
-}
-
-.accordion.active{
-	background-color: white;
-	border: none;
-	margin-bottom: 0;
-}
-
-.accordion.active:after {
-    content: "\2212";
-}
-
-.accordion#powerpump {
-	color: blue;
-	
-}
-
-.accordion.active#powerpump {
-	color: blue;
-	background-image: none;
-}
-
-#spinning {
-	color: green;
-	background-image: url("../IMAGES/icone/spinning.png");
-}
-
-.accordion.active#spinning {
-	color: green;
-	background-image: none;}
-
-#fitboxe {
-	color: red;
-
-}
-
-.accordion.active#fitboxe {
-	color: red;
-	background-image: none;
-}
-
-#jumpfit {
-	color: rgb(200,50,0);
-
-}
-
-.accordion.active#jumpfit {
-	color: rgb(200,50,0);
-	background-image: none;
-}
-
-#step {
-	color: purple;
-
-}
-
-.accordion.active#step {
-	color: purple;
-	background-image: none;
-}
-
-#colorpower{
-}
-
-#colorspinning{
-}
-
-#colorfitboxe{
-}
-
-#colorjumpfit{
-}
-
-#colorstep{
-	margin-bottom: 10px;
-}
-*/
-/*
-===================
-SEZIONE CALENDARIO
-==================
-*/
+/*===============
+PAGINA CALENDARIO
+=================*/
 
 .calendario {
 	width: 90%;
@@ -764,11 +635,9 @@ SEZIONE CALENDARIO
 
 }
 
-/*
-============
+/*===============
 PAGINA NEWS
-============
-*/
+=================*/
 
 .newscont {
 	float:left;
@@ -813,9 +682,9 @@ PAGINA NEWS
 	color:white;
 }
 
-/*=================
+/*===============
 PAGINA GALLERIA
-================*/
+=================*/
 
 #sfondogalleria {
 	position: relative;
@@ -953,11 +822,9 @@ PAGINA GALLERIA
 	margin-top:5%;
 }
 
-/*
-===========
+/*===============
 FORM
-===========
-*/
+=================*/
 
 .FormContainer {
 	background: #3D5A80;
@@ -1085,9 +952,9 @@ select option {
     background: #516b8d;
 }
 
-/*============
-ERRORE LOGIN
-===========*/
+/*===============
+MESSAGGI D'ERRORE
+=================*/
 
 .message {
 	border:3px solid white;
@@ -1098,12 +965,13 @@ ERRORE LOGIN
 	background-color: #3D5A80;
 	text-align:center;
 }
-.messagetext
-{
+
+.messagetext {
 	color:white;
 	margin-top:10%;
 	margin-bottom:20%;
 }
+
 .messagelink {
 	color:white;
 	float:right;
@@ -1112,6 +980,7 @@ ERRORE LOGIN
 	margin-right:2%;
 	text-decoration: underline;
 }
+
 .messagelinkquery {
 	color:white;
 	float:right;
@@ -1121,6 +990,7 @@ ERRORE LOGIN
 	margin-right:2%;
 	text-decoration: underline;
 }
+
 .messagelinklogin {
 	color:white;
 	float:right;
@@ -1130,24 +1000,16 @@ ERRORE LOGIN
 	margin-right:2%;
 	text-decoration: underline;
 }
-.messagelinklogin:hover
-{
-	color:blue;
-}
-.messagelinkquery:hover
-{
-	color:blue;
-}
-.messagelink:hover
-{
+
+.messagelinklogin:hover,
+.messagelinkquery:hover,
+.messagelink:hover {
 	color:blue;
 }
 
-/*
-============
-ADMIN PANEL
-============
-*/
+/*===============
+PULSANTI FORM
+=================*/
 
 #btnContainer {
 	width: 95%;
@@ -1236,6 +1098,12 @@ ADMIN PANEL
 	background: #058205;
 }
 
+.btn-12 {
+	margin: 0;
+	padding: 25px 0 25px 60px;
+	background: #f45c42;
+}
+
 .icon-adduser:before {
 	content: "\f234";
 }
@@ -1272,15 +1140,17 @@ ADMIN PANEL
 	content: "\f055";
 }
 
+.icon-removecorso:before {
+	content: "\f056";
+}
+
 .icon-schedadownimg:before {
 	content: "\f019";
 }
 
-/*
-============
-LISTA UTENTI
-============
-*/
+/*===============
+TABELLE
+=================*/
 
 .tableResponsive {
     overflow-x: auto;
