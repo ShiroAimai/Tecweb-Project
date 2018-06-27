@@ -957,11 +957,11 @@ MESSAGGI D'ERRORE
 =================*/
 
 .message {
+	position: relative;
 	border:3px solid white;
 	margin:5% 25%;
 	width:50%;
-	height:20em;
-	float:left;
+	height:14em;
 	background-color: #3D5A80;
 	text-align:center;
 }
@@ -972,38 +972,24 @@ MESSAGGI D'ERRORE
 	margin-bottom:20%;
 }
 
-.messagelink {
+.messagelink1 {
+	position: absolute;
+	bottom: 35px;
+	right: 10px;
 	color:white;
-	float:right;
-	clear:both;
-	margin-top:1.8%;
-	margin-right:2%;
 	text-decoration: underline;
 }
 
-.messagelinkquery {
+.messagelink2 {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
 	color:white;
-	float:right;
-	clear:both;
-	margin-top:6%;
-	margin-bottom:-4.5%;
-	margin-right:2%;
 	text-decoration: underline;
 }
 
-.messagelinklogin {
-	color:white;
-	float:right;
-	clear:both;
-	margin-top:4.4%;
-	margin-bottom:-2.8%;
-	margin-right:2%;
-	text-decoration: underline;
-}
-
-.messagelinklogin:hover,
-.messagelinkquery:hover,
-.messagelink:hover {
+.messagelink1:hover,
+.messagelink2:hover {
 	color:blue;
 }
 
