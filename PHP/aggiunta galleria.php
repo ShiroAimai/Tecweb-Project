@@ -15,6 +15,7 @@
 	$gallerySize = $_FILES["galleryFile"]["size"];
 	$counter=0;
 	
+	$galleryName = test_input($galleryName);
 	if(isset($galleryName) && !empty($galleryName) && isset($galleryFile) && !empty($galleryFile)) {
 		$max_file_number = 50; //massimo 50 file per volta
 		$upload_max_size = 209715200; //massimo 200M ad upload
@@ -22,7 +23,6 @@
 			header("Location: queryfallita.php");
 			die();
 		}
-        $galleryName = test_input($galleryName);
         while(isset($_FILES['galleryFile']['name'][$counter])) {   
 			$immagine=$_FILES['galleryFile']['name'][$counter];
 			query("INSERT INTO galleria (NomeImmagine, Album) VALUES ('$immagine', '$galleryName')");

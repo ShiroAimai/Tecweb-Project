@@ -14,9 +14,9 @@
 	register('newsDescription');
 	$newsImage = $_FILES["newsImage"]["name"];
 	
+	$newsTitle = test_input($newsTitle);
+    $newsDescription = test_input($newsDescription);
 	if(isset($newsTitle) && !empty($newsTitle) && isset($newsImage) && !empty($newsImage) && isset($newsDescription) && !empty($newsDescription)) {	
-        $newsTitle = test_input($newsTitle);
-        $newsDescription = test_input($newsDescription);
         query("INSERT INTO news (Titolo, Immagine, Descrizione) VALUES ('$newsTitle', '$newsImage', '$newsDescription')");
     }
     else {
