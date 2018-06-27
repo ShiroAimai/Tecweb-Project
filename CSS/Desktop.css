@@ -324,10 +324,6 @@ PAGINA CHI SIAMO
 PAGINA DOVE SIAMO
 =================*/
 
-#sfondodovesiamo {
-	position: relative;
-}
-
 #titolodovesiamo {
 	position: absolute;
 	font-family: Verdana;
@@ -338,10 +334,6 @@ PAGINA DOVE SIAMO
 	text-align: right;
 	right: 10%;
     top: 0;
-}
-
-#imagedovesiamo {
-	width: 100%;
 }
 
 #map {
@@ -686,10 +678,6 @@ PAGINA NEWS
 PAGINA GALLERIA
 =================*/
 
-#sfondogalleria {
-	position: relative;
-}
-
 #titologalleria {
 	position: absolute;
 	font-family: Verdana;
@@ -700,10 +688,6 @@ PAGINA GALLERIA
 	text-align: right;
 	right: 5%;
     top: -5%;
-}
-
-#imagegalleria {
-	width: 100%;
 }
 
 .gallerymain {
