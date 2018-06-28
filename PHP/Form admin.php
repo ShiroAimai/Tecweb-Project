@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerFormAdmin.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$formAdmin = file_get_contents("../Templates/FormAdmin.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
@@ -13,7 +13,7 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	
-	echo $head;
+	printHead('Aggiungi admin');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;

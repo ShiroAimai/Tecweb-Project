@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-	$head = file_get_contents("../Templates/headerQueryfallita.txt");
+    require_once('printHeader.php');
 	$foot = file_get_contents("../Templates/footer.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$queryfallita = file_get_contents("../Templates/queryfallita.txt");
@@ -13,7 +13,7 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 
-	echo $head;
+	printHead('Operazione fallita');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;

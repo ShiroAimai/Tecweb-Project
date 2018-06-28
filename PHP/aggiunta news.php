@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-	$head = file_get_contents("../Templates/headerAddNews.txt");
+	require_once('printHeader.php');
 	$foot = file_get_contents("../Templates/footer.txt");
 	$addNews = file_get_contents("../Templates/AddNews.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
@@ -24,7 +24,7 @@
 		die();
 	}
 
-	echo $head;
+	printHead('News Aggiunta');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;

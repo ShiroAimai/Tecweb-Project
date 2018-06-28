@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerDoveSiamo.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$dovesiamo = file_get_contents("../Templates/DoveSiamo.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
@@ -13,7 +13,7 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	
-	echo $head;
+	printHead('Dove Siamo');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;

@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerGallery.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
 	$login = "<button onclick=\"window.location.href='AreaPersonale.php'\">Area Personale</button>";
@@ -16,7 +16,7 @@
 		GROUP BY Album, NomeImmagine;
 	");
 
-    echo $head;
+    printHead('Galleria');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;

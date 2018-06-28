@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerListaFoto.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$listaFoto = file_get_contents("../Templates/ListaFoto.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
@@ -12,7 +12,7 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	
-	echo $head;
+	printHead('Lista foto');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;
@@ -25,7 +25,6 @@
 	
 	echo $closediv;
 	echo $closediv;
-	//register('title'); EDIT: Non usabile perché perde il valore al refresh
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $listaFoto;
 		$aux=$_GET['album'];

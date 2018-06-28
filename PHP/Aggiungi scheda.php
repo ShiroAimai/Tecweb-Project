@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-	$head = file_get_contents("../Templates/headerAddGallery.txt");
+    require_once('printHeader.php');
 	$foot = file_get_contents("../Templates/footer.txt");
 	$addScheda = file_get_contents("../Templates/AddScheda.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
@@ -13,7 +13,7 @@
 	register('user');
 	$pdf = $_FILES[$user]["name"];
 
-	echo $head;
+	printHead('Scheda aggiunta');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;

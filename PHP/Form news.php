@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerFormNews.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$formNews = file_get_contents("../Templates/FormNews.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
@@ -12,7 +12,7 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	
-	echo $head;
+	printHead('Aggiungi news');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
 		echo $logout;
 		echo $adminPanel;

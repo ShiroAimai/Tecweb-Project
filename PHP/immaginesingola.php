@@ -1,7 +1,16 @@
 <?php
 	require_once('config.php');
-	$head = file_get_contents("../Templates/headerImmagineSingola.txt");
-	echo $head;
+	echo("<!DOCTYPE html>
+		<html lang=\"it\">
+		<head>
+			<title>Galleria Foto | Body Evolution</title>
+			<meta charset=\"utf-8\">
+			<link href=\"../CSS/Desktop.css\" rel=\"stylesheet\" media=\"handheld, screen\"/>
+			<link href=\"../CSS/Tablet.css\" rel=\"stylesheet\" media=\"screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)\"/>
+			<link href=\"../CSS/Mobile.css\" rel=\"stylesheet\" media=\"handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)\"/>
+			<link href=\"../CSS/Print.css\" rel=\"stylesheet\" media=\"print\"/>
+			<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>
+		</head>");
 
 	$body = "<body>";
 	$closebody ="</body>";

@@ -2,7 +2,7 @@
 	<h1 id="titoloPagina">Lista Foto</h1>
 	<p>Visualizza la lista delle foto relative all'album</p>
 </div>
-<a id="backAdminPanel" href="Gestisci album.php">Torna alla gestione degli album</a>
+<div id="back"><a href="Gestisci album.php">Torna alla gestione degli album</a></div>
 <div class="tableResponsive"> 
 <table>
 <thead>

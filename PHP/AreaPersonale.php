@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerAreaPersonale.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$areaPersonale = file_get_contents("../Templates/AreaPersonale.txt");
 	$closebody = "</body>";
@@ -13,7 +13,7 @@
 		header("Location: UserPanel.php");
 	}
 	else {
-		echo $head;
+		printHead('Area Personale');
 		echo $areaPersonale;
 		echo $foot;
 		echo $closebody;

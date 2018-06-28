@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerFormCorsi.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$formcorsi = file_get_contents("../Templates/formAggcorsi.txt");
 	$disiscrizFormCorsi = file_get_contents("../Templates/disiscrizFormCorsi.txt");
@@ -16,7 +16,10 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	
-	echo $head;
+	if($_GET['attr']== 0)
+		printHead('Iscrizione corsi');
+	else
+		printHead('Disiscrizione corsi');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
 		echo $logout;
 		echo $userPanel;

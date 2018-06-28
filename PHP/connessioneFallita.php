@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-	$head = file_get_contents("../Templates/headerConnessionefallita.txt");
+	require_once('printHeader.php');
 	$foot = file_get_contents("../Templates/footer.txt");
 	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
 	$connfallita = file_get_contents("../Templates/connessionefallita.txt");
@@ -13,7 +13,7 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 
-	echo $head;
+	printHead('Connessione fallita');
 	echo $closediv;
 	echo $closediv;	
 	echo $connfallita;

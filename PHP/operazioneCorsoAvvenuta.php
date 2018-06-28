@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-    $head = file_get_contents("../Templates/headerAddCorso.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$addCorso = file_get_contents("../Templates/AddCorso.txt");
 	$rimCorso =file_get_contents("../Templates/rimCorso.txt");
@@ -12,7 +12,10 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	
-	echo $head;
+	if($_GET['attr']== 0)
+		printHead('Iscrizione avvenuta');
+	else
+		printHead('Disiscrizione avvenuta');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
 		echo $logout;
 		echo $userPanel;

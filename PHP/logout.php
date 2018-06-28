@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-	$head = file_get_contents("../Templates/headerLogout.txt");
+    require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$Logout = file_get_contents("../Templates/Logout.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
@@ -11,7 +11,7 @@
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	
-	echo $head;
+	printHead('Logout');
 	echo $login;
 	echo $closediv;
 	echo $closediv;
