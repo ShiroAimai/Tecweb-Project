@@ -44,7 +44,7 @@
 			echo "<td>".$a['Data'];
 			echo "</td>";
 			
-			echo "<td>
+			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"Elimina galleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria e le relative foto?');\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Elimina galleria</label>
@@ -52,7 +52,7 @@
 				</form>
 				</td>";
 				
-			echo "<td>
+			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"Rinomina galleria.php\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"rename\">Rinomina galleria</label>
@@ -61,7 +61,7 @@
 				</form>
 				</td>";
 				
-			echo "<td>
+			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"Lista foto.php?album=".$a['Album']."\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Vedi foto</label>

@@ -13,9 +13,9 @@
         <th scope="col">Album</th>
 		<th scope="col">Numero foto</th>
 		<th scope="col">Data</th>
-		<th scope="col">Elimina galleria</th>
-		<th scope="col">Rinomina galleria</th>
-		<th scope="col">Vedi foto</th>
+		<th class="notPrint" scope="col">Elimina galleria</th>
+		<th class="notPrint" scope="col">Rinomina galleria</th>
+		<th class="notPrint" scope="col">Vedi foto</th>
     </tr>
 </thead>
 <tbody>

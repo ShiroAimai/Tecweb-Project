@@ -50,7 +50,7 @@
 			echo "<td>".$u['Email'];
 			echo "</td>";
 			
-			echo "<td>
+			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"Elimina utente.php\" onsubmit=\"return confirm('Confermi di voler eliminare l\'utente?');\" >
 					<input type=\"hidden\"  name=\"type\" value=\"" . $u['Tipo'] . "\"/>
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
@@ -59,7 +59,7 @@
 				</form>
 				</td>";
 				
-			echo "<td>
+			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"Aggiungi scheda.php\" enctype=\"multipart/form-data\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Aggiungi scheda</label>
@@ -67,7 +67,7 @@
 				</form>
 				</td>";
 				
-			echo "<td>
+			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"Lista fatture.php?user=".$u['CodiceUtente']."\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Vedi fatture</label>

@@ -365,7 +365,7 @@ PAGINA DOVE SIAMO
 PAGINA ATTIVITA
 =================*/
 
-#Presentazione{
+#Presentazione {
 	color: #DAAC5E;
 	width:95%;
 	font-family: Verdana;
@@ -374,8 +374,7 @@ PAGINA ATTIVITA
 	text-align: left;
 	left: 5%;
 	margin-top: 1em;
-	margin-bottom: 1em;
-    
+	margin-bottom: 1em;   
 }
 
 #Presentazione p {

@@ -9,7 +9,7 @@
     <tr>
         <th scope="col">Album</th>
         <th scope="col">Foto</th>
-        <th scope="col">Elimina foto</th>
+        <th class="notPrint" scope="col">Elimina foto</th>
     </tr>
 </thead>
 <tbody>

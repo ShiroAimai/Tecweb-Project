@@ -16,9 +16,9 @@
         <th scope="col">Cognome</th>
         <th scope="col">Password</th>
         <th scope="col">Email</th>
-		<th scope="col">Elimina Utente</th>
-		<th scope="col">Aggiungi scheda</th>
-		<th scope="col">Fatture</th>
+		<th class="notPrint" scope="col">Elimina Utente</th>
+		<th class="notPrint" scope="col">Aggiungi scheda</th>
+		<th class="notPrint" scope="col">Fatture</th>
     </tr>
 </thead>
 <tbody>

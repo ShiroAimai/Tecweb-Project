@@ -51,7 +51,7 @@
 			echo "<td>".$f['EntrateCorsi'];
 			echo "</td>";
 
-			echo "<td>
+			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"Elimina fattura.php?user=".$f['CodiceUtente']."\" onsubmit=\"return confirm('Confermi di voler eliminare questa fattura?');\" >
 					<input type=\"hidden\"  name=\"fattura\" value=\"" . $f['NumeroRicevuta'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $f['NumeroRicevuta'] . "\">Elimina fattura</label>

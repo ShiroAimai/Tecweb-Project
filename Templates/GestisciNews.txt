@@ -14,7 +14,7 @@
         <th scope="col">Data</th>
         <th scope="col">Immagine</th>
         <th scope="col">Descrizione</th>
-		<th scope="col">Elimina news</th>
+		<th class="notPrint" scope="col">Elimina news</th>
     </tr>
 </thead>
 <tbody>

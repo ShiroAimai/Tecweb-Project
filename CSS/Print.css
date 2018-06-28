@@ -1,8 +1,6 @@
-/*
-=========================
+/*===============
 SEZIONE GENERALE
-=========================
-*/
+=================*/
 
 html, body {
 	font-size: 12pt;
@@ -11,40 +9,45 @@ html, body {
 	font-family: Times New Roman, Times, serif;
 	text-align: justify;
 	position: relative;
+	width: 100%;
 }
 
-.Menu, .sandwich, #user, #logofooter, #logofacebook, .container, .logo, #Coni, #asi  {
+.Menu, .sandwich, #user, #logofooter, #logofacebook, .container, .logo, #Coni, #asi {
 	display: none;
 }
 
-#logo{
+#logo {
 	display: none;
 }
 
-.printable{
+#titoloPagina {
+	font-size: 22px;
+	margin-bottom:-15px;
+}
+
+.printable {
 	font-size: 16pt;
 	font-weight: bold;
 	display: block;
 }
 
-.printablefooter{
-	font-size: 12pt;
+.printablefooter {
+	font-size: 14pt;
 	font-weight: bold;
+	margin-bottom:-15px;
 }
 
-#footerdx{
+#footerdx {
 	font-size: 10pt;
 }
 
-#titoloPagina{
-	font-size: 22px;
+#Footer h3 {
+	margin-bottom: -15px;
 }
 
-/*
-=========================
+/*===============
 PAGINA HOME
-=========================
-*/
+=================*/
 
 .image, .ridimensionasx, .ridimensionadx, .allenamento, .homeImg {
 	display:none;
@@ -56,14 +59,20 @@ PAGINA HOME
 }
 
 .separator {
-	margin:10px 0;
+	display: none;
 }
 
-/*
-=========================
+#DescrizionePalestra h3 {
+	margin-bottom:-15px;
+}
+
+.elenchiHome, .elenchiHome ul {
+	margin-top:-15px;
+}
+
+/*===============
 PAGINA ATTIVITA
-=========================
-*/
+=================*/
 
 .courseimg{
 	display: none;
@@ -74,85 +83,61 @@ PAGINA ATTIVITA
 }
 
 .titleCourseContent{
-	text-align: center;
+	text-align: left;
 	font-size: 14pt;
 	font-weight: bold;
+	margin-bottom:-15px;
 }
 
 .textAttContainer{
 	line-height: 110%;
 }
-/*
-.course{
-	border: 2px solid;
-	margin: 10px;
-	border-spacing: 15px; 
-	padding-left: 3%;
-	padding-right: 3%;
-	padding-top: 0%;
-	padding-bottom: 3%;
-}
-*/
 
-/*
-button.accordion{
-	border: none;
-	margin: 5px 350px;
-	font-size: 16px;
-	font-weight: bold ;
-}
-
-*/
-/*
-=========================
+/*===============
 PAGINA CALENDARIO
-=========================
-*/
+=================*/
 
-#imgcal{
+#imgcal {
 	display: none;
 }
 
-#calendariocorsi #Footer{
+#calendariocorsi #Footer {
 	display: none;
 }
 
 .calendario {
-	width: 90%;
-	text-align:left;
 	border-color:white;
-	font-weight: bold;
 	position: static;
 	border-style: solid;
 }
 
-#salafitness{
-	font-size: 14pt;
+#salafitness {
+	font-size: 12pt;
 	clear:both;
 }
 
-.vocecalendario
-{
+.vocecalendario {
 	float:left;
 	margin:0;
-	width: 107px;
+	width: 118px;
 }
 
-.giornovoce{
+.giornovoce {
 	text-align: center;
 }
-.orari{
+
+.orari {
 	list-style-type: none;
 	margin:0;
 	padding:0;
 	text-align: center;
-
 }
+
 .orari li {
 	margin: 2.3em 0em 3em 0em;
 }
 
-.oraricorsi li a{
+.oraricorsi li a {
 	text-decoration: none;
 }
 
@@ -162,11 +147,12 @@ PAGINA CALENDARIO
 	padding:0;
 }
 
-.corsovuoto{
+.corsovuoto {
 	border:1px solid black;
 	width:auto;
 	height:4em;
 }
+
 .spinning {
 	border:1px solid black;
 	width:auto;
@@ -189,7 +175,6 @@ PAGINA CALENDARIO
 }
 
 .jumpfit {
-
 	border:1px solid black;
 	width:auto;
 	height:4em;
@@ -203,92 +188,82 @@ PAGINA CALENDARIO
 	text-align: center;
 }
 
-/*
-=========================
+/*===============
 PAGINA NEWS
-=========================
-*/
+=================*/
 
 .imgnews{
 	display: none;
 }
 
-/*
-=========================
+.titlenews {
+	margin-bottom:-15px;
+}
+
+.pubblicazione {
+	font-size: 12px;
+}
+
+/*===============
 PAGINA GALLERIA
-=========================
-*/
+=================*/
 
 .galleryimg, .gallerypicmini, .backbutton{
 	display: none;
+}
+
+.gallerymain a {
+	text-decoration: none;
 }
 
 .imgsfondonero {
 	width:100%;
 }
 
-/*
-=========================
-PAGINA CHI SIAMO
-=========================
-*/
-
-#Istruttori img{
-	width: 250px;
-	height: 200px;
-	overflow: auto;
-	margin-right: 40px;
+#back, #imgsfondoneroa {
+	display: none;
 }
+
+/*===============
+PAGINA CHI SIAMO
+=================*/
 
 #GennyTiengoImg, #FabioFerroImg {
-float: left;
+	display: none;
 }
 
-#GennyTiengo, #FabioFerro {
-	overflow: auto;
-	font-size: 16px;
-	padding: 3px;
-	margin-bottom: 10px;
+#Istruttori h2 {
+	margin-bottom: -15px;
 }
 
-#Istruttori ul {
-	padding: 2px;
-}
-
-/*
-=========================
+/*===============
 PAGINA DOVE SIAMO
-=========================
-*/
+=================*/
 
 #map {
 	height: 400px;
-    width: auto;
+    width: 100%;
 }
 
+#GoogleMaps h2 {
+	margin-bottom: -15px;
+}
 
-/*
-=========================
-PAGINA USER PANEL
-=========================
-*/
+/*===============
+USER PANEL
+=================*/
 
 .bloccoDati {
 	border:none;
-	margin-bottom: 5px;
-}
-
-.lineacapo {
-	display: inline;
-	font-size: 14pt;
+	margin-bottom: 15px;
 }
 
 .EntryUtente {
+	float: left;
 	font-weight: bold;
 }
 
 .userData {
-	clear: both;
 	font-weight: bold;
 	font-size: 18pt;
 }
@@ -296,8 +271,49 @@ PAGINA USER PANEL
 	display: block;
 }
 
-.bloccoDati2, #contatoreCorsi, 
-#iscrizioneCorsi, #discrizioneCorsi, #datiScheda{
+#iscrizioneCorsi, #discrizioneCorsi, #datiScheda {
 	display: none;
 }
 
+/*===============
+ADMIN PANEL
+=================*/
+
+.btn-1, .btn-2, .btn-3, .btn-5, .btn-9 {
+	display: none;
+}
+
+
+/*===============
+FORM
+=================*/
+
+#exit {
+	display:none;
+}
+
+/*===============
+MESSAGGI D'ERRORE
+=================*/
+
+.message h2 {
+	margin-bottom: 0;
+}
+
+/*===============
+TABELLE
+=================*/
+
+table {
+    width: 100%;
+	border: solid 1px black;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: solid 1px black;
+}
+
+th.notPrint, td.notPrint {
+	display: none;
+}

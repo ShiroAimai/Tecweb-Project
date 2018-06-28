@@ -15,7 +15,7 @@
         <th scope="col">Cognome</th>
         <th scope="col">Password</th>
         <th scope="col">Email</th>
-		<th scope="col">Elimina Utente</th>
+		<th class="notPrint" scope="col">Elimina Utente</th>
     </tr>
 </thead>
 <tbody>
