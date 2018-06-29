@@ -38,7 +38,7 @@
 	echo $closediv;
 	echo $closediv;
    
-	$target_dir = "../uploads/";
+	$target_dir = "../Uploads/upNews/";
 	$target_file = $target_dir . basename($newsImage);
 	$uploadOk = 1;
 	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

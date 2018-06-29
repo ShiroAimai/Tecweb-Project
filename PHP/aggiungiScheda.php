@@ -29,7 +29,7 @@
 
 	$scheda_trovata = select("SELECT * FROM scheda WHERE CodiceUtente='$user';");
 	if(count($scheda_trovata) > 0){
-		unlink('../schede/'.$scheda_trovata[0]['LinkScheda']);
+		unlink('../Uploads/upSchede/'.$scheda_trovata[0]['LinkScheda']);
 		query("UPDATE scheda SET LinkScheda='$pdf' WHERE CodiceUtente='$user'");
 	}
 	else {
@@ -37,7 +37,7 @@
 	}
 	echo $addScheda;
 
-	$target_dir = "../schede/";
+	$target_dir = "../Uploads/upSchede/";
 	$target_file = $target_dir . basename($pdf);
 	$uploadOk = 1;
 	$pdfFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

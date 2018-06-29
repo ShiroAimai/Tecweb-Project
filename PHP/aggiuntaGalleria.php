@@ -48,10 +48,10 @@
 	echo $closediv;
 	echo $closediv;
 
-	if (!file_exists('../galleria/'.$galleryName.'/')) {
+	if (!file_exists('../Uploads/upGalleria/'.$galleryName.'/')) {
 		mkdir('../galleria/'.$galleryName.'/', 0777, true);
 	}
-	$target_dir = '../galleria/'.$galleryName.'/';
+	$target_dir = '../Uploads/upGalleria/'.$galleryName.'/';
 	$count=0;
 	foreach ($galleryFile as $g) {
 		$destination=$target_dir;
