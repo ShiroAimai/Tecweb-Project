@@ -214,12 +214,13 @@ PAGINA HOME
 }
 
 .bottom-left {
-	width: 30%;
+	width: 100%;
 	text-align: left;
     position: absolute;
     bottom: 50px;
     left: 50px;
 	line-height: normal;
+	font-size:30pt;
 }
 
 #DescrizionePalestra {
