@@ -328,7 +328,7 @@ PAGINA DOVE SIAMO
 
 #titolodovesiamo {
 	position: absolute;
-	font-family: Verdana;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #FD0303;
 	font-size: 6vw;
 	font-weight:800;
@@ -681,7 +681,7 @@ PAGINA GALLERIA
 
 #titologalleria {
 	position: absolute;
-	font-family: Verdana;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: rgb(107,27,87);
 	font-size: 6vw;
 	font-weight:800;

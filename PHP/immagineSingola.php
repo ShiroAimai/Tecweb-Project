@@ -3,7 +3,7 @@
 	echo("<!DOCTYPE html>
 		<html lang=\"it\">
 		<head>
-			<title>Galleria Foto | Body Evolution</title>
+			<title>Galleria Foto | <span xml:lang=\"en\">Body Evolution</span></title>
 			<meta charset=\"utf-8\">
 			<link href=\"../CSS/Desktop.css\" rel=\"stylesheet\" media=\"handheld, screen\"/>
 			<link href=\"../CSS/Tablet.css\" rel=\"stylesheet\" media=\"screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)\"/>
