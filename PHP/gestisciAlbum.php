@@ -65,7 +65,7 @@
 				<form method=\"post\" action=\"listaFoto.php?album=".$a['Album']."\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Vedi foto</label>
-					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Vedi foto\" value=\"Vedi foto\"/>
+					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Gestisci foto album\" value=\"Gestisi foto\"/>
 				</form>
 				</td>";
 		}

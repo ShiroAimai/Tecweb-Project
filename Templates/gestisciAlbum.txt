@@ -15,7 +15,7 @@
 		<th scope="col">Data</th>
 		<th class="notPrint" scope="col">Elimina galleria</th>
 		<th class="notPrint" scope="col">Rinomina galleria</th>
-		<th class="notPrint" scope="col">Vedi foto</th>
+		<th class="notPrint" scope="col">Gestisci foto</th>
     </tr>
 </thead>
 <tbody>
