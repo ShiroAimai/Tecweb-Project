@@ -17,7 +17,7 @@
 			header("Location:fattura aggiunta.php");
 	}
 	else {
-		header("Location: queryfallita.php");
+		header("Location: operazioneFallita.php");
 		die();
 	}
 	close_connection();

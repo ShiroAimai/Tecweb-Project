@@ -12,9 +12,9 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="Gestisci album.php"><span id="exit">&#215;</span></a>
+				<a href="gestisciAlbum.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
-					<form id="galleryForm" method="post" action="../PHP/aggiunta galleria.php" enctype="multipart/form-data">
+					<form id="galleryForm" method="post" action="../PHP/aggiuntaGalleria.php" enctype="multipart/form-data">
 						<div class="group">
 							<label for="galleryName" class="label">Nome album</label>
 							<input name="galleryName" id="galleryName" type="text" class="input" required />

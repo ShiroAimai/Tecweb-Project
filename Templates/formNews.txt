@@ -12,9 +12,9 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="Gestisci news.php"><span id="exit">&#215;</span></a>
+				<a href="gestisciNews.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
-					<form id="newsForm" method="post" action="../PHP/aggiunta news.php" enctype="multipart/form-data">
+					<form id="newsForm" method="post" action="../PHP/aggiuntaNews.php" enctype="multipart/form-data">
 						<div class="group">
 							<label for="newsTitle" class="label">Titolo news</label>
 							<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16" required />

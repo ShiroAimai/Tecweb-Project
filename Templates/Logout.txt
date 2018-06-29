@@ -1,7 +1,7 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Logout effettuato con successo!</h2>
-		<a class="messagelink1" href="AreaPersonale.php">Rieffettua il login</a>
+		<a class="messagelink1" href="areaPersonale.php">Rieffettua il login</a>
 		<a class="messagelink2" href="Home.php">Ritorna alla homepage</a>
 	</div>
 </div>

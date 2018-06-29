@@ -17,9 +17,9 @@
 		$_SESSION['user_surname'] = $utente_trovato[0]['Cognome'];
 		$_SESSION['user_type'] = $utente_trovato[0]['Tipo'];
 		if($_SESSION['user_type'] == 'admin')
-			header("Location:AdminPanel.php");
+			header("Location:adminPanel.php");
 		else
-			header("Location:UserPanel.php");
+			header("Location:userPanel.php");
 	}
 	else { 
 	  header("Location: erroreLogin.php");

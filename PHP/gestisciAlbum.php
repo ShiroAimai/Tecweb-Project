@@ -2,12 +2,12 @@
 	require_once('config.php');
     require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
-	$gestisciAlbum = file_get_contents("../Templates/GestisciAlbum.txt");
-	$notAdmin = file_get_contents("../Templates/NotAdmin.txt");
+	$gestisciAlbum = file_get_contents("../Templates/gestisciAlbum.txt");
+	$notAdmin = file_get_contents("../Templates/notAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\">Logout</button>";
-	$login = "<button onclick=\"window.location.href='AreaPersonale.php'\">Area Personale</button>";
-	$adminPanel = "<button onclick=\"window.location.href='AdminPanel.php'\">Admin Panel</button>";
-	$userPanel = "<button onclick=\"window.location.href='UserPanel.php'\">User Panel</button>";
+	$login = "<button onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
+	$adminPanel = "<button onclick=\"window.location.href='adminPanel.php'\">Admin Panel</button>";
+	$userPanel = "<button onclick=\"window.location.href='userPanel.php'\">User Panel</button>";
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
@@ -45,7 +45,7 @@
 			echo "</td>";
 			
 			echo "<td class=\"notPrint\">
-				<form method=\"post\" action=\"Elimina galleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria e le relative foto?');\" >
+				<form method=\"post\" action=\"eliminaGalleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria e le relative foto?');\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Elimina galleria</label>
 					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Elimina galleria\" value=\"Elimina galleria\"/>
@@ -53,7 +53,7 @@
 				</td>";
 				
 			echo "<td class=\"notPrint\">
-				<form method=\"post\" action=\"Rinomina galleria.php\" >
+				<form method=\"post\" action=\"rinominaGalleria.php\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"rename\">Rinomina galleria</label>
 					<input name=\"rename\" id=\"rename\" type=\"text\"  title=\"Rinomina galleria\" required />
@@ -62,7 +62,7 @@
 				</td>";
 				
 			echo "<td class=\"notPrint\">
-				<form method=\"post\" action=\"Lista foto.php?album=".$a['Album']."\" >
+				<form method=\"post\" action=\"listaFoto.php?album=".$a['Album']."\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Vedi foto</label>
 					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Vedi foto\" value=\"Vedi foto\"/>

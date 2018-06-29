@@ -6,5 +6,5 @@
 	unlink($file_to_delete);
 	query("DELETE FROM news WHERE Titolo='$title'");
 	close_connection();
-	header("Location:Gestisci news.php");
+	header("Location:gestisciNews.php");
 ?>

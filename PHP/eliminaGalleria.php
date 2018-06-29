@@ -13,5 +13,5 @@
 		rmdir($dir_to_delete);
 	query("DELETE FROM galleria WHERE Album='$title'");
 	close_connection();
-	header("Location:Gestisci album.php");
+	header("Location:gestisciAlbum.php");
 ?>

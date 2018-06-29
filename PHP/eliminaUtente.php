@@ -3,16 +3,16 @@
 	register('user');
 	register('type');
 	if($_SESSION['user_code'] == $user) {
-		header("Location:Errore eliminazione utente.php");
+		header("Location:erroreEliminazioneUtente.php");
 	} 
 	else if($type == 'admin') {
 		query("DELETE FROM utente WHERE CodiceUtente=$user");
 		close_connection();
-		header("Location:Gestisci admin.php");
+		header("Location:gestisciAdmin.php");
 	}
 	else {
 		query("DELETE FROM utente WHERE CodiceUtente=$user");
 		close_connection();
-		header("Location:Gestisci utenti.php");
+		header("Location:gestisciUtenti.php");
 	}
 ?>

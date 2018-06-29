@@ -2,9 +2,9 @@
 	<h1 id="titoloPagina">Gestisci Admin</h1>
 	<p>Gestisci gli amministratori registrati</p>
 </div>
-<div id="back"><a href="AdminPanel.php">Torna al pannello amministratore</a></div>
+<div id="back"><a href="adminPanel.php">Torna al pannello amministratore</a></div>
 <div id="btnContainer">
-	<a href="Form admin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi admin</button></a>
+	<a href="formAdmin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi admin</button></a>
 </div>
 <div class="tableResponsive"> 
 <table>

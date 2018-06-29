@@ -48,7 +48,7 @@ function query($sql) {
     }
     $res = mysqli_query($connessione, $sql);
     if ($res == FALSE) {
-		header("Location: queryfallita.php");
+		header("Location: operazioneFallita.php");
 		die();
     }
     return $res;

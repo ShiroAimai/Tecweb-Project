@@ -10,5 +10,5 @@
 		rmdir('../galleria/'.$folder.'/');
 	}
 	close_connection();
-	header("Location:Lista foto.php?album=$aux");
+	header("Location:listaFoto.php?album=$aux");
 ?>

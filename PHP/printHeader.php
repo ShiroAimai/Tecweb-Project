@@ -32,7 +32,7 @@
 			<div class=\"Menu\" id=\"myMenu\">");
 		}
 		else {
-			echo("<a href=\"AreaPersonale.php\"><img id=\"user\" src=\"../IMAGES/user.png\" alt=\"login utente\"/></a>
+			echo("<a href=\"areaPersonale.php\"><img id=\"user\" src=\"../IMAGES/user.png\" alt=\"login utente\"/></a>
 			<div class=\"Menu\" id=\"myMenu\">");
 		}
 		if($title == 'Home') {
@@ -69,13 +69,13 @@
 			echo("<a class=\"active\">Chi siamo</a>");
 		}
 		else {
-			echo("<a href=\"ChiSiamo.php\">Chi siamo</a>");
+			echo("<a href=\"chiSiamo.php\">Chi siamo</a>");
 		}
 		if($title == 'Dove Siamo') {
 			echo("<a class=\"active\">Dove siamo</a>");
 		}
 		else {
-			echo("<a href=\"DoveSiamo.php\">Dove siamo</a>");
+			echo("<a href=\"doveSiamo.php\">Dove siamo</a>");
 		}
 		if($title == 'Area Personale') {
 			echo("<button disabled>Area Personale</button></div></div>");

@@ -12,9 +12,9 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="Gestisci admin.php"><span id="exit">&#215;</span></a>
+				<a href="gestisciAdmin.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
-					<form id="userForm" action="registrazione admin.php" method="post">
+					<form id="userForm" action="registrazioneAdmin.php" method="post">
 						<div class="group">
 							<label for="userName" class="label">Nome</label>
 							<input name="userName" id="userName" type="text" class="input" required />

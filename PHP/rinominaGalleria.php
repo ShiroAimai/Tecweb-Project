@@ -10,9 +10,9 @@
 		close_connection();
 	}
 	else {
-		header("Location: queryfallita.php");
+		header("Location: operazioneFallita.php");
 		die();
 	}
 	rename($dir_to_rename, $dir_new_name);
-	header("Location:Gestisci album.php");
+	header("Location:gestisciAlbum.php");
 ?>

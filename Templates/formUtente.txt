@@ -14,7 +14,7 @@
 			<div class="login-html">
 				<a href="Gestisci utenti.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
-					<form id="userForm" action="registrazione utente.php" method="post">
+					<form id="userForm" action="registrazioneUtente.php" method="post">
 						<div class="group">
 							<label for="userName" class="label">Nome</label>
 							<input name="userName" id="userName" type="text" class="input" required />
