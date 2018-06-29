@@ -23,7 +23,7 @@
 
 	$aux=$_GET['album'];
 	$stampa="<div id=\"sfondonerocont\" ><a id=\"imgsfondoneroa\" href=\"albumGalleria.php?album=$aux\">Torna all'album ".$aux."</a>";
-	$stampa.="<img class=\"imgsfondonero\" src=\"../galleria/".$aux.'/'.$_GET['nome']."\" alt=\"Immagine dell'album ".$aux."\"/></div>";
+	$stampa.="<img class=\"imgsfondonero\" src=\"../Uploads/upGalleria/".$aux.'/'.$_GET['nome']."\" alt=\"Immagine dell'album ".$aux."\"/></div>";
 	echo $stampa;
 
 	echo $closediv;
