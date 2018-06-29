@@ -5,7 +5,7 @@
 	</div>
 	<div id="btnContainer">
 		<a href="gestisciUtenti.php"><button class="btn btn-4 btn-sep icon-showusers">Gestisci utenti</button></a>
-		<a href="gesticiAdmin.php"><button class="btn btn-6 btn-sep icon-showusers">Gestisci admin</button></a>
+		<a href="gestisciAdmin.php"><button class="btn btn-6 btn-sep icon-showusers">Gestisci admin</button></a>
 		<a href="gestisciNews.php"><button class="btn btn-7 btn-sep icon-shownews">Gestisci news</button></a>
 		<a href="gestisciAlbum.php"><button class="btn btn-8 btn-sep icon-showalbum">Gestisci album</button></a>
 	</div>

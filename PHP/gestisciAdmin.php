@@ -51,7 +51,7 @@
 			echo "</td>";
 			
 			echo "<td class=\"notPrint\">
-				<form method=\"post\" action=\"Elimina utente.php\" onsubmit=\"return confirm('Confermi di voler eliminare l\'utente?');\" >
+				<form method=\"post\" action=\"eliminaUtente.php\" onsubmit=\"return confirm('Confermi di voler eliminare l\'utente?');\" >
 					<input type=\"hidden\"  name=\"type\" value=\"" . $u['Tipo'] . "\"/>
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Elimina utente</label>

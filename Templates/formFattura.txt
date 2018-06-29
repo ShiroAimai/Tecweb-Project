@@ -14,7 +14,7 @@
 			<div class="login-html">
 				<a href="gestisciUtenti.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
-					<form id="userForm" action="aggiungiFattura.php" method="post">
+					<form id="userForm" action="fatturaAggiunta.php" method="post">
 						<div class="group">
 							<label for="userCode" class="label">Codice utente</label>
 							<input name="userCode" id="userCode" type="number" class="input" required />

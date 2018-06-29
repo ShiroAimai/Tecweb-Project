@@ -17,12 +17,12 @@
 	
 	$galleryName = test_input($galleryName);
 	if(isset($galleryName) && !empty($galleryName) && isset($galleryFile) && !empty($galleryFile)) {
-		$max_file_number = 50; //massimo 50 file per volta
+		/*$max_file_number = 50; //massimo 50 file per volta
 		$upload_max_size = 209715200; //massimo 200M ad upload
 		if(count($galleryFile) > $max_file_number || $gallerySize > $upload_max_size) {
 			header("Location: operazioneFallita.php");
 			die();
-		}
+		}*/
         while(isset($_FILES['galleryFile']['name'][$counter])) {   
 			$immagine=$_FILES['galleryFile']['name'][$counter];
 			query("INSERT INTO galleria (NomeImmagine, Album) VALUES ('$immagine', '$galleryName')");
@@ -59,7 +59,7 @@
 		$count++;
 		$destination=$destination.basename($g);
 		if (!move_uploaded_file($origin, $destination)) {
-			header("Location: queryfallita.php");		
+			header("Location: operazioneFallita.php");		
 			die();			
 		}
 	}

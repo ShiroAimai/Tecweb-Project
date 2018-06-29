@@ -2,7 +2,7 @@
 	<div class="messagetext">
 		<h2>Admin inserito con successo!</h2>
 		<a class="messagelink1" href="gestisciAdmin.php">Ritorna alla gestione degli admin</a>
-		<a class="messagelink12" href="Home.php">Ritorna alla homepage</a>
+		<a class="messagelink2" href="Home.php">Ritorna alla homepage</a>
 	</div>
 	
 </div>
