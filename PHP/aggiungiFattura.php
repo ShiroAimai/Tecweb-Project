@@ -5,8 +5,8 @@
 	register('mesi');
 	register('entrate');
 	$today = date("Y-m-d"); 
-
-	if(isset($userCode) && !empty($userCode) 
+	$tipoUtente = select("SELECT Tipo from utente where CodiceUtente='$userCode'");
+	if(isset($userCode) && !empty($userCode) && $tipoUtente[0]['Tipo'] !== "admin"
 		&& isset($today) && !empty($today)
 		&& isset($importo) && !empty($importo)
 		&& ((isset($mesi) && !empty($mesi)) || (isset($entrate) && !empty($entrate)))) {		
