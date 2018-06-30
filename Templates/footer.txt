@@ -35,7 +35,7 @@
 		istituzionale la società provveder&agrave; al tesseramento di questi ad una delle federazioni o enti sportivi a cui &egrave; affiliata.</p>
 	</div>
 	<div id="footerbottom">
-		<p><span lang="en">Copyright</span>&copy; 2018 Palestra <span lang="en">BODY EVOLUTION</span> A.S.D. - 
+		<p><span lang="en">Copyright</span>&copy; 2018 Palestra <span lang="en">BODY EVOLUTION</span> <acronym title="Associazione Sportiva Dilettantistica">A.S.D.</acronym> - 
 		<span lang="en">All rights reserved</span></p>
 	</div>
 	</div>
