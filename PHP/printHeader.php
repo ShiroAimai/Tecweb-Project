@@ -7,9 +7,9 @@
 			<title>".$title." | Body Evolution</title>
 			<meta charset=\"utf-8\">
 			<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>
-			<link href=\"../CSS/Desktop.css\" rel=\"stylesheet\" media=\"handheld, screen\"/>
-			<link href=\"../CSS/Tablet.css\" rel=\"stylesheet\" media=\"screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)\"/>
-			<link href=\"../CSS/Mobile.css\" rel=\"stylesheet\" media=\"handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)\"/>
+			<link href=\"../CSS/Desktop.css\" rel=\"stylesheet\"/>
+			<link href=\"../CSS/Tablet.css\" rel=\"stylesheet\" media=\"(min-width:768px) and (max-width:1024px)\"/>
+			<link href=\"../CSS/Mobile.css\" rel=\"stylesheet\" media=\"(max-width: 767px)\"/>
 			<link href=\"../CSS/Print.css\" rel=\"stylesheet\" media=\"print\"/>
 			<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\"/>
 		</head>
@@ -51,7 +51,7 @@
 			echo("<a class=\"active\">News</a>");
 		}
 		else {
-			echo("<a href=\"News.php\"><span xml:lang=\"en\">News</span></a>");
+			echo("<a href=\"News.php\"><span lang=\"en\">News</span></a>");
 		}
 		if($title == 'Galleria' || $title == 'Galleria Foto') {
 			echo("<a class=\"active\">Galleria</a>>");
