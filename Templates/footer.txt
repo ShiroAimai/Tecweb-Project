@@ -28,7 +28,7 @@
 	<div id="footerdx">
 		<img id="Coni" src="../IMAGES/Coni.png" alt="Affiliazione Coni"/>
 		<img id="asi" src="../IMAGES/Asi.png" alt="Affiliazione asi"/>
-		<p>La “BODY EVOLUTION A.S.D” &egrave; un'associazione senza scopo di lucro affiliata agli enti/federazioni di promozione
+		<p>La “<span lang="en">BODY EVOLUTION</span> A.S.D” &egrave; un'associazione senza scopo di lucro affiliata agli enti/federazioni di promozione
 		sportiva riconosciuti dal CONI come: ASI – Associazioni Sportive Sociali Italiane – affiliazione n. EPS VEN-VE0093
 		registro Coni n. 77776. L’attivit&agrave; di propaganda &egrave; in funzione agli scopi istituzionali e necessaria per lo sviluppo
 		e la divulgazione dello Sport dilettantistico nazionale. Per coloro che fanno domanda per la pratica dell’attivit&agrave; 

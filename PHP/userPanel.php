@@ -4,10 +4,10 @@
     $foot = file_get_contents("../Templates/footer.txt");
 	$UserPanel = file_get_contents("../Templates/userPanel.txt");
 	$notAdmin = file_get_contents("../Templates/notAdmin.txt");
-	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\"><span xml:lang=\"en\">Logout</span></button>";
+	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\"><span lang=\"en\">Logout</span></button>";
 	$login = "<button onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
-	$adminPanel = "<button onclick=\"window.location.href='adminPanel.php'\"><span xml:lang=\"en\">Admin Panel</span></button>";
-	$userPanel = "<button onclick=\"window.location.href='userPanel.php'\"><span xml:lang=\"en\">User Panel</span</button>";
+	$adminPanel = "<button onclick=\"window.location.href='adminPanel.php'\"><span lang=\"en\">Admin Panel</span></button>";
+	$userPanel = "<button onclick=\"window.location.href='userPanel.php'\"><span lang=\"en\">User Panel</span</button>";
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
@@ -39,7 +39,7 @@
 		$stampa .="<div class=\"TabUtente\">";
 		$stampa .="<div  id=\"NomeUtente\"><div class=\"EntryUtente\"> Nome: </div><div class=\"EntryTab\">&nbsp;" .$data['Nome']."&ensp;</div></div>";
 		$stampa .="<div id=\"CognomeUtente\"><div class=\"EntryUtente\"> Cognome: </div><div class=\"EntryTab\">&nbsp;" .$data['Cognome']."&ensp;</div></div>";
-		$stampa .="<div id=\"MailUtente\"><div class=\"EntryUtente\"> Email: </div><div class=\"EntryTab\">&nbsp;" .$data['Email']."&ensp;</div></div>";
+		$stampa .="<div id=\"MailUtente\"><div class=\"EntryUtente\"> <span lang=\"en\"> Email</span>: </div><div class=\"EntryTab\">&nbsp;" .$data['Email']."&ensp;</div></div>";
 		$stampa .="</div></div>";
 		
 		//Dati abbonamento
