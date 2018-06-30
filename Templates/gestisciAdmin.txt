@@ -1,10 +1,10 @@
 <div id="Presentazione">
-	<h1 id="titoloPagina">Gestisci Admin</h1>
+	<h1 id="titoloPagina">Gestisci <span lang="en">Admin</span></h1>
 	<p>Gestisci gli amministratori registrati</p>
 </div>
 <div id="back"><a href="adminPanel.php">Torna al pannello amministratore</a></div>
 <div id="btnContainer">
-	<a href="formAdmin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi admin</button></a>
+	<a href="formAdmin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi <span lang="en">admin</span></button></a>
 </div>
 <div class="tableResponsive"> 
 <table>
@@ -13,8 +13,8 @@
         <th scope="col">Codice Utente</th>
         <th scope="col">Nome</th>
         <th scope="col">Cognome</th>
-        <th scope="col">Password</th>
-        <th scope="col">Email</th>
+        <th scope="col"><span lang="en">Password</span></th>
+        <th scope="col"><span lang="en">Email</span></th>
 		<th class="notPrint" scope="col">Elimina Utente</th>
     </tr>
 </thead>

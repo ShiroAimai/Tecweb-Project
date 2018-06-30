@@ -18,7 +18,7 @@
 		<ul>
 			<li>Prova GRATUITA per tutti i nuovi amici</li>
 			<li>SCHEDE di allenamento personalizzate e gratuite</li>
-			<li>Vasto parco macchine su 400 mq di sala fitness</li>
+			<li>Vasto parco macchine su 400 mq di sala <span lang="en">fitness</span></li>
 			<li>Istruttori qualificati sempre presenti</li>
 			<li>Ampia scelta di corsi in pi&ugrave; fasce orarie</li>
 			<li>Sala corsi attrezzata su 280 mq</li>

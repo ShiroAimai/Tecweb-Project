@@ -4,7 +4,7 @@
 <div class="FormContainer">
 	<div class="containerChild">
 		<div class="leftContent">
-			<h1>Nuovo Album Galleria</h1>
+			<h1>Nuovo <span Album Galleria</h1>
 			<p>Inserisci una o pi&ugrave; immagini da inserire nel nuovo album</p>
 		</div>
 		<div class="signupOverlay"></div>
@@ -20,7 +20,7 @@
 							<input name="galleryName" id="galleryName" type="text" class="input" required />
 						</div>
 						<div class="group">
-							<label for="galleryFile[]" class="label">File</label>
+							<label for="galleryFile[]" class="label"><span lang="en">File</span></label>
 							<input name="galleryFile[]" id="galleryFile[]" type="file" class="input" accept="image/*" title="Seleziona fino a 50 foto per un massimo di 200MB" multiple required />
 						</div>
 						<div class="group">

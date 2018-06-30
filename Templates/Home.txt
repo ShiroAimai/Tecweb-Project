@@ -1,7 +1,7 @@
 ﻿<div class="homeImg">
 	<img class="image" src="../IMAGES/homeImg.jpg" alt="Immagine Body Evolution"/>
 	<div class="bottom-left">
-		<h2>PALESTRA BODY EVOLUTION</h2>
+		<h2>PALESTRA <span lang="en">BODY EVOLUTION</span></h2>
 	</div>
 </div>
 
@@ -9,9 +9,9 @@
 	<div class="dx">
 		<img class="ridimensionasx" src="../IMAGES/fitness.jpg" alt="esercizi di fitness"/>
 		<div class="limitedx">
-			<h3>IL FITNESS</h3>
+			<h3>IL <span lang="en">FITNESS</span></h3>
 			<div class="separator"></div>
-			<p>La Body Evolution non gode di una grande storia ma ha solide tradizioni. Tra queste il modo in cui vengono gestiti gli allenamenti, attenzione e massima serietà nella stilatura di programmi per ogni tipo di fisico.</p>
+			<p>La <span lang="en">Body Evolution</span> non gode di una grande storia ma ha solide tradizioni. Tra queste il modo in cui vengono gestiti gli allenamenti, attenzione e massima serietà nella stilatura di programmi per ogni tipo di fisico.</p>
 		</div>
 	</div>
 	<div class="sx">
@@ -19,10 +19,10 @@
 		<div class="limitesx">
 			<h3>ATTREZZATURA</h3>
 			<div class="separator"></div>
-			<p>La Body Evolution gode di un ampia sala di circa 400mq dedicata interamente al fitness. Nella sala è presente una vasta gamma di macchinari di ultima generazione a disposizione degli iscritti. Alla Body Evolution il rigore e la disciplina sono importanti per cui si chiede ai gentili clienti di dotarsi di asciugamano per l'igiene di tutti.</p>
+			<p>La <span lang="en">Body Evolution</span> gode di un ampia sala di circa 400mq dedicata interamente al <span lang="en">fitness</span>. Nella sala è presente una vasta gamma di macchinari di ultima generazione a disposizione degli iscritti. Alla <span lang="en">Body Evolution</span> il rigore e la disciplina sono importanti per cui si chiede ai gentili clienti di dotarsi di asciugamano per l'igiene di tutti.</p>
 			<ul  class="elenchiHome">
-				<li>Area fitness con più di 40 macchine di nuova generazione</li>
-				<li>Area cardio dotata di diversi tapis roulant con schermo digitale</li>
+				<li>Area <span lang="en">fitness</span> con più di 40 macchine di nuova generazione</li>
+				<li>Area cardio dotata di diversi <span lang="fr">tapis roulant</span> con schermo digitale</li>
 				<li>Area addominali dedicata</li>
 			</ul>
 		</div>
@@ -32,7 +32,7 @@
 		<div class="limitedx">
 			<h3>PROGRAMMA D'ALLENAMENTO</h3>
 			<div class="separator"></div>
-			<p>Grazie all'esperienza dei Trainer son disponibili diversi allenamenti a seconda delle esigenze. Gli allenamenti variano in base al grado di praticità dell'individuo, passsando da una semplice "Total Body" per i novizi, "allenamenti per definizione" che olte ad un'intensa attività cardiomuscolare mettono a dura prova la resistenza dell'individuo con tempi di riposo ridotti fino a "allenamenti ad obbiettivo" concentrati per i più esperti. La possibilità di allenamento varia anche rispetto alla disponibilità temporale, per cui sono stati creati allenamenti da 2, 3 e più giorni a settimana per soddisfare le esigenze di ogni iscritto. Gli allenamenti più comuni comprendono: </p>
+			<p>Grazie all'esperienza dei <span lang="en">Trainer</span> son disponibili diversi allenamenti a seconda delle esigenze. Gli allenamenti variano in base al grado di praticità dell'individuo, passsando da una semplice "<span lang="en">Total Body</span>" per i novizi, "allenamenti per definizione" che olte ad un'intensa attività cardiomuscolare mettono a dura prova la resistenza dell'individuo con tempi di riposo ridotti fino a "allenamenti ad obbiettivo" concentrati per i più esperti. La possibilità di allenamento varia anche rispetto alla disponibilità temporale, per cui sono stati creati allenamenti da 2, 3 e più giorni a settimana per soddisfare le esigenze di ogni iscritto. Gli allenamenti più comuni comprendono: </p>
 			<ul  class="elenchiHome">
 				<li>Forza e Potenziamento</li>
 				<li>Ipertrofia</li>
@@ -53,12 +53,12 @@
 				<ul>
 					<li>Dirigente sportivo Coni</li>
 					<li>Istruttore</li>
-					<li>Personal Trainer</li>
+					<li><span lang="en">Personal Trainer</span></li>
 					<li>Giuduce di gara</li>  
-					<li>Istuttore Spinning</li>
-					<li>Fit Box</li>
-					<li>Power Pump</li>
-					<li>Pilates</li>
+					<li>Istuttore <span lang="en">Spinning</span></li>
+					<li><span lang="en">Fit Box</span></li>
+					<li><span lang="en">Power Pump</span></li>
+					<li><span lang="en">Pilates</span></li>
 				</ul>
 			</div>
 			<div  class="elenchiHome">
@@ -66,9 +66,9 @@
 				<ul>
 					<li>Preparatore atletico</li>
 					<li>Istruttore</li>
-					<li>Personal Trainer</li>
+					<li><span lang="en">Personal Trainer</span></li>
 					<li>Giuduce di gara</li>  
-					<li>Istuttore Kick Boxing</li>
+					<li>Istuttore <span lang="en">Kick Boxing</span></li>
 				</ul>
 			</div>
 		</div>
@@ -78,13 +78,13 @@
 		<div class="limitedx">
 			<h3>CORSI</h3>
 			<div class="separator"></div>
-			<p>La palestra offre anche un pacchetto corsi. I corsi sono accessibili ad individui di ogni età e sono tenuti da Trainer esperti nel settore con la massima professionalità. La durata media è di 45 minuti ciascuno. I corsi offerti sono:</p>
+			<p>La palestra offre anche un pacchetto corsi. I corsi sono accessibili ad individui di ogni età e sono tenuti da <span lang="en">Trainer</span> esperti nel settore con la massima professionalità. La durata media è di 45 minuti ciascuno. I corsi offerti sono:</p>
 			<ul  class="elenchiHome">
-				<li>Spinning</li>
-				<li>Fit Boxe</li>
-				<li>Power Pump</li>
-				<li>Jump Fit</li>
-				<li>Step</li>
+				<li><span lang="en">Spinning</span></li>
+				<li><span lang="en">Fit Boxe</span></li>
+				<li><span lang="en">Power Pump</span></li>
+				<li><span lang="en">Jump Fit</span></li>
+				<li><span lang="en">Step</span></li>
 			</ul>
 		</div>
 	</div>

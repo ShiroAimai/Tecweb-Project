@@ -24,15 +24,15 @@
 							<input name="userSurname" id="userSurname" type="text" class="input" required />
 						</div>
 						<div class="group">
-							<label for="pass" class="label">Password</label>
-							<input name="pass" id="pass" type="password" class="input" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="La password deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera" required />
+							<label for="pass" class="label"><span lang="en">Password</span></label>
+							<input name="pass" id="pass" type="password" class="input" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="La <span lang="en">password</span> deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera" required />
 						</div>
 						<div class="group">
-							<label for="confirmPass" class="label">Ripeti Password</label>
+							<label for="confirmPass" class="label">Ripeti <span lang="en">Password</span></label>
 							<input name="confirmPass" id="confirmPass" type="password" class="input" required />
 						</div>
 						<div class="group">
-							<label for="userMail" class="label">Email</label>
+							<label for="userMail" class="label"><span lang="en">Email</span></label>
 							<input name="userMail" id="userMail" type="email" class="input" required />
 						</div>
 						<div class="group">

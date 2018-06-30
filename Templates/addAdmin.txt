@@ -1,8 +1,9 @@
 <div class="message">
 	<div class="messagetext">
-		<h2>Admin inserito con successo!</h2>
-		<a class="messagelink1" href="gestisciAdmin.php">Ritorna alla gestione degli admin</a>
-		<a class="messagelink2" href="Home.php">Ritorna alla homepage</a>
+		<h2><span lang="en">Admin</span> inserito con successo!</h2>
+		<a class="messagelink1" href="gestisciAdmin.php">Ritorna alla gestione degli <span lang="en">admin</span></a>
+		<a class="messagelink2" href="Home.php">Ritorna alla <span lang="en">homepage</span></a>
 	</div>
 	
 </div>
+

@@ -1,9 +1,9 @@
 <div class="message">
 		<div class="messagetext">
 			<h2>Si è verificato un'errore:</h2>
-			<h4>Il Codice Utente o la Password inseriti non sono corretti.</h4>
+			<h4>Il Codice Utente o la <span lang="en">Password</span> inseriti non sono corretti.</h4>
 			<a class="messagelink1" href="../PHP/areaPersonale.php">Per reinserire i dati cliccare qui</a>
-			<a class="messagelink2" href="../PHP/Home.php">Ritorna alla homepage</a>
+			<a class="messagelink2" href="../PHP/Home.php">Ritorna alla <span lang="en">homepage</span></a>
 		</div>
 		
 	</div>

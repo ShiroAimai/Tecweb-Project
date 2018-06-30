@@ -1,6 +1,6 @@
 <div id="Descrizione">
 	<div id="Presentazione">
-		<h1 id="titoloPagina">USER PANEL</h1>
+		<h1 id="titoloPagina"><span lang="en">USER PANEL</span></h1>
 		<p>Benvenuto nel pannello utente</p>
 	</div>
 </div>

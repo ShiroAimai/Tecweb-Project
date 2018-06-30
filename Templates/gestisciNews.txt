@@ -1,10 +1,10 @@
 <div id="Presentazione">
-	<h1 id="titoloPagina">Gestisci news</h1>
-	<p>Gestisci le news presenti nel sito</p>
+	<h1 id="titoloPagina">Gestisci <span lang="en">news</span></h1>
+	<p>Gestisci le <span lang="en">news</span> presenti nel sito</p>
 </div>
 <div id="back"><a href="adminPanel.php">Torna al pannello amministratore</a></div>
 <div id="btnContainer">
-	<a href="formNews.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi news</button></a>
+	<a href="formNews.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi <span lang="en">news</span></button></a>
 </div>
 <div class="tableResponsive"> 
 <table>
@@ -14,7 +14,7 @@
         <th scope="col">Data</th>
         <th scope="col">Immagine</th>
         <th scope="col">Descrizione</th>
-		<th class="notPrint" scope="col">Elimina news</th>
+		<th class="notPrint" scope="col">Elimina <span lang="en">news</span></th>
     </tr>
 </thead>
 <tbody>

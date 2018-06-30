@@ -9,7 +9,7 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<h1>Sign In</h1>
+				<h1><span lang="en">Sign In</span></h1>
 				<a href="../PHP/Home.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">
 					<form id="PersonalAreaForm" action="../PHP/login.php" method="post">

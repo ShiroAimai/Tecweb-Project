@@ -1,12 +1,12 @@
 <div id="Descrizione">
 	<div id="Presentazione">
-		<h1 id="titoloPagina">ADMIN PANEL</h1>
+		<h1 id="titoloPagina"><span lang="en">ADMIN PANEL</span></h1>
 		<p>Benvenuto nel pannello amministratore</p>
 	</div>
 	<div id="btnContainer">
 		<a href="gestisciUtenti.php"><button class="btn btn-4 btn-sep icon-showusers">Gestisci utenti</button></a>
-		<a href="gestisciAdmin.php"><button class="btn btn-6 btn-sep icon-showusers">Gestisci admin</button></a>
-		<a href="gestisciNews.php"><button class="btn btn-7 btn-sep icon-shownews">Gestisci news</button></a>
+		<a href="gestisciAdmin.php"><button class="btn btn-6 btn-sep icon-showusers">Gestisci <span lang="en">admin</span></button></a>
+		<a href="gestisciNews.php"><button class="btn btn-7 btn-sep icon-shownews">Gestisci <span lang="en">news</span></button></a>
 		<a href="gestisciAlbum.php"><button class="btn btn-8 btn-sep icon-showalbum">Gestisci album</button></a>
 	</div>
 </div>

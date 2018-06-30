@@ -1,11 +1,11 @@
 <div id="Presentazione">
-	<h1 id="titoloPagina">AGGIUNGI NEWS</h1>
+	<h1 id="titoloPagina">AGGIUNGI<span lang="en">NEWS</span></h1>
 </div>
 <div class="FormContainer">
 	<div class="containerChild">
 		<div class="leftContent">
-			<h1>Nuova News</h1>
-			<p>Inserisci titolo, immagine e descrizione di una nuova news</p>
+			<h1>Nuova <span lang="en">News</span></h1>
+			<p>Inserisci titolo, immagine e descrizione di una nuova <span lang="en">news</span></p>
 		</div>
 		<div class="signupOverlay"></div>
 	</div>
@@ -16,7 +16,7 @@
 				<div class="login-form">							
 					<form id="newsForm" method="post" action="../PHP/aggiuntaNews.php" enctype="multipart/form-data">
 						<div class="group">
-							<label for="newsTitle" class="label">Titolo news</label>
+							<label for="newsTitle" class="label">Titolo <span lang="en">news</span></label>
 							<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16" required />
 						</div>
 						<div class="group">

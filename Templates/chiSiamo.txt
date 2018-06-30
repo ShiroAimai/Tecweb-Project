@@ -9,8 +9,8 @@
 			<div class="separator"></div>
 			<ul>
 				<li>Dirigente sportivo Coni</li>
-				<li>Istruttore (Spinning, Fit Boxe, Power Pump, Jump Fit, Step, Pilates, Riabilitazione, Gestanti)</li>
-				<li>Personal Trainer</li>
+				<li>Istruttore (<span lang="en">Spinning, Fit Boxe, Power Pump, Jump Fit, Step, Pilates,</span> Riabilitazione, Gestanti)</li>
+				<li><span lang="en">Personal Trainer</span></li>
 				<li>Giudice di gara</li>
 			</ul>
 		</div>
@@ -20,8 +20,8 @@
 			<div class="separator"></div>
 			<ul>
 				<li>Preparatore atletico</li>
-				<li>Istruttore Kick Boxing</li>
-				<li>Personal Trainer</li>
+				<li>Istruttore <span lang="en">Kick Boxing</span></li>
+				<li><span lang="en">Personal Trainer</span></li>
 				<li>Giudice di gara</li>
 			</ul>
 		</div>

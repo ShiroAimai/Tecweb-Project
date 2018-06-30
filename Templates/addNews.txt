@@ -1,8 +1,8 @@
 <div class="message">
 	<div class="messagetext">
-		<h2>News inserita con successo!</h2>
-		<a class="messagelink1" href="gestisciNews.php">Ritorna alla gestione delle news</a>
-		<a class="messagelink2" href="Home.php">Ritorna alla homepage</a>
+		<h2><span lang="en">News</span> inserita con successo!</h2>
+		<a class="messagelink1" href="gestisciNews.php">Ritorna alla gestione delle <span lang="en">news</span></a>
+		<a class="messagelink2" href="Home.php">Ritorna alla <span lang="en">homepage</span></a>
 	</div>
 	
 </div>

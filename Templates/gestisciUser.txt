@@ -14,8 +14,8 @@
         <th scope="col">Codice Utente</th>
         <th scope="col">Nome</th>
         <th scope="col">Cognome</th>
-        <th scope="col">Password</th>
-        <th scope="col">Email</th>
+        <th scope="col"><span lang="en">Password</span></th>
+        <th scope="col"><span lang="en">Email</span></th>
 		<th class="notPrint" scope="col">Elimina Utente</th>
 		<th class="notPrint" scope="col">Aggiungi scheda</th>
 		<th class="notPrint" scope="col">Fatture</th>

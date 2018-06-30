@@ -20,7 +20,7 @@
 			<li>
 				<a href="Attivita.php#spinning">
 					<div class="spinning">
-						<p class="corsovoce">Spinning</p>
+						<p class="corsovoce"><span lang="en">Spinning</span></p>
 					</div>
 				</a>
 			</li>
@@ -28,7 +28,7 @@
 			<li>
 				<a href="Attivita.php#step">
 					<div class="step">
-						<p class="corsovoce">Step</p>
+						<p class="corsovoce"><span lang="en">Step</span></p>
 					</div>
 				</a>
 			</li>
@@ -36,7 +36,7 @@
 			<li>
 				<a href="Attivita.php#jumpfit">
 					<div class="jumpfit">
-						<p class="corsovoce">Jump Fit</p>
+						<p class="corsovoce"><span lang="en">Jump Fit</span></p>
 					</div>
 				</a>
 			</li>
@@ -55,7 +55,7 @@
 			<li>
 				<a href="Attivita.php#spinning">
 					<div class="spinning">
-						<p class="corsovoce">Spinning</p>
+						<p class="corsovoce"><span lang="en">Spinning</span></p>
 					</div>
 				</a>
 			</li>
@@ -63,7 +63,7 @@
 			<li>
 				<a href="Attivita.php#fitboxe">
 					<div class="fitboxe">
-						<p class="corsovoce">Fit Boxe</p>
+						<p class="corsovoce"><span lang="en">Fit Boxe</span></p>
 					</div>
 				</a>
 			</li>
@@ -76,7 +76,7 @@
 			<li>
 				<a href="Attivita.php#powerpump">
 					<div class="powerpump">
-						<p class="corsovoce">Power Pump</p>
+						<p class="corsovoce"><span lang="en">Power Pump</span></p>
 					</div>
 				</a>
 			</li>
@@ -84,7 +84,7 @@
 			<li>
 				<a href="Attivita.php#step">
 					<div class="step">
-						<p class="corsovoce">Step</p>
+						<p class="corsovoce"><span lang="en">Step</span></p>
 					</div>
 				</a>
 			</li>
@@ -92,7 +92,7 @@
 			<li>
 				<a href="Attivita.php#jumpfit">
 					<div class="jumpfit">
-						<p class="corsovoce">Jump Fit</p>
+						<p class="corsovoce"><span lang="en">Jump Fit</span></p>
 					</div>
 				</a>
 			</li>
@@ -105,7 +105,7 @@
 			<li>
 				<a href="Attivita.php#jumpfit">
 					<div class="jumpfit">
-						<p class="corsovoce">Jump Fit</p>
+						<p class="corsovoce"><span lang="en">Jump Fit</span></p>
 					</div>
 				</a>
 			</li>
@@ -113,7 +113,7 @@
 			<li>
 				<a href="Attivita.php#powerpump">
 					<div class="powerpump">
-						<p class="corsovoce">Power Pump</p>
+						<p class="corsovoce"><span lang="en">Power Pump</span></p>
 					</div>
 				</a>
 			</li>
@@ -121,7 +121,7 @@
 			<li>
 				<a href="Attivita.php#fitboxe">
 					<div class="fitboxe">
-						<p class="corsovoce">Fit Boxe</p>
+						<p class="corsovoce"><span lang="en">Fit Boxe</span></p>
 					</div>
 				</a>
 			</li>
@@ -140,19 +140,19 @@
 			<li>
 				<a href="Attivita.php#spinning">
 					<div class="spinning">
-						<p class="corsovoce">Spinning</p>
+						<p class="corsovoce"><span lang="en">Spinning</span></p>
 					</div>
 				</a>
 			</li>
 			
 			<li>
-				<a href="Attivita.php#spinning">
-					<div class="spinning">
-						<p class="corsovoce">Spinning</p>
+				<a href="Attivita.php#step">
+					<div class="step">
+						<p class="corsovoce"><span lang="en">Step</span></p>
 					</div>
 				</a>
 			</li>
 		</ul>
 	</div>
-	<h1 id="salafitness">LA SALA FITNESS E' SEMPRE DISPONIBILE NEGLI ORARI DI APERTURA DELLA PALESTRA</h1>
+	<h1 id="salafitness">LA SALA <span lang="en">FITNESS</span> E' SEMPRE DISPONIBILE NEGLI ORARI DI APERTURA DELLA PALESTRA</h1>
 </div>
