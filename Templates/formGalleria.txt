@@ -4,7 +4,7 @@
 <div class="FormContainer">
 	<div class="containerChild">
 		<div class="leftContent">
-			<h1>Nuovo <span Album Galleria</h1>
+			<h1>Nuovo Album Galleria</h1>
 			<p>Inserisci una o pi&ugrave; immagini da inserire nel nuovo album</p>
 		</div>
 		<div class="signupOverlay"></div>
