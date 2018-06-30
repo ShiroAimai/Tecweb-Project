@@ -9,12 +9,11 @@
 	if(isset($userCode) && !empty($userCode) 
 		&& isset($today) && !empty($today)
 		&& isset($importo) && !empty($importo)
-		&& isset($mesi) && !empty($mesi)
-		&& isset($entrate) && !empty($entrate)) {		
+		&& ((isset($mesi) && !empty($mesi)) || (isset($entrate) && !empty($entrate)))) {		
 			//aggiorno fattura
 			query("INSERT INTO fattura (CodiceUtente, DataEmissione, ImportoEuro, MesiFitness, EntrateCorsi)
 			VALUES ('$userCode','$today','$importo','$mesi','$entrate')");			
-			header("Location:fattura aggiunta.php");
+			header("Location:fatturaAggiunta.php");
 	}
 	else {
 		header("Location: operazioneFallita.php");
