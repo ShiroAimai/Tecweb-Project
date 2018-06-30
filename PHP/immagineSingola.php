@@ -5,11 +5,11 @@
 		<head>
 			<title>Galleria Foto | <span lang=\"en\">Body Evolution</span></title>
 			<meta charset=\"utf-8\">
-			<link href=\"../CSS/Desktop.css\" rel=\"stylesheet\" media=\"handheld, screen\"/>
-			<link href=\"../CSS/Tablet.css\" rel=\"stylesheet\" media=\"screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)\"/>
-			<link href=\"../CSS/Mobile.css\" rel=\"stylesheet\" media=\"handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)\"/>
-			<link href=\"../CSS/Print.css\" rel=\"stylesheet\" media=\"print\"/>
 			<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>
+			<link href=\"../CSS/Desktop.css\" rel=\"stylesheet\"/>
+			<link href=\"../CSS/Tablet.css\" rel=\"stylesheet\" media=\"(min-width:768px) and (max-width:1024px)\"/>
+			<link href=\"../CSS/Mobile.css\" rel=\"stylesheet\" media=\"(max-width: 767px)\"/>
+			<link href=\"../CSS/Print.css\" rel=\"stylesheet\" media=\"print\"/>
 		</head>");
 
 	$body = "<body>";

@@ -4,15 +4,16 @@
 	<title>Errore 404 | Body Evolution</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link href="CSS/Desktop.css" rel="stylesheet" media="handheld, screen"/>
-	<link href="CSS/Tablet.css" rel="stylesheet" media="screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)"/>
-	<link href="CSS/Mobile.css" rel="stylesheet" media="handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)"/>
-	<link href="CSS/Print.css" rel="stylesheet" media="print"/>
+	<link href="../CSS/Desktop.css" rel="stylesheet"/>
+	<link href="../CSS/Tablet.css" rel="stylesheet" media="(min-width:768px) and (max-width:1024px)"/>
+	<link href="../CSS/Mobile.css" rel="stylesheet" media="(max-width: 767px)"/>
+	<link href="../CSS/Print.css" rel="stylesheet" media="print"/>
 </head>
 
 <body>
 	<div id="contenitore">
 		<div id="Intestazione">
+			<a href="#corpo" id="saltaMenu">Vai al corpo della pagina</a>
 			<a class="sandwich" onclick="myFunction()">&#9776;</a>
 			<a href="PHP/Home.php"><img id="logo" src="IMAGES/logo.png" alt="Body Evolution logo"/></a>
 			<div class="printable"> BODY EVOLUTION FITNESS</div><a href="PHP/areaPersonale.php"><img id="user" src="../IMAGES/user.png" alt="login utente"/></a>
@@ -24,17 +25,19 @@
 				<a href="PHP/Calendario.php">Calendario</a>
 				<a href="PHP/chiSiamo.php">Chi siamo</a>
 				<a href="PHP/doveSiamo.php">Dove siamo</a>
-				<button onclick="window.location.href='PHP/areaPersonale.php'">Area Personale</button>
+				<button title="Effettua il login" onclick="window.location.href='PHP/areaPersonale.php'">Area Personale</button>
 			</div>
 		</div>
 		
-		<div class="message">
-			<div class="messagetext">
-				<h2>La pagina che stai cercando non esiste o non è disponibile</h2>
-				<a class="messagelink2" href="PHP/Home.php">Ritorna alla homepage</a>
-				<a class="messagelink1" href="PHP/Attivita.php">Visita i nostri corsi</a>
-			</div>
-		</div>﻿
+		<div id="Corpo">
+			<div class="message">
+				<div class="messagetext">
+					<h2>La pagina che stai cercando non esiste o non è disponibile</h2>
+					<a class="messagelink2" href="PHP/Home.php">Ritorna alla homepage</a>
+					<a class="messagelink1" href="PHP/Attivita.php">Visita i nostri corsi</a>
+				</div>
+			</div>﻿
+		</div>
 		
 		<a href='#' id="backTop" title="Torna su">&#9650;</a>
 		

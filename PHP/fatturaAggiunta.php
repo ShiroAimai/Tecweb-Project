@@ -3,9 +3,9 @@
     require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
 	$addFattura = file_get_contents("../Templates/addFattura.txt");
-	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\"><span lang=\"en\">Logout</span></button>";
-	$login = "<button onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
-	$adminPanel = "<button onclick=\"window.location.href='adminPanel.php'\"><span lang=\"en\">Admin Panel</span></button>";
+	$logout = "<button id=\"logoutButton\" title=\"Effettua il logout\" onclick=\"window.location.href='logout.php'\"><span lang=\"en\">Logout</span></button>";
+	$login = "<button title=\"Effettua il login\" onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
+	$adminPanel = "<button title=\"Vai al pannello amministratore\" onclick=\"window.location.href='adminPanel.php'\"><span lang=\"en\">Admin Panel</span></button>";
 	$notAdmin = file_get_contents("../Templates/notAdmin.txt");
 	$closediv = "</div>";
 	$closebody = "</body>";
