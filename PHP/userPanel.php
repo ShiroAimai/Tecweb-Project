@@ -76,19 +76,20 @@
 		//Button iscrizione corsi
 		$stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Iscriviti a nuovi corsi:</div>";
-		$stampa .= "<form action=\"formCorsi.php?attr=0\"> <button type=\"submit\"class=\"btn btn-10 btn-sep icon-addcorso\" >Iscrizione corsi</button> </form>";
-		//$stampa .= "<input type=\"button\" class=\"btn btn-10 btn-sep icon-addcorso\" value=\"Iscriviti a nuovi corsi\" onclick=\"window.location.href = 'formCorsi.php?attr=0' \">";
-		//"<a href=\"formCorsi.php?attr=0\" title=\"Iscriviti a nuovi corsi\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
+		$stampa .= "<form action=\"formCorsi.php\"> <button type=\"submit\" class=\"btn btn-10 btn-sep icon-addcorso\" >Iscrizione corsi</button>";
+		$stampa .= "<input type=\"hidden\" name=\"attr\" value=\"0\"/></form>";
+		//vecchio metodo
+		//$stampa .="<a href=\"formCorsi.php?attr=0\" title=\"Iscriviti a nuovi corsi\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
 		
 		$stampa .="</div>";
 
 		//Button disiscrizione corsi
         $stampa .="<div id=\"discrizioneCorsi\" class=\"bloccoDati\">";
         $stampa .= "<div class=\"userData\">Cancella la tua iscrizione ai corsi:</div>";
-        $stampa .="<form action=\"formCorsi.php?attr=1\"> <button type=\"submit\" class=\"btn btn-12 btn-sep icon-removecorso\" >Disiscrizione corsi</button> </form>";
-
-        //"<input type=\"button\" class=\"btn btn-12 btn-sep icon-removecorso\" value=\"Disiscriviti dai corsi\" onclick=\"window.location.href = 'formCorsi.php?attr=1' \">";
-        //"<a href=\"formCorsi.php?attr=1\" title=\"Disiscriviti dai corsi\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
+        $stampa .="<form action=\"formCorsi.php\"> <button type=\"submit\" class=\"btn btn-12 btn-sep icon-removecorso\" >Disiscrizione corsi</button>
+        <input type=\"hidden\" name=\"attr\" value=\"1\"/> </form>";
+        //vecchio metodo
+        //$stampa .="<a href=\"formCorsi.php?attr=1\" title=\"Disiscriviti dai corsi\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
         $stampa .="</div>";
 
 
@@ -99,8 +100,13 @@
 		$stampa .= "<div class=\"userData\">La tua scheda:</div>";
 		if($data['LinkScheda']!=null) {
 			//mi cerca la scheda nella dir schede col nome corrispondente salvato sul db
-			$stampa .= "<a href=\"../Uploads/upSchede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\" title=\"Scarica la tua scheda\">";
-			$stampa .= "<button class=\"btn btn-11 btn-sep icon-schedadownimg\">Scarica scheda</button></a>";
+			//$stampa .= "<a href=\"../Uploads/upSchede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\" title=\"Scarica la tua scheda\">";
+			//$stampa .= "<button class=\"btn btn-11 btn-sep icon-schedadownimg\">Scarica scheda</button>
+		
+
+			$stampa .="<form action=\"../Uploads/upSchede/".$data['LinkScheda']."\"> 
+			<button type=\"submit\" class=\"btn btn-11 btn-sep icon-schedadownimg\" >Scarica la tua scheda</button> </form>";
+			
 			
 		}
 		else
