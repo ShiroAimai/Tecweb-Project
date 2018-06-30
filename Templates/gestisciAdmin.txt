@@ -1,21 +1,22 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">Gestisci <span lang="en">Admin</span></h1>
-	<p>Gestisci gli amministratori registrati</p>
-</div>
-<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
-<div id="btnContainer">
-	<a href="formAdmin.php" title="Inserisci nuovo admin"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi <span lang="en">admin</span></button></a>
-</div>
-<div class="tableResponsive"> 
-<table summary="Tabella contenente la lista degli admin registrati">
-<thead>
-    <tr>
-        <th scope="col">Codice Utente</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Cognome</th>
-        <th scope="col"><span lang="en">Password</span></th>
-        <th scope="col"><span lang="en">Email</span></th>
-		<th class="notPrint" scope="col">Elimina Utente</th>
-    </tr>
-</thead>
-<tbody>
+<div id="Corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">Gestisci <span lang="en">Admin</span></h1>
+		<p>Gestisci gli amministratori registrati</p>
+	</div>
+	<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
+	<div id="btnContainer">
+		<a href="formAdmin.php" title="Inserisci nuovo admin"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi <span lang="en">admin</span></button></a>
+	</div>
+	<div class="tableResponsive"> 
+	<table summary="Tabella contenente la lista degli admin registrati">
+	<thead>
+		<tr>
+			<th scope="col">Codice Utente</th>
+			<th scope="col">Nome</th>
+			<th scope="col">Cognome</th>
+			<th scope="col"><span lang="en">Password</span></th>
+			<th scope="col"><span lang="en">Email</span></th>
+			<th class="notPrint" scope="col">Elimina Utente</th>
+		</tr>
+	</thead>
+	<tbody>

@@ -12,7 +12,7 @@ html, body {
 	width: 100%;
 }
 
-.Menu, .sandwich, #user, #logofooter, #logofacebook, .container, .logo, #Coni, #asi {
+.Menu, .sandwich, #user, #saltaMenu, #logofooter, #logofacebook, .container, .logo, #Coni, #asi {
 	display: none;
 }
 

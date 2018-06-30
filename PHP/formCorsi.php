@@ -4,7 +4,6 @@
     $foot = file_get_contents("../Templates/footer.txt");
 	$formcorsi = file_get_contents("../Templates/formCorsi.txt");
 	$disiscrizFormCorsi = file_get_contents("../Templates/disiscrizFormCorsi.txt");
-	$backpanel =  file_get_contents("../Templates/backPanelUtente.txt");
 	$notAdmin = file_get_contents("../Templates/notAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\"><span lang=\"en\">Logout</span></button>";
 	$login = "<button onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
@@ -61,14 +60,18 @@
                echo "</br> Non sei iscritto a nessuno dei corsi disponibili nella nostra palestra!";
 		}
 		if($counter == 1)
-		    echo $backpanel;
+		    echo "</div>
+                    </form>
+					<div class=\"group\">
+						<button class=\"button\" onclick=\"window.location.href='userPanel.php'\" title=\"Torna al pannello utente\">Torna al pannello utente!</button>
+					</div></div></div></div></div></div></div>";
 		else
 		    echo "</div>
 					<div class=\"group\">
 						<input tabindex=$tabindex title=\"Procedi con la richiesta\" type=\"submit\" class=\"button\" value=\"Procedi\"/>
 						</div>
 					</form>
-				</div></div></div></div></div>";
+				</div></div></div></div></div></div></div>";
 	}
 	else {
 		echo $notAdmin;

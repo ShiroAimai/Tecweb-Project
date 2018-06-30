@@ -1,55 +1,57 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">AGGIUNGI FATTURA</h1>
-</div>
-<div class="FormContainer">
-	<div class="containerChild">
-		<div class="leftContent">
-			<h1>Nuova Fattura</h1>
-			<p>Inserisci il codice utente e i relativi dati per inserire una nuova fattura</p>
-		</div>
-		<div class="signupOverlay"></div>
+<div id="corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">AGGIUNGI FATTURA</h1>
 	</div>
-	<div class="containerChild">
-		<div class="loginWrap">
-			<div class="login-html">
-				<a href="gestisciUtenti.php" title="Ritorna alla gestione degli utenti"><span id="exit">&#215;</span></a>
-				<div class="login-form">							
-					<form id="userForm" action="fatturaAggiunta.php" method="post">
-						<div class="group">
-							<label for="userCode" class="label">Codice utente</label>
-							<input tabindex="10" title="Inserisci il codice utente" name="userCode" id="userCode" type="number" class="input" required />
-						</div>
-						<div class="group">
-							<label for="mesi" class="label">Mesi <span lang="en">Fitness</span></label>
-							<select tabindex="20" title="Seleziona il numero di mesi" onchange="changeMesi()" name="mesi" id="mesi" class="input" >
-								<option value="0">0</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-								<option value="11">11</option>
-								<option value="12">12</option>
-							</select>
+	<div class="FormContainer">
+		<div class="containerChild">
+			<div class="leftContent">
+				<h1>Nuova Fattura</h1>
+				<p>Inserisci il codice utente e i relativi dati per inserire una nuova fattura</p>
+			</div>
+			<div class="signupOverlay"></div>
+		</div>
+		<div class="containerChild">
+			<div class="loginWrap">
+				<div class="login-html">
+					<a href="gestisciUtenti.php" title="Ritorna alla gestione degli utenti"><span id="exit">&#215;</span></a>
+					<div class="login-form">							
+						<form id="userForm" action="fatturaAggiunta.php" method="post">
+							<div class="group">
+								<label for="userCode" class="label">Codice utente</label>
+								<input tabindex="10" title="Inserisci il codice utente" name="userCode" id="userCode" type="number" class="input" required />
+							</div>
+							<div class="group">
+								<label for="mesi" class="label">Mesi <span lang="en">Fitness</span></label>
+								<select tabindex="20" title="Seleziona il numero di mesi" onchange="changeMesi()" name="mesi" id="mesi" class="input" >
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
 
-						</div>
-						<div class="group">
-							<label for="entrate" class="label">Entrate Corsi</label>
-							<input tabindex="30" title="Inserisci il numero di entrate" onchange="changeEntrate()" name="entrate" id="entrate" type="number" min="0" max="100" value="0" class="input" />
-						</div>
-						<div class="group">
-							<label for="importo" class="label">Importo</label>
-							<input tabindex="40" title="Importo fattura" name="importo" id="importo" value="0" type="number" min="0" max="1080" class="input" required />
-						</div>
-						<div class="group">
-							<input tabindex="50" title="Inserisci fattura" type="submit" class="button" value="Inserisci fattura"/>
-						</div>
-					</form>
+							</div>
+							<div class="group">
+								<label for="entrate" class="label">Entrate Corsi</label>
+								<input tabindex="30" title="Inserisci il numero di entrate" onchange="changeEntrate()" name="entrate" id="entrate" type="number" min="0" max="100" value="0" class="input" />
+							</div>
+							<div class="group">
+								<label for="importo" class="label">Importo</label>
+								<input tabindex="40" title="Importo fattura" name="importo" id="importo" value="0" type="number" min="0" max="1080" class="input" required />
+							</div>
+							<div class="group">
+								<input tabindex="50" title="Inserisci fattura" type="submit" class="button" value="Inserisci fattura"/>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

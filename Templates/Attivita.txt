@@ -1,77 +1,79 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">ATTIVIT&Agrave;</h1>
-	<p> Alla <span lang="en">Body Evolution</span> ti offriamo svariate attivit&agrave; per migliorare la tua forma!<br />Scegli un corso per saperne di pi&ugrave; </p>
-</div>
-
-<div id="powerpump">
-	<div id="PowerpumpCourseContent" class="titleCourseContent">
-		<img class="iconAtt" src="../IMAGES/icone/power1.png" alt="icona alzatore pesi"/>
-		<p class="titleAttPower"><span lang="en">Power Pump</span></p>
+<div id="corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">ATTIVIT&Agrave;</h1>
+		<p> Alla <span lang="en">Body Evolution</span> ti offriamo svariate attivit&agrave; per migliorare la tua forma!<br />Scegli un corso per saperne di pi&ugrave; </p>
 	</div>
-	<img class="courseimg" src="../IMAGES/powerpump.jpg" alt="powepump immagine"/>
-	<div class="textAttContainer">
-		<div class="testoAtt">
-			<p>TONIFICAZIONE - MODELLAMENTO DELLA FIGURA - GLUTEI SODI E TONICI - AUMENTO RESISTENZA</p>
-			<p>Corso di gruppo divertente e completo per dimagrire e tonificarsi su base muscolare.<br /><br />Un allenamento mirano alla tonificazione muscolare e delle forza resistente attraverso il costante utilizzo del bilanciere a peso regolabile, cavigliere e pesetti, <span lang="en">squat</span>, trazioni, distensioni, spinte con colonne sonore che allieteranno la lezione.<br /><br />Esercizi completi ti faranno riscoprire il tuo corpo, donando nuova energia e vitalit&agrave; alla tua figura.
-			</br></br>La lezione dura 45 minuti.</p>
+
+	<div id="powerpump">
+		<div id="PowerpumpCourseContent" class="titleCourseContent">
+			<img class="iconAtt" src="../IMAGES/icone/power1.png" alt="icona alzatore pesi"/>
+			<p class="titleAttPower"><span lang="en">Power Pump</span></p>
+		</div>
+		<img class="courseimg" src="../IMAGES/powerpump.jpg" alt="powepump immagine"/>
+		<div class="textAttContainer">
+			<div class="testoAtt">
+				<p>TONIFICAZIONE - MODELLAMENTO DELLA FIGURA - GLUTEI SODI E TONICI - AUMENTO RESISTENZA</p>
+				<p>Corso di gruppo divertente e completo per dimagrire e tonificarsi su base muscolare.<br /><br />Un allenamento mirano alla tonificazione muscolare e delle forza resistente attraverso il costante utilizzo del bilanciere a peso regolabile, cavigliere e pesetti, <span lang="en">squat</span>, trazioni, distensioni, spinte con colonne sonore che allieteranno la lezione.<br /><br />Esercizi completi ti faranno riscoprire il tuo corpo, donando nuova energia e vitalit&agrave; alla tua figura.
+				</br></br>La lezione dura 45 minuti.</p>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div id="spinning">
-	<div id="SpinningCourseContent" class="titleCourseContent">
-		<img class="iconAtt" src="../IMAGES/icone/spinning1.png" alt="icona uomo in bicicletta"/>
-		<p class="titleAttSpinning"><span lang="en">Spinning</span></p>
-	</div>
-	<img class="courseimg" src="../IMAGES/spinning.jpg" alt="powepump"/>
-	<div class="textAttContainer">
-		<div class="testoAtt">
-			<p>GRUPPO - DIVERTIMENTO - BICICLETTA STAZIONARIA - INTENSIT&Agrave; PEDALATA - CONSUMO CALORICO</p>
-			<p>Lo <span lang="en">spinning</span> &egrave; una attivit&agrave; aerobica di gruppo, divertente e coinvolgente, attraverso dei percorsi virtuali creati con video e <span lang="en">tour</span> paesaggistici, con l'iscritto che utilizzando una bicicletta stazionaria, pu&ograve; migliorare le proprie capacit&agrave; organiche attraverso concentrazione e coinvolgimento portando la mente a superare la fatica fisica.<br /><br />La pedalata a varie velocit&agrave;, diretta dall'Istruttore e unita alla tecnica di concentrazione e coinvolgimento del gruppo, rendono piacevole e divertente la lezione.<br /><br /> Le lezioni durano 45 minuti e grazie all'ottimo allenamento aerobico portano a un grosso dispendio calorico (500-800 caloreie a lezione).</p>
+	<div id="spinning">
+		<div id="SpinningCourseContent" class="titleCourseContent">
+			<img class="iconAtt" src="../IMAGES/icone/spinning1.png" alt="icona uomo in bicicletta"/>
+			<p class="titleAttSpinning"><span lang="en">Spinning</span></p>
+		</div>
+		<img class="courseimg" src="../IMAGES/spinning.jpg" alt="powepump"/>
+		<div class="textAttContainer">
+			<div class="testoAtt">
+				<p>GRUPPO - DIVERTIMENTO - BICICLETTA STAZIONARIA - INTENSIT&Agrave; PEDALATA - CONSUMO CALORICO</p>
+				<p>Lo <span lang="en">spinning</span> &egrave; una attivit&agrave; aerobica di gruppo, divertente e coinvolgente, attraverso dei percorsi virtuali creati con video e <span lang="en">tour</span> paesaggistici, con l'iscritto che utilizzando una bicicletta stazionaria, pu&ograve; migliorare le proprie capacit&agrave; organiche attraverso concentrazione e coinvolgimento portando la mente a superare la fatica fisica.<br /><br />La pedalata a varie velocit&agrave;, diretta dall'Istruttore e unita alla tecnica di concentrazione e coinvolgimento del gruppo, rendono piacevole e divertente la lezione.<br /><br /> Le lezioni durano 45 minuti e grazie all'ottimo allenamento aerobico portano a un grosso dispendio calorico (500-800 caloreie a lezione).</p>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div id="fitboxe">
-	<div id="FitboxeCourseContent" class="titleCourseContent">
-		<img class="iconAtt" src="../IMAGES/icone/fitboxe1.png" alt="icona alzatore pesi"/>
-		<p class="titleAttFitBoxe"> <span lang="en">Fit Boxe</span></p>
-	</div>
-	<img class="courseimg" src="../IMAGES/fitBoxe.jpg" alt="fitboxe immagine"/>
-	<div class="textAttContainer">
-		<div class="testoAtt">
-			<p> DIMAGRIRE - PREVENIRE MALATTIA CARDIOVASCOLARI - RASSODARE - RILLASSARSI E SCARICARE TENSIONI- DIVERTIRSI - IMPARARE A DIFENDERSI</p>
-			<p>Attivit&agrave; di gruppo: esplosiva, divertente e liberatoria. <br></br>Ogni lezione unisce l'aerobica alle arti marziali. Calci, pugni, ginocchiate, gomitate in un coinvolgente crescendo musicale che trasforma le tecniche di combattimento in una danza fatale.<br /><br />
-			Questa disciplina, giocosa e coinvolgente, consente di scaricare in maniera positiva l'aggressivit&agrave; accumulata nella vita di tutti i giorni. Il risultato &egrave; un <span lang="en">mix</span> di benessere e piacere che ci permette di essere in forma imparando a difendersi.<br /><br />
-			&Egrave; uno sport praticabile ad ogni et&agrave;, migliora la forma fisica attraverso un allenamento aerobico. La lezione dura 45 minuti.</p>
+	<div id="fitboxe">
+		<div id="FitboxeCourseContent" class="titleCourseContent">
+			<img class="iconAtt" src="../IMAGES/icone/fitboxe1.png" alt="icona alzatore pesi"/>
+			<p class="titleAttFitBoxe"> <span lang="en">Fit Boxe</span></p>
+		</div>
+		<img class="courseimg" src="../IMAGES/fitBoxe.jpg" alt="fitboxe immagine"/>
+		<div class="textAttContainer">
+			<div class="testoAtt">
+				<p> DIMAGRIRE - PREVENIRE MALATTIA CARDIOVASCOLARI - RASSODARE - RILLASSARSI E SCARICARE TENSIONI- DIVERTIRSI - IMPARARE A DIFENDERSI</p>
+				<p>Attivit&agrave; di gruppo: esplosiva, divertente e liberatoria. <br></br>Ogni lezione unisce l'aerobica alle arti marziali. Calci, pugni, ginocchiate, gomitate in un coinvolgente crescendo musicale che trasforma le tecniche di combattimento in una danza fatale.<br /><br />
+				Questa disciplina, giocosa e coinvolgente, consente di scaricare in maniera positiva l'aggressivit&agrave; accumulata nella vita di tutti i giorni. Il risultato &egrave; un <span lang="en">mix</span> di benessere e piacere che ci permette di essere in forma imparando a difendersi.<br /><br />
+				&Egrave; uno sport praticabile ad ogni et&agrave;, migliora la forma fisica attraverso un allenamento aerobico. La lezione dura 45 minuti.</p>
+			</div>
 		</div>
 	</div>
-</div>
-	
-<div id="jumpfit">
-	<div id="JumpfitCourseContent" class="titleCourseContent">
-		<img class="iconAtt" src="../IMAGES/icone/jumpfit1.png" alt="icona alzatore pesi"/>
-		<p class="titleAttJumpFit"> <span lang="en">Jump Fit</span></p>
-	</div>
-	<img class="courseimg" src="../IMAGES/jumpfit.jpg" alt="jumpfit immagine"/>
-	<div class="textAttContainer">
-		<div class="testoAtt">
-			<p>DIVERTIMENTO - TONIFICAZIONE - SENSO DI EQUILIBRIO - BRUCIARE GRASSO - SVAGO ASSOLUTO</p>
-			<p>Attivit&agrave; aerobica di gruppo ad impatto zero che incrementa la circolazione del sangue e aumenta le capacit&agrave; di cuore e polmoni.<br></br> Migliora il senso di equilibrio; rinforza i vostri muscoli; fornisce un effetto aerobico; vi distende quando siete tesi e vi rimette in forma quando siete stanchi. Ottimo per perdere peso velocemente divertendosi. Le articolazioni si rafforzano senza subire lo stress del impatto a terra.<br /><br /> Ideale a tutte le et&agrave;, per chu vuole rimettersi in forma e bruciare grasso e calorie ritorndando bambino.<br /><br /> Salti a ritmo di musica allieteranno l'allenamento della durata di 45 minuti.</p>
+		
+	<div id="jumpfit">
+		<div id="JumpfitCourseContent" class="titleCourseContent">
+			<img class="iconAtt" src="../IMAGES/icone/jumpfit1.png" alt="icona alzatore pesi"/>
+			<p class="titleAttJumpFit"> <span lang="en">Jump Fit</span></p>
+		</div>
+		<img class="courseimg" src="../IMAGES/jumpfit.jpg" alt="jumpfit immagine"/>
+		<div class="textAttContainer">
+			<div class="testoAtt">
+				<p>DIVERTIMENTO - TONIFICAZIONE - SENSO DI EQUILIBRIO - BRUCIARE GRASSO - SVAGO ASSOLUTO</p>
+				<p>Attivit&agrave; aerobica di gruppo ad impatto zero che incrementa la circolazione del sangue e aumenta le capacit&agrave; di cuore e polmoni.<br></br> Migliora il senso di equilibrio; rinforza i vostri muscoli; fornisce un effetto aerobico; vi distende quando siete tesi e vi rimette in forma quando siete stanchi. Ottimo per perdere peso velocemente divertendosi. Le articolazioni si rafforzano senza subire lo stress del impatto a terra.<br /><br /> Ideale a tutte le et&agrave;, per chu vuole rimettersi in forma e bruciare grasso e calorie ritorndando bambino.<br /><br /> Salti a ritmo di musica allieteranno l'allenamento della durata di 45 minuti.</p>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div id="step">
-	<div id="StepCourseContent" class="titleCourseContent">
-		<img class="iconAtt" src="../IMAGES/icone/step1.png" alt="icona step"/>
-		<p class="titleAttStep"> <span lang="en">Step</span></p>
-	</div>
-	<img class="courseimg" src="../IMAGES/step.jpg" alt="step immagine"/>
-	<div class="textAttContainer">
-		<div class="testoAtt">
-			<p>PERDITA DI PESO - DIVERTIMENTO - TONIFICAZIONE - AUMENTO COORDINAZIONE</p>
-			<p>La lezione di <span lang="en">step</span> prevede una serie di esercizi dinamici di salita e discesa dalla piattaforma seguendo un ritmo costante scandito dalla musica e dai comandi dell'istruttore.<br /><br /> L'attivit&agrave; eseguita sullo <span lang="en">step</span> migliora l'efficienza dell'apparato cardio-vascolare e nello stesso tempo si agisce sullo stato tonico-trofico degli arti inferiori con un lavoro di alta intensit&agrave;, ma a basso impatto.<br /><br /> Ogni lezione ha durata pari a 45 minuti. Le coreografie permettono di divertirsi e scaricare gli stress producendo un ottimo consumo calorico. Alla fine di ogni lezione daremo spazio ad esercizi per glutei e addominali. Divertimento assicurato e risultati evidenti.</p>
+	<div id="step">
+		<div id="StepCourseContent" class="titleCourseContent">
+			<img class="iconAtt" src="../IMAGES/icone/step1.png" alt="icona step"/>
+			<p class="titleAttStep"> <span lang="en">Step</span></p>
+		</div>
+		<img class="courseimg" src="../IMAGES/step.jpg" alt="step immagine"/>
+		<div class="textAttContainer">
+			<div class="testoAtt">
+				<p>PERDITA DI PESO - DIVERTIMENTO - TONIFICAZIONE - AUMENTO COORDINAZIONE</p>
+				<p>La lezione di <span lang="en">step</span> prevede una serie di esercizi dinamici di salita e discesa dalla piattaforma seguendo un ritmo costante scandito dalla musica e dai comandi dell'istruttore.<br /><br /> L'attivit&agrave; eseguita sullo <span lang="en">step</span> migliora l'efficienza dell'apparato cardio-vascolare e nello stesso tempo si agisce sullo stato tonico-trofico degli arti inferiori con un lavoro di alta intensit&agrave;, ma a basso impatto.<br /><br /> Ogni lezione ha durata pari a 45 minuti. Le coreografie permettono di divertirsi e scaricare gli stress producendo un ottimo consumo calorico. Alla fine di ogni lezione daremo spazio ad esercizi per glutei e addominali. Divertimento assicurato e risultati evidenti.</p>
+			</div>
 		</div>
 	</div>
 </div>

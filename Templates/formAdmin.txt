@@ -1,44 +1,46 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">AGGIUNGI AMMINISTRATORE</h1>
-</div>
-<div class="FormContainer">
-	<div class="containerChild">
-		<div class="leftContent">
-			<h1>Nuovo Amministratore</h1>
-			<p>Inserisci le credenziali di accesso per registrare un nuovo amministratore</p>
-		</div>
-		<div class="signupOverlay"></div>
+<div id="corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">AGGIUNGI AMMINISTRATORE</h1>
 	</div>
-	<div class="containerChild">
-		<div class="loginWrap">
-			<div class="login-html">
-				<a href="gestisciAdmin.php" title="Ritorna alla gestione degli admin"><span id="exit">&#215;</span></a>
-				<div class="login-form">							
-					<form id="userForm" action="registrazioneAdmin.php" method="post">
-						<div class="group">
-							<label for="userName" class="label">Nome</label>
-							<input tabindex="10" title="Inserisci il nome" name="userName" id="userName" type="text" class="input" required />
-						</div>
-						<div class="group">
-							<label for="userSurname" class="label">Cognome</label>
-							<input tabindex="20" title="Inserisci il cognome" name="userSurname" id="userSurname" type="text" class="input" required />
-						</div>
-						<div class="group">
-							<label for="pass" class="label"><span lang="en">Password</span></label>
-							<input tabindex="30" name="pass" id="pass" type="password" class="input" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Inserisci la password, deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera" required />
-						</div>
-						<div class="group">
-							<label for="confirmPass" class="label">Ripeti <span lang="en">Password</span></label>
-							<input tabindex="40" title="Reinserisci la password" name="confirmPass" id="confirmPass" type="password" class="input" required />
-						</div>
-						<div class="group">
-							<label for="userMail" class="label"><span lang="en">Email</span></label>
-							<input tabindex="50" title="Inserisci l'indirizzo mail" name="userMail" id="userMail" type="email" class="input" required />
-						</div>
-						<div class="group">
-							<input tabindex="60" title="Inserisci admin" type="submit" class="button" value="Inserisci admin"/>
-						</div>
-					</form>
+	<div class="FormContainer">
+		<div class="containerChild">
+			<div class="leftContent">
+				<h1>Nuovo Amministratore</h1>
+				<p>Inserisci le credenziali di accesso per registrare un nuovo amministratore</p>
+			</div>
+			<div class="signupOverlay"></div>
+		</div>
+		<div class="containerChild">
+			<div class="loginWrap">
+				<div class="login-html">
+					<a href="gestisciAdmin.php" title="Ritorna alla gestione degli admin"><span id="exit">&#215;</span></a>
+					<div class="login-form">							
+						<form id="userForm" action="registrazioneAdmin.php" method="post">
+							<div class="group">
+								<label for="userName" class="label">Nome</label>
+								<input tabindex="10" title="Inserisci il nome" name="userName" id="userName" type="text" class="input" required />
+							</div>
+							<div class="group">
+								<label for="userSurname" class="label">Cognome</label>
+								<input tabindex="20" title="Inserisci il cognome" name="userSurname" id="userSurname" type="text" class="input" required />
+							</div>
+							<div class="group">
+								<label for="pass" class="label"><span lang="en">Password</span></label>
+								<input tabindex="30" name="pass" id="pass" type="password" class="input" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Inserisci la password, deve essere lunga almeno 8 caratteri e contenere almeno un numero e una lettera" required />
+							</div>
+							<div class="group">
+								<label for="confirmPass" class="label">Ripeti <span lang="en">Password</span></label>
+								<input tabindex="40" title="Reinserisci la password" name="confirmPass" id="confirmPass" type="password" class="input" required />
+							</div>
+							<div class="group">
+								<label for="userMail" class="label"><span lang="en">Email</span></label>
+								<input tabindex="50" title="Inserisci l'indirizzo mail" name="userMail" id="userMail" type="email" class="input" required />
+							</div>
+							<div class="group">
+								<input tabindex="60" title="Inserisci admin" type="submit" class="button" value="Inserisci admin"/>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

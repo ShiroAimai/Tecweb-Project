@@ -1,20 +1,21 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">Gestisci <span lang="en">news</span></h1>
-	<p>Gestisci le <span lang="en">news</span> presenti nel sito</p>
-</div>
-<div id="back"><a href="adminPanel.php" title="Ritorna la pannello amministratore">Torna al pannello amministratore</a></div>
-<div id="btnContainer">
-	<a href="formNews.php" title="Inserisci una news"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi <span lang="en">news</span></button></a>
-</div>
-<div class="tableResponsive"> 
-<table summary="Tabella contenente la lista delle news presenti nel sito">
-<thead>
-    <tr>
-        <th scope="col">Titolo</th>
-        <th scope="col">Data</th>
-        <th scope="col">Immagine</th>
-        <th scope="col">Descrizione</th>
-		<th class="notPrint" scope="col">Elimina <span lang="en">news</span></th>
-    </tr>
-</thead>
-<tbody>
+<div id="Corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">Gestisci <span lang="en">news</span></h1>
+		<p>Gestisci le <span lang="en">news</span> presenti nel sito</p>
+	</div>
+	<div id="back"><a href="adminPanel.php" title="Ritorna la pannello amministratore">Torna al pannello amministratore</a></div>
+	<div id="btnContainer">
+		<a href="formNews.php" title="Inserisci una news"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi <span lang="en">news</span></button></a>
+	</div>
+	<div class="tableResponsive"> 
+	<table summary="Tabella contenente la lista delle news presenti nel sito">
+	<thead>
+		<tr>
+			<th scope="col">Titolo</th>
+			<th scope="col">Data</th>
+			<th scope="col">Immagine</th>
+			<th scope="col">Descrizione</th>
+			<th class="notPrint" scope="col">Elimina <span lang="en">news</span></th>
+		</tr>
+	</thead>
+	<tbody>

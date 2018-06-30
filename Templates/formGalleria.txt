@@ -1,32 +1,34 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">AGGIUNGI FOTO</h1>
-</div>
-<div class="FormContainer">
-	<div class="containerChild">
-		<div class="leftContent">
-			<h1>Nuovo Album Galleria</h1>
-			<p>Inserisci una o pi&ugrave; immagini da inserire nel nuovo album</p>
-		</div>
-		<div class="signupOverlay"></div>
+<div id="corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">AGGIUNGI FOTO</h1>
 	</div>
-	<div class="containerChild">
-		<div class="loginWrap">
-			<div class="login-html">
-				<a href="gestisciAlbum.php" title="Ritorna alla gestione degli album"><span id="exit">&#215;</span></a>
-				<div class="login-form">							
-					<form id="galleryForm" method="post" action="../PHP/aggiuntaGalleria.php" enctype="multipart/form-data">
-						<div class="group">
-							<label for="galleryName" class="label">Nome album</label>
-							<input tabindex="10" title="Inserisci nome album" name="galleryName" id="galleryName" type="text" class="input" required />
-						</div>
-						<div class="group">
-							<label for="galleryFile[]" class="label"><span lang="en">File</span></label>
-							<input tabindex="20" name="galleryFile[]" id="galleryFile[]" type="file" class="input" accept="image/*" title="Seleziona fino a 50 foto per un massimo di 200 megabyte" multiple required />
-						</div>
-						<div class="group">
-							<input tabindex="30" title="Inserisci file" type="submit" class="button" value="Inserisci file"/>
-						</div>
-					</form>
+	<div class="FormContainer">
+		<div class="containerChild">
+			<div class="leftContent">
+				<h1>Nuovo Album Galleria</h1>
+				<p>Inserisci una o pi&ugrave; immagini da inserire nel nuovo album</p>
+			</div>
+			<div class="signupOverlay"></div>
+		</div>
+		<div class="containerChild">
+			<div class="loginWrap">
+				<div class="login-html">
+					<a href="gestisciAlbum.php" title="Ritorna alla gestione degli album"><span id="exit">&#215;</span></a>
+					<div class="login-form">							
+						<form id="galleryForm" method="post" action="../PHP/aggiuntaGalleria.php" enctype="multipart/form-data">
+							<div class="group">
+								<label for="galleryName" class="label">Nome album</label>
+								<input tabindex="10" title="Inserisci nome album" name="galleryName" id="galleryName" type="text" class="input" required />
+							</div>
+							<div class="group">
+								<label for="galleryFile[]" class="label"><span lang="en">File</span></label>
+								<input tabindex="20" name="galleryFile[]" id="galleryFile[]" type="file" class="input" accept="image/*" title="Seleziona fino a 50 foto per un massimo di 200 megabyte" multiple required />
+							</div>
+							<div class="group">
+								<input tabindex="30" title="Inserisci file" type="submit" class="button" value="Inserisci file"/>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

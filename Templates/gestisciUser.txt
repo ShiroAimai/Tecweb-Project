@@ -1,24 +1,25 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">Gestisci Utenti</h1>
-	<p>Gestisci gli utenti registrati</p>
-</div>
-<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
-<div id="btnContainer">
-	<a href="formUtente.php" title="Inserisci un nuovo utente"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
-	<a href="formFattura.php" title="Inserisci una fattura"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
-</div>
-<div class="tableResponsive"> 
-<table summary="Tabella contenente la lista degli utenti registrati">
-<thead>
-    <tr>
-        <th scope="col">Codice Utente</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Cognome</th>
-        <th scope="col"><span lang="en">Password</span></th>
-        <th scope="col"><span lang="en">Email</span></th>
-		<th class="notPrint" scope="col">Elimina Utente</th>
-		<th class="notPrint" scope="col">Aggiungi scheda</th>
-		<th class="notPrint" scope="col">Fatture</th>
-    </tr>
-</thead>
-<tbody>
+<div id="Corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">Gestisci Utenti</h1>
+		<p>Gestisci gli utenti registrati</p>
+	</div>
+	<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
+	<div id="btnContainer">
+		<a href="formUtente.php" title="Inserisci un nuovo utente"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
+		<a href="formFattura.php" title="Inserisci una fattura"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
+	</div>
+	<div class="tableResponsive"> 
+	<table summary="Tabella contenente la lista degli utenti registrati">
+	<thead>
+		<tr>
+			<th scope="col">Codice Utente</th>
+			<th scope="col">Nome</th>
+			<th scope="col">Cognome</th>
+			<th scope="col"><span lang="en">Password</span></th>
+			<th scope="col"><span lang="en">Email</span></th>
+			<th class="notPrint" scope="col">Elimina Utente</th>
+			<th class="notPrint" scope="col">Aggiungi scheda</th>
+			<th class="notPrint" scope="col">Fatture</th>
+		</tr>
+	</thead>
+	<tbody>

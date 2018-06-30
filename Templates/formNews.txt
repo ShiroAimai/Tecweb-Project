@@ -1,36 +1,38 @@
-<div id="Presentazione">
-	<h1 id="titoloPagina">AGGIUNGI<span lang="en">NEWS</span></h1>
-</div>
-<div class="FormContainer">
-	<div class="containerChild">
-		<div class="leftContent">
-			<h1>Nuova <span lang="en">News</span></h1>
-			<p>Inserisci titolo, immagine e descrizione di una nuova <span lang="en">news</span></p>
-		</div>
-		<div class="signupOverlay"></div>
+<div id="corpo">
+	<div id="Presentazione">
+		<h1 id="titoloPagina">AGGIUNGI<span lang="en">NEWS</span></h1>
 	</div>
-	<div class="containerChild">
-		<div class="loginWrap">
-			<div class="login-html">
-				<a href="gestisciNews.php" title="Ritorna alla gestione delle news"><span id="exit">&#215;</span></a>
-				<div class="login-form">							
-					<form id="newsForm" method="post" action="../PHP/aggiuntaNews.php" enctype="multipart/form-data">
-						<div class="group">
-							<label for="newsTitle" class="label">Titolo <span lang="en">news</span></label>
-							<input tabindex="10" title="Inserisci il titolo" name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16" required />
-						</div>
-						<div class="group">
-							<label for="newsImage" class="label">Immagine</label>
-							<input tabindex="20" title="Seleziona l'immagine" name="newsImage" id="newsImage" type="file" class="input" accept="image/*" required />
-						</div>
-						<div class="group">
-							<label for="newsDescription" class="label">Descrizione</label>
-							<textarea tabindex="30" title="Inserisci il testo" name="newsDescription" id="newsDescription" rows="5" cols="50" class="input" required ></textarea>
-						</div>
-						<div class="group">
-							<input tabindex="40" title="Inserisci la news" type="submit" class="button" value="Inserisci news"/>
-						</div>
-					</form>
+	<div class="FormContainer">
+		<div class="containerChild">
+			<div class="leftContent">
+				<h1>Nuova <span lang="en">News</span></h1>
+				<p>Inserisci titolo, immagine e descrizione di una nuova <span lang="en">news</span></p>
+			</div>
+			<div class="signupOverlay"></div>
+		</div>
+		<div class="containerChild">
+			<div class="loginWrap">
+				<div class="login-html">
+					<a href="gestisciNews.php" title="Ritorna alla gestione delle news"><span id="exit">&#215;</span></a>
+					<div class="login-form">							
+						<form id="newsForm" method="post" action="../PHP/aggiuntaNews.php" enctype="multipart/form-data">
+							<div class="group">
+								<label for="newsTitle" class="label">Titolo <span lang="en">news</span></label>
+								<input tabindex="10" title="Inserisci il titolo" name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16" required />
+							</div>
+							<div class="group">
+								<label for="newsImage" class="label">Immagine</label>
+								<input tabindex="20" title="Seleziona l'immagine" name="newsImage" id="newsImage" type="file" class="input" accept="image/*" required />
+							</div>
+							<div class="group">
+								<label for="newsDescription" class="label">Descrizione</label>
+								<textarea tabindex="30" title="Inserisci il testo" name="newsDescription" id="newsDescription" rows="5" cols="50" class="input" required ></textarea>
+							</div>
+							<div class="group">
+								<input tabindex="40" title="Inserisci la news" type="submit" class="button" value="Inserisci news"/>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

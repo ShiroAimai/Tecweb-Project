@@ -59,6 +59,7 @@
 		echo "</tbody>";
 		echo "</table>";
 		echo $closediv;
+		echo $closediv;
 	}
 	else {
 		echo $notAdmin;

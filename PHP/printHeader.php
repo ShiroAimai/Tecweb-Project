@@ -17,6 +17,7 @@
 		<body>
 			<div id=\"contenitore\">
 				<div id=\"Intestazione\">
+					<a href=\"#corpo\" id=\"saltaMenu\">Vai al corpo della pagina</a>
 					<a class=\"sandwich\" title=\"Mostra barra di navigazione\" onclick=\"menuResponsive()\">&#9776;</a>
 		");
 		if($title == 'Home') {
@@ -28,11 +29,11 @@
 			<div class=\"printable\"> BODY EVOLUTION FITNESS</div>");
 		}
 		if($title == 'Area Personale') {
-			echo("<a class=\"active\"><img id=\"user\" src=\"../IMAGES/user.png\"/></a>
+			echo("<a class=\"active\"><img id=\"user\" src=\"../IMAGES/user.png\" alt=\"Immagine login\"/></a>
 			<div class=\"Menu\" id=\"myMenu\">");
 		}
 		else {
-			echo("<a href=\"areaPersonale.php\"><img id=\"user\" src=\"../IMAGES/user.png\" title=\"Vai all'area personale\"/></a>
+			echo("<a href=\"areaPersonale.php\"><img id=\"user\" src=\"../IMAGES/user.png\" title=\"Vai all'area personale\" alt=\"Immagine login\"/></a>
 			<div class=\"Menu\" id=\"myMenu\">");
 		}
 		if($title == 'Home') {

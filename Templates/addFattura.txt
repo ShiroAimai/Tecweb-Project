@@ -1,8 +1,9 @@
-<div class="message">
-	<div class="messagetext">
-		<h2>Fattura inserita con successo!</h2>
-		<a class="messagelink1" href="gestisciUtenti.php" title="Ritorna alla gestione degli utenti">Ritorna alla gestione degli utenti</a>
-		<a class="messagelink2" href="Home.php" title="Ritorna alla homepage">Ritorna alla <span lang="en">homepage</span></a>
+<div id="corpo">
+	<div class="message">
+		<div class="messagetext">
+			<h2>Fattura inserita con successo!</h2>
+			<a class="messagelink1" href="gestisciUtenti.php" title="Ritorna alla gestione degli utenti">Ritorna alla gestione degli utenti</a>
+			<a class="messagelink2" href="Home.php" title="Ritorna alla homepage">Ritorna alla <span lang="en">homepage</span></a>
+		</div>	
 	</div>
-	
 </div>

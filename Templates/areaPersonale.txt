@@ -1,30 +1,32 @@
-<div class="FormContainer">
-	<div class="containerChild">
-		<div class="leftContent">
-			<h1>Area Personale</h1>
-			<p>Inserisci le tue credenziali per accedere all'area personale</p>
+<div id="corpo">
+	<div class="FormContainer">
+		<div class="containerChild">
+			<div class="leftContent">
+				<h1>Area Personale</h1>
+				<p>Inserisci le tue credenziali per accedere all'area personale</p>
+			</div>
+			<div class="signupOverlay"></div>
 		</div>
-		<div class="signupOverlay"></div>
-	</div>
-	<div class="containerChild">
-		<div class="loginWrap">
-			<div class="login-html">
-				<h1><span lang="en">Sign In</span></h1>
-				<a href="../PHP/Home.php" title="Ritorna alla homepage"><span id="exit">&#215;</span></a>
-				<div class="login-form">
-					<form id="PersonalAreaForm" action="../PHP/login.php" method="post">
-						<div class="group">
-							<label for="userCode" class="label">Codice utente</label>
-							<input tabindex="10" title="Inserisci il codice utente" name="userCode" id="userCode" type="text" class="input" required />
-						</div>
-						<div class="group">
-							<label lang="en" for="pass" class="label">Password</label>
-							<input tabindex="20" title="Inserisci la password" name="pass" id="pass" type="password" class="input" required />
-						</div>
-						<div class="group">
-							<input tabindex="30" title="Procedi col login" type="submit" class="button" value="Sign In"/>
-						</div>
-					</form>
+		<div class="containerChild">
+			<div class="loginWrap">
+				<div class="login-html">
+					<h1><span lang="en">Sign In</span></h1>
+					<a href="../PHP/Home.php" title="Ritorna alla homepage"><span id="exit">&#215;</span></a>
+					<div class="login-form">
+						<form id="PersonalAreaForm" action="../PHP/login.php" method="post">
+							<div class="group">
+								<label for="userCode" class="label">Codice utente</label>
+								<input tabindex="10" title="Inserisci il codice utente" name="userCode" id="userCode" type="text" class="input" required />
+							</div>
+							<div class="group">
+								<label lang="en" for="pass" class="label">Password</label>
+								<input tabindex="20" title="Inserisci la password" name="pass" id="pass" type="password" class="input" required />
+							</div>
+							<div class="group">
+								<input tabindex="30" title="Procedi col login" type="submit" class="button" value="Sign In"/>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -43,6 +43,12 @@ INTESTAZIONE
 	width: 9.19em;
 }
 
+#saltaMenu {
+    position:absolute;
+    height:0;
+    overflow:hidden;   
+}
+
 .Menu {
 	overflow: hidden;
 	font-size: 15px;

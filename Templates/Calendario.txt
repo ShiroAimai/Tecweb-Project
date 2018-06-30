@@ -1,158 +1,160 @@
-<img id="imgcal" src="../IMAGES/sfondocalendario.png" alt="sfondo pagina calendario palestra"/>
-<div id="Presentazione">
-	<h1 id="titoloPagina">CALENDARIO</h1>
-	<p> Guarda gli orari dei corsi offerti alla <span lang="en">Body Evolution</span>!</p>
-</div>
-<div class="calendario">
-	<div class="vocecalendario">
-		<h2 class="giornovoce">Orari:</h2>
-		<div class="separator"></div>
-		<ul class="orari">
-			<li>10:15-11:15</li>
-			<li>19:00-19:45</li>
-			<li>19:45-20:30</li>
-		</ul>
+<div id="corpo">
+	<img id="imgcal" src="../IMAGES/sfondocalendario.png" alt="sfondo pagina calendario palestra"/>
+	<div id="Presentazione">
+		<h1 id="titoloPagina">CALENDARIO</h1>
+		<p> Guarda gli orari dei corsi offerti alla <span lang="en">Body Evolution</span>!</p>
 	</div>
-	<div class="vocecalendario">
-		<h2 class="giornovoce">Lunedì</h2>
-		<div class="separator"></div>
-		<ul class="oraricorsi">
-			<li>
-				<a href="Attivita.php#spinning" title="Vai alla sezione spinning">
-					<div class="spinning">
-						<p class="corsovoce"><span lang="en">Spinning</span></p>
-					</div>
-				</a>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#step" title="Vai alla sezione step">
-					<div class="step">
-						<p class="corsovoce"><span lang="en">Step</span></p>
-					</div>
-				</a>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#jumpfit" title="Vai alla sezione jump fit">
-					<div class="jumpfit">
-						<p class="corsovoce"><span lang="en">Jump Fit</span></p>
-					</div>
-				</a>
-			</li>
-		</ul>
+	<div class="calendario">
+		<div class="vocecalendario">
+			<h2 class="giornovoce">Orari:</h2>
+			<div class="separator"></div>
+			<ul class="orari">
+				<li>10:15-11:15</li>
+				<li>19:00-19:45</li>
+				<li>19:45-20:30</li>
+			</ul>
+		</div>
+		<div class="vocecalendario">
+			<h2 class="giornovoce">Lunedì</h2>
+			<div class="separator"></div>
+			<ul class="oraricorsi">
+				<li>
+					<a href="Attivita.php#spinning" title="Vai alla sezione spinning">
+						<div class="spinning">
+							<p class="corsovoce"><span lang="en">Spinning</span></p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#step" title="Vai alla sezione step">
+						<div class="step">
+							<p class="corsovoce"><span lang="en">Step</span></p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#jumpfit" title="Vai alla sezione jump fit">
+						<div class="jumpfit">
+							<p class="corsovoce"><span lang="en">Jump Fit</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="vocecalendario">
+			<h2 class="giornovoce">Martedì</h2>
+			<div class="separator"></div>
+			<ul class="oraricorsi">
+				<li>
+						<div class="corsovuoto">
+							<p class="corsovoce"></p>
+						</div>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#spinning" title="Vai alla sezione spinning">
+						<div class="spinning">
+							<p class="corsovoce"><span lang="en">Spinning</span></p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#fitboxe" title="Vai alla sezione fit boxe">
+						<div class="fitboxe">
+							<p class="corsovoce"><span lang="en">Fit Boxe</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="vocecalendario">
+			<h2 class="giornovoce">Mercoledì</h2>
+			<div class="separator"></div>
+			<ul class="oraricorsi">
+				<li>
+					<a href="Attivita.php#powerpump" title="Vai alla sezione power pump">
+						<div class="powerpump">
+							<p class="corsovoce"><span lang="en">Power Pump</span></p>
+						</div>
+					</a>
+				</li>
+						
+				<li>
+					<a href="Attivita.php#step" title="Vai alla sezione step">
+						<div class="step">
+							<p class="corsovoce"><span lang="en">Step</span></p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#jumpfit" title="Vai alla sezione jump fit">
+						<div class="jumpfit">
+							<p class="corsovoce"><span lang="en">Jump Fit</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="vocecalendario">
+			<h2 class="giornovoce">Giovedì</h2>
+			<div class="separator"></div>
+			<ul class="oraricorsi">
+				<li>
+					<a href="Attivita.php#jumpfit" title="Vai alla sezione jump fit">
+						<div class="jumpfit">
+							<p class="corsovoce"><span lang="en">Jump Fit</span></p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#powerpump" title="Vai alla sezione power pump">
+						<div class="powerpump">
+							<p class="corsovoce"><span lang="en">Power Pump</span></p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#fitboxe" title="Vai alla sezione fit boxe">
+						<div class="fitboxe">
+							<p class="corsovoce"><span lang="en">Fit Boxe</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="vocecalendario">
+			<h2 class="giornovoce">Venerdì</h2>
+			<div class="separator"></div>
+			<ul class="oraricorsi">
+				<li>
+						<div class="corsovuoto">
+							<p class="corsovoce"></p>
+						</div>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#spinning" title="Vai alla sezione spinning">
+						<div class="spinning">
+							<p class="corsovoce"><span lang="en">Spinning</span></p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="Attivita.php#step" title="Vai alla sezione step">
+						<div class="step">
+							<p class="corsovoce"><span lang="en">Step</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<h1 id="salafitness">LA SALA <span lang="en">FITNESS</span> E' SEMPRE DISPONIBILE NEGLI ORARI DI APERTURA DELLA PALESTRA</h1>
 	</div>
-	<div class="vocecalendario">
-		<h2 class="giornovoce">Martedì</h2>
-		<div class="separator"></div>
-		<ul class="oraricorsi">
-			<li>
-					<div class="corsovuoto">
-						<p class="corsovoce"></p>
-					</div>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#spinning" title="Vai alla sezione spinning">
-					<div class="spinning">
-						<p class="corsovoce"><span lang="en">Spinning</span></p>
-					</div>
-				</a>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#fitboxe" title="Vai alla sezione fit boxe">
-					<div class="fitboxe">
-						<p class="corsovoce"><span lang="en">Fit Boxe</span></p>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="vocecalendario">
-		<h2 class="giornovoce">Mercoledì</h2>
-		<div class="separator"></div>
-		<ul class="oraricorsi">
-			<li>
-				<a href="Attivita.php#powerpump" title="Vai alla sezione power pump">
-					<div class="powerpump">
-						<p class="corsovoce"><span lang="en">Power Pump</span></p>
-					</div>
-				</a>
-			</li>
-					
-			<li>
-				<a href="Attivita.php#step" title="Vai alla sezione step">
-					<div class="step">
-						<p class="corsovoce"><span lang="en">Step</span></p>
-					</div>
-				</a>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#jumpfit" title="Vai alla sezione jump fit">
-					<div class="jumpfit">
-						<p class="corsovoce"><span lang="en">Jump Fit</span></p>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="vocecalendario">
-		<h2 class="giornovoce">Giovedì</h2>
-		<div class="separator"></div>
-		<ul class="oraricorsi">
-			<li>
-				<a href="Attivita.php#jumpfit" title="Vai alla sezione jump fit">
-					<div class="jumpfit">
-						<p class="corsovoce"><span lang="en">Jump Fit</span></p>
-					</div>
-				</a>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#powerpump" title="Vai alla sezione power pump">
-					<div class="powerpump">
-						<p class="corsovoce"><span lang="en">Power Pump</span></p>
-					</div>
-				</a>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#fitboxe" title="Vai alla sezione fit boxe">
-					<div class="fitboxe">
-						<p class="corsovoce"><span lang="en">Fit Boxe</span></p>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="vocecalendario">
-		<h2 class="giornovoce">Venerdì</h2>
-		<div class="separator"></div>
-		<ul class="oraricorsi">
-			<li>
-					<div class="corsovuoto">
-						<p class="corsovoce"></p>
-					</div>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#spinning" title="Vai alla sezione spinning">
-					<div class="spinning">
-						<p class="corsovoce"><span lang="en">Spinning</span></p>
-					</div>
-				</a>
-			</li>
-			
-			<li>
-				<a href="Attivita.php#step" title="Vai alla sezione step">
-					<div class="step">
-						<p class="corsovoce"><span lang="en">Step</span></p>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<h1 id="salafitness">LA SALA <span lang="en">FITNESS</span> E' SEMPRE DISPONIBILE NEGLI ORARI DI APERTURA DELLA PALESTRA</h1>
 </div>
