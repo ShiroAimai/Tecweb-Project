@@ -26,7 +26,6 @@
 	echo $closediv;
 	echo $attivita;
 	echo $foot;
-	echo $accordion;
 	echo $closebody;
 	echo $closehtml;
 ?>
