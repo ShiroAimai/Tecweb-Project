@@ -7,7 +7,7 @@
 	$login = "<button title=\"Effettua il login\" onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
 	$adminPanel = "<button title=\"Vai al pannello amministratore\" onclick=\"window.location.href='adminPanel.php'\"><span lang=\"en\">Admin Panel</span></button>";
 	$userPanel = "<button title=\"Vai al pannello utente\" onclick=\"window.location.href='userPanel.php'\"><span lang=\"en\">User Panel</span</button>";
-	$closediv = "</div>"
+	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
 	register('user');
@@ -31,9 +31,11 @@
 	if(count($scheda_trovata) > 0){
 		unlink('../Uploads/upSchede/'.$scheda_trovata[0]['LinkScheda']);
 		query("UPDATE scheda SET LinkScheda='$pdf' WHERE CodiceUtente='$user'");
+
 	}
 	else {
 		query("INSERT INTO scheda (CodiceUtente, LinkScheda) VALUES ('$user', '$pdf')");
+
 	}
 	echo $addScheda;
 
