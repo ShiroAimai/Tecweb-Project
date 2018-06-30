@@ -2,14 +2,15 @@
 	require_once('config.php');
 	$userCode = $_SESSION['user_code'];
     $counter=1;
+	$check=0;
 
-	if (isset($_POST['submit'])) {
-		while(isset($_POST["select".$counter.""])) {
-			query("DELETE FROM iscrizionecorso WHERE CodiceUtente='$userCode' AND NomeCorso='".$_POST["select".$counter.""]."'");
-			$counter++;
-		}
+	while(isset($_POST["select".$counter.""])) {
+		query("DELETE FROM iscrizionecorso WHERE CodiceUtente='$userCode' AND NomeCorso='".$_POST["select".$counter.""]."'");
+		$counter++;
+		$check++;
 	}
-	else {
+
+	if($check == 0) {
 		header("Location: operazioneFallita.php");
 		die();
 	}

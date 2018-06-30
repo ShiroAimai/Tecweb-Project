@@ -2,7 +2,7 @@
 	require_once('config.php');
     require_once('printHeader.php');
     $foot = file_get_contents("../Templates/footer.txt");
-	$formcorsi = file_get_contents("../Templates/formAggCorsi.txt");
+	$formcorsi = file_get_contents("../Templates/formCorsi.txt");
 	$disiscrizFormCorsi = file_get_contents("../Templates/disiscrizFormCorsi.txt");
 	$backpanel =  file_get_contents("../Templates/backPanelUtente.txt");
 	$notAdmin = file_get_contents("../Templates/notAdmin.txt");
