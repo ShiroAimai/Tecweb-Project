@@ -14,7 +14,7 @@
 			<div class="testoAtt">
 				<p>TONIFICAZIONE - MODELLAMENTO DELLA FIGURA - GLUTEI SODI E TONICI - AUMENTO RESISTENZA</p>
 				<p>Corso di gruppo divertente e completo per dimagrire e tonificarsi su base muscolare.<br /><br />Un allenamento mirano alla tonificazione muscolare e delle forza resistente attraverso il costante utilizzo del bilanciere a peso regolabile, cavigliere e pesetti, <span lang="en">squat</span>, trazioni, distensioni, spinte con colonne sonore che allieteranno la lezione.<br /><br />Esercizi completi ti faranno riscoprire il tuo corpo, donando nuova energia e vitalit&agrave; alla tua figura.
-				</br></br>La lezione dura 45 minuti.</p>
+				<br /><br />La lezione dura 45 minuti.</p>
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 		<div class="textAttContainer">
 			<div class="testoAtt">
 				<p> DIMAGRIRE - PREVENIRE MALATTIA CARDIOVASCOLARI - RASSODARE - RILLASSARSI E SCARICARE TENSIONI- DIVERTIRSI - IMPARARE A DIFENDERSI</p>
-				<p>Attivit&agrave; di gruppo: esplosiva, divertente e liberatoria. <br></br>Ogni lezione unisce l'aerobica alle arti marziali. Calci, pugni, ginocchiate, gomitate in un coinvolgente crescendo musicale che trasforma le tecniche di combattimento in una danza fatale.<br /><br />
+				<p>Attivit&agrave; di gruppo: esplosiva, divertente e liberatoria. <br /><br />Ogni lezione unisce l'aerobica alle arti marziali. Calci, pugni, ginocchiate, gomitate in un coinvolgente crescendo musicale che trasforma le tecniche di combattimento in una danza fatale.<br /><br />
 				Questa disciplina, giocosa e coinvolgente, consente di scaricare in maniera positiva l'aggressivit&agrave; accumulata nella vita di tutti i giorni. Il risultato &egrave; un <span lang="en">mix</span> di benessere e piacere che ci permette di essere in forma imparando a difendersi.<br /><br />
 				&Egrave; uno sport praticabile ad ogni et&agrave;, migliora la forma fisica attraverso un allenamento aerobico. La lezione dura 45 minuti.</p>
 			</div>
@@ -58,7 +58,7 @@
 		<div class="textAttContainer">
 			<div class="testoAtt">
 				<p>DIVERTIMENTO - TONIFICAZIONE - SENSO DI EQUILIBRIO - BRUCIARE GRASSO - SVAGO ASSOLUTO</p>
-				<p>Attivit&agrave; aerobica di gruppo ad impatto zero che incrementa la circolazione del sangue e aumenta le capacit&agrave; di cuore e polmoni.<br></br> Migliora il senso di equilibrio; rinforza i vostri muscoli; fornisce un effetto aerobico; vi distende quando siete tesi e vi rimette in forma quando siete stanchi. Ottimo per perdere peso velocemente divertendosi. Le articolazioni si rafforzano senza subire lo stress del impatto a terra.<br /><br /> Ideale a tutte le et&agrave;, per chu vuole rimettersi in forma e bruciare grasso e calorie ritorndando bambino.<br /><br /> Salti a ritmo di musica allieteranno l'allenamento della durata di 45 minuti.</p>
+				<p>Attivit&agrave; aerobica di gruppo ad impatto zero che incrementa la circolazione del sangue e aumenta le capacit&agrave; di cuore e polmoni.<br /><br /> Migliora il senso di equilibrio; rinforza i vostri muscoli; fornisce un effetto aerobico; vi distende quando siete tesi e vi rimette in forma quando siete stanchi. Ottimo per perdere peso velocemente divertendosi. Le articolazioni si rafforzano senza subire lo stress del impatto a terra.<br /><br /> Ideale a tutte le et&agrave;, per chu vuole rimettersi in forma e bruciare grasso e calorie ritorndando bambino.<br /><br /> Salti a ritmo di musica allieteranno l'allenamento della durata di 45 minuti.</p>
 			</div>
 		</div>
 	</div>

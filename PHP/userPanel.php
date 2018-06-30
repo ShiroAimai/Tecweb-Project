@@ -7,7 +7,7 @@
 	$logout = "<button id=\"logoutButton\" title=\"Effettua il logout\" onclick=\"window.location.href='logout.php'\"><span lang=\"en\">Logout</span></button>";
 	$login = "<button title=\"Effettua il login\" onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
 	$adminPanel = "<button title=\"Vai al pannello amministratore\" onclick=\"window.location.href='adminPanel.php'\"><span lang=\"en\">Admin Panel</span></button>";
-	$userPanel = "<button title=\"Vai al pannello utente\" onclick=\"window.location.href='userPanel.php'\"><span lang=\"en\">User Panel</span</button>";
+	$userPanel = "<button title=\"Vai al pannello utente\" onclick=\"window.location.href='userPanel.php'\"><span lang=\"en\">User Panel</span></button>";
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
@@ -34,7 +34,7 @@
 		$data = mysqli_fetch_assoc($query);
 		$name =$data['Nome'];
 		$cognome =$data['Cognome'];
-		$stampa ="<div id=\"datiUtente\"class=\"bloccoDati\">";
+		$stampa ="<div id=\"datiUtente\" class=\"bloccoDati\">";
 		$stampa .="<div class=\"userData\">Dati utente:</div>";
 		$stampa .="<div class=\"TabUtente\">";
 		$stampa .="<div  id=\"NomeUtente\"><div class=\"EntryUtente\"> Nome: </div><div class=\"EntryTab\">&nbsp;" .$data['Nome']."&ensp;</div></div>";
@@ -50,7 +50,7 @@
 		$stampa .="<div class=\"TabUtente\">";
 		$stampa .="<div class=\"EntryUtente\"> Validit&agrave; abbonamento:</div>";
 		if($data['ScadenzaFitness'] >= date("Y-m-d"))
-			$stampa .="<div id\"scadenzaAbbonamento\" class=\"EntryTab\">&nbsp;" .$data['ScadenzaFitness']."&ensp;</div>";
+			$stampa .="<div id=\"scadenzaAbbonamento\" class=\"EntryTab\">&nbsp;" .$data['ScadenzaFitness']."&ensp;</div>";
 		else
 			$stampa .=" <div class=\"EntryTab\">&nbsp;Scaduto!&ensp;</div>";
 		$stampa .="<div class=\"EntryUtente\"> Entrate corsi:</div><div class=\"EntryTab\">&nbsp;" .$data['EntrateCorsi']."&ensp;</div></div>";
@@ -76,13 +76,16 @@
 		//Button iscrizione corsi
 		$stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Iscriviti a nuovi corsi:</div>";
-		$stampa .="<a href=\"formCorsi.php?attr=0\" title=\"Iscriviti a nuovi corsi\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
+		$stampa .= "<input type=\"button\" class=\"btn btn-10 btn-sep icon-addcorso\" value=\"Iscriviti a nuovi corsi\" onclick=\"window.location.href = 'formCorsi.php?attr=0' \">";
+		//"<a href=\"formCorsi.php?attr=0\" title=\"Iscriviti a nuovi corsi\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
+		
 		$stampa .="</div>";
 
 		//Button disiscrizione corsi
         $stampa .="<div id=\"discrizioneCorsi\" class=\"bloccoDati\">";
         $stampa .= "<div class=\"userData\">Cancella la tua iscrizione ai corsi:</div>";
-        $stampa .="<a href=\"formCorsi.php?attr=1\" title=\"Disiscriviti dai corsi\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
+        $stampa .="<input type=\"button\" class=\"btn btn-12 btn-sep icon-removecorso\" value=\"Disiscriviti dai corsi\" onclick=\"window.location.href = 'formCorsi.php?attr=1' \">";
+        //"<a href=\"formCorsi.php?attr=1\" title=\"Disiscriviti dai corsi\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
         $stampa .="</div>";
 
 
