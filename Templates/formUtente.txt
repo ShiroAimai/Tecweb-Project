@@ -12,7 +12,7 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="Gestisci utenti.php"><span id="exit">&#215;</span></a>
+				<a href="gestisciUtenti.php"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
 					<form id="userForm" action="registrazioneUtente.php" method="post">
 						<div class="group">
