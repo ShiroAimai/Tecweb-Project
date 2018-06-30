@@ -7,7 +7,6 @@
 	$login = "<button onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
 	$adminPanel = "<button onclick=\"window.location.href='adminPanel.php'\"><span lang=\"en\">Admin Panel</span></button>";
 	$userPanel = "<button onclick=\"window.location.href='userPanel.php'\"><span lang=\"en\">User Panel</span</button>";
-	$accordion = "<script src=\"../JS/Accordion.js\"></script>";
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
