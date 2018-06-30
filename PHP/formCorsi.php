@@ -4,7 +4,6 @@
     $foot = file_get_contents("../Templates/footer.txt");
 	$formcorsi = file_get_contents("../Templates/formAggCorsi.txt");
 	$disiscrizFormCorsi = file_get_contents("../Templates/disiscrizFormCorsi.txt");
-	$endFormCorsi = file_get_contents("../Templates/endFormCorsi.txt");
 	$backpanel =  file_get_contents("../Templates/backPanelUtente.txt");
 	$notAdmin = file_get_contents("../Templates/notAdmin.txt");
 	$logout = "<button id=\"logoutButton\" onclick=\"window.location.href='logout.php'\"><span lang=\"en\">Logout</span></button>";
@@ -33,14 +32,16 @@
 
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'user') {
         $counter = 1;
+		$tabindex = 10;
         if($_GET['attr'] == 0) {
             $corsiDisp = select("SELECT NomeCorso from corso where NomeCorso <> all(SELECT NomeCorso from iscrizionecorso where CodiceUtente = ".$_SESSION['user_code'].")");
 		    echo $formcorsi;
 
 		    while($counter <= sizeOf($corsiDisp))
 		        {
-		            echo " </br><input type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiDisp[$counter-1]['NomeCorso']."\" /> ".$corsiDisp[$counter-1]['NomeCorso']."";
+		            echo " </br><input tabindex=$tabindex title=\"Seleziona ".$corsiDisp[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiDisp[$counter-1]['NomeCorso']."\" /> ".$corsiDisp[$counter-1]['NomeCorso']."";
 		            $counter++;
+					$tabindex = $tabindex + 10;
 		         }
 
 		    if($counter ==1)
@@ -52,8 +53,9 @@
 
             while($counter <= sizeOf($corsiRimov))
             {
-                echo " </br><input type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiRimov[$counter-1]['NomeCorso']."\" /> ".$corsiRimov[$counter-1]['NomeCorso']." ";
+                echo " </br><input tabindex=$tabindex title=\"Seleziona ".$corsiRimov[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiRimov[$counter-1]['NomeCorso']."\" /> ".$corsiRimov[$counter-1]['NomeCorso']." ";
                 $counter++;
+				$tabindex = $tabindex + 10;
             }
             if($counter ==1)
                echo "</br> Non sei iscritto a nessuno dei corsi disponibili nella nostra palestra!";
@@ -61,7 +63,12 @@
 		if($counter == 1)
 		    echo $backpanel;
 		else
-		    echo $endFormCorsi;
+		    echo "</div>
+					<div class=\"group\">
+						<input tabindex=$tabindex title=\"Procedi con la richiesta\" type=\"submit\" class=\"button\" value=\"Procedi\"/>
+						</div>
+					</form>
+				</div></div></div></div></div>";
 	}
 	else {
 		echo $notAdmin;

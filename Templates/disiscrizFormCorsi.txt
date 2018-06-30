@@ -13,7 +13,7 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="userPanel.php"><span id="exit">&#215;</span></a>
+				<a href="userPanel.php" title="Ritorna al pannello utente"><span id="exit">&#215;</span></a>
 				<div class="login-form">
 					<form id="userForm" action="rimozioneCorso.php" method="post">
 						<div class="group">

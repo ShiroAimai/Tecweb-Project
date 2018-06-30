@@ -2,12 +2,12 @@
 	<h1 id="titoloPagina">Gestisci <span lang="en">Admin</span></h1>
 	<p>Gestisci gli amministratori registrati</p>
 </div>
-<div id="back"><a href="adminPanel.php">Torna al pannello amministratore</a></div>
+<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
 <div id="btnContainer">
-	<a href="formAdmin.php"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi <span lang="en">admin</span></button></a>
+	<a href="formAdmin.php" title="Inserisci nuovo admin"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi <span lang="en">admin</span></button></a>
 </div>
 <div class="tableResponsive"> 
-<table>
+<table summary="Tabella contenente la lista degli admin registrati">
 <thead>
     <tr>
         <th scope="col">Codice Utente</th>

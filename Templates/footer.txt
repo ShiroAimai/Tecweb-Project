@@ -1,7 +1,7 @@
 ﻿<a href='#' id="backTop" title="Torna su">&#9650;</a>
 <div id="Footer">
 	<div id="footersx">
-		<a href="Home.php"><img id="logofooter" src="../IMAGES/logo.png" alt="Body Evolution logo"/></a>
+		<a href="Home.php" title="Vai alla homepage"><img id="logofooter" src="../IMAGES/logo.png" alt="Logo Body Evolution"/></a>
 		<div class="printablefooter"> BODY EVOLUTION FITNESS</div>
 		<p><span class="blocco">Via Cavour, 18</span>
 		<span class="blocco">30014 Cavarzere (VE)</span>
@@ -11,7 +11,7 @@
 		<p><span class="blocco">Lun./Ven. dalle 9.00 alle 22.00</span>
 		<span class="blocco">Sab. dalle 10.00 alle 12.00 e dalle 15.00 alle 18.00</span>
 		<span class="blocco">Dom. dalle 10.00 alle 12.00</span></p>
-		<a href="https://it-it.facebook.com/BodyEvolutionPalestra"><img id="logofacebook" src="../IMAGES/facebook.png" alt="Link pagina Facebook"/></a>
+		<a href="https://it-it.facebook.com/BodyEvolutionPalestra" title="Vai alla pagina facebook della palestra"><img id="logofacebook" src="../IMAGES/facebook.png" alt="Logo Facebook"/></a>
 	</div>
 	<div id="footercx">
 		<h3>INFORMAZIONI</h3>
@@ -26,8 +26,8 @@
 		</ul>
 	</div>
 	<div id="footerdx">
-		<img id="Coni" src="../IMAGES/Coni.png" alt="Affiliazione Coni"/>
-		<img id="asi" src="../IMAGES/Asi.png" alt="Affiliazione asi"/>
+		<img id="Coni" src="../IMAGES/Coni.png" alt="Logo Affiliazione Coni"/>
+		<img id="asi" src="../IMAGES/Asi.png" alt="Logo Affiliazione asi"/>
 		<p>La “<span lang="en">BODY EVOLUTION</span> <acronym title="Associazione Sportiva Dilettantistica">A.S.D.</acronym>” &egrave; un'associazione senza scopo di lucro affiliata agli enti/federazioni di promozione
 		sportiva riconosciuti dal <acronym title="Comitato Olimpico Nazionale Italiano">CONI</acronym> come: ASI – Associazioni Sportive Sociali Italiane – affiliazione n. EPS VEN-VE0093
 		registro Coni n. 77776. L’attivit&agrave; di propaganda &egrave; in funzione agli scopi istituzionali e necessaria per lo sviluppo

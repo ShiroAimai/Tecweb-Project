@@ -2,13 +2,13 @@
 	<h1 id="titoloPagina">Gestisci Utenti</h1>
 	<p>Gestisci gli utenti registrati</p>
 </div>
-<div id="back"><a href="adminPanel.php">Torna al pannello amministratore</a></div>
+<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
 <div id="btnContainer">
-	<a href="formUtente.php"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
-	<a href="formFattura.php"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
+	<a href="formUtente.php" title="Inserisci un nuovo utente"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
+	<a href="formFattura.php" title="Inserisci una fattura"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
 </div>
 <div class="tableResponsive"> 
-<table>
+<table summary="Tabella contenente la lista degli utenti registrati">
 <thead>
     <tr>
         <th scope="col">Codice Utente</th>

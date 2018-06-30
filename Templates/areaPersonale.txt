@@ -10,19 +10,19 @@
 		<div class="loginWrap">
 			<div class="login-html">
 				<h1><span lang="en">Sign In</span></h1>
-				<a href="../PHP/Home.php"><span id="exit">&#215;</span></a>
+				<a href="../PHP/Home.php" title="Ritorna alla homepage"><span id="exit">&#215;</span></a>
 				<div class="login-form">
 					<form id="PersonalAreaForm" action="../PHP/login.php" method="post">
 						<div class="group">
 							<label for="userCode" class="label">Codice utente</label>
-							<input name="userCode" id="userCode" type="text" class="input" required />
+							<input tabindex="10" title="Inserisci il codice utente" name="userCode" id="userCode" type="text" class="input" required />
 						</div>
 						<div class="group">
-							<label for="pass" class="label">Password</label>
-							<input name="pass" id="pass" type="password" class="input" required />
+							<label lang="en" for="pass" class="label">Password</label>
+							<input tabindex="20" title="Inserisci la password" name="pass" id="pass" type="password" class="input" required />
 						</div>
 						<div class="group">
-							<input type="submit" class="button" value="Sign In"/>
+							<input tabindex="30" title="Procedi col login" type="submit" class="button" value="Sign In"/>
 						</div>
 					</form>
 				</div>

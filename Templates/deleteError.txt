@@ -1,7 +1,7 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Non è possibile rimuovere il tuo stesso <span lang="en">account</span>!</h2>
-		<a class="messagelink1" href="gestisciAdmin.php">Ritorna alla gestione degli <span lang="en">admin</span></a>
-		<a class="messagelink2" href="Home.php">Ritorna alla <span lang="en">homepage</span></a>
+		<a class="messagelink1" href="gestisciAdmin.php" title="Ritorna alla gestione degli admin">Ritorna alla gestione degli <span lang="en">admin</span></a>
+		<a class="messagelink2" href="Home.php" title="Ritorna alla homepage">Ritorna alla <span lang="en">homepage</span></a>
 	</div>
 </div>

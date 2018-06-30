@@ -1,8 +1,8 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Iscrizione ai corsi selezionati avvenuta con successo!</h2>
-		<a class="messagelink1" href="userPanel.php">Ritorna al pannello utente</a>
-		<a class="messagelink2" href="Home.php">Ritorna alla <span lang="en">homepage</span></a>
+		<a class="messagelink1" href="userPanel.php" title="Ritorna al pannello utente">Ritorna al pannello utente</a>
+		<a class="messagelink2" href="Home.php" title="Ritorna alla homepage">Ritorna alla <span lang="en">homepage</span></a>
 	</div>
 	
 </div>

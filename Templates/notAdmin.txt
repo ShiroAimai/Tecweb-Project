@@ -1,7 +1,7 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Non sei loggato o non hai i privilegi necessari per accedere a questa pagina!</h2>
-		<a class="messagelink1" href="areaPersonale.php">Effettua il <span lang="en">login</span></a>
-		<a class="messagelink2" href="Home.php">Ritorna alla <span lang="en">homepage</span></a>
+		<a class="messagelink1" href="areaPersonale.php" title="Vai alla pagina di login">Effettua il <span lang="en">login</span></a>
+		<a class="messagelink2" href="Home.php" title="Ritorna alla homepage">Ritorna alla <span lang="en">homepage</span></a>
 	</div>
 </div>

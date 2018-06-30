@@ -2,9 +2,9 @@
 	<h1 id="titoloPagina">Lista Fatture</h1>
 	<p>Visualizza la lista delle fatture relative all'utente</p>
 </div>
-<div id="back"><a href="gestisciUtenti.php">Torna alla gestione degli utenti</a></div>
+<div id="back"><a href="gestisciUtenti.php" title="Ritorna alla gestione degli utenti">Torna alla gestione degli utenti</a></div>
 <div class="tableResponsive"> 
-<table>
+<table summary="Tabella contenente la lista delle fatture relative all'utente">
 <thead>
     <tr>
         <th scope="col">Numero Ricevuta</th>

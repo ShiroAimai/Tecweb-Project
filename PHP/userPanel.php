@@ -76,13 +76,13 @@
 		//Button iscrizione corsi
 		$stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Iscriviti a nuovi corsi:</div>";
-		$stampa .="<a href=\"formCorsi.php?attr=0\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
+		$stampa .="<a href=\"formCorsi.php?attr=0\" title=\"Iscriviti a nuovi corsi\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
 		$stampa .="</div>";
 
 		//Button disiscrizione corsi
         $stampa .="<div id=\"discrizioneCorsi\" class=\"bloccoDati\">";
         $stampa .= "<div class=\"userData\">Cancella la tua iscrizione ai corsi:</div>";
-        $stampa .="<a href=\"formCorsi.php?attr=1\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
+        $stampa .="<a href=\"formCorsi.php?attr=1\" title=\"Disiscriviti dai corsi\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
         $stampa .="</div>";
 
 
@@ -93,7 +93,7 @@
 		$stampa .= "<div class=\"userData\">La tua scheda:</div>";
 		if($data['LinkScheda']!=null) {
 			//mi cerca la scheda nella dir schede col nome corrispondente salvato sul db
-			$stampa .= "<a href=\"../schede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\">";
+			$stampa .= "<a href=\"../schede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\" title=\"Scarica la tua scheda\">";
 			$stampa .= "<button class=\"btn btn-11 btn-sep icon-schedadownimg\">Scarica scheda</button></a>";
 		}
 		else

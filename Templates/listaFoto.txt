@@ -2,9 +2,9 @@
 	<h1 id="titoloPagina">Lista Foto</h1>
 	<p>Visualizza la lista delle foto relative all'album</p>
 </div>
-<div id="back"><a href="gestisciAlbum.php">Torna alla gestione degli album</a></div>
+<div id="back"><a href="gestisciAlbum.php" title="Ritorna alla gestione degli album">Torna alla gestione degli album</a></div>
 <div class="tableResponsive"> 
-<table>
+<table summary="Tabella contenente la lista delle foto relative all'album">
 <thead>
     <tr>
         <th scope="col">Album</th>

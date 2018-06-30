@@ -12,23 +12,23 @@
 	<div class="containerChild">
 		<div class="loginWrap">
 			<div class="login-html">
-				<a href="gestisciNews.php"><span id="exit">&#215;</span></a>
+				<a href="gestisciNews.php" title="Ritorna alla gestione delle news"><span id="exit">&#215;</span></a>
 				<div class="login-form">							
 					<form id="newsForm" method="post" action="../PHP/aggiuntaNews.php" enctype="multipart/form-data">
 						<div class="group">
 							<label for="newsTitle" class="label">Titolo <span lang="en">news</span></label>
-							<input name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16" required />
+							<input tabindex="10" title="Inserisci il titolo" name="newsTitle" id="newsTitle" type="text" class="input" maxlength="16" required />
 						</div>
 						<div class="group">
 							<label for="newsImage" class="label">Immagine</label>
-							<input name="newsImage" id="newsImage" type="file" class="input" accept="image/*" required />
+							<input tabindex="20" title="Seleziona l'immagine" name="newsImage" id="newsImage" type="file" class="input" accept="image/*" required />
 						</div>
 						<div class="group">
 							<label for="newsDescription" class="label">Descrizione</label>
-							<textarea name="newsDescription" id="newsDescription" rows="5" cols="50" class="input" required ></textarea>
+							<textarea tabindex="30" title="Inserisci il testo" name="newsDescription" id="newsDescription" rows="5" cols="50" class="input" required ></textarea>
 						</div>
 						<div class="group">
-							<input type="submit" class="button" value="Inserisci news"/>
+							<input tabindex="40" title="Inserisci la news" type="submit" class="button" value="Inserisci news"/>
 						</div>
 					</form>
 				</div>

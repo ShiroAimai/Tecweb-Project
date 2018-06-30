@@ -2,12 +2,12 @@
 	<h1 id="titoloPagina">Gestisci <span lang="en">news</span></h1>
 	<p>Gestisci le <span lang="en">news</span> presenti nel sito</p>
 </div>
-<div id="back"><a href="adminPanel.php">Torna al pannello amministratore</a></div>
+<div id="back"><a href="adminPanel.php" title="Ritorna la pannello amministratore">Torna al pannello amministratore</a></div>
 <div id="btnContainer">
-	<a href="formNews.php"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi <span lang="en">news</span></button></a>
+	<a href="formNews.php" title="Inserisci una news"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi <span lang="en">news</span></button></a>
 </div>
 <div class="tableResponsive"> 
-<table>
+<table summary="Tabella contenente la lista delle news presenti nel sito">
 <thead>
     <tr>
         <th scope="col">Titolo</th>

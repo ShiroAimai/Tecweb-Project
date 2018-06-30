@@ -1,8 +1,7 @@
 <div class="message">
 	<div class="messagetext">
 		<h2>Scheda aggiunta con successo!</h2>
-		<a class="messagelink1" href="adminPanel.php">Ritorna al pannello amministratore</a>
-		<a class="messagelink2" href="Home.php">Ritorna alla <span lang="en">homepage</span></a>
+		<a class="messagelink1" href="adminPanel.php" title="Ritorna al pannello amministratore">Ritorna al pannello amministratore</a>
+		<a class="messagelink2" href="Home.php" title="Ritorna alla homepage">Ritorna alla <span lang="en">homepage</span></a>
 	</div>
-	
 </div>
