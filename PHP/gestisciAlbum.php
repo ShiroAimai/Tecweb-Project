@@ -11,6 +11,7 @@
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
+	$id = 1;
 	
 	printHead('Gestisci album');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -47,27 +48,31 @@
 			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"eliminaGalleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria e le relative foto?');\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Elimina galleria</label>
-					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Elimina galleria ".$a['Album']."\" value=\"Elimina galleria\"/>
+					<label class=\"invisibleLabel\" for=\"" . $id . "\">Elimina galleria</label>
+					<input id=\"".$id."\" name=\"".$id."\" type=\"submit\"  title=\"Elimina galleria ".$a['Album']."\" value=\"Elimina galleria\"/>
 				</form>
 				</td>";
+				
+			$id++;
 				
 			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"rinominaGalleria.php\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"rename\">Rinomina galleria</label>
-					<input name=\"rename\" id=\"rename\" type=\"text\"  title=\"Inserisci il nuovo nome dell'album\" required />
-					<input type=\"submit\"  title=\"Rinomina galleria ".$a['Album']."\" value=\"Rinomina galleria\"/>
+					<label class=\"invisibleLabel\" for=\"rename".$a['Album']."\">Rinomina galleria</label>
+					<input name=\"rename".$a['Album']."\" type=\"text\"  title=\"Inserisci il nuovo nome dell'album\" required />
+					<input type=\"submit\" title=\"Rinomina galleria ".$a['Album']."\" value=\"Rinomina galleria\"/>
 				</form>
 				</td>";
 				
 			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"listaFoto.php?album=".$a['Album']."\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Vedi foto</label>
-					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Gestisci foto album\" value=\"Gestisi foto\"/>
+					<label class=\"invisibleLabel\" for=\"" . $id . "\">Vedi foto</label>
+					<input id=\"".$id."\" name=\"".$id."\" type=\"submit\"  title=\"Gestisci foto album\" value=\"Gestisi foto\"/>
 				</form>
 				</td>";
+				
+			$id++;
 		}
 		echo "</tbody>";
 		echo "</table>";

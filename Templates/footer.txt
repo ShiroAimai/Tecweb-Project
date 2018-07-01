@@ -7,14 +7,14 @@
 		<span class="blocco">30014 Cavarzere (VE)</span>
 		<span class="blocco">tel. 340 9473426</span>
 		<span class="blocco">body_evolution@libero.it</span></p>
-		<h3>ORARI PALESTRA</h3>
+		<h2>ORARI PALESTRA</h2>
 		<p><span class="blocco">Lun./Ven. dalle 9.00 alle 22.00</span>
 		<span class="blocco">Sab. dalle 10.00 alle 12.00 e dalle 15.00 alle 18.00</span>
 		<span class="blocco">Dom. dalle 10.00 alle 12.00</span></p>
 		<a href="https://it-it.facebook.com/BodyEvolutionPalestra" title="Vai alla pagina facebook della palestra"><img id="logofacebook" src="../IMAGES/facebook.png" alt="Logo Facebook"/></a>
 	</div>
 	<div id="footercx">
-		<h3>INFORMAZIONI</h3>
+		<h2>INFORMAZIONI</h2>
 		<ul>
 			<li>Prova GRATUITA per tutti i nuovi amici</li>
 			<li>SCHEDE di allenamento personalizzate e gratuite</li>

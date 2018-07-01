@@ -35,7 +35,7 @@
 	
 	while($row = mysqli_fetch_assoc($query)) {
 		$stampa = "<div class=\"newscont\">
-						<h3 class=\"titlenews\"> ".$row['Titolo']." </h3> 
+						<h2 class=\"titlenews\"> ".$row['Titolo']." </h2> 
 						<div class=\"corpopos\">
 							<p class=\"pubblicazione\">Pubblicato il ".$row['Data']."</p>
 							<img class=\"imgnews\" src=\"../Uploads/upNews/".$row['Immagine']."\" alt=\"Immagine della news\" /> 

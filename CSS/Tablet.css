@@ -74,11 +74,11 @@ INTESTAZIONE
 FOOTER
 =================*/
 
-#Footer h3 {
+#Footer h2 {
 	margin: 0;
 }
 
-#footersx h3 {
+#footersx h2 {
 	margin-top: 2em;
 }
 
@@ -86,7 +86,7 @@ FOOTER
 	width: 32%;
 }
 
-#footercx h3 {
+#footercx h2 {
 	margin-bottom: 1em;
 }
 

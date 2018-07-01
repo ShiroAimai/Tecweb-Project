@@ -29,10 +29,11 @@
 	
 	echo $closediv;
 	echo $closediv;
-	$title = "<div id=\"Presentazione\">
-				<h1 id=\"titoloPagina\">GALLERIA ALBUM</h1>
-				<p>Guarda le foto scattate dai nostri Trainer qui alla <span lang=\"en\">Body Evolution</span>!</p>
-			</div>";
+	$title = "<div id=\"corpo\">
+				<div id=\"Presentazione\">
+					<h1 id=\"titoloPagina\">GALLERIA ALBUM</h1>
+					<p>Guarda le foto scattate dai nostri Trainer qui alla <span lang=\"en\">Body Evolution</span>!</p>
+				</div>";
 	echo $title;	
 
     $opendiv = "<div class=\"gallerymain\">";
@@ -44,14 +45,14 @@
                 
                 if($aux==null)//caso in cui siamo appena entrati a prelevare nel database
                     {
-                    $stampa = "<a href=\"albumGalleria.php?album=".$row['Album']."\"><div class=\"album\"> <h3 class=\"albumname\">".$row['Album']."</h3><img class=\"galleryimg\" src=\"../Uploads/upGalleria/".$row['Album'].'/'.$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"></div></a>";
+                    $stampa = "<a href=\"albumGalleria.php?album=".$row['Album']."\"><div class=\"album\"> <h2 class=\"albumname\">".$row['Album']."</h2><img class=\"galleryimg\" src=\"../Uploads/upGalleria/".$row['Album'].'/'.$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"></div></a>";
                     // aggiungere il primo $row di ogni album
                         $aux=$row['Album'];
                     }
                 else if($row['Album']!=$aux)
                 {
                     echo $stampa;
-                    $stampa="<a href=\"albumGalleria.php?album=".$row['Album']."\"><div class=\"album\"> <h3 class=\"albumname\">".$row['Album']."</h3><img class=\"galleryimg\" src=\"../Uploads/upGalleria/".$row['Album'].'/'.$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"/></div></a>";
+                    $stampa="<a href=\"albumGalleria.php?album=".$row['Album']."\"><div class=\"album\"> <h2 class=\"albumname\">".$row['Album']."</h2><img class=\"galleryimg\" src=\"../Uploads/upGalleria/".$row['Album'].'/'.$row['NomeImmagine']."\" alt=\"Immagine dell'album ".$row['Album']."\"/></div></a>";
                     $aux=$row['Album'];
                 }
             
@@ -60,6 +61,7 @@
             
     echo $stampa;
     echo $closediv;
+	echo $closediv;
 	close_connection();
     echo $foot;
 	echo $closebody;

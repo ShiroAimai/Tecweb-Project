@@ -155,6 +155,6 @@
 				</li>
 			</ul>
 		</div>
-		<h1 id="salafitness">LA SALA <span lang="en">FITNESS</span> E' SEMPRE DISPONIBILE NEGLI ORARI DI APERTURA DELLA PALESTRA</h1>
+		<h2 id="salafitness">LA SALA <span lang="en">FITNESS</span> E' SEMPRE DISPONIBILE NEGLI ORARI DI APERTURA DELLA PALESTRA</h1>
 	</div>
 </div>

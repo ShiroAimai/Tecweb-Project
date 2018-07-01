@@ -78,7 +78,7 @@ FOOTER
 	position: relative;
 }
 
-#Footer h3 {
+#Footer h2 {
 	margin-top: 6%;
 	margin-bottom: 0;
 }
@@ -94,7 +94,7 @@ FOOTER
 	margin-left: 0;
 }
 
-#footercx h3 {
+#footercx h2 {
 	margin-top: 0;
 }
 
@@ -302,6 +302,10 @@ PAGINA GALLERIA
 
 .album {
 	height:10em;
+}
+
+.album .albumname {
+	font-size: 15px;
 }
 
 #imgsfondoneroa {

@@ -75,7 +75,7 @@
 			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"listaFatture.php?user=".$u['CodiceUtente']."\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Vedi fatture</label>
+					<label class=\"invisibleLabel\" for=\"" . $id . "\">Vedi fatture</label>
 					<input id=\"".$id."\" type=\"submit\"  title=\"Vedi le fatture dell'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Vedi fatture\"/>
 				</form>
 				</td>";

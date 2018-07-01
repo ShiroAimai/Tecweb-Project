@@ -25,6 +25,7 @@
 	echo $closediv;
 	echo $closediv;
 
+	echo "<div id=\"corpo\">";
 	echo "<div id=\"gallerypictitle\">";
 	echo "<h2>Album <span id=\"albumtitle\">".$_GET['album']."</span></h2>";
 	echo $goback;
@@ -44,7 +45,8 @@
 		}
 		echo $stampa;
 	}
-	echo $closediv;		
+	echo $closediv;
+	echo $closediv;	
 	
 	close_connection();	
 	echo $foot;
