@@ -55,7 +55,7 @@
 			echo("<a href=\"News.php\" title=\"Vai alle news\"><span lang=\"en\">News</span></a>");
 		}
 		if($title == 'Galleria' || $title == 'Galleria Foto') {
-			echo("<a class=\"active\">Galleria</a>>");
+			echo("<a class=\"active\">Galleria</a>");
 		}
 		else {
 			echo("<a href=\"Galleria.php\" title=\"Vai alla galleria\">Galleria</a>");
