@@ -35,7 +35,7 @@ INTESTAZIONE
 .sandwich {
 	position: absolute;
     left: 30px;
-    top: 18px;
+    top: 35px;
 	font-size: 50px;
 	display: block;
 	color: #DAAC5E;
@@ -45,7 +45,7 @@ INTESTAZIONE
 #user {
 	position: absolute;
     right: 30px;
-    top: 26px;
+    top: 45px;
 	width: 7%;
 	display: block;
 	color: #DAAC5E;
