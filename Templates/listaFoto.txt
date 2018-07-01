@@ -5,7 +5,7 @@
 	</div>
 	<div id="back"><a href="gestisciAlbum.php" title="Ritorna alla gestione degli album">Torna alla gestione degli album</a></div>
 	<div class="tableResponsive"> 
-	<table summary="Tabella contenente la lista delle foto relative all'album">
+	<table aria-label="Tabella contenente la lista delle foto relative all'album">
 	<thead>
 		<tr>
 			<th scope="col">Album</th>

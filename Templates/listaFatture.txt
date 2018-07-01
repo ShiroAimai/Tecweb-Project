@@ -5,7 +5,7 @@
 	</div>
 	<div id="back"><a href="gestisciUtenti.php" title="Ritorna alla gestione degli utenti">Torna alla gestione degli utenti</a></div>
 	<div class="tableResponsive"> 
-	<table summary="Tabella contenente la lista delle fatture relative all'utente">
+	<table aria-label="Tabella contenente la lista delle fatture relative all'utente">
 	<thead>
 		<tr>
 			<th scope="col">Numero Ricevuta</th>

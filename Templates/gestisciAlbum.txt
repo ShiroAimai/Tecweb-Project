@@ -5,10 +5,10 @@
 	</div>
 	<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
 	<div id="btnContainer">
-		<a href="formGalleria.php" title="Inserisci nuovo album"><button class="btn btn-3 btn-sep icon-addphoto">Aggiungi foto</button></a>
+		<a class="btn btn-3 btn-sep icon-addphoto" href="formGalleria.php" title="Inserisci nuovo album">Aggiungi foto</a>
 	</div>
 	<div class="tableResponsive"> 
-	<table summary="Tabella contenente la lista degli album presenti nel sito">
+	<table aria-label="Tabella contenente la lista degli album presenti nel sito">
 	<thead>
 		<tr>
 			<th scope="col">Album</th>

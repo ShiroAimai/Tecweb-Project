@@ -1005,6 +1005,7 @@ PULSANTI FORM
 	margin: 18px;
 	text-transform: uppercase;
 	font-weight: 700;
+	font-size:14px;
 	position: relative;
 	text-align: center;
 }

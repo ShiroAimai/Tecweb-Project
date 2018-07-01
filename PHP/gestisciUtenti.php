@@ -63,7 +63,7 @@
 				<form method=\"post\" action=\"aggiungiScheda.php\" enctype=\"multipart/form-data\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Aggiungi scheda</label>
-					<input id=\"".$u['CodiceUtente']."\" name=\"".$u['CodiceUtente']."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda all'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Aggiungi scheda\" onchange=\"form.submit()\"/>
+					<input id=\"".$u['CodiceUtente']."\" name=\"".$u['CodiceUtente']."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda all'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" onchange=\"form.submit()\"/>
 				</form>
 				</td>";
 				

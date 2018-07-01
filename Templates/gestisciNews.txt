@@ -5,10 +5,10 @@
 	</div>
 	<div id="back"><a href="adminPanel.php" title="Ritorna la pannello amministratore">Torna al pannello amministratore</a></div>
 	<div id="btnContainer">
-		<a href="formNews.php" title="Inserisci una news"><button class="btn btn-2 btn-sep icon-addnews">Aggiungi <span lang="en">news</span></button></a>
+		<a class="btn btn-2 btn-sep icon-addnews" href="formNews.php" title="Inserisci una news">Aggiungi <span lang="en">news</span></a>
 	</div>
 	<div class="tableResponsive"> 
-	<table summary="Tabella contenente la lista delle news presenti nel sito">
+	<table aria-label="Tabella contenente la lista delle news presenti nel sito">
 	<thead>
 		<tr>
 			<th scope="col">Titolo</th>

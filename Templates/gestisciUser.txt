@@ -5,11 +5,11 @@
 	</div>
 	<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
 	<div id="btnContainer">
-		<a href="formUtente.php" title="Inserisci un nuovo utente"><button class="btn btn-1 btn-sep icon-adduser">Aggiungi utente</button></a>
-		<a href="formFattura.php" title="Inserisci una fattura"><button class="btn btn-9 btn-sep icon-addfattura">Aggiungi fattura</button></a>
+		<a class="btn btn-1 btn-sep icon-adduser" href="formUtente.php" title="Inserisci un nuovo utente">Aggiungi utente</a>
+		<a class="btn btn-9 btn-sep icon-addfattura" href="formFattura.php" title="Inserisci una fattura">Aggiungi fattura</a>
 	</div>
 	<div class="tableResponsive"> 
-	<table summary="Tabella contenente la lista degli utenti registrati">
+	<table aria-label="Tabella contenente la lista degli utenti registrati">
 	<thead>
 		<tr>
 			<th scope="col">Codice Utente</th>

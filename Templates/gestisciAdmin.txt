@@ -5,10 +5,10 @@
 	</div>
 	<div id="back"><a href="adminPanel.php" title="Ritorna al pannello amministratore">Torna al pannello amministratore</a></div>
 	<div id="btnContainer">
-		<a href="formAdmin.php" title="Inserisci nuovo admin"><button class="btn btn-5 btn-sep icon-addadmin">Aggiungi <span lang="en">admin</span></button></a>
+		<a class="btn btn-5 btn-sep icon-addadmin" href="formAdmin.php" title="Inserisci nuovo admin">Aggiungi <span lang="en">admin</span></a>
 	</div>
 	<div class="tableResponsive"> 
-	<table summary="Tabella contenente la lista degli admin registrati">
+	<table aria-label="Tabella contenente la lista degli admin registrati">
 	<thead>
 		<tr>
 			<th scope="col">Codice Utente</th>
