@@ -18,4 +18,4 @@
 					<div class="login-form">
 						<form id="userForm" action="rimozioneCorso.php" method="post">
 							<div class="group">
-								<label for="corsi" class="label">Disiscrizione corsi</label>
+								<label class="label">Disiscrizione corsi</label>

@@ -38,13 +38,13 @@
 
 		    while($counter <= sizeOf($corsiDisp))
 		        {
-		            echo " </br><input tabindex=$tabindex title=\"Seleziona ".$corsiDisp[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiDisp[$counter-1]['NomeCorso']."\" /> ".$corsiDisp[$counter-1]['NomeCorso']."";
+		            echo "<br><input tabindex=$tabindex title=\"Seleziona ".$corsiDisp[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiDisp[$counter-1]['NomeCorso']."\" /> ".$corsiDisp[$counter-1]['NomeCorso']."";
 		            $counter++;
 					$tabindex = $tabindex + 10;
 		         }
 
 		    if($counter ==1)
-                echo "</br> Sei già iscritto a tutti i corsi disponibili nella nostra palestra!";
+                echo "<br> Sei già iscritto a tutti i corsi disponibili nella nostra palestra!";
 		}
 		else if($_GET['attr'] == 1) {
 		    $corsiRimov = select("SELECT NomeCorso from iscrizionecorso where CodiceUtente = ".$_SESSION['user_code']."");
@@ -52,26 +52,26 @@
 
             while($counter <= sizeOf($corsiRimov))
             {
-                echo " </br><input tabindex=$tabindex title=\"Seleziona ".$corsiRimov[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiRimov[$counter-1]['NomeCorso']."\" /> ".$corsiRimov[$counter-1]['NomeCorso']." ";
+                echo "<br><input tabindex=$tabindex title=\"Seleziona ".$corsiRimov[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiRimov[$counter-1]['NomeCorso']."\" /> ".$corsiRimov[$counter-1]['NomeCorso']." ";
                 $counter++;
 				$tabindex = $tabindex + 10;
             }
             if($counter ==1)
-               echo "</br> Non sei iscritto a nessuno dei corsi disponibili nella nostra palestra!";
+               echo "<br> Non sei iscritto a nessuno dei corsi disponibili nella nostra palestra!";
 		}
 		if($counter == 1)
 		    echo "</div>
                     </form>
 					<div class=\"group\">
 						<button class=\"button\" onclick=\"window.location.href='userPanel.php'\" title=\"Torna al pannello utente\">Torna al pannello utente!</button>
-					</div></div></div></div></div></div></div>";
+					</div></div></div></div></div></div>";
 		else
 		    echo "</div>
 					<div class=\"group\">
 						<input tabindex=$tabindex title=\"Procedi con la richiesta\" type=\"submit\" class=\"button\" value=\"Procedi\"/>
 						</div>
 					</form>
-				</div></div></div></div></div></div></div>";
+				</div></div></div></div></div></div>";
 	}
 	else {
 		echo $notAdmin;

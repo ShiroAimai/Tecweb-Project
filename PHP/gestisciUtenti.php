@@ -11,6 +11,7 @@
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
+	$id = 1;
 	
 	printHead('Gestisci utenti');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -54,26 +55,32 @@
 				<form method=\"post\" action=\"eliminaUtente.php\" onsubmit=\"return confirm('Confermi di voler eliminare l\'utente?');\" >
 					<input type=\"hidden\"  name=\"type\" value=\"" . $u['Tipo'] . "\"/>
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Elimina utente</label>
-					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Elimina utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Elimina utente\"/>
+					<label class=\"invisibleLabel\" for=\"" . $id . "\">Elimina utente</label>
+					<input id=\"".$id."\" type=\"submit\"  title=\"Elimina utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Elimina utente\"/>
 				</form>
 				</td>";
+			
+			$id++;
 				
 			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"aggiungiScheda.php\" enctype=\"multipart/form-data\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Aggiungi scheda</label>
-					<input id=\"".$u['CodiceUtente']."\" name=\"".$u['CodiceUtente']."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda all'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" onchange=\"form.submit()\"/>
+					<label class=\"invisibleLabel\" for=\"" . $id . "\">Aggiungi scheda</label>
+					<input id=\"".$id."\" name=\"".$id."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda all'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" onchange=\"form.submit()\"/>
 				</form>
 				</td>";
+				
+			$id++;
 				
 			echo "<td class=\"notPrint\">
 				<form method=\"post\" action=\"listaFatture.php?user=".$u['CodiceUtente']."\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Vedi fatture</label>
-					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Vedi le fatture dell'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Vedi fatture\"/>
+					<input id=\"".$id."\" type=\"submit\"  title=\"Vedi le fatture dell'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Vedi fatture\"/>
 				</form>
 				</td>";
+				
+			$id++;
 		}
 		echo "</tbody>";
 		echo "</table>";

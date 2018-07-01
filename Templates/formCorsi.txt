@@ -18,4 +18,4 @@
 					<div class="login-form">							
 						<form id="userForm" action="aggiuntaCorso.php" method="post">
 							<div class="group">
-								<label for="corsi" class="label">Iscrizione corsi</label>
+								<label class="label">Iscrizione corsi</label>

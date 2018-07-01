@@ -11,6 +11,7 @@
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
+	$id = 1;
 	
 	printHead('Gestisci news');
 	if(isset($_SESSION['user_code']) && $_SESSION['user_type'] == 'admin') {
@@ -51,10 +52,12 @@
 				<form method=\"post\" action=\"eliminaNews.php\" onsubmit=\"return confirm('Confermi di voler eliminare la news?');\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $n['Titolo'] . "\"/>
 					<input type=\"hidden\"  name=\"image\" value=\"" . $n['Immagine'] . "\"/>
-					<label class=\"invisibleLabel\" for=\"" . $n['Titolo'] . "\">Elimina news</label>
-					<input id=\"".$n['Titolo']."\" type=\"submit\"  title=\"Elimina news ".$n['Titolo']."\" value=\"Elimina news\"/>
+					<label class=\"invisibleLabel\" for=\"" . $id . "\">Elimina news</label>
+					<input id=\"".$id."\" type=\"submit\"  title=\"Elimina news ".$n['Titolo']."\" value=\"Elimina news\"/>
 				</form>
 				</td>";
+			
+			$id++;
 		}
 		echo "</tbody>";
 		echo "</table>";

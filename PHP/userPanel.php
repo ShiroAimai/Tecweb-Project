@@ -76,20 +76,13 @@
 		//Button iscrizione corsi
 		$stampa .="<div id=\"iscrizioneCorsi\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">Iscriviti a nuovi corsi:</div>";
-		$stampa .= "<form action=\"formCorsi.php\"> <button type=\"submit\" class=\"btn btn-10 btn-sep icon-addcorso\" >Iscrizione corsi</button>";
-		$stampa .= "<input type=\"hidden\" name=\"attr\" value=\"0\"/></form>";
-		//vecchio metodo
-		//$stampa .="<a href=\"formCorsi.php?attr=0\" title=\"Iscriviti a nuovi corsi\"><button class=\"btn btn-10 btn-sep icon-addcorso\">Iscrizione corsi</button></a>";
-		
+		$stampa .= "<a class=\"btn btn-10 btn-sep icon-addcorso\" href=\"formCorsi.php?attr=0\" title=\"Iscriviti a nuovi corsi\">Iscrizione corsi</a>";		
 		$stampa .="</div>";
 
 		//Button disiscrizione corsi
         $stampa .="<div id=\"discrizioneCorsi\" class=\"bloccoDati\">";
         $stampa .= "<div class=\"userData\">Cancella la tua iscrizione ai corsi:</div>";
-        $stampa .="<form action=\"formCorsi.php\"> <button type=\"submit\" class=\"btn btn-12 btn-sep icon-removecorso\" >Disiscrizione corsi</button>
-        <input type=\"hidden\" name=\"attr\" value=\"1\"/> </form>";
-        //vecchio metodo
-        //$stampa .="<a href=\"formCorsi.php?attr=1\" title=\"Disiscriviti dai corsi\"><button class=\"btn btn-12 btn-sep icon-removecorso\">Disiscrizione corsi</button></a>";
+        $stampa .="<a class=\"btn btn-12 btn-sep icon-removecorso\" href=\"formCorsi.php?attr=1\" title=\"Disiscriviti dai corsi\">Disiscrizione corsi</a>";
         $stampa .="</div>";
 
 
