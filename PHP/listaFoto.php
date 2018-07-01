@@ -47,7 +47,7 @@
 					<input type=\"hidden\"  name=\"folder\" value=\"" . $f['Album'] . "\"/>
 					<input type=\"hidden\"  name=\"image\" value=\"" . $f['NomeImmagine'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $f['NomeImmagine'] . "\">Elimina foto</label>
-					<input id=\"".$f['NomeImmagine']."\" type=\"submit\"  title=\"Elimina foto\" value=\"Elimina foto\"/>
+					<input id=\"".$f['NomeImmagine']."\" type=\"submit\"  title=\"Elimina foto ".$f['NomeImmagine']."\" value=\"Elimina foto\"/>
 				</form>
 				</td>";
 		}

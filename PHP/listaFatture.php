@@ -55,7 +55,7 @@
 				<form method=\"post\" action=\"eliminaFattura.php?user=".$f['CodiceUtente']."\" onsubmit=\"return confirm('Confermi di voler eliminare questa fattura?');\" >
 					<input type=\"hidden\"  name=\"fattura\" value=\"" . $f['NumeroRicevuta'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $f['NumeroRicevuta'] . "\">Elimina fattura</label>
-					<input id=\"".$f['NumeroRicevuta']."\" type=\"submit\"  title=\"Elimina fattura\" value=\"Elimina fattura\"/>
+					<input id=\"".$f['NumeroRicevuta']."\" type=\"submit\"  title=\"Elimina fattura numero ".$f['NumeroRicevuta']." del ".$f['DataEmissione']."\" value=\"Elimina fattura\"/>
 				</form>
 				</td>";
 		}

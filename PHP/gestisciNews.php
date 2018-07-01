@@ -52,7 +52,7 @@
 					<input type=\"hidden\"  name=\"title\" value=\"" . $n['Titolo'] . "\"/>
 					<input type=\"hidden\"  name=\"image\" value=\"" . $n['Immagine'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $n['Titolo'] . "\">Elimina news</label>
-					<input id=\"".$n['Titolo']."\" type=\"submit\"  title=\"Elimina news\" value=\"Elimina news\"/>
+					<input id=\"".$n['Titolo']."\" type=\"submit\"  title=\"Elimina news ".$n['Titolo']."\" value=\"Elimina news\"/>
 				</form>
 				</td>";
 		}

@@ -55,7 +55,7 @@
 					<input type=\"hidden\"  name=\"type\" value=\"" . $u['Tipo'] . "\"/>
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Elimina utente</label>
-					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Elimina utente\" value=\"Elimina utente\"/>
+					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Elimina amministratore ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Elimina utente\"/>
 				</form>
 				</td>";
 		}

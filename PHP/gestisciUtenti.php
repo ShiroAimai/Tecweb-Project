@@ -55,7 +55,7 @@
 					<input type=\"hidden\"  name=\"type\" value=\"" . $u['Tipo'] . "\"/>
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Elimina utente</label>
-					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Elimina utente\" value=\"Elimina utente\"/>
+					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Elimina utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Elimina utente\"/>
 				</form>
 				</td>";
 				
@@ -63,7 +63,7 @@
 				<form method=\"post\" action=\"aggiungiScheda.php\" enctype=\"multipart/form-data\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Aggiungi scheda</label>
-					<input id=\"".$u['CodiceUtente']."\" name=\"".$u['CodiceUtente']."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda\" value=\"Aggiungi scheda\" onchange=\"form.submit()\"/>
+					<input id=\"".$u['CodiceUtente']."\" name=\"".$u['CodiceUtente']."\" type=\"file\" accept=\"application/pdf\"  title=\"Aggiungi scheda all'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Aggiungi scheda\" onchange=\"form.submit()\"/>
 				</form>
 				</td>";
 				
@@ -71,7 +71,7 @@
 				<form method=\"post\" action=\"listaFatture.php?user=".$u['CodiceUtente']."\" >
 					<input type=\"hidden\"  name=\"user\" value=\"" . $u['CodiceUtente'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $u['CodiceUtente'] . "\">Vedi fatture</label>
-					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Vedi fatture\" value=\"Vedi fatture\"/>
+					<input id=\"".$u['CodiceUtente']."\" type=\"submit\"  title=\"Vedi le fatture dell'utente ".$u['CodiceUtente']." ".$u['Nome']." ".$u['Cognome']."\" value=\"Vedi fatture\"/>
 				</form>
 				</td>";
 		}

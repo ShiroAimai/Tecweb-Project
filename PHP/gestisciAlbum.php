@@ -48,7 +48,7 @@
 				<form method=\"post\" action=\"eliminaGalleria.php\" onsubmit=\"return confirm('Confermi di voler eliminare la galleria e le relative foto?');\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"" . $a['Album'] . "\">Elimina galleria</label>
-					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Elimina galleria\" value=\"Elimina galleria\"/>
+					<input id=\"".$a['Album']."\" type=\"submit\"  title=\"Elimina galleria ".$a['Album']."\" value=\"Elimina galleria\"/>
 				</form>
 				</td>";
 				
@@ -56,8 +56,8 @@
 				<form method=\"post\" action=\"rinominaGalleria.php\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"rename\">Rinomina galleria</label>
-					<input name=\"rename\" id=\"rename\" type=\"text\"  title=\"Rinomina galleria\" required />
-					<input type=\"submit\"  title=\"Rinomina galleria\" value=\"Rinomina galleria\"/>
+					<input name=\"rename\" id=\"rename\" type=\"text\"  title=\"Inserisci il nuovo nome dell'album\" required />
+					<input type=\"submit\"  title=\"Rinomina galleria ".$a['Album']."\" value=\"Rinomina galleria\"/>
 				</form>
 				</td>";
 				
