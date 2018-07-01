@@ -14,16 +14,15 @@ html, body {
 	font-size: 100%;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	background-color: #323232;
+	margin:1.5%;
+	background-image: url("../IMAGES/sfondo.jpg");
 }
 
 .printable {
 	display:none;
 }
 
-#contenitore {
-	margin:1.5%;
-	background-image: url("../IMAGES/sfondo.jpg");
-}
+
 
 /*===============
 INTESTAZIONE
