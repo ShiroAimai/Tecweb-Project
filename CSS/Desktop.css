@@ -14,16 +14,15 @@ html, body {
 	font-size: 100%;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	background-color: #323232;
+	margin:1.5%;
+	background-image: url("../IMAGES/sfondo.jpg");
 }
 
 .printable {
 	display:none;
 }
 
-#contenitore {
-	margin:1.5%;
-	background-image: url("../IMAGES/sfondo.jpg");
-}
+
 
 /*===============
 INTESTAZIONE
@@ -836,7 +835,7 @@ FORM
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.76);
+	background-color: rgb(33,33,33);
 }
 
 .containerChild {
@@ -878,7 +877,7 @@ a {
 	height: 100%;
 	margin:auto;
 	position:relative;
-	background-color: #3D5A80;
+	background-color: rgb(80,80,80);
 }
 
 .login-html{
@@ -903,6 +902,7 @@ a {
 	text-transform:uppercase;
 	letter-spacing: 2px;
 	font-weight: 600;
+
 }
 
 .login-form {
@@ -933,15 +933,18 @@ a {
 }
 
 .login-form .group .label {
-	color:#aaa;
+	color:white;
 	font-size:12px;
 }
 
 .login-form .group .button {
-	background:#3F51B5;
+	background:rgb(55,55,55);
 	cursor: pointer;
 }
-
+.login-form .group .button:hover {
+	background:#DAAC5E;
+	color:rgb(55,55,55);
+}
 select option {
     background: #516b8d;
 }
@@ -956,7 +959,7 @@ MESSAGGI D'ERRORE
 	margin:5% 25%;
 	width:50%;
 	height:14em;
-	background-color: #3D5A80;
+	background-color: rgb(50,50,50);
 	text-align:center;
 }
 
@@ -1143,24 +1146,21 @@ TABELLE
 table {
     width: 90%;
 	margin: 2em auto;
-    background-color: #D0E4F5;
+    background-color: rgb(120,120,120);
     border: solid 1px #000000;
     border-collapse: collapse;
+    color:#ffffff;
 }
 
 thead {
-	background-color: #003366;
-    color: #cccccc;
+	background-color: rgb(77,77,77);
+    color: #ffffff;
     text-align: left;
 }
 
-
 tr:nth-child(even) {
-	background-color: #eeeeee;
-}
-
-tr:nth-child(even) {
-	background-color: #ffffff;
+	background-color: rgb(77,77,77);
+	
 }
 
 th, td {
