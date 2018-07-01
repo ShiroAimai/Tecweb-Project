@@ -22,10 +22,11 @@
 	}
 	echo $closediv;
 	echo $closediv;
-	$title = "<div id=\"Presentazione\">
-				<h1 id=\"titoloPagina\"><span lang=\"en\">NEWS</span></h1>
-				<p>Resta aggiornato sulle ultime novità della <span lang=\"en\">Body Evolution</span>!</p>
-			</div>";
+	$title = "<div id=\"corpo\">
+				<div id=\"Presentazione\">
+					<h1 id=\"titoloPagina\"><span lang=\"en\">NEWS</span></h1>
+					<p>Resta aggiornato sulle ultime novità della <span lang=\"en\">Body Evolution</span>!</p>
+				</div>";
 	echo $title;
 	
 	$query = query("
@@ -46,6 +47,7 @@
 		echo $stampa;
 	}
 
+	echo $closediv;
 	close_connection();
 	echo $foot;
 	echo $closebody;

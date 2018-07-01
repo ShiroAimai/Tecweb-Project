@@ -49,7 +49,7 @@
 	echo $closediv;
 
 	if (!file_exists('../Uploads/upGalleria/'.$galleryName.'/')) {
-		mkdir('../galleria/'.$galleryName.'/', 0777, true);
+		mkdir('../Uploads/upGalleria/'.$galleryName.'/', 0777, true);
 	}
 	$target_dir = '../Uploads/upGalleria/'.$galleryName.'/';
 	$count=0;
