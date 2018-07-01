@@ -1006,6 +1006,7 @@ PULSANTI FORM
 	text-transform: uppercase;
 	font-weight: 700;
 	position: relative;
+	text-align: center;
 }
 
 .btn:before {
@@ -1125,6 +1126,7 @@ PULSANTI FORM
 
 .icon-schedadownimg:before {
 	content: "\f019";
+	align-content: center;
 }
 
 /*===============

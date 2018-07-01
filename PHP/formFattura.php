@@ -8,7 +8,7 @@
 	$login = "<button title=\"Effettua il login\" onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
 	$adminPanel = "<button title=\"Vai al pannello amministratore\" onclick=\"window.location.href='adminPanel.php'\"><span lang=\"en\">Admin Panel</span></button>";
 	$formFattura .="<script src=\"../JS/calcoloImportoFatture.js\"></script>";
-	$userPanel = "<button title=\"Vai al pannello utente\" onclick=\"window.location.href='userPanel.php'\"><span lang=\"en\">User Panel</span</button>";
+	$userPanel = "<button title=\"Vai al pannello utente\" onclick=\"window.location.href='userPanel.php'\"><span lang=\"en\">User Panel</span></button>";
 	$pswvalidation = "<script src=\"../JS/pswValidation.js\"></script>";
 	$closediv = "</div>";
 	$closebody = "</body>";

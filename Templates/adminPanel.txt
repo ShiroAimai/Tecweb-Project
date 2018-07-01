@@ -22,8 +22,6 @@
         	<form action="gestisciAlbum.php">
 			 	<button type="submit" class="btn btn-8 btn-sep icon-showalbum" >Gestisci album</button> 
         	</form>
-
-
 		</div>
 	</div>
 </div>
