@@ -65,7 +65,7 @@
 		$ok = FALSE;
 		while($data = mysqli_fetch_assoc($query3)){
 		    $ok = TRUE;
-			$stampa .="<div id=\"contatoreCorsi\" class=\"EntryUtente\">$countercorsi.</div><div id=\"nomeCorso\" class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>";
+			$stampa .="<div class=\"EntryUtente\">$countercorsi.</div><div class=\"EntryTab\"> &nbsp;".$data['NomeCorso']."&ensp;</div>";
 			$countercorsi++;
 		}
 		if($ok == FALSE)
@@ -99,15 +99,7 @@
 		$stampa .="<div id=\"datiScheda\" class=\"bloccoDati\">";
 		$stampa .= "<div class=\"userData\">La tua scheda:</div>";
 		if($data['LinkScheda']!=null) {
-			//mi cerca la scheda nella dir schede col nome corrispondente salvato sul db
-			//$stampa .= "<a href=\"../Uploads/upSchede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\" title=\"Scarica la tua scheda\">";
-			//$stampa .= "<button class=\"btn btn-11 btn-sep icon-schedadownimg\">Scarica scheda</button>
-		
-
-			$stampa .="<form action=\"../Uploads/upSchede/".$data['LinkScheda']."\"> 
-			<button type=\"submit\" class=\"btn btn-11 btn-sep icon-schedadownimg\" >Scarica la tua scheda</button> </form>";
-			
-			
+			$stampa .= "<a class=\"btn btn-11 btn-sep icon-schedadownimg\" href=\"../Uploads/upSchede/".$data['LinkScheda']."\" download=\"Scheda ".$name." ".$cognome."\" title=\"Scarica la tua scheda\">Scarica scheda</a>";			
 		}
 		else
 			$stampa.="<div class=\"EntryUtente\">Nessuna scheda associata.</div>";
