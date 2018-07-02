@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `fsacchet`
+-- Database: `ncister`
 --
 
 -- --------------------------------------------------------
@@ -39,9 +39,7 @@ CREATE TABLE `abbonamento` (
 --
 
 INSERT INTO `abbonamento` (`CodiceUtente`, `ScadenzaFitness`, `EntrateCorsi`) VALUES
-(1, '2018-03-28', 0),
-(2, '2018-03-28', 20),
-(3, '2018-03-28', 30);
+(2, '2018-05-28', 30);
 
 -- --------------------------------------------------------
 
@@ -79,15 +77,6 @@ CREATE TABLE `fattura` (
   `MesiFitness` int(10) DEFAULT 0,
   `EntrateCorsi` int(10) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dump dei dati per la tabella `fattura`
---
-
-INSERT INTO `fattura` (`NumeroRicevuta`, `DataEmissione`, `ImportoEuro`, `CodiceUtente`, `MesiFitness`, `EntrateCorsi`) VALUES
-(1, '2017-03-28', 300, 1, 12, 0),
-(2, '2017-03-28', 120, 2, 0, 20),
-(3, '2017-09-28', 420, 3, 6, 30);
 
 --
 -- Trigger `fattura`
@@ -141,6 +130,14 @@ END
 $$
 DELIMITER ;
 
+-- Dump dei dati per la tabella `fattura`
+--
+
+INSERT INTO `fattura` (`NumeroRicevuta`, `DataEmissione`, `ImportoEuro`, `CodiceUtente`, `MesiFitness`, `EntrateCorsi`) VALUES
+(2, '2018-05-28', 70, 2, 1, 5);
+
+--
+
 -- --------------------------------------------------------
 
 --
@@ -158,11 +155,9 @@ CREATE TABLE `galleria` (
 --
 
 INSERT INTO `galleria` (`NomeImmagine`, `Data`, `Album`) VALUES
-('Allenamento.jpg', '2018-01-01', 'Palestra'),
 ('fitBoxe.jpg', '2018-01-01', 'Palestra'),
 ('fitness.jpg', '2018-01-01', 'Palestra'),
 ('jumpfit.jpg', '2018-01-01', 'Palestra'),
-('pizzata.jpg', '2018-01-01', 'Pizzata'),
 ('Trainer.jpg', '2018-01-01', 'Palestra');
 
 --
@@ -190,9 +185,7 @@ CREATE TABLE `iscrizionecorso` (
 --
 
 INSERT INTO `iscrizionecorso` (`CodiceUtente`, `CodiceCorso`, `NomeCorso`) VALUES
-(2, 1, 'Spinning'),
-(2, 2, 'FitBoxe'),
-(3, 2, 'FitBoxe');
+(2, 2, 'FitBoxe');
 
 -- --------------------------------------------------------
 
@@ -212,8 +205,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`Titolo`, `Data`, `Immagine`, `Descrizione`) VALUES
-('Titolo news', '2018-03-01', 'Freddy.jpg', 'Descrizione news'),
-('Titolo seconda news', '2018-02-28', 'Freddy.jpg', 'Descrizione seconda news');
+('Pizzata estiva!', '2018-06-01', 'pizzata.jpg', 'Non mancare alla pizzata estiva con i membri della palestra!');
 
 --
 -- Trigger `news`
@@ -239,7 +231,7 @@ CREATE TABLE `scheda` (
 --
 
 INSERT INTO `scheda` (`CodiceUtente`, `LinkScheda`) VALUES
-(1, 'fsacchet.pdf');
+(2, 'fsacchet.pdf');
 
 -- --------------------------------------------------------
 
@@ -261,11 +253,10 @@ CREATE TABLE `utente` (
 --
 
 INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `Password`, `Email`, `Tipo`) VALUES
-(1, 'Francesco', 'Sacchetto', 'fsacchet1', 'francesco.sacchetto@gmail.com', 'user'),
-(2, 'Nicola', 'Cisternino', 'nicocister2', 'nicola.cisternino@gmail.com', 'user'),
-(3, 'Marco', 'Masiero', 'marmasier3', 'marco.masiero@gmail.com', 'user'),
-(4, 'Stefano', 'Nordio', 'snordio4', 'stefano.nordio@gmail.com', 'user'),
-(5, 'Admin-Name', 'Admin-Surname', 'admin', 'admin.admin@gmail.com', 'admin');
+(1, 'Admin-Name', 'Admin-Surname', 'admin', 'admin.admin@gmail.com', 'admin'),
+(2, 'Francesco', 'Sacchetto', 'user', 'francesco.sacchetto@gmail.com', 'user');
+
+--
 
 --
 -- Trigger `utente`
@@ -290,7 +281,6 @@ END
 $$
 DELIMITER ;
 
---
 -- Indici per le tabelle scaricate
 --
 
