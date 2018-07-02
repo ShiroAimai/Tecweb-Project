@@ -3,13 +3,16 @@
 	$userCode = $_SESSION['user_code'];
     $counter=1;
 	$check=0;
-
-	while(isset($_POST["select".$counter.""])) {
-		query("DELETE FROM iscrizionecorso WHERE CodiceUtente='$userCode' AND NomeCorso='".$_POST["select".$counter.""]."'");
-		$counter++;
-		$check++;
+	while($counter <= 5){
+		if(isset($_POST["select".$counter.""])) {
+			query("DELETE FROM iscrizionecorso WHERE CodiceUtente='$userCode' AND NomeCorso='".$_POST["select".$counter.""]."'");
+			$counter++;
+			$check++;
+		}
+		else {
+			$counter++;
+		}
 	}
-
 	if($check == 0) {
 		header("Location: operazioneFallita.php");
 		die();
