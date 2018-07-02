@@ -2,8 +2,8 @@
 	require_once('config.php');
 	register('title');
 	register('rename');
-	$dir_to_rename = '../galleria/'.$title.'/';
-	$dir_new_name = '../galleria/'.$rename.'/';
+	$dir_to_rename = '../Uploads/upGalleria/'.$title.'/';
+	$dir_new_name = '../Uploads/upGalleria/'.$rename.'/';
 	$rename = test_input($rename);
 	if(isset($rename) && !empty($rename)) {
 		query("UPDATE galleria SET Album='$rename' WHERE Album='$title'");

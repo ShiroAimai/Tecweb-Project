@@ -59,7 +59,7 @@
 				<form method=\"post\" action=\"rinominaGalleria.php\" >
 					<input type=\"hidden\"  name=\"title\" value=\"" . $a['Album'] . "\"/>
 					<label class=\"invisibleLabel\" for=\"rename".$a['Album']."\">Rinomina galleria</label>
-					<input name=\"rename".$a['Album']."\" type=\"text\"  title=\"Inserisci il nuovo nome dell'album\" required />
+					<input id=\"rename".$a['Album']."\" name=\"rename\" type=\"text\"  title=\"Inserisci il nuovo nome dell'album\" required />
 					<input type=\"submit\" title=\"Rinomina galleria ".$a['Album']."\" value=\"Rinomina galleria\"/>
 				</form>
 				</td>";
