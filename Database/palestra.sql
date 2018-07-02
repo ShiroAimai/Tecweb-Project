@@ -39,7 +39,10 @@ CREATE TABLE `abbonamento` (
 --
 
 INSERT INTO `abbonamento` (`CodiceUtente`, `ScadenzaFitness`, `EntrateCorsi`) VALUES
-(2, '2018-05-28', 30);
+(2, '2018-05-28', 30),
+(3, '2018-01-01', 100),
+(4, '2018-04-10', 0),
+(5, '2019-01-01', 50);
 
 -- --------------------------------------------------------
 
@@ -134,7 +137,10 @@ DELIMITER ;
 --
 
 INSERT INTO `fattura` (`NumeroRicevuta`, `DataEmissione`, `ImportoEuro`, `CodiceUtente`, `MesiFitness`, `EntrateCorsi`) VALUES
-(2, '2018-05-28', 70, 2, 1, 5);
+(1, '2018-05-28', 70, 2, 1, 5),
+(2, '2018-03-10', 140, 3, 2, 10),
+(3, '2018-05-01', 70, 4, 1, 5),
+(4, '2017-01-01', 70, 5, 1, 5);
 
 --
 
@@ -158,7 +164,9 @@ INSERT INTO `galleria` (`NomeImmagine`, `Data`, `Album`) VALUES
 ('fitBoxe.jpg', '2018-01-01', 'Palestra'),
 ('fitness.jpg', '2018-01-01', 'Palestra'),
 ('jumpfit.jpg', '2018-01-01', 'Palestra'),
-('Trainer.jpg', '2018-01-01', 'Palestra');
+('Trainer.jpg', '2018-01-01', 'Palestra'),
+('party.jpg', '2018-01-01', 'Party'),
+('partydue.jpg', '2018-01-01', 'Party');
 
 --
 -- Trigger `galleria`
@@ -185,7 +193,8 @@ CREATE TABLE `iscrizionecorso` (
 --
 
 INSERT INTO `iscrizionecorso` (`CodiceUtente`, `CodiceCorso`, `NomeCorso`) VALUES
-(2, 2, 'FitBoxe');
+(2, 2, 'FitBoxe'),
+(3, 2, 'FitBoxe');
 
 -- --------------------------------------------------------
 
@@ -205,7 +214,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`Titolo`, `Data`, `Immagine`, `Descrizione`) VALUES
-('Pizzata estiva!', '2018-06-01', 'pizzata.jpg', 'Non mancare alla pizzata estiva con i membri della palestra!');
+('Pizzata estiva!', '2018-06-01', 'pizzata.jpg', 'Non mancare alla pizzata estiva con i membri della palestra! Passa in palestra per maggiori informazioni.'),
+('Gara Deadlift!', '2018-05-01', 'gara.jpg', 'Iscriviti in palestra alla gara di Deadlift! Metti alla prova la tua forza!');
 
 --
 -- Trigger `news`
@@ -254,7 +264,10 @@ CREATE TABLE `utente` (
 
 INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `Password`, `Email`, `Tipo`) VALUES
 (1, 'Admin-Name', 'Admin-Surname', 'admin', 'admin.admin@gmail.com', 'admin'),
-(2, 'Francesco', 'Sacchetto', 'user', 'francesco.sacchetto@gmail.com', 'user');
+(2, 'Francesco', 'Sacchetto', 'user', 'francesco.sacchetto@gmail.com', 'user'),
+(3, 'Nicola', 'Cisternino', 'user', 'nicola.cisternino@gmail.com', 'user'),
+(4, 'Marco', 'Masiero', 'user', 'marco.masiero@gmail.com', 'user'),
+(5, 'Stefano', 'Nordio', 'user', 'stefano.nordio@gmail.com', 'user');
 
 --
 
