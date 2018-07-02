@@ -18,7 +18,7 @@
 			<div id=\"contenitore\">
 				<div id=\"Intestazione\">
 					<a href=\"#corpo\" id=\"saltaMenu\">Vai al corpo della pagina</a>
-					<a class=\"sandwich\"  onclick=\"menuResponsive()\">&#9776;</a>
+					<a class=\"sandwich\" title=\"Mostra barra di navigazione\" onclick=\"menuResponsive()\">&#9776;</a>
 		");
 		if($title == 'Home') {
 			echo("<a class=\"active\"><img id=\"logo\" src=\"../IMAGES/logo.png\" alt=\"Logo Body Evolution\" title=\"Logo Body Evolution\"/></a>
