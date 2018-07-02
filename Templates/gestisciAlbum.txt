@@ -1,4 +1,4 @@
-<div id="Corpo">
+<div id="corpo">
 	<div id="Presentazione">
 		<h1 id="titoloPagina">Gestisci album</h1>
 		<p>Gestisci gli album presenti nel sito</p>

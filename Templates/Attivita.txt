@@ -7,7 +7,7 @@
 	<div id="powerpump">
 		<div id="PowerpumpCourseContent" class="titleCourseContent">
 			<img class="iconAtt" src="../IMAGES/icone/power1.png" alt="icona alzatore pesi"/>
-			<p class="titleAttPower"><span lang="en">Power Pump</span></p>
+			<h2 class="titleAttPower"><span lang="en">Power Pump</span></h2>
 		</div>
 		<img class="courseimg" src="../IMAGES/powerpump.jpg" alt="powepump immagine"/>
 		<div class="textAttContainer">
@@ -22,7 +22,7 @@
 	<div id="spinning">
 		<div id="SpinningCourseContent" class="titleCourseContent">
 			<img class="iconAtt" src="../IMAGES/icone/spinning1.png" alt="icona uomo in bicicletta"/>
-			<p class="titleAttSpinning"><span lang="en">Spinning</span></p>
+			<h2 class="titleAttSpinning"><span lang="en">Spinning</span></h2>
 		</div>
 		<img class="courseimg" src="../IMAGES/spinning.jpg" alt="powepump"/>
 		<div class="textAttContainer">
@@ -35,8 +35,8 @@
 
 	<div id="fitboxe">
 		<div id="FitboxeCourseContent" class="titleCourseContent">
-			<img class="iconAtt" src="../IMAGES/icone/fitboxe1.png" alt="icona alzatore pesi"/>
-			<p class="titleAttFitBoxe"> <span lang="en">Fit Boxe</span></p>
+			<img class="iconAtt" src="../IMAGES/icone/fitboxe1.png" alt="icona uomo al sacco"/>
+			<h2 class="titleAttFitBoxe"> <span lang="en">Fit Boxe</span></h2>
 		</div>
 		<img class="courseimg" src="../IMAGES/fitBoxe.jpg" alt="fitboxe immagine"/>
 		<div class="textAttContainer">
@@ -51,8 +51,8 @@
 		
 	<div id="jumpfit">
 		<div id="JumpfitCourseContent" class="titleCourseContent">
-			<img class="iconAtt" src="../IMAGES/icone/jumpfit1.png" alt="icona alzatore pesi"/>
-			<p class="titleAttJumpFit"> <span lang="en">Jump Fit</span></p>
+			<img class="iconAtt" src="../IMAGES/icone/jumpfit1.png" alt="icona uomo sul trampolino"/>
+			<h2 class="titleAttJumpFit"> <span lang="en">Jump Fit</span></h2>
 		</div>
 		<img class="courseimg" src="../IMAGES/jumpfit.jpg" alt="jumpfit immagine"/>
 		<div class="textAttContainer">
@@ -66,7 +66,7 @@
 	<div id="step">
 		<div id="StepCourseContent" class="titleCourseContent">
 			<img class="iconAtt" src="../IMAGES/icone/step1.png" alt="icona step"/>
-			<p class="titleAttStep"> <span lang="en">Step</span></p>
+			<h2 class="titleAttStep"> <span lang="en">Step</span></h2>
 		</div>
 		<img class="courseimg" src="../IMAGES/step.jpg" alt="step immagine"/>
 		<div class="textAttContainer">

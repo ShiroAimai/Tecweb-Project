@@ -1,4 +1,4 @@
-<div id="Corpo">
+<div id="corpo">
 	<div id="Presentazione">
 		<h1 id="titoloPagina">Gestisci <span lang="en">news</span></h1>
 		<p>Gestisci le <span lang="en">news</span> presenti nel sito</p>

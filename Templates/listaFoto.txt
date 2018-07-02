@@ -1,4 +1,4 @@
-<div id="Corpo">
+<div id="corpo">
 	<div id="Presentazione">
 		<h1 id="titoloPagina">Lista Foto</h1>
 		<p>Visualizza la lista delle foto relative all'album</p>

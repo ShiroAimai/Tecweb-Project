@@ -38,7 +38,7 @@
 
 		    while($counter <= sizeOf($corsiDisp))
 		        {
-		            echo "<br><input tabindex=$tabindex title=\"Seleziona ".$corsiDisp[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiDisp[$counter-1]['NomeCorso']."\" /> ".$corsiDisp[$counter-1]['NomeCorso']."";
+		            echo "<br><label class=\"invisibleLabel\" for=\"select".$counter."\">".$corsiDisp[$counter-1]['NomeCorso']."</label><input tabindex=$tabindex title=\"Seleziona ".$corsiDisp[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiDisp[$counter-1]['NomeCorso']."\" /> ".$corsiDisp[$counter-1]['NomeCorso']."";
 		            $counter++;
 					$tabindex = $tabindex + 10;
 		         }
@@ -52,7 +52,7 @@
 
             while($counter <= sizeOf($corsiRimov))
             {
-                echo "<br><input tabindex=$tabindex title=\"Seleziona ".$corsiRimov[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiRimov[$counter-1]['NomeCorso']."\" /> ".$corsiRimov[$counter-1]['NomeCorso']." ";
+                echo "<br><label class=\"invisibleLabel\" for=\"select".$counter."\">".$corsiRimov[$counter-1]['NomeCorso']."</label><input tabindex=$tabindex title=\"Seleziona ".$corsiRimov[$counter-1]['NomeCorso']."\" type=\"checkbox\" name=\"select".$counter."\" id=\"select".$counter."\" value=\"".$corsiRimov[$counter-1]['NomeCorso']."\" /> ".$corsiRimov[$counter-1]['NomeCorso']." ";
                 $counter++;
 				$tabindex = $tabindex + 10;
             }
