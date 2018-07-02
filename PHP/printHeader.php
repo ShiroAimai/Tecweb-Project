@@ -5,7 +5,7 @@
 		<html lang=\"it\">
 		<head>
 			<title>".$title." | Body Evolution</title>
-			<meta charset=\"utf-8\">
+			<meta charset=\"UTF-8\">
 			<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>
 			<link href=\"../CSS/Desktop.css\" rel=\"stylesheet\" media=\"screen\"/>
 			<link href=\"../CSS/Tablet.css\" rel=\"stylesheet\" media=\"screen and (min-width:768px) and (max-width:1024px)\"/>

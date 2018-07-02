@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ncister`
+-- Database: `fsacchet`
 --
 
 -- --------------------------------------------------------
@@ -52,7 +52,7 @@ INSERT INTO `abbonamento` (`CodiceUtente`, `ScadenzaFitness`, `EntrateCorsi`) VA
 
 CREATE TABLE `corso` (
   `CodiceCorso` int(10) NOT NULL,
-  `NomeCorso` varchar(150) NOT NULL
+  `NomeCorso` char(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -153,7 +153,7 @@ INSERT INTO `fattura` (`NumeroRicevuta`, `DataEmissione`, `ImportoEuro`, `Codice
 CREATE TABLE `galleria` (
   `NomeImmagine` varchar(50) NOT NULL,
   `Data` date NOT NULL,
-  `Album` varchar(45) NOT NULL
+  `Album` char(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -161,12 +161,18 @@ CREATE TABLE `galleria` (
 --
 
 INSERT INTO `galleria` (`NomeImmagine`, `Data`, `Album`) VALUES
-('fitBoxe.jpg', '2018-01-01', 'Palestra'),
-('fitness.jpg', '2018-01-01', 'Palestra'),
-('jumpfit.jpg', '2018-01-01', 'Palestra'),
-('Trainer.jpg', '2018-01-01', 'Palestra'),
+('allenamento.jpg', '2018-04-01', 'Palestra'),
+('corsi.jpg', '2018-04-01', 'Palestra'),
+('fitboxe.jpg', '2018-04-01', 'Palestra'),
+('fitness.jpg', '2018-04-01', 'Palestra'),
+('jumpfit.jpg', '2018-04-01', 'Palestra'),
+('trainer.jpg', '2018-04-01', 'Palestra'),
 ('party.jpg', '2018-01-01', 'Party'),
-('partydue.jpg', '2018-01-01', 'Party');
+('partydue.jpg', '2018-01-01', 'Party'),
+('pizzata.jpg', '2018-05-13', 'Pizzata'),
+('pizzata2.jpg', '2018-05-13', 'Pizzata'),
+('gara.jpg', '2018-05-13', 'Gara Deadlift'),
+('gara2.jpg', '2018-05-13', 'Gara Deadlift');
 
 --
 -- Trigger `galleria`
@@ -185,7 +191,7 @@ DELIMITER ;
 CREATE TABLE `iscrizionecorso` (
   `CodiceUtente` int(10) NOT NULL,
   `CodiceCorso` int(10) NOT NULL,
-  `NomeCorso` varchar(150) NOT NULL
+  `NomeCorso` char(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -203,7 +209,7 @@ INSERT INTO `iscrizionecorso` (`CodiceUtente`, `CodiceCorso`, `NomeCorso`) VALUE
 --
 
 CREATE TABLE `news` (
-  `Titolo` varchar(50) NOT NULL,
+  `Titolo` char(50) NOT NULL,
   `Data` date NOT NULL,
   `Immagine` varchar(50) NOT NULL,
   `Descrizione` text NOT NULL
@@ -214,8 +220,20 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`Titolo`, `Data`, `Immagine`, `Descrizione`) VALUES
-('Pizzata estiva!', '2018-06-01', 'pizzata.jpg', 'Non mancare alla pizzata estiva con i membri della palestra! Passa in palestra per maggiori informazioni.'),
-('Gara Deadlift!', '2018-05-01', 'gara.jpg', 'Iscriviti in palestra alla gara di Deadlift! Metti alla prova la tua forza!');
+('Gara Deadlift', '2018-07-02', 'gara.jpg', 'Venerdì 20 Luglio presso la palestra Body Evolution di Cavarzere si terrà una gara di Deadlift.
+Alla gara può partecipare chiunque, indipendentemente dall\'età, dal sesso e dal massimale di stacco da terra.
+Le categorie di peso verranno decise in base al numero di iscritti e verranno comunicate una settimana prima della gara.
+Saranno premiati i primi 3 uomini e le prime 3 donne, in più diversi premi in palio.
+Il costo della gara è di 10 euro, più 5 euro per l\'assicurazione (tranne per i partecipanti già iscritti alla Body Evolution, i quali sono già assicurati).
+L\'iscrizione può essere effettuata fino a cinque giorni prima della gara entro il 15 Luglio.
+Oltre questa data alla quota prevista si applicherà un supplemento di 5 euro.
+Per maggiori indformazioni e per iscriversi alla gara rivolgersi presso la segreteria della palestra.'),
+('Pizzata estiva', '2018-07-01', 'pizzata.jpg', 'Non mancare alla pizzata estiva con i membri della palestra Body Evolution.
+L\'evento si terrà Mercoledì 11 Luglio alle ore 20:45.
+Giro pizza con 10 tipi di pizza (8 salate + 2 dolci) a spicchi.
+Costo 14 euro bevande comprese.
+Prenotazione e pagamento entro il 10 Luglio presso la segreteria della palestra');
+
 
 --
 -- Trigger `news`
@@ -251,11 +269,11 @@ INSERT INTO `scheda` (`CodiceUtente`, `LinkScheda`) VALUES
 
 CREATE TABLE `utente` (
   `CodiceUtente` int(10) NOT NULL,
-  `Nome` varchar(150) NOT NULL,
-  `Cognome` varchar(150) NOT NULL,
-  `Password` varchar(50) NOT NULL,
-  `Email` varchar(50) NOT NULL,
-  `Tipo` varchar(50) NOT NULL DEFAULT 'user'
+  `Nome` char(150) NOT NULL,
+  `Cognome` char(150) NOT NULL,
+  `Password` char(50) NOT NULL,
+  `Email` char(50) NOT NULL,
+  `Tipo` char(50) NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -263,11 +281,12 @@ CREATE TABLE `utente` (
 --
 
 INSERT INTO `utente` (`CodiceUtente`, `Nome`, `Cognome`, `Password`, `Email`, `Tipo`) VALUES
-(1, 'Admin-Name', 'Admin-Surname', 'admin', 'admin.admin@gmail.com', 'admin'),
+(1, 'Mario', 'Rossi', 'admin', 'mario.rossi@gmail.com', 'admin'),
 (2, 'Francesco', 'Sacchetto', 'user', 'francesco.sacchetto@gmail.com', 'user'),
 (3, 'Nicola', 'Cisternino', 'user', 'nicola.cisternino@gmail.com', 'user'),
 (4, 'Marco', 'Masiero', 'user', 'marco.masiero@gmail.com', 'user'),
-(5, 'Stefano', 'Nordio', 'user', 'stefano.nordio@gmail.com', 'user');
+(5, 'Stefano', 'Nordio', 'user', 'stefano.nordio@gmail.com', 'user'),
+(6, 'Roberto', 'Verdi', 'admin', 'roberto.verdi@hotmail.com', 'admin');
 
 --
 
@@ -278,7 +297,7 @@ DELIMITER $$
 CREATE TRIGGER `updabb` AFTER INSERT ON `utente` FOR EACH ROW BEGIN
 DECLARE codut INTEGER;
 DECLARE scad DATE;
-DECLARE tipo VARCHAR(50);
+DECLARE tipo char(50);
 
 SELECT new.Tipo INTO tipo;
 IF (tipo = 'user')

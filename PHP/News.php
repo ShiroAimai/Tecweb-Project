@@ -31,7 +31,8 @@
 	
 	$query = query("
 		SELECT Titolo, Data, Immagine, Descrizione 
-		FROM news;
+		FROM news
+		ORDER BY Data DESC;
 	");
 	
 	while($row = mysqli_fetch_assoc($query)) {
