@@ -59,7 +59,7 @@ INTESTAZIONE
 	color: #DAAC5E;
 	text-align: center;
 	font-weight: bold;
-	padding: 2em 0.53em;
+	padding: 2em 0.64em;
 	text-decoration: none;
 	width: auto;
 }
@@ -75,20 +75,26 @@ INTESTAZIONE
 	cursor: default;
 }
 
+.Menu button {
+	float: right;
+	display: block;
+	color: white;
+	background-color: #4CAF50;
+	padding: 2em 0.64em;
+	width: auto;
+	border: none;
+	font-size: 100%;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+.Menu button:hover {
+	opacity: 0.8;
+}
+
 #logoutButton {
 	background-color: red;
-	float: right;
-	color: white;
-}
-
-#panelButton {
-	background-color: #4CAF50;
-	float: right;
-	color: white;
-}
-
-#logoutButton:hover, #panelButton:hover {
-	opacity: 0.8;
 }
 
 .sandwich {
@@ -325,6 +331,12 @@ PAGINA CHI SIAMO
 /*===============
 PAGINA DOVE SIAMO
 =================*/
+
+#noscriptMap{
+	font-size: 24px;
+	color:white;
+	text-align: left;
+}
 
 #titolodovesiamo {
 	position: absolute;
