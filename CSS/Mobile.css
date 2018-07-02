@@ -27,11 +27,6 @@ INTESTAZIONE
 	padding: 1em 0.64em;
 }
 
-.Menu button {
-	display: none;
-	padding: 1em 0.64em;
-}
-
 .sandwich {
 	position: absolute;
     left: 15px;
@@ -68,6 +63,10 @@ INTESTAZIONE
     display: block;
 	width: 100%;
     text-align: left;
+}
+
+.Menu.responsive #panelButton {
+    display: none;
 }
 
 /*===============
