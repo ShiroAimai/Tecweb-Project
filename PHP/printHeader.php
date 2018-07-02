@@ -79,7 +79,7 @@
 			echo("<a href=\"doveSiamo.php\" title=\"Vai a dove siamo\">Dove siamo</a>");
 		}
 		if($title == 'Area Personale') {
-			echo("<button disabled>Area Personale</button></div></div>");
+			echo("<a id=\"panelButton\" class=\"active\">Area Personale</a></div></div>");
 		}
 	}
 ?>

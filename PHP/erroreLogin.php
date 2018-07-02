@@ -3,7 +3,7 @@
 	require_once('printHeader.php');
 	$foot = file_get_contents("../Templates/footer.txt");
 	$errLogin = file_get_contents("../Templates/erroreLogin.txt");
-	$login = "<button title=\"Effettua il login\" onclick=\"window.location.href='areaPersonale.php'\">Area Personale</button>";
+	$login = "<a id=\"panelButton\" title=\"Effettua il login\" href=\"areaPersonale.php\">Area Personale</a>";
 	$closediv = "</div>";
 	$closebody = "</body>";
 	$closehtml = "</html>";
