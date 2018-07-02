@@ -60,9 +60,9 @@ CREATE TABLE `corso` (
 
 INSERT INTO `corso` (`CodiceCorso`, `NomeCorso`) VALUES
 (1, 'Spinning'),
-(2, 'FitBoxe'),
-(3, 'PowerPump'),
-(4, 'JumpFit'),
+(2, 'Fit boxe'),
+(3, 'Power pump'),
+(4, 'Jump fit'),
 (5, 'Step');
 
 -- --------------------------------------------------------
