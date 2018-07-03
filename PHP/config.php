@@ -5,9 +5,9 @@ session_start();
 
 //parametri di connessione al database
 $hostname = "localhost";
-$username = "root";
-$password = "";
-$database = "fsacchet";
+$username = "ncistern";
+$password = "Pathai3toof6Ee3e";
+$database = "ncistern";
 
 //registra una variabile da una form nella pagina che richiama questa funzione
 function register($varname) {
